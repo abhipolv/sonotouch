@@ -1,0 +1,15 @@
+# Use a clean, default sans-serif font
+font.family: DejaVu Sans
+
+# Set default font size
+font.size: 12
+
+# Use a specific backend (if you have issues with Qt, use TkAgg or Agg)
+backend: TkAgg
+
+# Customize line width and figure size
+lines.linewidth: 2
+figure.figsize: 8, 6
+
+# Use tighter layout by default
+figure.autolayout: True
