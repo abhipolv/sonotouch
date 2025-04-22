@@ -1,0 +1,72 @@
+Command: ninja flash
+[1/5] cd "/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/esp-idf/esptool_py" && /home/abhi/.espressif/python_env/idf5.5_py3.13_env/bin/python /home/abhi/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/abhi/University\ of\ Michigan\ Dropbox/Abhipol\ Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/partition_table/partition-table.bin /home/abhi/University\ of\ Michigan\ Dropbox/Abhipol\ Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/sonostream.bin
+sonostream.bin binary size 0xbac50 bytes. Smallest app partition is 0x100000 bytes. 0x453b0 bytes (27%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cd "/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/esptool_py" && /home/abhi/.espressif/python_env/idf5.5_py3.13_env/bin/python /home/abhi/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/abhi/University\ of\ Michigan\ Dropbox/Abhipol\ Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/bootloader.bin
+Bootloader binary size 0x52b0 bytes. 0x2d50 bytes (35%) free.
+[3/5] No install step for 'bootloader'
+[4/5] Completed 'bootloader'
+[4/5] cd /home/abhi/esp/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/abhi/esp/esp-idf -D "SERIAL_TOOL=/home/abhi/.espressif/python_env/idf5.5_py3.13_env/bin/python;;/home/abhi/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32s3" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D "WORKING_DIRECTORY=/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build" -P /home/abhi/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32s3 -p /dev/ttyACM0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 2MB 0x0 bootloader/bootloader.bin 0x10000 sonostream.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.9.dev5
+Serial port /dev/ttyACM0
+Connecting...
+Chip is ESP32-S3 (QFN56) (revision v0.1)
+Features: WiFi, BLE
+Crystal is 40MHz
+USB mode: USB-Serial/JTAG
+MAC: 34:85:18:50:81:30
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x000cafff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 21168 bytes to 13485...
+Writing at 0x00000000... (100 %)
+Wrote 21168 bytes (13485 compressed) at 0x00000000 in 0.5 seconds (effective 355.0 kbit/s)...
+Hash of data verified.
+Compressed 765008 bytes to 476765...
+Writing at 0x00010000... (3 %)
+Writing at 0x0001ccde... (6 %)
+Writing at 0x00025da3... (10 %)
+Writing at 0x0003115e... (13 %)
+Writing at 0x000374a3... (16 %)
+Writing at 0x0003d90e... (20 %)
+Writing at 0x00043ba2... (23 %)
+Writing at 0x0004934e... (26 %)
+Writing at 0x0004f0b3... (30 %)
+Writing at 0x00054e8a... (33 %)
+Writing at 0x0005ab4e... (36 %)
+Writing at 0x000609d6... (40 %)
+Writing at 0x000668ab... (43 %)
+Writing at 0x0006b654... (46 %)
+Writing at 0x00070675... (50 %)
+Writing at 0x00075a8d... (53 %)
+Writing at 0x0007af55... (56 %)
+Writing at 0x0008005d... (60 %)
+Writing at 0x000852c0... (63 %)
+Writing at 0x0008affa... (66 %)
+Writing at 0x0009082f... (70 %)
+Writing at 0x0009654f... (73 %)
+Writing at 0x0009c071... (76 %)
+Writing at 0x000a162a... (80 %)
+Writing at 0x000ab20e... (83 %)
+Writing at 0x000b21f3... (86 %)
+Writing at 0x000b84c9... (90 %)
+Writing at 0x000be615... (93 %)
+Writing at 0x000c4825... (96 %)
+Writing at 0x000ca14c... (100 %)
+Wrote 765008 bytes (476765 compressed) at 0x00010000 in 6.1 seconds (effective 997.8 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 343.6 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

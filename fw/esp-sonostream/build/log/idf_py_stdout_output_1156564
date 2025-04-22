@@ -1,0 +1,1057 @@
+Command: /home/abhi/.espressif/python_env/idf5.5_py3.13_env/bin/python /home/abhi/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyACM0 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 /home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/sonostream.elf /home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/bootloader.elf -m '/home/abhi/.espressif/python_env/idf5.5_py3.13_env/bin/python' '/home/abhi/esp/esp-idf/tools/idf.py' '-p' '/dev/ttyACM0'
+[0;32mI (108) esp_image: segment 1: paddr=0002aff8 vaddr=3fc99e00 sizeESP-ROM:esp32s3-20210327[0m
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40048c29
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x15d0
+load:0x403c8700,len:0xd20
+load:0x403cb700,len:0x2f60
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v5.5-dev-2290-g94cfe394fe-dirty 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Mar  8 2025 22:06:51[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.1[0m
+[0;32mI (30) boot: efuse block revision: v1.2[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=1afd0h (110544) map[0m
+[0;32mI (108) esp_image: segment 1: paddr=0002aff8 vaddr=3fc99e00 size=049a0h ( 18848) load[0m
+[0;32mI (112) esp_image: segment 2: paddr=0002f9a0 vaddr=40374000 size=00678h (  1656) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=878dch (555228) map[0m
+[0;32mI (217) esp_image: segment 4: paddr=000b7904 vaddr=40374678 size=15730h ( 87856) load[0m
+[0;32mI (236) esp_image: segment 5: paddr=000cd03c vaddr=600fe000 size=0001ch (    28) load[0m
+[0;32mI (246) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (246) boot: Disabling RNG early entropy source...[0m
+[0;32mI (256) cpu_start: Multicore app[0m
+[0;32mI (265) cpu_start: Pro cpu start user code[0m
+[0;32mI (265) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (265) app_init: Application information:[0m
+[0;32mI (265) app_init: Project name:     sonostream[0m
+[0;32mI (269) app_init: App version:      52524e4-dirty[0m
+[0;32mI (274) app_init: Compile time:     Apr  6 2025 12:35:45[0m
+[0;32mI (279) app_init: ELF file SHA256:  ea913a313...[0m
+[0;32mI (283) app_init: ESP-IDF:          v5.5-dev-2290-g94cfe394fe-dirty[0m
+[0;32mI (289) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (293) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (297) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (301) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (307) heap_init: At 3FCA2440 len 000472D0 (284 KiB): RAM[0m
+[0;32mI (312) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (317) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (322) heap_init: At 600FE01C len 00001FCC (7 KiB): RTCRAM[0m
+[0;32mI (329) spi_flash: detected chip: generic[0m
+[0;32mI (331) spi_flash: flash io: dio[0m
+[0;33mW (334) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (347) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (353) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (360) main_task: Started on CPU0[0m
+[0;32mI (370) main_task: Calling app_main()[0m
+[0;32mI (370) Sonostream: Receiving data in PCM format[0m
+[0;32mI (390) pp: pp rom version: e7ae62f[0m
+[0;32mI (390) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (400) wifi:wifi driver task: 3fcb9868, prio:23, stack:6656, core=0[0m
+[0;32mI (410) wifi:wifi firmware version: 3a3aca644[0m
+[0;32mI (410) wifi:wifi certification version: v7.0[0m
+[0;32mI (410) wifi:config NVS flash: enabled[0m
+[0;32mI (410) wifi:config nano formatting: disabled[0m
+[0;32mI (410) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (420) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (420) wifi:Init management short buffer num: 32[0m
+[0;32mI (420) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (430) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (430) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (440) wifi:Init static rx buffer num: 10[0m
+[0;32mI (440) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (440) wifi_init: rx ba win: 6[0m
+[0;32mI (450) wifi_init: accept mbox: 6[0m
+[0;32mI (450) wifi_init: tcpip mbox: 32[0m
+[0;32mI (450) wifi_init: udp mbox: 6[0m
+[0;32mI (460) wifi_init: tcp mbox: 6[0m
+[0;32mI (460) wifi_init: tcp tx win: 5760[0m
+[0;32mI (460) wifi_init: tcp rx win: 5760[0m
+[0;32mI (470) wifi_init: tcp mss: 1440[0m
+[0;32mI (470) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (470) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (480) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (500) phy_init: phy_version 700,8582a7fd,Feb 10 2025,20:13:11[0m
+[0;32mI (540) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (630) wifi:mode : sta (34:85:18:50:81:30)[0m
+[0;32mI (630) wifi:enable tsf[0m
+[0;32mI (630) Sonostream: Device successfully initialized as a WiFi station![0m
+[0;32mI (650) wifi:new:<5,0>, old:<1,0>, ap:<255,255>, sta:<5,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (650) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (660) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (660) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (680) wifi:connected with definitelynotarouter, aid = 23, channel 5, BW20, bssid = f0:2f:74:5f:62:70[0m
+[0;32mI (680) wifi:security: WPA2-PSK, phy: bgn, rssi: -11[0m
+[0;32mI (690) wifi:pm start, type: 1[0m
+
+[0;32mI (690) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (690) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (700) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (710) wifi:<ba-add>idx:0 (ifx:0, f0:2f:74:5f:62:70), tid:6, ssn:1, winSize:64[0m
+[0;32mI (1720) esp_netif_handlers: sta ip: 192.168.50.21, mask: 255.255.255.0, gw: 192.168.50.1[0m
+[0;32mI (1720) Sonostream: got ip:192.168.50.21[0m
+[0;32mI (1720) Sonostream: Connected to ap SSID:definitelynotarouter password:notapwd777[0m
+[0;32mI (1720) main_task: Returned from app_main()[0m
+[0;32mI (1720) Sonostream: PDM Rx duration: 149 us[0m
+[0;32mI (1730) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (1730) Sonostream: PDM task added an element, current size: 1[0m
+[0;32mI (1740) Sonostream: Successfully connected[0m
+[0;32mI (1740) Sonostream: PDM Rx duration: 19328 us[0m
+[0;32mI (1750) Sonostream: PDM task added an element, current size: 1[0m
+[0;32mI (1750) wifi:<ba-add>idx:1 (ifx:0, f0:2f:74:5f:62:70), tid:0, ssn:1, winSize:64[0m
+[1;31mE (1790) Sonostream: Error occurred during sending a chunk: errno 104[0m
+
+[1;31mE (1790) Sonostream: Error occurred during sending a frame: errno 104[0m
+[0;32mI (1790) Sonostream: Successfully connected[0m
+[1;31mE (1790) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (1800) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (1800) Sonostream: Successfully connected[0m
+[0;32mI (1910) Sonostream: PDM Rx duration: 181871 us[0m
+[0;32mI (1910) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (1910) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (1910) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (1920) Sonostream: Successfully connected[0m
+[0;32mI (2160) Sonostream: PDM Rx duration: 437612 us[0m
+[0;32mI (2160) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (2160) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (2170) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (2170) Sonostream: Successfully connected[0m
+[0;32mI (2420) Sonostream: PDM Rx duration: 693370 us[0m
+[0;32mI (2420) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (2420) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (2420) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (2430) Sonostream: Successfully connected[0m
+[0;32mI (2670) Sonostream: PDM Rx duration: 949110 us[0m
+[0;32mI (2670) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (2670) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (2680) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (2690) Sonostream: Successfully connected[0m
+[0;32mI (2930) Sonostream: PDM Rx duration: 1204862 us[0m
+[0;32mI (2930) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (2930) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (2930) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (2940) Sonostream: Successfully connected[0m
+[0;32mI (3190) Sonostream: PDM Rx duration: 1460613 us[0m
+[0;32mI (3190) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (3190) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (3190) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (3200) Sonostream: Successfully connected[0m
+[0;32mI (3440) Sonostream: PDM Rx duration: 1716358 us[0m
+[0;32mI (3440) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (3440) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (3450) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (3450) Sonostream: Successfully connected[0m
+[0;32mI (3700) Sonostream: PDM Rx duration: 1972112 us[0m
+[0;32mI (3700) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (3700) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (3700) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (3710) Sonostream: Successfully connected[0m
+[0;32mI (3950) Sonostream: PDM Rx duration: 2227863 us[0m
+[0;32mI (3950) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (3950) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (3960) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (3960) Sonostream: Successfully connected[0m
+[0;32mI (4210) Sonostream: PDM Rx duration: 2483607 us[0m
+[0;32mI (4210) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (4210) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (4210) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (4220) Sonostream: Successfully connected[0m
+[0;32mI (4460) Sonostream: PDM Rx duration: 2739364 us[0m
+[0;32mI (4460) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (4470) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (4470) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (4480) Sonostream: Successfully connected[0m
+[0;32mI (4720) Sonostream: PDM Rx duration: 2995110 us[0m
+[0;32mI (4720) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (4720) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (4720) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (4730) Sonostream: Successfully connected[0m
+[0;32mI (4980) Sonostream: PDM Rx duration: 3250864 us[0m
+[0;32mI (4980) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (4980) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (4980) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (4990) Sonostream: Successfully connected[0m
+[0;32mI (5230) Sonostream: PDM Rx duration: 3506607 us[0m
+[0;32mI (5230) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (5230) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (5240) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (5240) Sonostream: Successfully connected[0m
+[0;32mI (5490) Sonostream: PDM Rx duration: 3762370 us[0m
+[0;32mI (5490) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (5490) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (5490) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (5500) Sonostream: Successfully connected[0m
+[0;32mI (5740) Sonostream: PDM Rx duration: 4018112 us[0m
+[0;32mI (5740) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (5740) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (5750) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (5750) Sonostream: Successfully connected[0m
+[0;32mI (6000) Sonostream: PDM Rx duration: 4273859 us[0m
+[0;32mI (6000) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (6000) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (6000) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (6010) Sonostream: Successfully connected[0m
+[0;32mI (6250) Sonostream: PDM Rx duration: 4529612 us[0m
+[0;32mI (6250) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (6250) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (6260) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (6270) Sonostream: Successfully connected[0m
+[0;32mI (6510) Sonostream: PDM Rx duration: 4785366 us[0m
+[0;32mI (6510) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (6510) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (6520) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (6520) Sonostream: Successfully connected[0m
+[0;32mI (6770) Sonostream: PDM Rx duration: 5041111 us[0m
+[0;32mI (6770) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (6770) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (6770) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (6780) Sonostream: Successfully connected[0m
+[0;32mI (7020) Sonostream: PDM Rx duration: 5296862 us[0m
+[0;32mI (7020) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (7020) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (7030) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (7030) Sonostream: Successfully connected[0m
+[0;32mI (7280) Sonostream: PDM Rx duration: 5552616 us[0m
+[0;32mI (7280) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (7280) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (7280) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (7290) Sonostream: Successfully connected[0m
+[0;32mI (7530) Sonostream: PDM Rx duration: 5808361 us[0m
+[0;32mI (7530) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (7530) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (7540) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (7540) Sonostream: Successfully connected[0m
+[0;32mI (7790) Sonostream: PDM Rx duration: 6064112 us[0m
+[0;32mI (7790) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (7790) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (7790) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (7800) Sonostream: Successfully connected[0m
+[0;32mI (8040) Sonostream: PDM Rx duration: 6319862 us[0m
+[0;32mI (8040) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (8050) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (8050) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (8060) Sonostream: Successfully connected[0m
+[0;32mI (8300) Sonostream: PDM Rx duration: 6575615 us[0m
+[0;32mI (8300) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (8300) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (8310) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (8310) Sonostream: Successfully connected[0m
+[0;32mI (8560) Sonostream: PDM Rx duration: 6831358 us[0m
+[0;32mI (8560) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (8560) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (8560) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (8570) Sonostream: Successfully connected[0m
+[0;32mI (8810) Sonostream: PDM Rx duration: 7087115 us[0m
+[0;32mI (8810) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (8810) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (8820) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (8820) Sonostream: Successfully connected[0m
+[0;32mI (9070) Sonostream: PDM Rx duration: 7342862 us[0m
+[0;32mI (9070) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (9070) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (9070) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (9080) Sonostream: Successfully connected[0m
+[0;32mI (9320) Sonostream: PDM Rx duration: 7598610 us[0m
+[0;32mI (9320) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (9320) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (9330) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (9330) Sonostream: Successfully connected[0m
+[0;32mI (9580) Sonostream: PDM Rx duration: 7854364 us[0m
+[0;32mI (9580) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (9580) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (9580) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (9590) Sonostream: Successfully connected[0m
+[0;32mI (9830) Sonostream: PDM Rx duration: 8110112 us[0m
+[0;32mI (9830) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (9840) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (9840) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (9850) Sonostream: Successfully connected[0m
+[0;32mI (10090) Sonostream: PDM Rx duration: 8365858 us[0m
+[0;32mI (10090) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (10090) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (10100) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (10100) Sonostream: Successfully connected[0m
+[0;32mI (10350) Sonostream: PDM Rx duration: 8621614 us[0m
+[0;32mI (10350) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (10350) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (10350) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (10360) Sonostream: Successfully connected[0m
+[0;32mI (10600) Sonostream: PDM Rx duration: 8877359 us[0m
+[0;32mI (10600) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (10600) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (10610) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (10610) Sonostream: Successfully connected[0m
+[0;32mI (10860) Sonostream: PDM Rx duration: 9133114 us[0m
+[0;32mI (10860) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (10860) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (10860) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (10870) Sonostream: Successfully connected[0m
+[0;32mI (11110) Sonostream: PDM Rx duration: 9388862 us[0m
+[0;32mI (11110) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (11110) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (11120) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (11130) Sonostream: Successfully connected[0m
+[0;32mI (11370) Sonostream: PDM Rx duration: 9644617 us[0m
+[0;32mI (11370) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (11370) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (11370) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (11380) Sonostream: Successfully connected[0m
+[0;32mI (11620) Sonostream: PDM Rx duration: 9900359 us[0m
+[0;32mI (11630) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (11630) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (11630) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (11640) Sonostream: Successfully connected[0m
+[0;32mI (11880) Sonostream: PDM Rx duration: 10156114 us[0m
+[0;32mI (11880) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (11880) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (11890) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (11890) Sonostream: Successfully connected[0m
+[0;32mI (12140) Sonostream: PDM Rx duration: 10411859 us[0m
+[0;32mI (12140) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (12140) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (12140) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (12150) Sonostream: Successfully connected[0m
+[0;32mI (12390) Sonostream: PDM Rx duration: 10667614 us[0m
+[0;32mI (12390) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (12390) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (12400) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (12400) Sonostream: Successfully connected[0m
+[0;32mI (12650) Sonostream: PDM Rx duration: 10923363 us[0m
+[0;32mI (12650) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (12650) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (12650) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (12660) Sonostream: Successfully connected[0m
+[0;32mI (12900) Sonostream: PDM Rx duration: 11179113 us[0m
+[0;32mI (12900) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (12900) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (12910) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (12920) Sonostream: Successfully connected[0m
+[0;32mI (13160) Sonostream: PDM Rx duration: 11434862 us[0m
+[0;32mI (13160) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (13160) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (13170) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (13170) Sonostream: Successfully connected[0m
+[0;32mI (13420) Sonostream: PDM Rx duration: 11690611 us[0m
+[0;32mI (13420) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (13420) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (13420) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (13430) Sonostream: Successfully connected[0m
+[0;32mI (13670) Sonostream: PDM Rx duration: 11946360 us[0m
+[0;32mI (13670) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (13670) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (13680) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (13680) Sonostream: Successfully connected[0m
+[0;32mI (13930) Sonostream: PDM Rx duration: 12202109 us[0m
+[0;32mI (13930) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (13930) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (13930) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (13940) Sonostream: Successfully connected[0m
+[0;32mI (14180) Sonostream: PDM Rx duration: 12457865 us[0m
+[0;32mI (14180) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (14180) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (14190) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (14190) Sonostream: Successfully connected[0m
+[0;32mI (14440) Sonostream: PDM Rx duration: 12713608 us[0m
+[0;32mI (14440) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (14440) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (14440) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (14450) Sonostream: Successfully connected[0m
+[0;32mI (14690) Sonostream: PDM Rx duration: 12969364 us[0m
+[0;32mI (14690) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (14690) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (14700) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (14710) Sonostream: Successfully connected[0m
+[0;32mI (615) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 2500I (1925) Sonostream: PDM Rx duration: 211947 us[0m
+[0;32mI (1925) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (1935) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (1935) Sonostream: Socket Tx duration: 11864 us[0m
+[0;32mI (1935) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (2175) Sonostream: PDM Rx duration: 467691 us[0m
+[0;32mI (2175) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (2185) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (2185) Sonostream: Socket Tx duration: 10682 us[0m
+[0;32mI (2185) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (2435) Sonostream: PDM Rx duration: 723441 us[0m
+[0;32mI (2435) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (2445) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (2445) Sonostream: Socket Tx duration: 9581 us[0m
+[0;32mI (2445) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (2685) Sonostream: PDM Rx duration: 979191 us[0m
+[0;32mI (2685) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (2705) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (2705) Sonostream: Socket Tx duration: 14038 us[0m
+[0;32mI (2705) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (2945) Sonostream: PDM Rx duration: 1234941 us[0m
+[0;32mI (2945) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (2955) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (2955) Sonostream: Socket Tx duration: 12130 us[0m
+[0;32mI (2955) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (3205) Sonostream: PDM Rx duration: 1490691 us[0m
+[0;32mI (3205) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (3225) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (3225) Sonostream: Socket Tx duration: 22281 us[0m
+[0;32mI (3225) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (3455) Sonostream: PDM Rx duration: 1746441 us[0m
+[0;32mI (3455) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (3475) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (3475) Sonostream: Socket Tx duration: 14606 us[0m
+[0;32mI (3475) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (3715) Sonostream: PDM Rx duration: 2002191 us[0m
+[0;32mI (3715) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (3725) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (3725) Sonostream: Socket Tx duration: 13230 us[0m
+[0;32mI (3725) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (3965) Sonostream: PDM Rx duration: 2257941 us[0m
+[0;32mI (3965) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (3975) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (3975) Sonostream: Socket Tx duration: 9878 us[0m
+[0;32mI (3975) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (4225) Sonostream: PDM Rx duration: 2513691 us[0m
+[0;32mI (4225) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (4235) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (4235) Sonostream: Socket Tx duration: 12403 us[0m
+[0;32mI (4235) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (4475) Sonostream: PDM Rx duration: 2769441 us[0m
+[0;32mI (4475) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (4495) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (4495) Sonostream: Socket Tx duration: 12802 us[0m
+[0;32mI (4495) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (4735) Sonostream: PDM Rx duration: 3025191 us[0m
+[0;32mI (4735) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (4755) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (4755) Sonostream: Socket Tx duration: 20265 us[0m
+[0;32mI (4755) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (4995) Sonostream: PDM Rx duration: 3280941 us[0m
+[0;32mI (4995) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (5015) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (5015) Sonostream: Socket Tx duration: 22366 us[0m
+[0;32mI (5015) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (5245) Sonostream: PDM Rx duration: 3536692 us[0m
+[0;32mI (5245) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (5275) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (5275) Sonostream: Socket Tx duration: 29069 us[0m
+[0;32mI (5275) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (5505) Sonostream: PDM Rx duration: 3792442 us[0m
+[0;32mI (5505) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (5515) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (5515) Sonostream: Socket Tx duration: 14353 us[0m
+[0;32mI (5515) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (5755) Sonostream: PDM Rx duration: 4048192 us[0m
+[0;32mI (5755) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (5775) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (5775) Sonostream: Socket Tx duration: 21012 us[0m
+[0;32mI (5775) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (6015) Sonostream: PDM Rx duration: 4303941 us[0m
+[0;32mI (6015) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (6035) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (6035) Sonostream: Socket Tx duration: 17104 us[0m
+[0;32mI (6035) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (6265) Sonostream: PDM Rx duration: 4559691 us[0m
+[0;32mI (6265) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (6285) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (6285) Sonostream: Socket Tx duration: 18106 us[0m
+[0;32mI (6285) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (6525) Sonostream: PDM Rx duration: 4815441 us[0m
+[0;32mI (6525) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (6535) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (6535) Sonostream: Socket Tx duration: 11962 us[0m
+[0;32mI (6535) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (6785) Sonostream: PDM Rx duration: 5071192 us[0m
+[0;32mI (6785) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (6795) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (6795) Sonostream: Socket Tx duration: 14800 us[0m
+[0;32mI (6795) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (7035) Sonostream: PDM Rx duration: 5326942 us[0m
+[0;32mI (7035) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (7055) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (7055) Sonostream: Socket Tx duration: 19723 us[0m
+[0;32mI (7055) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (7295) Sonostream: PDM Rx duration: 5582691 us[0m
+[0;32mI (7295) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (7305) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (7305) Sonostream: Socket Tx duration: 12175 us[0m
+[0;32mI (7305) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (7545) Sonostream: PDM Rx duration: 5838442 us[0m
+[0;32mI (7545) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (7565) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (7565) Sonostream: Socket Tx duration: 17832 us[0m
+[0;32mI (7565) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (7805) Sonostream: PDM Rx duration: 6094191 us[0m
+[0;32mI (7805) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (7825) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (7825) Sonostream: Socket Tx duration: 26242 us[0m
+[0;32mI (7835) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (8055) Sonostream: PDM Rx duration: 6349942 us[0m
+[0;32mI (8055) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (8075) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (8075) Sonostream: Socket Tx duration: 11226 us[0m
+[0;32mI (8075) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (8315) Sonostream: PDM Rx duration: 6605691 us[0m
+[0;32mI (8315) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (8345) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (8345) Sonostream: Socket Tx duration: 29067 us[0m
+[0;32mI (8345) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (8575) Sonostream: PDM Rx duration: 6861442 us[0m
+[0;32mI (8575) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (8575) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (8575) Sonostream: Socket Tx duration: 8997 us[0m
+[0;32mI (8585) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (8825) Sonostream: PDM Rx duration: 7117192 us[0m
+[0;32mI (8825) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (8845) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (8845) Sonostream: Socket Tx duration: 14600 us[0m
+[0;32mI (8845) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (9085) Sonostream: PDM Rx duration: 7372942 us[0m
+[0;32mI (9085) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (9095) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (9095) Sonostream: Socket Tx duration: 10790 us[0m
+[0;32mI (9095) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (9335) Sonostream: PDM Rx duration: 7628691 us[0m
+[0;32mI (9335) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (9355) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (9355) Sonostream: Socket Tx duration: 14686 us[0m
+[0;32mI (9355) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (9595) Sonostream: PDM Rx duration: 7884441 us[0m
+[0;32mI (9595) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (9605) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (9605) Sonostream: Socket Tx duration: 12693 us[0m
+[0;32mI (9605) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (9845) Sonostream: PDM Rx duration: 8140192 us[0m
+[0;32mI (9845) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (9865) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (9875) Sonostream: Socket Tx duration: 20921 us[0m
+[0;32mI (9875) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (10105) Sonostream: PDM Rx duration: 8395941 us[0m
+[0;32mI (10105) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (10125) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (10125) Sonostream: Socket Tx duration: 20421 us[0m
+[0;32mI (10125) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (10365) Sonostream: PDM Rx duration: 8651692 us[0m
+[0;32mI (10365) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (10375) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (10375) Sonostream: Socket Tx duration: 9444 us[0m
+[0;32mI (10375) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (10615) Sonostream: PDM Rx duration: 8907441 us[0m
+[0;32mI (10615) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (10625) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (10625) Sonostream: Socket Tx duration: 11225 us[0m
+[0;32mI (10625) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (10875) Sonostream: PDM Rx duration: 9163192 us[0m
+[0;32mI (10875) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (10895) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (10895) Sonostream: Socket Tx duration: 25046 us[0m
+[0;32mI (10895) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (11125) Sonostream: PDM Rx duration: 9418941 us[0m
+[0;32mI (11125) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (11145) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (11145) Sonostream: Socket Tx duration: 13948 us[0m
+[0;32mI (11145) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (11385) Sonostream: PDM Rx duration: 9674692 us[0m
+[0;32mI (11385) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (11395) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (11395) Sonostream: Socket Tx duration: 11334 us[0m
+[0;32mI (11395) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (11635) Sonostream: PDM Rx duration: 9930442 us[0m
+[0;32mI (11645) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (11675) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (11675) Sonostream: Socket Tx duration: 39516 us[0m
+[0;32mI (11675) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (11895) Sonostream: PDM Rx duration: 10186192 us[0m
+[0;32mI (11895) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (11905) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (11905) Sonostream: Socket Tx duration: 9989 us[0m
+[0;32mI (11905) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (12155) Sonostream: PDM Rx duration: 10441942 us[0m
+[0;32mI (12155) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (12195) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (12195) Sonostream: Socket Tx duration: 44807 us[0m
+[0;32mI (12195) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (12405) Sonostream: PDM Rx duration: 10697692 us[0m
+[0;32mI (12405) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (12415) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (12415) Sonostream: Socket Tx duration: 8804 us[0m
+[0;32mI (12415) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (12665) Sonostream: PDM Rx duration: 10953442 us[0m
+[0;32mI (12665) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (12675) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (12675) Sonostream: Socket Tx duration: 12249 us[0m
+[0;32mI (12675) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (12915) Sonostream: PDM Rx duration: 11209192 us[0m
+[0;32mI (12915) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (12935) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (12935) Sonostream: Socket Tx duration: 13442 us[0m
+[0;32mI (12935) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (13175) Sonostream: PDM Rx duration: 11464943 us[0m
+[0;32mI (13175) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (13185) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (13185) Sonostream: Socket Tx duration: 12435 us[0m
+[0;32mI (13185) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (13435) Sonostream: PDM Rx duration: 11720693 us[0m
+[0;32mI (13435) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (13445) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (13445) Sonostream: Socket Tx duration: 13445 us[0m
+[0;32mI (13445) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (13685) Sonostream: PDM Rx duration: 11976443 us[0m
+[0;32mI (13685) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (13695) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (13705) Sonostream: Socket Tx duration: 14183 us[0m
+[0;32mI (13705) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (13945) Sonostream: PDM Rx duration: 12232192 us[0m
+[0;32mI (13945) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (13955) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (13955) Sonostream: Socket Tx duration: 10490 us[0m
+[0;32mI (13955) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (14195) Sonostream: PDM Rx duration: 12487943 us[0m
+[0;32mI (14195) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (14205) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (14205) Sonostream: Socket Tx duration: 11627 us[0m
+[0;32mI (14205) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (14455) Sonostream: PDM Rx duration: 12743692 us[0m
+[0;32mI (14455) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (14465) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (14465) Sonostream: Socket Tx duration: 10001 us[0m
+[0;32mI (14465) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (14705) Sonostream: PDM Rx duration: 12999443 us[0m
+[0;32mI (14705) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (14735) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (14735) Sonostream: Socket Tx duration: 25581 us[0m
+[0;32mI (14735) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (14965) Sonostream: PDM Rx duration: 13255192 us[0m
+[0;32mI (14965) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (15015) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (15015) Sonostream: Socket Tx duration: 53656 us[0m
+[0;32mI (15015) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (15225) Sonostream: PDM Rx duration: 13510942 us[0m
+[0;32mI (15225) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (15235) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (15235) Sonostream: Socket Tx duration: 17794 us[0m
+[0;32mI (15235) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (15475) Sonostream: PDM Rx duration: 13766693 us[0m
+[0;32mI (15475) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (15485) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (15485) Sonostream: Socket Tx duration: 10771 us[0m
+[0;32mI (15485) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (15735) Sonostream: PDM Rx duration: 14022443 us[0m
+[0;32mI (15735) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (15745) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (15745) Sonostream: Socket Tx duration: 13859 us[0m
+[0;32mI (15745) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (15985) Sonostream: PDM Rx duration: 14278192 us[0m
+[0;32mI (15985) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (15995) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (15995) Sonostream: Socket Tx duration: 9996 us[0m
+[0;32mI (15995) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (16245) Sonostream: PDM Rx duration: 14533943 us[0m
+[0;32mI (16245) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (16255) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (16255) Sonostream: Socket Tx duration: 13024 us[0m
+[0;32mI (16255) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (16495) Sonostream: PDM Rx duration: 14789692 us[0m
+[0;32mI (16495) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (16515) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (16515) Sonostream: Socket Tx duration: 12785 us[0m
+[0;32mI (16515) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (16755) Sonostream: PDM Rx duration: 15045443 us[0m
+[0;32mI (16755) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (16775) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (16775) Sonostream: Socket Tx duration: 19752 us[0m
+[0;32mI (16775) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (17015) Sonostream: PDM Rx duration: 15301193 us[0m
+[0;32mI (17015) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (17035) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (17035) Sonostream: Socket Tx duration: 24980 us[0m
+[0;32mI (17035) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (17265) Sonostream: PDM Rx duration: 15556943 us[0m
+[0;32mI (17265) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (17275) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (17275) Sonostream: Socket Tx duration: 12584 us[0m
+[0;32mI (17275) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (17525) Sonostream: PDM Rx duration: 15812693 us[0m
+[0;32mI (17525) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (17535) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (17535) Sonostream: Socket Tx duration: 16842 us[0m
+[0;32mI (17535) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (17775) Sonostream: PDM Rx duration: 16068443 us[0m
+[0;32mI (17775) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (17795) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (17795) Sonostream: Socket Tx duration: 20375 us[0m
+[0;32mI (17795) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (18035) Sonostream: PDM Rx duration: 16324193 us[0m
+[0;32mI (18035) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (18045) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (18045) Sonostream: Socket Tx duration: 10213 us[0m
+[0;32mI (18045) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (18285) Sonostream: PDM Rx duration: 16579943 us[0m
+[0;32mI (18285) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (18315) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (18315) Sonostream: Socket Tx duration: 23183 us[0m
+[0;32mI (18315) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (18545) Sonostream: PDM Rx duration: 16835692 us[0m
+[0;32mI (18545) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (18555) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (18555) Sonostream: Socket Tx duration: 12541 us[0m
+[0;32mI (18555) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (18805) Sonostream: PDM Rx duration: 17091443 us[0m
+[0;32mI (18805) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (18825) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (18825) Sonostream: Socket Tx duration: 26681 us[0m
+[0;32mI (18825) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (19055) Sonostream: PDM Rx duration: 17347193 us[0m
+[0;32mI (19055) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (19065) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (19065) Sonostream: Socket Tx duration: 9658 us[0m
+[0;32mI (19065) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (19315) Sonostream: PDM Rx duration: 17602944 us[0m
+[0;32mI (19315) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (19325) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (19325) Sonostream: Socket Tx duration: 16353 us[0m
+[0;32mI (19325) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (19565) Sonostream: PDM Rx duration: 17858694 us[0m
+[0;32mI (19565) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (19585) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (19585) Sonostream: Socket Tx duration: 17320 us[0m
+[0;32mI (19585) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (19825) Sonostream: PDM Rx duration: 18114443 us[0m
+[0;32mI (19825) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (19845) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (19845) Sonostream: Socket Tx duration: 16891 us[0m
+[0;32mI (19845) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (20075) Sonostream: PDM Rx duration: 18370194 us[0m
+[0;32mI (20075) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (20095) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (20095) Sonostream: Socket Tx duration: 13223 us[0m
+[0;32mI (20095) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (20335) Sonostream: PDM Rx duration: 18625942 us[0m
+[0;32mI (20335) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (20345) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (20345) Sonostream: Socket Tx duration: 13490 us[0m
+[0;32mI (20345) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (20595) Sonostream: PDM Rx duration: 18881693 us[0m
+[0;32mI (20595) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (20605) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (20605) Sonostream: Socket Tx duration: 18181 us[0m
+[0;32mI (20605) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (20845) Sonostream: PDM Rx duration: 19137444 us[0m
+[0;32mI (20845) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (20855) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (20855) Sonostream: Socket Tx duration: 11171 us[0m
+[0;32mI (20855) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (21105) Sonostream: PDM Rx duration: 19393194 us[0m
+[0;32mI (21105) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (21115) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (21115) Sonostream: Socket Tx duration: 10956 us[0m
+[0;32mI (21115) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (21355) Sonostream: PDM Rx duration: 19648942 us[0m
+[0;32mI (21355) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (21365) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (21365) Sonostream: Socket Tx duration: 9876 us[0m
+[0;32mI (21365) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (21615) Sonostream: PDM Rx duration: 19904693 us[0m
+[0;32mI (21615) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (21635) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (21635) Sonostream: Socket Tx duration: 25074 us[0m
+[0;32mI (21635) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (21865) Sonostream: PDM Rx duration: 20160443 us[0m
+[0;32mI (21875) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (21885) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (21885) Sonostream: Socket Tx duration: 11199 us[0m
+[0;32mI (21885) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (22125) Sonostream: PDM Rx duration: 20416194 us[0m
+[0;32mI (22125) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (22135) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (22135) Sonostream: Socket Tx duration: 10125 us[0m
+[0;32mI (22135) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (22385) Sonostream: PDM Rx duration: 20671943 us[0m
+[0;32mI (22385) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (22405) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (22405) Sonostream: Socket Tx duration: 19413 us[0m
+[0;32mI (22405) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (22635) Sonostream: PDM Rx duration: 20927693 us[0m
+[0;32mI (22635) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (22645) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (22645) Sonostream: Socket Tx duration: 10551 us[0m
+[0;32mI (22645) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (22895) Sonostream: PDM Rx duration: 21183444 us[0m
+[0;32mI (22895) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (22905) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (22905) Sonostream: Socket Tx duration: 13241 us[0m
+[0;32mI (22905) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (23145) Sonostream: PDM Rx duration: 21439194 us[0m
+[0;32mI (23145) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (23165) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (23165) Sonostream: Socket Tx duration: 12193 us[0m
+[0;32mI (23165) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (23405) Sonostream: PDM Rx duration: 21694944 us[0m
+[0;32mI (23405) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (23425) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (23425) Sonostream: Socket Tx duration: 19201 us[0m
+[0;32mI (23425) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (23665) Sonostream: PDM Rx duration: 21950693 us[0m
+[0;32mI (23665) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (23675) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (23675) Sonostream: Socket Tx duration: 10635 us[0m
+[0;32mI (23675) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (23915) Sonostream: PDM Rx duration: 22206444 us[0m
+[0;32mI (23915) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (23925) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (23925) Sonostream: Socket Tx duration: 11133 us[0m
+[0;32mI (23925) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (24175) Sonostream: PDM Rx duration: 22462193 us[0m
+[0;32mI (24175) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (24185) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (24185) Sonostream: Socket Tx duration: 12584 us[0m
+[0;32mI (24185) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (24425) Sonostream: PDM Rx duration: 22717943 us[0m
+[0;32mI (24425) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (24445) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (24445) Sonostream: Socket Tx duration: 21610 us[0m
+[0;32mI (24445) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (24685) Sonostream: PDM Rx duration: 22973694 us[0m
+[0;32mI (24685) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (24695) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (24695) Sonostream: Socket Tx duration: 10939 us[0m
+[0;32mI (24695) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (24935) Sonostream: PDM Rx duration: 23229443 us[0m
+[0;32mI (24935) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (24955) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (24955) Sonostream: Socket Tx duration: 14214 us[0m
+[0;32mI (24955) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (25195) Sonostream: PDM Rx duration: 23485194 us[0m
+[0;32mI (25195) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (25205) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (25205) Sonostream: Socket Tx duration: 11442 us[0m
+[0;32mI (25205) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (25455) Sonostream: PDM Rx duration: 23740944 us[0m
+[0;32mI (25455) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (25465) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (25465) Sonostream: Socket Tx duration: 11170 us[0m
+[0;32mI (25465) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (25705) Sonostream: PDM Rx duration: 23996694 us[0m
+[0;32mI (25705) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (25715) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (25715) Sonostream: Socket Tx duration: 11485 us[0m
+[0;32mI (25715) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (25965) Sonostream: PDM Rx duration: 24252444 us[0m
+[0;32mI (25965) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (25975) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (25975) Sonostream: Socket Tx duration: 9913 us[0m
+[0;32mI (25975) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (26215) Sonostream: PDM Rx duration: 24508194 us[0m
+[0;32mI (26215) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (26235) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (26235) Sonostream: Socket Tx duration: 15812 us[0m
+[0;32mI (26235) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (26475) Sonostream: PDM Rx duration: 24763944 us[0m
+[0;32mI (26475) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (26485) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (26485) Sonostream: Socket Tx duration: 13682 us[0m
+[0;32mI (26485) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (26725) Sonostream: PDM Rx duration: 25019694 us[0m
+[0;32mI (26725) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (26735) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (26735) Sonostream: Socket Tx duration: 10155 us[0m
+[0;32mI (26735) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (26985) Sonostream: PDM Rx duration: 25275444 us[0m
+[0;32mI (26985) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (27005) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (27005) Sonostream: Socket Tx duration: 23974 us[0m
+[0;32mI (27005) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (27245) Sonostream: PDM Rx duration: 25531194 us[0m
+[0;32mI (27245) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (27255) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (27255) Sonostream: Socket Tx duration: 11949 us[0m
+[0;32mI (27255) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (27495) Sonostream: PDM Rx duration: 25786944 us[0m
+[0;32mI (27495) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (27505) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (27505) Sonostream: Socket Tx duration: 12106 us[0m
+[0;32mI (27505) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (27755) Sonostream: PDM Rx duration: 26042694 us[0m
+[0;32mI (27755) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (27765) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (27765) Sonostream: Socket Tx duration: 11638 us[0m
+[0;32mI (27765) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (28005) Sonostream: PDM Rx duration: 26298444 us[0m
+[0;32mI (28005) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (28025) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (28025) Sonostream: Socket Tx duration: 21448 us[0m
+[0;32mI (28025) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (28265) Sonostream: PDM Rx duration: 26554194 us[0m
+[0;32mI (28265) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (28275) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (28275) Sonostream: Socket Tx duration: 11673 us[0m
+[0;32mI (28275) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (28515) Sonostream: PDM Rx duration: 26809944 us[0m
+[0;32mI (28515) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (28525) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (28525) Sonostream: Socket Tx duration: 10085 us[0m
+[0;32mI (28525) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (28775) Sonostream: PDM Rx duration: 27065694 us[0m
+[0;32mI (28775) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (28815) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (28815) Sonostream: Socket Tx duration: 41131 us[0m
+[0;32mI (28815) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (29035) Sonostream: PDM Rx duration: 27321444 us[0m
+[0;32mI (29035) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (29045) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (29045) Sonostream: Socket Tx duration: 10823 us[0m
+[0;32mI (29045) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (29285) Sonostream: PDM Rx duration: 27577194 us[0m
+[0;32mI (29285) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (29295) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (29295) Sonostream: Socket Tx duration: 10186 us[0m
+[0;32mI (29295) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (29545) Sonostream: PDM Rx duration: 27832944 us[0m
+[0;32mI (29545) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (29555) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (29555) Sonostream: Socket Tx duration: 10198 us[0m
+[0;32mI (29555) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (29795) Sonostream: PDM Rx duration: 28088695 us[0m
+[0;32mI (29795) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (29815) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (29815) Sonostream: Socket Tx duration: 15214 us[0m
+[0;32mI (29815) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (30055) Sonostream: PDM Rx duration: 28344445 us[0m
+[0;32mI (30055) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (30075) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (30075) Sonostream: Socket Tx duration: 17667 us[0m
+[0;32mI (30075) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (30305) Sonostream: PDM Rx duration: 28600194 us[0m
+[0;32mI (30305) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (30325) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (30325) Sonostream: Socket Tx duration: 12195 us[0m
+[0;32mI (30325) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (30565) Sonostream: PDM Rx duration: 28855944 us[0m
+[0;32mI (30565) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (30575) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (30575) Sonostream: Socket Tx duration: 13767 us[0m
+[0;32mI (30575) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (30825) Sonostream: PDM Rx duration: 29111694 us[0m
+[0;32mI (30825) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (30835) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (30835) Sonostream: Socket Tx duration: 12122 us[0m
+[0;32mI (30835) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (31075) Sonostream: PDM Rx duration: 29367445 us[0m
+[0;32mI (31075) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (31085) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (31085) Sonostream: Socket Tx duration: 10651 us[0m
+[0;32mI (31085) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (31335) Sonostream: PDM Rx duration: 29623195 us[0m
+[0;32mI (31335) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (31345) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (31345) Sonostream: Socket Tx duration: 14638 us[0m
+[0;32mI (31345) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (31585) Sonostream: PDM Rx duration: 29878944 us[0m
+[0;32mI (31585) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (31595) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (31595) Sonostream: Socket Tx duration: 10541 us[0m
+[0;32mI (31595) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (31845) Sonostream: PDM Rx duration: 30134694 us[0m
+[0;32mI (31845) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (31855) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (31855) Sonostream: Socket Tx duration: 12298 us[0m
+[0;32mI (31855) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (32095) Sonostream: PDM Rx duration: 30390444 us[0m
+[0;32mI (32105) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (32105) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (32105) Sonostream: Socket Tx duration: 9767 us[0m
+[0;32mI (32105) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (32355) Sonostream: PDM Rx duration: 30646195 us[0m
+[0;32mI (32355) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (32365) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (32365) Sonostream: Socket Tx duration: 10043 us[0m
+[0;32mI (32365) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (32615) Sonostream: PDM Rx duration: 30901945 us[0m
+[0;32mI (32615) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (32625) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (32625) Sonostream: Socket Tx duration: 11505 us[0m
+[0;32mI (32625) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (32865) Sonostream: PDM Rx duration: 31157695 us[0m
+[0;32mI (32865) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (32875) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (32875) Sonostream: Socket Tx duration: 8614 us[0m
+[0;32mI (32875) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (33125) Sonostream: PDM Rx duration: 31413445 us[0m
+[0;32mI (33125) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (33135) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (33135) Sonostream: Socket Tx duration: 10032 us[0m
+[0;32mI (33135) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (33375) Sonostream: PDM Rx duration: 31669194 us[0m
+[0;32mI (33375) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (33385) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (33385) Sonostream: Socket Tx duration: 9460 us[0m
+[0;32mI (33385) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (33635) Sonostream: PDM Rx duration: 31924944 us[0m
+[0;32mI (33635) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (33645) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (33645) Sonostream: Socket Tx duration: 10982 us[0m
+[0;32mI (33645) Sonostream: Socket task removed an element, current size: 0[0m
+[0;32mI (33895) Sonostream: PDM Rx duration: 32180694 us[0m
+[0;32mI (33895) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (33905) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (33905) Sonostream: Socket Tx duration: 16999 us[0m
+[0;32mI (33905) Sonostream: Socket task removed an element, current size: 0[0m

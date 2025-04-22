@@ -1,0 +1,2541 @@
+Command: /home/abhi/.espressif/python_env/idf5.5_py3.13_env/bin/python /home/abhi/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyACM0 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 /home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/sonostream.elf /home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/bootloader.elf -m '/home/abhi/.espressif/python_env/idf5.5_py3.13_env/bin/python' '/home/abhi/esp/esp-idf/tools/idf.py' '-p' '/dev/ttyACM0'
+[0;32mI (107) esp_image: segment 1: paddr=0002a7d0 vaddr=3fc99e00 sizeESP-ROM:esp32s3-20210327[0m
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40056f5c
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x15d0
+load:0x403c8700,len:0xd20
+load:0x403cb700,len:0x2f60
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v5.5-dev-2290-g94cfe394fe-dirty 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Mar  8 2025 22:06:51[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.1[0m
+[0;32mI (30) boot: efuse block revision: v1.2[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=1a7a8h (108456) map[0m
+[0;32mI (107) esp_image: segment 1: paddr=0002a7d0 vaddr=3fc99e00 size=049a0h ( 18848) load[0m
+[0;32mI (112) esp_image: segment 2: paddr=0002f178 vaddr=40374000 size=00ea0h (  3744) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=86870h (551024) map[0m
+[0;32mI (216) esp_image: segment 4: paddr=000b6898 vaddr=40374ea0 size=14e88h ( 85640) load[0m
+[0;32mI (235) esp_image: segment 5: paddr=000cb728 vaddr=600fe000 size=0001ch (    28) load[0m
+[0;32mI (244) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (244) boot: Disabling RNG early entropy source...[0m
+[0;32mI (254) cpu_start: Multicore app[0m
+[0;32mI (263) cpu_start: Pro cpu start user code[0m
+[0;32mI (263) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (263) app_init: Application information:[0m
+[0;32mI (264) app_init: Project name:     sonostream[0m
+[0;32mI (268) app_init: App version:      126772e-dirty[0m
+[0;32mI (272) app_init: Compile time:     Apr 10 2025 15:03:47[0m
+[0;32mI (277) app_init: ELF file SHA256:  8f79e4baa...[0m
+[0;32mI (281) app_init: ESP-IDF:          v5.5-dev-2290-g94cfe394fe-dirty[0m
+[0;32mI (287) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (291) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (295) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (299) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (305) heap_init: At 3FCA2430 len 000472E0 (284 KiB): RAM[0m
+[0;32mI (310) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (316) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (321) heap_init: At 600FE01C len 00001FCC (7 KiB): RTCRAM[0m
+[0;32mI (327) spi_flash: detected chip: generic[0m
+[0;32mI (330) spi_flash: flash io: dio[0m
+[0;33mW (333) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (345) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (351) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (358) main_task: Started on CPU0[0m
+[0;32mI (368) main_task: Calling app_main()[0m
+[0;32mI (368) Sonostream: Receiving data in PCM format[0m
+[0;32mI (388) pp: pp rom version: e7ae62f[0m
+[0;32mI (388) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (398) wifi:wifi driver task: 3fcaccec, prio:23, stack:6656, core=0[0m
+[0;32mI (408) wifi:wifi firmware version: 3a3aca644[0m
+[0;32mI (408) wifi:wifi certification version: v7.0[0m
+[0;32mI (408) wifi:config NVS flash: enabled[0m
+[0;32mI (408) wifi:config nano formatting: disabled[0m
+[0;32mI (408) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (418) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (418) wifi:Init management short buffer num: 32[0m
+[0;32mI (418) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (428) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (428) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (438) wifi:Init static rx buffer num: 10[0m
+[0;32mI (438) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (438) wifi_init: rx ba win: 6[0m
+[0;32mI (448) wifi_init: accept mbox: 6[0m
+[0;32mI (448) wifi_init: tcpip mbox: 32[0m
+[0;32mI (448) wifi_init: udp mbox: 6[0m
+[0;32mI (458) wifi_init: tcp mbox: 6[0m
+[0;32mI (458) wifi_init: tcp tx win: 5760[0m
+[0;32mI (458) wifi_init: tcp rx win: 5760[0m
+[0;32mI (468) wifi_init: tcp mss: 1440[0m
+[0;32mI (468) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (468) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (478) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (498) phy_init: phy_version 700,8582a7fd,Feb 10 2025,20:13:11[0m
+[0;32mI (538) wifi:mode : sta (34:85:18:50:81:30)[0m
+[0;32mI (538) wifi:enable tsf[0m
+[0;32mI (538) Sonostream: Device successfully initialized as a WiFi station![0m
+[0;32mI (548) wifi:new:<8,0>, old:<1,0>, ap:<255,255>, sta:<8,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (548) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (558) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (568) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (578) wifi:connected with definitelynotarouter, aid = 19, channel 8, BW20, bssid = f0:2f:74:5f:62:70[0m
+[0;32mI (578) wifi:security: WPA2-PSK, phy: bgn, rssi: -17[0m
+[0;32mI (598) wifi:pm start, type: 1[0m
+
+[0;32mI (598) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (598) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (608) wifi:<ba-add>idx:0 (ifx:0, f0:2f:74:5f:62:70), tid:6, ssn:1, winSize:64[0m
+[0;32mI (658) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1618) esp_netif_handlers: sta ip: 192.168.50.21, mask: 255.255.255.0, gw: 192.168.50.1[0m
+[0;32mI (1618) Sonostream: got ip:192.168.50.21[0m
+[0;32mI (1618) Sonostream: Connected to ap SSID:definitelynotarouter password:notapwd777[0m
+[0;32mI (1618) main_task: Returned from app_main()[0m
+[0;32mI (1618) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (1638) Sonostream: Successfully connected[0m
+[0;32mI (1668) wifi:<ba-add>idx:1 (ifx:0, f0:2f:74:5f:62:70), tid:0, ssn:1, winSize:64[0m
+[1;31mE (1688) Sonostream: Error occurred during sending a chunk: errno 104[0m
+
+[1;31mE (1688) Sonostream: Error occurred during sending a frame: errno 104[0m
+[0;32mI (1688) Sonostream: Successfully connected[0m
+[1;31mE (1738) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (1738) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (1738) Sonostream: Successfully connected[0m
+[1;31mE (1828) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (1838) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (1838) Sonostream: Successfully connected[0m
+[1;31mE (1928) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (1928) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (1928) Sonostream: Successfully connected[0m
+[1;31mE (2018) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (2018) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (2018) Sonostream: Successfully connected[0m
+[1;31mE (2108) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (2108) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (2118) Sonostream: Successfully connected[0m
+[1;31mE (2208) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (2208) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (2208) Sonostream: Successfully connected[0m
+[1;31mE (2298) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (2298) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (2298) Sonostream: Successfully connected[0m
+[1;31mE (2388) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (2388) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (2388) Sonostream: Successfully connected[0m
+[1;31mE (2488) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (2488) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (2488) Sonostream: Successfully connected[0m
+[1;31mE (2578) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (2578) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (2578) Sonostream: Successfully connected[0m
+[1;31mE (2668) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (2668) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (2668) Sonostream: Successfully connected[0m
+[1;31mE (2758) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (2758) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (2768) Sonostream: Successfully connected[0m
+[1;31mE (2858) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (2858) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (2858) Sonostream: Successfully connected[0m
+[1;31mE (2948) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (2948) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (2948) Sonostream: Successfully connected[0m
+[1;31mE (3038) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (3038) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (3038) Sonostream: Successfully connected[0m
+[1;31mE (3138) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (3138) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (3138) Sonostream: Successfully connected[0m
+[1;31mE (3228) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (3228) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (3228) Sonostream: Successfully connected[0m
+[1;31mE (3318) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (3318) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (3318) Sonostream: Successfully connected[0m
+[1;31mE (3408) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (3408) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (3418) Sonostream: Successfully connected[0m
+[1;31mE (3508) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (3508) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (3508) Sonostream: Successfully connected[0m
+[1;31mE (3598) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (3598) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (3598) Sonostream: Successfully connected[0m
+[1;31mE (3688) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (3688) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (3688) Sonostream: Successfully connected[0m
+[1;31mE (3788) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (3788) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (3788) Sonostream: Successfully connected[0m
+[1;31mE (3878) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (3878) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (3878) Sonostream: Successfully connected[0m
+[1;31mE (3968) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (3968) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (3968) Sonostream: Successfully connected[0m
+[1;31mE (4058) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (4058) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (4068) Sonostream: Successfully connected[0m
+[1;31mE (4158) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (4158) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (4158) Sonostream: Successfully connected[0m
+[1;31mE (4248) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (4248) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (4248) Sonostream: Successfully connected[0m
+[1;31mE (4338) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (4338) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (4338) Sonostream: Successfully connected[0m
+[1;31mE (4438) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (4438) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (4438) Sonostream: Successfully connected[0m
+[1;31mE (4528) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (4528) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (4528) Sonostream: Successfully connected[0m
+[1;31mE (4618) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (4618) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (4618) Sonostream: Successfully connected[0m
+[1;31mE (4708) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (4708) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (4718) Sonostream: Successfully connected[0m
+[1;31mE (4808) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (4808) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (4808) Sonostream: Successfully connected[0m
+[1;31mE (4898) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (4898) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (4898) Sonostream: Successfully connected[0m
+[1;31mE (4988) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (4988) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (4988) Sonostream: Successfully connected[0m
+[1;31mE (5088) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (5088) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (5088) Sonostream: Successfully connected[0m
+[1;31mE (5178) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (5178) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (5178) Sonostream: Successfully connected[0m
+[1;31mE (5268) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (5268) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (5268) Sonostream: Successfully connected[0m
+[1;31mE (5358) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (5358) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (5368) Sonostream: Successfully connected[0m
+[1;31mE (5458) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (5458) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (5458) Sonostream: Successfully connected[0m
+[1;31mE (5548) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (5548) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (5548) Sonostream: Successfully connected[0m
+[1;31mE (5638) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (5638) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (5638) Sonostream: Successfully connected[0m
+[1;31mE (5738) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (5738) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (5738) Sonostream: Successfully connected[0m
+[1;31mE (5828) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (5828) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (5828) Sonostream: Successfully connected[0m
+[1;31mE (5918) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (5918) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (5918) Sonostream: Successfully connected[0m
+[1;31mE (6008) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (6008) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (6018) Sonostream: Successfully connected[0m
+[1;31mE (6108) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (6108) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (6108) Sonostream: Successfully connected[0m
+[1;31mE (6198) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (6198) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (6198) Sonostream: Successfully connected[0m
+[1;31mE (6288) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (6288) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (6288) Sonostream: Successfully connected[0m
+[1;31mE (6388) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (6388) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (6388) Sonostream: Successfully connected[0m
+[1;31mE (6478) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (6478) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (6478) Sonostream: Successfully connected[0m
+[1;31mE (6568) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (6568) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (6568) Sonostream: Successfully connected[0m
+[1;31mE (6658) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (6668) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (6668) Sonostream: Successfully connected[0m
+[1;31mE (6688) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (6688) task_wdt:  - IDLE0 (CPU 0)[0m
+[1;31mE (6688) task_wdt: Tasks currently running:[0m
+[1;31mE (6688) task_wdt: CPU 0: socket_tx_task[0m
+[1;31mE (6688) task_wdt: CPU 1: IDLE1[0m
+[1;31mE (6688) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4200F55A:0x3FC9C160 0x4200F970:0x3FC9C180 0x40377761:0x3FC9C1B0 0x400559DD:0x3FCB5310 0x4037CAEA:0x3FCB5320 0x4037C4F2:0x3FCB5340 0x4200BDA8:0x3FCB5380 0x4037C789:0x3FCB53E0
+
+[1;31mE (6778) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (6778) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (6778) Sonostream: Successfully connected[0m
+[1;31mE (6868) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (6868) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (6878) Sonostream: Successfully connected[0m
+[1;31mE (6968) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (6968) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (6968) Sonostream: Successfully connected[0m
+[1;31mE (7058) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (7058) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (7058) Sonostream: Successfully connected[0m
+[1;31mE (7148) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (7148) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (7148) Sonostream: Successfully connected[0m
+[1;31mE (7248) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (7248) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (7248) Sonostream: Successfully connected[0m
+[1;31mE (7338) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (7338) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (7338) Sonostream: Successfully connected[0m
+[1;31mE (7428) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (7428) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (7428) Sonostream: Successfully connected[0m
+[1;31mE (7518) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (7518) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (7528) Sonostream: Successfully connected[0m
+[1;31mE (7618) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (7618) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (7618) Sonostream: Successfully connected[0m
+[1;31mE (7708) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (7708) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (7708) Sonostream: Successfully connected[0m
+[1;31mE (7798) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (7798) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (7798) Sonostream: Successfully connected[0m
+[1;31mE (7898) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (7898) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (7898) Sonostream: Successfully connected[0m
+[1;31mE (7988) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (7988) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (7988) Sonostream: Successfully connected[0m
+[1;31mE (8078) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (8078) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (8078) Sonostream: Successfully connected[0m
+[1;31mE (8168) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (8168) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (8178) Sonostream: Successfully connected[0m
+[1;31mE (8268) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (8268) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (8268) Sonostream: Successfully connected[0m
+[1;31mE (8358) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (8358) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (8358) Sonostream: Successfully connected[0m
+[1;31mE (8448) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (8448) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (8448) Sonostream: Successfully connected[0m
+[1;31mE (8548) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (8548) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (8548) Sonostream: Successfully connected[0m
+[1;31mE (8638) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (8638) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (8638) Sonostream: Successfully connected[0m
+[1;31mE (8728) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (8728) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (8728) Sonostream: Successfully connected[0m
+[1;31mE (8818) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (8818) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (8828) Sonostream: Successfully connected[0m
+[1;31mE (8918) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (8918) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (8918) Sonostream: Successfully connected[0m
+[1;31mE (9008) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (9008) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (9008) Sonostream: Successfully connected[0m
+[1;31mE (9098) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (9098) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (9098) Sonostream: Successfully connected[0m
+[1;31mE (9198) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (9198) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (9198) Sonostream: Successfully connected[0m
+[1;31mE (9288) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (9288) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (9288) Sonostream: Successfully connected[0m
+[1;31mE (9378) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (9378) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (9378) Sonostream: Successfully connected[0m
+[1;31mE (9468) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (9468) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (9478) Sonostream: Successfully connected[0m
+[1;31mE (9568) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (9568) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (9568) Sonostream: Successfully connected[0m
+[1;31mE (9658) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (9658) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (9658) Sonostream: Successfully connected[0m
+[1;31mE (9748) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (9748) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (9748) Sonostream: Successfully connected[0m
+[1;31mE (9848) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (9848) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (9848) Sonostream: Successfully connected[0m
+[1;31mE (9938) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (9938) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (9938) Sonostream: Successfully connected[0m
+[1;31mE (10028) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (10028) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (10028) Sonostream: Successfully connected[0m
+[1;31mE (10118) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (10118) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (10128) Sonostream: Successfully connected[0m
+[1;31mE (10218) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (10218) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (10218) Sonostream: Successfully connected[0m
+[1;31mE (10308) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (10308) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (10308) Sonostream: Successfully connected[0m
+[1;31mE (10398) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (10398) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (10408) Sonostream: Successfully connected[0m
+[1;31mE (10498) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (10498) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (10498) Sonostream: Successfully connected[0m
+[1;31mE (10588) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (10588) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (10588) Sonostream: Successfully connected[0m
+[1;31mE (10678) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (10678) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (10678) Sonostream: Successfully connected[0m
+[1;31mE (10768) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (10768) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (10778) Sonostream: Successfully connected[0m
+[1;31mE (10868) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (10868) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (10868) Sonostream: Successfully connected[0m
+[1;31mE (10958) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (10958) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (10958) Sonostream: Successfully connected[0m
+[1;31mE (11048) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (11048) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (11058) Sonostream: Successfully connected[0m
+[1;31mE (11148) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (11148) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (11148) Sonostream: Successfully connected[0m
+[1;31mE (11238) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (11238) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (11238) Sonostream: Successfully connected[0m
+[1;31mE (11328) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (11328) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (11328) Sonostream: Successfully connected[0m
+[1;31mE (11418) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (11428) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (11428) Sonostream: Successfully connected[0m
+[1;31mE (11518) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (11518) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (11518) Sonostream: Successfully connected[0m
+[1;31mE (11608) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (11608) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (11608) Sonostream: Successfully connected[0m
+[1;31mE (11688) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (11688) task_wdt:  - IDLE0 (CPU 0)[0m
+[1;31mE (11688) task_wdt: Tasks currently running:[0m
+[1;31mE (11688) task_wdt: CPU 0: socket_tx_task[0m
+[1;31mE (11688) task_wdt: CPU 1: IDLE1[0m
+[1;31mE (11688) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4200F55A:0x3FC9C160 0x4200F970:0x3FC9C180 0x40377761:0x3FC9C1B0 0x4037E85D:0x3FCB5340 0x4200BDA8:0x3FCB5380 0x4037C789:0x3FCB53E0
+
+[1;31mE (11728) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (11728) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (11728) Sonostream: Successfully connected[0m
+[1;31mE (11818) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (11818) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (11818) Sonostream: Successfully connected[0m
+[1;31mE (11908) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (11908) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (11908) Sonostream: Successfully connected[0m
+[1;31mE (12008) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (12008) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (12008) Sonostream: Successfully connected[0m
+[1;31mE (12098) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (12098) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (12098) Sonostream: Successfully connected[0m
+[1;31mE (12188) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (12188) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (12188) Sonostream: Successfully connected[0m
+[1;31mE (12278) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (12278) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (12288) Sonostream: Successfully connected[0m
+[1;31mE (12378) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (12378) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (12378) Sonostream: Successfully connected[0m
+[1;31mE (12468) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (12468) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (12468) Sonostream: Successfully connected[0m
+[1;31mE (12558) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (12558) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (12558) Sonostream: Successfully connected[0m
+[1;31mE (12658) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (12658) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (12658) Sonostream: Successfully connected[0m
+[1;31mE (12748) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (12748) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (12748) Sonostream: Successfully connected[0m
+[1;31mE (12838) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (12838) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (12838) Sonostream: Successfully connected[0m
+[1;31mE (12928) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (12928) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (12938) Sonostream: Successfully connected[0m
+[1;31mE (13028) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (13028) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (13028) Sonostream: Successfully connected[0m
+[1;31mE (13118) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (13118) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (13118) Sonostream: Successfully connected[0m
+[1;31mE (13208) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (13208) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (13208) Sonostream: Successfully connected[0m
+[1;31mE (13308) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (13308) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (13308) Sonostream: Successfully connected[0m
+[1;31mE (13398) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (13398) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (13398) Sonostream: Successfully connected[0m
+[1;31mE (13488) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (13488) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (13488) Sonostream: Successfully connected[0m
+[1;31mE (13578) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (13578) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (13588) Sonostream: Successfully connected[0m
+[1;31mE (13678) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (13678) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (13678) Sonostream: Successfully connected[0m
+[1;31mE (13768) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (13768) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (13768) Sonostream: Successfully connected[0m
+[1;31mE (13858) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (13858) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (13858) Sonostream: Successfully connected[0m
+[1;31mE (13958) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (13958) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (13958) Sonostream: Successfully connected[0m
+[1;31mE (14048) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (14048) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (14048) Sonostream: Successfully connected[0m
+[1;31mE (14138) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (14138) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (14138) Sonostream: Successfully connected[0m
+[1;31mE (14228) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (14228) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (14238) Sonostream: Successfully connected[0m
+[1;31mE (14328) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (14328) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (14328) Sonostream: Successfully connected[0m
+[1;31mE (14418) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (14418) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (14418) Sonostream: Successfully connected[0m
+[1;31mE (14508) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (14508) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (14508) Sonostream: Successfully connected[0m
+[1;31mE (14608) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (14608) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (14608) Sonostream: Successfully connected[0m
+[1;31mE (14698) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (14698) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (14698) Sonostream: Successfully connected[0m
+[1;31mE (14788) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (14788) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (14788) Sonostream: Successfully connected[0m
+[1;31mE (14878) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (14878) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (14888) Sonostream: Successfully connected[0m
+[1;31mE (14978) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (14978) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (14978) Sonostream: Successfully connected[0m
+[1;31mE (15068) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (15068) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (15068) Sonostream: Successfully connected[0m
+[1;31mE (15158) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (15158) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (15168) Sonostream: Successfully connected[0m
+[1;31mE (15258) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (15258) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (15258) Sonostream: Successfully connected[0m
+[0;32mI (2993) Sonostream: Attempting to connect to the AP...[0m
+[0;32mI (2993) Sonostream: Connection to the AP fail[0m
+[0;32mI (3003) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3003) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (3013) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (3013) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (3033) wifi:connected with definitelynotarouter, aid = 21, channel 8, BW20, bssid = f0:2f:74:5f:62:70[0m
+[0;32mI (3033) wifi:security: WPA2-PSK, phy: bgn, rssi: -16[0m
+[0;32mI (3043) wifi:pm start, type: 1[0m
+
+[0;32mI (3043) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (3053) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (3063) wifi:<ba-add>idx:0 (ifx:0, f0:2f:74:5f:62:70), tid:6, ssn:1, winSize:64[0m
+[0;32mI (3123) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (4073) esp_netif_handlers: sta ip: 192.168.50.21, mask: 255.255.255.0, gw: 192.168.50.1[0m
+[0;32mI (4073) Sonostream: got ip:192.168.50.21[0m
+[0;32mI (4073) Sonostream: Connected to ap SSID:definitelynotarouter password:notapwd777[0m
+[0;32mI (4073) main_task: Returned from app_main()[0m
+[0;32mI (4073) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (4093) Sonostream: Successfully connected[0m
+[0;32mI (4133) wifi:<ba-add>idx:1 (ifx:0, f0:2f:74:5f:62:70), tid:0, ssn:1, winSize:64[0m
+[0;32mI (4193) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (4213) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (4303) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (4403) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (4493) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (4593) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (4693) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (4773) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (4873) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (4953) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (5053) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (5143) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (5233) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (5333) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (5423) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (5513) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (5613) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (5703) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (5803) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (5883) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (5983) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (6073) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (6173) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (6263) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (6373) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (6443) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (6543) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (6633) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (6733) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (6813) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (6903) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (7003) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (7093) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (7193) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (7293) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (7373) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (7463) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (7563) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (7663) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (7743) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (7843) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (7933) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (8023) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (8113) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (8203) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (8303) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (8393) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (8493) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (8583) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (8673) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (8773) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (8853) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (8953) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (9043) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (9143) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (9233) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (9333) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (9423) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (9513) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (9603) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (9693) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (9813) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (9873) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (9983) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (10073) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (10163) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (10253) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (10353) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (10443) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (10543) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (10633) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (10713) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (10813) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (10903) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (11003) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (11093) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (11183) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (11273) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (11363) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (11463) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (11553) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (11653) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (11743) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (11833) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (11923) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (12023) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (12113) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (12203) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (12303) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (12383) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (12483) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (12573) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (12663) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (12763) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (12853) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (12943) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (13043) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (13133) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (13223) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (13323) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (13413) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (13503) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (13603) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (13703) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (13783) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (13873) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (13983) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (14063) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (14153) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (14253) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (14343) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (14433) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (14523) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (14623) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (14713) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (14813) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (14893) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (14983) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (15113) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (15173) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (15273) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (15363) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (15453) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (15553) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (15633) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (15733) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (15823) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (15913) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (16013) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (16103) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (16193) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (16293) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (16383) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (16473) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (16573) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (16663) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (16753) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (16853) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (16943) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (17033) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (17133) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (17243) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (17373) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (17413) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (17503) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (17593) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (17683) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (17783) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (17863) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (17963) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (18053) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (18143) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (18253) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (18333) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (18433) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (18523) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (18623) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (18713) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (18803) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (18903) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (19003) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (19073) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (19173) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (19273) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (19353) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (19623) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (19633) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (19643) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (19733) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (19813) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (19913) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (20013) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (20103) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (20233) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (20293) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (20383) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (20483) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (20563) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (20673) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (20753) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (20853) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (20943) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (21023) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (21123) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (21213) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (21303) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (21393) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (21493) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (21583) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (21673) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (21773) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (21873) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (21953) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (22053) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (22163) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (22233) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (22323) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (22433) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (22513) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (22613) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (22703) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (22803) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (22883) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (22973) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (23073) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (23163) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (23253) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (23353) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (23443) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (23543) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (23623) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (23723) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (23813) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (23923) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (23993) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (24093) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (24183) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (24283) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (24373) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (24463) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (24573) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (24643) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (24753) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (24833) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (24933) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (25023) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (25113) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (25223) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (25303) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (25403) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (25483) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (25573) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (25673) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (25763) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (25873) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (25953) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (26053) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (26133) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (26243) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (26323) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (26423) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (26513) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (26593) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (26693) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (26793) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (26883) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (26973) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (27073) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (27163) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (27273) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (27343) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (27433) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (27523) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (27623) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (27713) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (27803) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (27903) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (27993) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (28093) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (28183) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (28293) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (28363) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (28463) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (28563) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (28643) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (28733) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (28833) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (28913) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (29013) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (29103) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (29203) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (29293) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (29393) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (29473) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (29583) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (29673) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (29763) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (29883) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (29943) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (30033) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (30133) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (30233) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (30313) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (30403) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (30503) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (30593) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (30683) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (30783) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (30873) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (30963) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (31063) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (31153) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (31243) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (31333) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (31443) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (31523) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (31613) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (31723) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (31803) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (31893) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (31983) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (32073) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (32183) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (32283) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (32353) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (32453) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (32543) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (32653) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (32743) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (32823) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (32923) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (33003) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (33103) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (33193) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (33293) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (33383) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (33473) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (33563) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (33663) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (33753) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (33843) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (33933) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (34033) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (34123) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (34213) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (34313) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (34413) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (34493) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (34583) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (34683) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (34783) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (34863) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (34953) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (35053) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (35143) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (35243) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (35333) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (35423) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (35513) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (35603) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (35703) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (35793) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (35883) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (35983) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (36123) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (36193) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (36273) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (36353) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (36453) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (36543) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (36633) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (36723) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (36813) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (36903) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (37003) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (37103) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (37183) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (37293) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (37373) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (37473) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (37563) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (37653) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (37743) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (37843) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (37933) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (38023) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (38123) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (38213) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (38313) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (38393) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (38493) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (38583) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (38673) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (38773) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (38853) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (38953) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (39043) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (39133) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (39233) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (39323) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (39423) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (39513) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (39603) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (39693) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (39793) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (39883) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (39973) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (40063) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (40163) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (40253) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (40353) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (40443) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (40533) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (40623) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (40713) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (40813) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (40903) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (40993) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (41083) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (41183) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (41273) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (41363) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (41463) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (41553) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (41643) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (41743) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (41833) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (41923) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (42023) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (42113) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (42203) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (42303) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (42383) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (42483) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (42573) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (42683) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (42763) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (42853) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (42943) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (43043) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (43133) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (43223) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (43323) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (43413) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (43513) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (43593) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (43693) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (43783) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (43873) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (43973) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (44063) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (44173) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (44243) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (44363) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (44433) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (44523) Sonostream: Success: 8192 bytes sent[0m
+I (44623) Sonostream: Success: 8192 bytes sent
+[0;32mI (44713) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (44803) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (44893) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (44993) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (45093) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (45173) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (45283) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (45363) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (45453) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (45553) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (45633) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (45733) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (45833) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (45923) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (46013) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (46103) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (46203) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (46293) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (46383) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (46483) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (46573) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (46663) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (46763) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (46843) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (46943) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (47043) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (47123) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (47223) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (47313) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (47403) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (47493) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (47583) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (47683) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (47773) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (47873) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (47963) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (48053) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (48143) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (48243) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (48333) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (48423) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (48523) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (48613) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (48703) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (48793) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (48893) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (48983) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (49073) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (49163) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (49263) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (49353) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (49453) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (49543) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (49633) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (49723) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (49833) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (49913) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (50003) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (50103) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (50193) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (50283) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (50373) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (50473) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (50563) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (50653) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (50753) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (50843) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (50933) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (51023) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (51123) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (51213) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (51303) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (51403) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (51493) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (51583) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (51683) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (51773) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (51863) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (51953) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (52063) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (52143) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (52233) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (52333) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (52423) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (52523) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (52603) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (52693) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (52793) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (52893) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (52973) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (53073) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (53163) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (53253) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (53343) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (53443) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (53533) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (53623) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (53723) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (53813) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (53903) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (54003) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (54093) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (54183) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (54293) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (54363) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (54473) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (54553) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (54653) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (54743) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (54843) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (54923) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (55023) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (55123) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (55203) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (55303) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (55393) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (55483) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (55573) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (55673) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (55763) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (55853) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (55953) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (56053) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (56133) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (56223) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (56323) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (56413) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (56513) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (56603) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (56693) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (56793) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (56883) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (56983) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (57063) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (57153) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (57253) Sonostream: Success: 8192 bytes sent[0m
+[0;32mI (57343) Sonostream: Success: 8192 bytes sent[0m
+[1;31mE (57433) Sonostream: Error occurred during sending a chunk: errno 104[0m
+
+[1;31mE (57433) Sonostream: Error occurred during sending a frame: errno 104[0m
+[0;32mI (57433) Sonostream: Successfully connected[0m
+[1;31mE (57513) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (57523) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (57523) Sonostream: Successfully connected[0m
+[1;31mE (57613) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (57613) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (57613) Sonostream: Successfully connected[0m
+[1;31mE (57703) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (57703) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (57703) Sonostream: Successfully connected[0m
+[1;31mE (57793) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (57793) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (57803) Sonostream: Successfully connected[0m
+[1;31mE (57893) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (57893) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (57893) Sonostream: Successfully connected[0m
+[1;31mE (57983) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (57983) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (57983) Sonostream: Successfully connected[0m
+[1;31mE (58073) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (58073) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (58073) Sonostream: Successfully connected[0m
+[1;31mE (58163) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (58173) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (58173) Sonostream: Successfully connected[0m
+[1;31mE (58263) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (58263) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (58263) Sonostream: Successfully connected[0m
+[1;31mE (58353) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (58353) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (58353) Sonostream: Successfully connected[0m
+[1;31mE (58443) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (58443) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (58453) Sonostream: Successfully connected[0m
+[1;31mE (58543) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (58543) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (58543) Sonostream: Successfully connected[0m
+[1;31mE (58633) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (58633) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (58633) Sonostream: Successfully connected[0m
+[1;31mE (58723) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (58723) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (58723) Sonostream: Successfully connected[0m
+[1;31mE (58823) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (58823) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (58823) Sonostream: Successfully connected[0m
+[1;31mE (58913) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (58913) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (58913) Sonostream: Successfully connected[0m
+[1;31mE (59003) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (59003) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (59003) Sonostream: Successfully connected[0m
+[1;31mE (59093) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (59093) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (59103) Sonostream: Successfully connected[0m
+[1;31mE (59193) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (59193) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (59193) Sonostream: Successfully connected[0m
+[1;31mE (59283) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (59283) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (59283) Sonostream: Successfully connected[0m
+[1;31mE (59373) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (59373) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (59373) Sonostream: Successfully connected[0m
+[1;31mE (59473) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (59473) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (59473) Sonostream: Successfully connected[0m
+[1;31mE (59563) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (59563) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (59563) Sonostream: Successfully connected[0m
+[1;31mE (59653) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (59653) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (59653) Sonostream: Successfully connected[0m
+[1;31mE (59743) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (59743) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (59753) Sonostream: Successfully connected[0m
+[1;31mE (59843) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (59843) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (59843) Sonostream: Successfully connected[0m
+[1;31mE (59933) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (59933) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (59933) Sonostream: Successfully connected[0m
+[1;31mE (60023) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (60023) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (60023) Sonostream: Successfully connected[0m
+[1;31mE (60123) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (60123) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (60123) Sonostream: Successfully connected[0m
+[1;31mE (60213) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (60213) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (60213) Sonostream: Successfully connected[0m
+[1;31mE (60303) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (60303) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (60303) Sonostream: Successfully connected[0m
+[1;31mE (60393) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (60393) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (60403) Sonostream: Successfully connected[0m
+[1;31mE (60493) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (60493) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (60493) Sonostream: Successfully connected[0m
+[1;31mE (60583) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (60583) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (60583) Sonostream: Successfully connected[0m
+[1;31mE (60673) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (60673) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (60673) Sonostream: Successfully connected[0m
+[1;31mE (60773) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (60773) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (60773) Sonostream: Successfully connected[0m
+[1;31mE (60863) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (60863) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (60863) Sonostream: Successfully connected[0m
+[1;31mE (60953) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (60953) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (60953) Sonostream: Successfully connected[0m
+[1;31mE (61043) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (61043) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (61053) Sonostream: Successfully connected[0m
+[1;31mE (61143) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (61143) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (61143) Sonostream: Successfully connected[0m
+[1;31mE (61233) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (61233) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (61233) Sonostream: Successfully connected[0m
+[1;31mE (61323) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (61323) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (61323) Sonostream: Successfully connected[0m
+[1;31mE (61423) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (61423) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (61423) Sonostream: Successfully connected[0m
+[1;31mE (61513) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (61513) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (61513) Sonostream: Successfully connected[0m
+[1;31mE (61603) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (61603) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (61603) Sonostream: Successfully connected[0m
+[1;31mE (61693) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (61693) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (61703) Sonostream: Successfully connected[0m
+[1;31mE (61793) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (61793) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (61793) Sonostream: Successfully connected[0m
+[1;31mE (61883) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (61883) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (61883) Sonostream: Successfully connected[0m
+[1;31mE (61973) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (61973) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (61973) Sonostream: Successfully connected[0m
+[1;31mE (62073) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (62073) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (62073) Sonostream: Successfully connected[0m
+[1;31mE (62163) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (62163) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (62163) Sonostream: Successfully connected[0m
+[1;31mE (62253) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (62253) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (62253) Sonostream: Successfully connected[0m
+[1;31mE (62343) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (62343) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (62353) Sonostream: Successfully connected[0m
+[1;31mE (62433) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (62433) task_wdt:  - IDLE0 (CPU 0)[0m
+[1;31mE (62433) task_wdt: Tasks currently running:[0m
+[1;31mE (62433) task_wdt: CPU 0: socket_tx_task[0m
+[1;31mE (62433) task_wdt: CPU 1: IDLE1[0m
+[1;31mE (62433) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4200F55A:0x3FC9C160 0x4200F970:0x3FC9C180 0x40377761:0x3FC9C1B0 0x400559DD:0x3FCB5300 0x4037CAEA:0x3FCB5310 0x4037C4F2:0x3FCB5330 0x4200BDA8:0x3FCB5370 0x4037C789:0x3FCB53D0
+
+[1;31mE (62473) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (62473) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (62483) Sonostream: Successfully connected[0m
+[1;31mE (62553) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (62553) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (62563) Sonostream: Successfully connected[0m
+[1;31mE (62653) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (62653) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (62653) Sonostream: Successfully connected[0m
+[1;31mE (62743) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (62743) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (62743) Sonostream: Successfully connected[0m
+[1;31mE (62833) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (62833) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (62833) Sonostream: Successfully connected[0m
+[1;31mE (62933) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (62933) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (62933) Sonostream: Successfully connected[0m
+[1;31mE (63023) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (63023) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (63023) Sonostream: Successfully connected[0m
+[1;31mE (63113) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (63113) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (63113) Sonostream: Successfully connected[0m
+[1;31mE (63203) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (63203) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (63213) Sonostream: Successfully connected[0m
+[1;31mE (63303) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (63303) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (63303) Sonostream: Successfully connected[0m
+[1;31mE (63393) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (63393) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (63393) Sonostream: Successfully connected[0m
+[1;31mE (63483) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (63483) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (63483) Sonostream: Successfully connected[0m
+[1;31mE (63583) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (63583) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (63583) Sonostream: Successfully connected[0m
+[1;31mE (63673) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (63673) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (63673) Sonostream: Successfully connected[0m
+[1;31mE (63763) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (63763) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (63763) Sonostream: Successfully connected[0m
+[1;31mE (63853) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (63853) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (63863) Sonostream: Successfully connected[0m
+[1;31mE (63953) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (63953) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (63953) Sonostream: Successfully connected[0m
+[1;31mE (64043) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (64043) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (64043) Sonostream: Successfully connected[0m
+[1;31mE (64133) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (64133) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (64133) Sonostream: Successfully connected[0m
+[1;31mE (64233) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (64233) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (64233) Sonostream: Successfully connected[0m
+[1;31mE (64323) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (64323) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (64323) Sonostream: Successfully connected[0m
+[1;31mE (64413) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (64413) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (64413) Sonostream: Successfully connected[0m
+[1;31mE (64503) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (64503) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (64513) Sonostream: Successfully connected[0m
+[1;31mE (64603) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (64603) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (64603) Sonostream: Successfully connected[0m
+[1;31mE (64693) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (64693) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (64693) Sonostream: Successfully connected[0m
+[1;31mE (64783) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (64783) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (64783) Sonostream: Successfully connected[0m
+[1;31mE (64883) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (64883) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (64883) Sonostream: Successfully connected[0m
+[1;31mE (64973) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (64973) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (64973) Sonostream: Successfully connected[0m
+[1;31mE (65063) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (65063) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (65063) Sonostream: Successfully connected[0m
+[1;31mE (65153) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (65153) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (65163) Sonostream: Successfully connected[0m
+[1;31mE (65253) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (65253) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (65253) Sonostream: Successfully connected[0m
+[1;31mE (65343) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (65343) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (65343) Sonostream: Successfully connected[0m
+[1;31mE (65433) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (65433) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (65433) Sonostream: Successfully connected[0m
+[1;31mE (65533) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (65533) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (65533) Sonostream: Successfully connected[0m
+[1;31mE (65623) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (65623) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (65623) Sonostream: Successfully connected[0m
+[1;31mE (65713) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (65713) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (65713) Sonostream: Successfully connected[0m
+[1;31mE (65803) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (65803) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (65813) Sonostream: Successfully connected[0m
+[1;31mE (65903) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (65903) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (65903) Sonostream: Successfully connected[0m
+[1;31mE (65993) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (65993) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (65993) Sonostream: Successfully connected[0m
+[1;31mE (66083) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (66083) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (66083) Sonostream: Successfully connected[0m
+[1;31mE (66183) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (66183) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (66183) Sonostream: Successfully connected[0m
+[1;31mE (66273) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (66273) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (66273) Sonostream: Successfully connected[0m
+[1;31mE (66363) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (66363) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (66363) Sonostream: Successfully connected[0m
+[1;31mE (66453) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (66453) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (66463) Sonostream: Successfully connected[0m
+[1;31mE (66553) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (66553) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (66553) Sonostream: Successfully connected[0m
+[1;31mE (66643) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (66643) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (66643) Sonostream: Successfully connected[0m
+[1;31mE (66733) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (66733) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (66733) Sonostream: Successfully connected[0m
+[1;31mE (66833) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (66833) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (66833) Sonostream: Successfully connected[0m
+[1;31mE (66923) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (66923) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (66923) Sonostream: Successfully connected[0m
+[1;31mE (67013) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (67013) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (67013) Sonostream: Successfully connected[0m
+[1;31mE (67103) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (67103) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (67113) Sonostream: Successfully connected[0m
+[1;31mE (67203) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (67203) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (67203) Sonostream: Successfully connected[0m
+[1;31mE (67293) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (67293) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (67293) Sonostream: Successfully connected[0m
+[1;31mE (67383) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (67383) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (67393) Sonostream: Successfully connected[0m
+[1;31mE (67433) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (67433) task_wdt:  - IDLE0 (CPU 0)[0m
+[1;31mE (67433) task_wdt: Tasks currently running:[0m
+[1;31mE (67433) task_wdt: CPU 0: socket_tx_task[0m
+[1;31mE (67433) task_wdt: CPU 1: IDLE1[0m
+[1;31mE (67433) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4200F55A:0x3FC9C160 0x4200F970:0x3FC9C180 0x40377761:0x3FC9C1B0 0x400559DD:0x3FCB5300 0x4037CAEA:0x3FCB5310 0x4037C4F2:0x3FCB5330 0x4200BDA8:0x3FCB5370 0x4037C789:0x3FCB53D0
+
+[1;31mE (67503) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (67503) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (67503) Sonostream: Successfully connected[0m
+[1;31mE (67593) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (67593) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (67593) Sonostream: Successfully connected[0m
+[1;31mE (67693) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (67693) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (67693) Sonostream: Successfully connected[0m
+[1;31mE (67783) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (67783) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (67783) Sonostream: Successfully connected[0m
+[1;31mE (67873) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (67873) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (67873) Sonostream: Successfully connected[0m
+[1;31mE (67963) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (67963) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (67973) Sonostream: Successfully connected[0m
+[1;31mE (68063) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (68063) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (68063) Sonostream: Successfully connected[0m
+[1;31mE (68153) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (68153) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (68153) Sonostream: Successfully connected[0m
+[1;31mE (68243) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (68243) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (68243) Sonostream: Successfully connected[0m
+[1;31mE (68343) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (68343) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (68343) Sonostream: Successfully connected[0m
+[1;31mE (68433) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (68433) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (68433) Sonostream: Successfully connected[0m
+[1;31mE (68523) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (68523) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (68523) Sonostream: Successfully connected[0m
+[1;31mE (68613) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (68613) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (68623) Sonostream: Successfully connected[0m
+[1;31mE (68713) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (68713) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (68713) Sonostream: Successfully connected[0m
+[1;31mE (68803) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (68803) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (68803) Sonostream: Successfully connected[0m
+[1;31mE (68893) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (68893) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (68893) Sonostream: Successfully connected[0m
+[1;31mE (68993) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (68993) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (68993) Sonostream: Successfully connected[0m
+[1;31mE (69083) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (69083) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (69083) Sonostream: Successfully connected[0m
+[1;31mE (69173) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (69173) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (69173) Sonostream: Successfully connected[0m
+[1;31mE (69263) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (69263) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (69273) Sonostream: Successfully connected[0m
+[1;31mE (69363) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (69363) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (69363) Sonostream: Successfully connected[0m
+[1;31mE (69453) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (69453) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (69453) Sonostream: Successfully connected[0m
+[1;31mE (69543) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (69543) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (69543) Sonostream: Successfully connected[0m
+[1;31mE (69643) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (69643) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (69643) Sonostream: Successfully connected[0m
+[1;31mE (69733) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (69733) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (69733) Sonostream: Successfully connected[0m
+[1;31mE (69823) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (69823) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (69823) Sonostream: Successfully connected[0m
+[1;31mE (69913) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (69913) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (69923) Sonostream: Successfully connected[0m
+[1;31mE (70013) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (70013) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (70013) Sonostream: Successfully connected[0m
+[1;31mE (70103) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (70103) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (70103) Sonostream: Successfully connected[0m
+[1;31mE (70193) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (70193) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (70193) Sonostream: Successfully connected[0m
+[1;31mE (70293) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (70293) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (70293) Sonostream: Successfully connected[0m
+[1;31mE (70383) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (70383) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (70383) Sonostream: Successfully connected[0m
+[1;31mE (70473) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (70473) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (70473) Sonostream: Successfully connected[0m
+[1;31mE (70563) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (70563) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (70573) Sonostream: Successfully connected[0m
+[1;31mE (70663) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (70663) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (70663) Sonostream: Successfully connected[0m
+[1;31mE (70753) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (70753) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (70753) Sonostream: Successfully connected[0m
+[1;31mE (70843) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (70843) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (70843) Sonostream: Successfully connected[0m
+[1;31mE (70943) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (70943) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (70943) Sonostream: Successfully connected[0m
+[1;31mE (71033) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (71033) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (71033) Sonostream: Successfully connected[0m
+[1;31mE (71123) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (71123) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (71123) Sonostream: Successfully connected[0m
+[1;31mE (71213) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (71213) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (71223) Sonostream: Successfully connected[0m
+[1;31mE (71313) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (71313) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (71313) Sonostream: Successfully connected[0m
+[1;31mE (71403) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (71403) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (71403) Sonostream: Successfully connected[0m
+[1;31mE (71493) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (71493) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (71503) Sonostream: Successfully connected[0m
+[1;31mE (71593) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (71593) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (71593) Sonostream: Successfully connected[0m
+[1;31mE (71683) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (71683) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (71683) Sonostream: Successfully connected[0m
+[1;31mE (71773) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (71773) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (71773) Sonostream: Successfully connected[0m
+[1;31mE (71863) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (71873) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (71873) Sonostream: Successfully connected[0m
+[1;31mE (71963) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (71963) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (71963) Sonostream: Successfully connected[0m
+[1;31mE (72053) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (72053) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (72053) Sonostream: Successfully connected[0m
+[1;31mE (72143) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (72143) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (72153) Sonostream: Successfully connected[0m
+[1;31mE (72243) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (72243) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (72243) Sonostream: Successfully connected[0m
+[1;31mE (72333) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (72333) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (72333) Sonostream: Successfully connected[0m
+[1;31mE (72423) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (72423) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (72423) Sonostream: Successfully connected[0m
+[1;31mE (72433) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (72433) task_wdt:  - IDLE0 (CPU 0)[0m
+[1;31mE (72433) task_wdt: Tasks currently running:[0m
+[1;31mE (72433) task_wdt: CPU 0: socket_tx_task[0m
+[1;31mE (72433) task_wdt: CPU 1: IDLE1[0m
+[1;31mE (72433) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4200F55A:0x3FC9C160 0x4200F970:0x3FC9C180 0x40377761:0x3FC9C1B0 0x400559DD:0x3FCB5300 0x4037CAEA:0x3FCB5310 0x4037C4F2:0x3FCB5330 0x4200BDA8:0x3FCB5370 0x4037C789:0x3FCB53D0
+
+[1;31mE (72553) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (72553) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (72553) Sonostream: Successfully connected[0m
+[1;31mE (72643) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (72643) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (72643) Sonostream: Successfully connected[0m
+[1;31mE (72743) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (72743) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (72743) Sonostream: Successfully connected[0m
+[1;31mE (72833) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (72833) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (72833) Sonostream: Successfully connected[0m
+[1;31mE (72923) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (72923) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (72923) Sonostream: Successfully connected[0m
+[1;31mE (73013) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (73013) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (73023) Sonostream: Successfully connected[0m
+[1;31mE (73113) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (73113) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (73113) Sonostream: Successfully connected[0m
+[1;31mE (73203) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (73203) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (73203) Sonostream: Successfully connected[0m
+[1;31mE (73293) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (73293) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (73293) Sonostream: Successfully connected[0m
+[1;31mE (73393) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (73393) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (73393) Sonostream: Successfully connected[0m
+[1;31mE (73483) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (73483) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (73483) Sonostream: Successfully connected[0m
+[1;31mE (73573) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (73573) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (73573) Sonostream: Successfully connected[0m
+[1;31mE (73663) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (73663) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (73673) Sonostream: Successfully connected[0m
+[1;31mE (73763) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (73763) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (73763) Sonostream: Successfully connected[0m
+[1;31mE (73853) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (73853) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (73853) Sonostream: Successfully connected[0m
+[1;31mE (73943) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (73943) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (73943) Sonostream: Successfully connected[0m
+[1;31mE (74043) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (74043) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (74043) Sonostream: Successfully connected[0m
+[1;31mE (74133) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (74133) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (74133) Sonostream: Successfully connected[0m
+[1;31mE (74223) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (74223) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (74223) Sonostream: Successfully connected[0m
+[1;31mE (74313) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (74313) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (74323) Sonostream: Successfully connected[0m
+[1;31mE (74413) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (74413) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (74413) Sonostream: Successfully connected[0m
+[1;31mE (74503) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (74503) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (74503) Sonostream: Successfully connected[0m
+[1;31mE (74593) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (74593) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (74593) Sonostream: Successfully connected[0m
+[1;31mE (74693) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (74693) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (74693) Sonostream: Successfully connected[0m
+[1;31mE (74783) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (74783) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (74783) Sonostream: Successfully connected[0m
+[1;31mE (74873) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (74873) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (74873) Sonostream: Successfully connected[0m
+[1;31mE (74963) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (74963) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (74973) Sonostream: Successfully connected[0m
+[1;31mE (75063) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (75063) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (75063) Sonostream: Successfully connected[0m
+[1;31mE (75153) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (75153) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (75153) Sonostream: Successfully connected[0m
+[1;31mE (75243) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (75243) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (75253) Sonostream: Successfully connected[0m
+[1;31mE (75343) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (75343) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (75343) Sonostream: Successfully connected[0m
+[1;31mE (75433) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (75433) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (75433) Sonostream: Successfully connected[0m
+[1;31mE (75523) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (75523) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (75523) Sonostream: Successfully connected[0m
+[1;31mE (75613) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (75623) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (75623) Sonostream: Successfully connected[0m
+[1;31mE (75713) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (75713) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (75713) Sonostream: Successfully connected[0m
+[1;31mE (75803) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (75803) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (75803) Sonostream: Successfully connected[0m
+[1;31mE (75893) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (75893) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (75903) Sonostream: Successfully connected[0m
+[1;31mE (75993) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (75993) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (75993) Sonostream: Successfully connected[0m
+[1;31mE (76083) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (76083) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (76083) Sonostream: Successfully connected[0m
+[1;31mE (76173) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (76173) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (76173) Sonostream: Successfully connected[0m
+[1;31mE (76263) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (76273) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (76273) Sonostream: Successfully connected[0m
+[1;31mE (76363) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (76363) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (76363) Sonostream: Successfully connected[0m
+[1;31mE (76453) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (76453) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (76453) Sonostream: Successfully connected[0m
+[1;31mE (76543) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (76543) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (76553) Sonostream: Successfully connected[0m
+[1;31mE (76643) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (76643) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (76643) Sonostream: Successfully connected[0m
+[1;31mE (76733) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (76733) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (76733) Sonostream: Successfully connected[0m
+[1;31mE (76823) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (76823) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (76823) Sonostream: Successfully connected[0m
+[1;31mE (76923) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (76923) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (76923) Sonostream: Successfully connected[0m
+[1;31mE (77013) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (77013) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (77013) Sonostream: Successfully connected[0m
+[1;31mE (77103) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (77103) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (77103) Sonostream: Successfully connected[0m
+[1;31mE (77193) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (77193) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (77203) Sonostream: Successfully connected[0m
+[1;31mE (77293) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (77293) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (77293) Sonostream: Successfully connected[0m
+[1;31mE (77383) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (77383) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (77383) Sonostream: Successfully connected[0m
+[1;31mE (77433) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (77433) task_wdt:  - IDLE0 (CPU 0)[0m
+[1;31mE (77433) task_wdt: Tasks currently running:[0m
+[1;31mE (77433) task_wdt: CPU 0: socket_tx_task[0m
+[1;31mE (77433) task_wdt: CPU 1: IDLE1[0m
+[1;31mE (77433) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4200F55A:0x3FC9C160 0x4200F970:0x3FC9C180 0x40377761:0x3FC9C1B0 0x400559DD:0x3FCB5300 0x4037E892:0x3FCB5310 0x4037C480:0x3FCB5330 0x4200BDA8:0x3FCB5370 0x4037C789:0x3FCB53D0
+
+[1;31mE (77503) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (77503) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (77503) Sonostream: Successfully connected[0m
+[1;31mE (77593) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (77593) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (77593) Sonostream: Successfully connected[0m
+[1;31mE (77683) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (77683) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (77683) Sonostream: Successfully connected[0m
+[1;31mE (77773) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (77773) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (77783) Sonostream: Successfully connected[0m
+[1;31mE (77873) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (77873) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (77873) Sonostream: Successfully connected[0m
+[1;31mE (77963) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (77963) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (77963) Sonostream: Successfully connected[0m
+[1;31mE (78053) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (78053) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (78053) Sonostream: Successfully connected[0m
+[1;31mE (78153) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (78153) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (78153) Sonostream: Successfully connected[0m
+[1;31mE (78243) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (78243) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (78243) Sonostream: Successfully connected[0m
+[1;31mE (78333) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (78333) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (78333) Sonostream: Successfully connected[0m
+[1;31mE (78423) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (78423) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (78433) Sonostream: Successfully connected[0m
+[1;31mE (78523) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (78523) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (78523) Sonostream: Successfully connected[0m
+[1;31mE (78613) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (78613) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (78613) Sonostream: Successfully connected[0m
+[1;31mE (78703) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (78703) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (78703) Sonostream: Successfully connected[0m
+[1;31mE (78803) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (78803) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (78803) Sonostream: Successfully connected[0m
+[1;31mE (78893) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (78893) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (78893) Sonostream: Successfully connected[0m
+[1;31mE (78983) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (78983) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (78983) Sonostream: Successfully connected[0m
+[1;31mE (79073) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (79073) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (79083) Sonostream: Successfully connected[0m
+[1;31mE (79173) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (79173) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (79173) Sonostream: Successfully connected[0m
+[1;31mE (79263) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (79263) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (79263) Sonostream: Successfully connected[0m
+[1;31mE (79353) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (79353) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (79363) Sonostream: Successfully connected[0m
+[1;31mE (79453) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (79453) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (79453) Sonostream: Successfully connected[0m
+[1;31mE (79543) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (79543) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (79543) Sonostream: Successfully connected[0m
+[1;31mE (79633) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (79633) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (79633) Sonostream: Successfully connected[0m
+[1;31mE (79723) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (79733) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (79733) Sonostream: Successfully connected[0m
+[1;31mE (79823) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (79823) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (79823) Sonostream: Successfully connected[0m
+[1;31mE (79913) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (79913) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (79913) Sonostream: Successfully connected[0m
+[1;31mE (80003) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (80003) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (80013) Sonostream: Successfully connected[0m
+[1;31mE (80103) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (80103) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (80103) Sonostream: Successfully connected[0m
+[1;31mE (80193) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (80193) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (80193) Sonostream: Successfully connected[0m
+[1;31mE (80283) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (80283) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (80283) Sonostream: Successfully connected[0m
+[1;31mE (80373) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (80383) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (80383) Sonostream: Successfully connected[0m
+[1;31mE (80473) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (80473) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (80473) Sonostream: Successfully connected[0m
+[1;31mE (80563) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (80563) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (80563) Sonostream: Successfully connected[0m
+[1;31mE (80653) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (80653) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (80663) Sonostream: Successfully connected[0m
+[1;31mE (80753) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (80753) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (80753) Sonostream: Successfully connected[0m
+[1;31mE (80843) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (80843) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (80843) Sonostream: Successfully connected[0m
+[1;31mE (80933) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (80933) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (80933) Sonostream: Successfully connected[0m
+[1;31mE (81023) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (81033) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (81033) Sonostream: Successfully connected[0m
+[1;31mE (81123) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (81123) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (81123) Sonostream: Successfully connected[0m
+[1;31mE (81213) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (81213) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (81213) Sonostream: Successfully connected[0m
+[1;31mE (81303) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (81303) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (81313) Sonostream: Successfully connected[0m
+[1;31mE (81403) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (81403) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (81403) Sonostream: Successfully connected[0m
+[1;31mE (81493) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (81493) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (81493) Sonostream: Successfully connected[0m
+[1;31mE (81583) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (81583) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (81583) Sonostream: Successfully connected[0m
+[1;31mE (81683) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (81683) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (81683) Sonostream: Successfully connected[0m
+[1;31mE (81773) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (81773) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (81773) Sonostream: Successfully connected[0m
+[1;31mE (81863) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (81863) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (81863) Sonostream: Successfully connected[0m
+[1;31mE (81953) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (81953) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (81963) Sonostream: Successfully connected[0m
+[1;31mE (82053) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (82053) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (82053) Sonostream: Successfully connected[0m
+[1;31mE (82143) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (82143) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (82143) Sonostream: Successfully connected[0m
+[1;31mE (82233) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (82233) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (82233) Sonostream: Successfully connected[0m
+[1;31mE (82333) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (82333) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (82333) Sonostream: Successfully connected[0m
+[1;31mE (82423) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (82423) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (82423) Sonostream: Successfully connected[0m
+[1;31mE (82433) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (82433) task_wdt:  - IDLE0 (CPU 0)[0m
+[1;31mE (82433) task_wdt: Tasks currently running:[0m
+[1;31mE (82433) task_wdt: CPU 0: socket_tx_task[0m
+[1;31mE (82433) task_wdt: CPU 1: IDLE1[0m
+[1;31mE (82433) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4200F55A:0x3FC9C160 0x4200F970:0x3FC9C180 0x40377761:0x3FC9C1B0 0x400559DD:0x3FCB5300 0x4037CAEA:0x3FCB5310 0x4037C4F2:0x3FCB5330 0x4200BDA8:0x3FCB5370 0x4037C789:0x3FCB53D0
+
+[1;31mE (82533) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (82533) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (82543) Sonostream: Successfully connected[0m
+[1;31mE (82633) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (82633) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (82633) Sonostream: Successfully connected[0m
+[1;31mE (82723) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (82723) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (82723) Sonostream: Successfully connected[0m
+[1;31mE (82813) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (82813) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (82813) Sonostream: Successfully connected[0m
+[1;31mE (82913) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (82913) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (82913) Sonostream: Successfully connected[0m
+[1;31mE (83003) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (83003) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (83003) Sonostream: Successfully connected[0m
+[1;31mE (83093) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (83093) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (83093) Sonostream: Successfully connected[0m
+[1;31mE (83183) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (83183) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (83193) Sonostream: Successfully connected[0m
+[1;31mE (83283) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (83283) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (83283) Sonostream: Successfully connected[0m
+[1;31mE (83373) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (83373) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (83373) Sonostream: Successfully connected[0m
+[1;31mE (83463) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (83463) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (83463) Sonostream: Successfully connected[0m
+[1;31mE (83563) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (83563) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (83563) Sonostream: Successfully connected[0m
+[1;31mE (83653) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (83653) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (83653) Sonostream: Successfully connected[0m
+[1;31mE (83743) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (83743) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (83743) Sonostream: Successfully connected[0m
+[1;31mE (83833) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (83833) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (83843) Sonostream: Successfully connected[0m
+[1;31mE (83933) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (83933) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (83933) Sonostream: Successfully connected[0m
+[1;31mE (84023) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (84023) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (84023) Sonostream: Successfully connected[0m
+[1;31mE (84113) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (84113) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (84123) Sonostream: Successfully connected[0m
+[1;31mE (84213) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (84213) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (84213) Sonostream: Successfully connected[0m
+[1;31mE (84303) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (84303) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (84303) Sonostream: Successfully connected[0m
+[1;31mE (84393) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (84393) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (84393) Sonostream: Successfully connected[0m
+[1;31mE (84483) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (84493) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (84493) Sonostream: Successfully connected[0m
+[1;31mE (84583) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (84583) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (84583) Sonostream: Successfully connected[0m
+[1;31mE (84673) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (84673) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (84673) Sonostream: Successfully connected[0m
+[1;31mE (84763) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (84763) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (84773) Sonostream: Successfully connected[0m
+[1;31mE (84863) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (84863) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (84863) Sonostream: Successfully connected[0m

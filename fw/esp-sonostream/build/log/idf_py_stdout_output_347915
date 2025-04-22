@@ -1,0 +1,1509 @@
+Command: /home/abhi/.espressif/python_env/idf5.5_py3.13_env/bin/python /home/abhi/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyACM0 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 /home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/sonostream.elf /home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/bootloader.elf -m '/home/abhi/.espressif/python_env/idf5.5_py3.13_env/bin/python' '/home/abhi/esp/esp-idf/tools/idf.py' '-p' '/dev/ttyACM0'
+[0;32mI (107) esp_image: segment 1: paddr=0002a7a8 vaddr=3fc99e00 sizeESP-ROM:esp32s3-20210327[0m
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40056f5c
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x15d0
+load:0x403c8700,len:0xd20
+load:0x403cb700,len:0x2f60
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v5.5-dev-2290-g94cfe394fe-dirty 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Mar  8 2025 22:06:51[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.1[0m
+[0;32mI (30) boot: efuse block revision: v1.2[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=1a780h (108416) map[0m
+[0;32mI (107) esp_image: segment 1: paddr=0002a7a8 vaddr=3fc99e00 size=049a0h ( 18848) load[0m
+[0;32mI (112) esp_image: segment 2: paddr=0002f150 vaddr=40374000 size=00ec8h (  3784) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=85fb0h (548784) map[0m
+[0;32mI (216) esp_image: segment 4: paddr=000b5fd8 vaddr=40374ec8 size=14e60h ( 85600) load[0m
+[0;32mI (235) esp_image: segment 5: paddr=000cae40 vaddr=600fe000 size=0001ch (    28) load[0m
+[0;32mI (244) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (244) boot: Disabling RNG early entropy source...[0m
+[0;32mI (254) cpu_start: Multicore app[0m
+[0;32mI (263) cpu_start: Pro cpu start user code[0m
+[0;32mI (263) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (263) app_init: Application information:[0m
+[0;32mI (263) app_init: Project name:     sonostream[0m
+[0;32mI (267) app_init: App version:      52524e4-dirty[0m
+[0;32mI (272) app_init: Compile time:     Apr  6 2025 12:35:45[0m
+[0;32mI (277) app_init: ELF file SHA256:  d5bc23798...[0m
+[0;32mI (281) app_init: ESP-IDF:          v5.5-dev-2290-g94cfe394fe-dirty[0m
+[0;32mI (287) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (291) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (295) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (299) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (305) heap_init: At 3FCA2430 len 000472E0 (284 KiB): RAM[0m
+[0;32mI (310) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (315) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (320) heap_init: At 600FE01C len 00001FCC (7 KiB): RTCRAM[0m
+[0;32mI (327) spi_flash: detected chip: generic[0m
+[0;32mI (329) spi_flash: flash io: dio[0m
+[0;33mW (332) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (345) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (351) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (358) main_task: Started on CPU0[0m
+[0;32mI (368) main_task: Calling app_main()[0m
+[0;32mI (368) Sonostream: Receiving data in PCM format[0m
+[0;32mI (388) pp: pp rom version: e7ae62f[0m
+[0;32mI (388) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (398) wifi:wifi driver task: 3fcc0828, prio:23, stack:6656, core=0[0m
+[0;32mI (408) wifi:wifi firmware version: 3a3aca644[0m
+[0;32mI (408) wifi:wifi certification version: v7.0[0m
+[0;32mI (408) wifi:config NVS flash: enabled[0m
+[0;32mI (408) wifi:config nano formatting: disabled[0m
+[0;32mI (408) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (418) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (418) wifi:Init management short buffer num: 32[0m
+[0;32mI (418) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (428) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (428) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (438) wifi:Init static rx buffer num: 10[0m
+[0;32mI (438) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (438) wifi_init: rx ba win: 6[0m
+[0;32mI (448) wifi_init: accept mbox: 6[0m
+[0;32mI (448) wifi_init: tcpip mbox: 32[0m
+[0;32mI (448) wifi_init: udp mbox: 6[0m
+[0;32mI (458) wifi_init: tcp mbox: 6[0m
+[0;32mI (458) wifi_init: tcp tx win: 5760[0m
+[0;32mI (458) wifi_init: tcp rx win: 5760[0m
+[0;32mI (468) wifi_init: tcp mss: 1440[0m
+[0;32mI (468) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (468) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (478) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (498) phy_init: phy_version 700,8582a7fd,Feb 10 2025,20:13:11[0m
+[0;32mI (538) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (558) wifi:mode : sta (34:85:18:50:81:30)[0m
+[0;32mI (558) wifi:enable tsf[0m
+[0;32mI (558) Sonostream: Device successfully initialized as a WiFi station![0m
+[0;32mI (568) wifi:new:<9,0>, old:<1,0>, ap:<255,255>, sta:<9,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (568) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (578) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (578) wifi:state: assoc -> init (0x2c0)[0m
+[0;32mI (588) wifi:new:<9,0>, old:<9,0>, ap:<255,255>, sta:<9,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (588) Sonostream: Attempting to connect to the AP...[0m
+[0;32mI (588) Sonostream: Connection to the AP fail[0m
+[0;32mI (2998) Sonostream: Attempting to connect to the AP...[0m
+[0;32mI (2998) Sonostream: Connection to the AP fail[0m
+[0;32mI (3008) wifi:new:<9,0>, old:<9,0>, ap:<255,255>, sta:<9,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3008) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (3018) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (3018) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (3038) wifi:connected with definitelynotarouter, aid = 20, channel 9, BW20, bssid = f0:2f:74:5f:62:70[0m
+[0;32mI (3038) wifi:security: WPA2-PSK, phy: bgn, rssi: -8[0m
+[0;32mI (3048) wifi:pm start, type: 1[0m
+
+[0;32mI (3048) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (3048) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (3058) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (3068) wifi:<ba-add>idx:0 (ifx:0, f0:2f:74:5f:62:70), tid:6, ssn:1, winSize:64[0m
+[0;32mI (4078) esp_netif_handlers: sta ip: 192.168.50.21, mask: 255.255.255.0, gw: 192.168.50.1[0m
+[0;32mI (4078) Sonostream: got ip:192.168.50.21[0m
+[0;32mI (4078) Sonostream: Connected to ap SSID:definitelynotarouter password:notapwd777[0m
+[0;32mI (4078) main_task: Returned from app_main()[0m
+[0;32mI (4078) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (4098) wifi:<ba-add>idx:1 (ifx:0, f0:2f:74:5f:62:70), tid:0, ssn:1, winSize:64[0m
+BEGIN Before Queue -------------------------
+64630 64632 64632 64634 64635 64631 64633 64635 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+64678 64678 64676 64677 64680 64677 64679 64678 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+64703 64703 64707 64701 64700 64703 64701 64698 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+64659 64641 64635 64651 64683 64674 64628 64679 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+64749 64745 64748 64749 64747 64747 64750 64747 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+64754 64756 64756 64755 64756 64756 64755 64755 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+64678 64677 64681 64680 64679 64679 64680 64681 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+64731 64733 64731 64731 64733 64731 64730 64729 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+64791 64792 64792 64791 64791 64794 64791 64792 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+64722 64719 64716 64712 64709 64704 64705 64700 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+64792 64789 64791 64792 64789 64790 64791 64789 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+64762 64764 64763 64763 64762 64763 64764 64763 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+64762 64760 64762 64765 64761 64761 64764 64761 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+64802 64805 64803 64802 64804 64801 64799 64801 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+64833 64831 64830 64831 64831 64830 64830 64829 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+64874 64875 64874 64869 64878 64874 64872 64877 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+64915 64911 64912 64912 64912 64912 64912 64910 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+64887 64888 64891 64888 64889 64892 64890 64891 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+64934 64934 64933 64934 64933 64932 64932 64933 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+64928 64927 64931 64931 64933 64932 64935 64936 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+64943 64941 64942 64943 64942 64942 64942 64943 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+64954 64955 64955 64953 64955 64953 64954 64956 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+64904 64906 64904 64906 64905 64906 64907 64905 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+64927 64929 64929 64928 64929 64928 64926 64928 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+64987 64986 64982 64985 64984 64983 64983 64982 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65058 65058 65060 65059 65060 65060 65060 65060 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65090 65091 65091 65092 65091 65090 65093 65092 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65059 65061 65060 65060 65062 65063 65062 65064 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65068 65067 65064 65072 65071 65068 65070 65070 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65182 65183 65183 65182 65181 65180 65180 65181 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65150 65148 65148 65146 65151 65148 65147 65150 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65137 65138 65135 65133 65135 65133 65133 65133 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65172 65173 65177 65176 65173 65178 65177 65173 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65151 65152 65155 65152 65153 65153 65152 65152 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65186 65186 65185 65184 65185 65183 65186 65185 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65266 65263 65266 65264 65266 65265 65264 65264 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65272 65271 65271 65271 65270 65268 65270 65269 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65237 65238 65238 65240 65240 65239 65241 65241 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65277 65277 65279 65277 65277 65279 65279 65277 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65293 65293 65295 65295 65293 65296 65293 65297 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65330 65329 65331 65331 65328 65328 65331 65330 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65369 65370 65372 65371 65372 65371 65370 65371 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65370 65363 65365 65368 65362 65366 65367 65354 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65394 65396 65398 65396 65396 65397 65397 65397 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65357 65355 65356 65359 65358 65357 65358 65357 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65392 65392 65393 65386 65392 65391 65386 65390 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65415 65415 65413 65414 65416 65413 65413 65413 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65442 65443 65447 65444 65444 65451 65447 65447 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65443 65447 65443 65446 65446 65443 65444 65446 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65331 65330 65332 65330 65329 65330 65329 65327 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65464 65464 65465 65465 65464 65464 65467 65465 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65491 65492 65494 65492 65493 65488 65492 65491 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65496 65497 65494 65494 65495 65494 65495 65495 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+6 7 10 11 9 10 11 14 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65457 65458 65455 65457 65455 65454 65454 65453 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65465 65464 65466 65464 65463 65466 65465 65465 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+22 22 23 23 24 21 24 23 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+10 13 14 13 14 16 14 16 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+0 6 3 0 4 5 2 4 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+53 52 56 56 56 56 57 57 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65529 65530 65527 65524 65531 65529 65527 65531 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+33 31 33 30 32 31 33 32 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+90 91 93 89 89 91 88 90 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+15 18 16 17 17 18 16 16 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+103 107 103 106 112 112 112 115 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+54 49 51 52 51 49 51 50 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+81 84 82 81 84 80 82 84 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+104 103 103 103 104 105 105 105 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+101 105 103 103 104 103 99 103 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+106 105 106 105 106 106 105 106 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+103 103 105 105 106 105 105 107 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+69 64 63 61 58 57 58 53 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+113 116 116 114 117 116 115 116 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+159 161 160 162 159 161 160 160 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+118 121 119 118 119 116 117 116 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+117 117 118 114 120 117 117 120 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+145 148 146 144 148 146 146 146 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+171 170 172 171 168 174 171 167 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+170 174 170 167 172 170 167 171 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+150 148 147 148 146 146 146 147 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+134 134 137 135 137 137 137 137 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+195 195 195 197 196 194 196 196 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+176 177 176 175 176 174 174 174 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+171 174 173 172 171 171 171 171 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+180 182 183 182 183 184 183 185 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+175 174 174 176 175 176 179 176 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+223 227 226 226 228 225 228 228 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+167 165 164 163 164 161 165 162 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+187 190 190 187 191 190 188 191 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+228 226 227 228 227 226 227 226 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+193 194 196 191 195 195 192 195 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+215 215 216 216 217 213 218 220 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+191 189 191 191 189 192 189 190 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+228 230 228 229 230 228 228 228 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+249 247 251 248 248 248 247 247 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+244 246 248 246 249 248 252 250 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+215 216 216 215 215 214 216 216 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+227 228 226 226 225 223 225 226 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+242 243 246 243 242 244 240 242 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+229 231 230 229 230 229 230 231 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+227 227 228 225 226 228 225 225 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+254 254 251 253 254 252 255 255 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+206 207 209 208 210 208 210 210 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+221 221 218 221 217 217 226 218 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+247 249 248 246 248 247 245 246 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+230 221 232 234 216 233 233 217 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+206 207 208 207 207 206 207 206 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+204 206 210 206 204 208 206 206 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+252 255 256 254 255 259 258 258 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+210 210 208 209 210 207 208 207 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+238 236 238 236 236 236 235 234 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+233 238 236 234 236 233 235 237 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+215 213 214 215 213 215 215 213 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+191 194 191 192 196 192 192 194 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+179 178 179 181 180 180 178 180 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+207 208 208 209 209 207 210 212 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+286 285 287 285 284 286 284 282 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+187 186 185 185 186 186 184 186 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+208 210 211 209 210 211 209 210 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+209 210 212 208 207 217 211 209 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+147 147 147 140 144 145 142 144 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+251 251 250 250 252 248 250 252 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+216 213 218 217 213 218 215 213 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+171 175 172 173 177 174 174 177 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+180 178 178 180 178 178 179 178 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+201 202 201 198 202 199 201 199 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+180 177 177 178 178 175 179 176 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+223 224 225 223 225 225 223 224 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+168 162 172 168 160 173 165 159 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+170 172 170 169 172 172 172 172 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+160 160 161 161 160 160 162 159 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+122 123 122 120 122 119 119 119 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+207 205 206 206 204 204 207 203 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+175 179 178 178 180 179 179 180 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+97 97 97 99 99 99 101 98 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+151 154 156 151 155 158 152 157 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+200 199 198 199 196 194 197 195 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+188 189 192 187 188 194 191 189 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+187 190 190 190 187 189 189 186 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+133 134 136 134 135 136 135 136 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+163 166 165 166 165 163 166 165 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+179 179 179 176 179 178 177 178 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+180 180 179 179 180 179 178 178 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+166 171 173 167 170 171 165 168 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+193 192 194 196 192 194 196 194 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+176 173 175 175 174 176 174 173 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+236 235 233 235 236 233 237 238 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+100 100 100 99 101 101 98 102 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+189 193 190 192 191 191 191 192 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+215 212 212 214 214 213 214 216 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+101 104 104 101 104 104 103 104 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+142 140 138 135 131 129 129 124 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+141 138 143 141 143 147 146 145 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+143 140 145 149 146 146 147 145 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+184 184 183 183 184 182 184 183 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+187 185 190 192 195 197 198 199 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+95 97 96 97 98 96 97 102 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+148 145 147 145 145 148 147 144 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+125 130 127 126 128 128 126 127 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+173 171 174 172 170 174 172 170 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+179 175 178 199 215 199 187 182 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+102 91 98 109 115 125 141 136 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+149 161 187 192 186 171 157 173 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+123 194 172 127 150 120 55 66 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+181 150 148 122 92 159 185 126 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+237 95 65532 115 197 112 108 147 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+40 102 65485 65464 90 117 60 89 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+469 408 472 319 425 558 295 244 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+240 234 271 273 245 124 305 387 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+97 190 65386 65290 129 224 65223 65282 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+151 252 162 27 15 66 104 96 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+116 121 123 120 111 110 122 115 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+59 83 12 57 87 19 65514 62 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65469 65457 65465 65462 65448 65492 65534 65484 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65520 70 65 65501 147 84 65451 65373 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+287 315 363 171 227 381 407 151 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+39 65522 118 102 148 93 41 87 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+59 71 147 367 383 220 72 78 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+55 65518 65390 96 132 25 14 88 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+52 201 117 0 65473 78 182 65530 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65520 183 125 65500 232 425 223 137 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+92 115 103 98 127 116 92 99 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+213 67 65522 216 85 65474 102 83 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+50 49 48 52 48 49 54 49 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+146 144 145 145 144 142 145 144 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+87 83 85 85 85 84 87 83 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+62 61 64 62 63 61 64 64 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+158 158 155 157 160 158 156 156 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+78 84 84 80 83 84 81 83 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+84 85 84 84 82 83 81 82 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+117 111 115 116 108 117 113 109 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+71 73 74 76 75 72 78 75 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+57 59 61 60 62 62 60 62 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+51 53 50 51 52 51 49 50 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+27 28 30 26 28 30 28 29 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+47 46 47 44 49 46 44 46 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+50 53 52 50 54 52 51 52 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+62 62 64 61 61 64 63 61 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+73 75 76 73 73 76 73 73 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+58 57 55 57 58 55 58 57 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+53 52 53 53 53 54 52 52 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+70 69 68 68 68 64 67 66 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+36 36 36 37 37 38 38 40 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+17 20 17 18 20 18 19 20 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+43 41 41 40 39 40 36 36 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+95 280 144 76 105 65526 49 75 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+48 64 97 130 131 93 53 46 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+33 34 40 45 44 47 53 59 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65429 65497 48 49 65519 21 161 95 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+78 80 77 78 78 78 79 77 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65296 65403 65327 65133 65427 65530 65477 65530 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+77 77 76 78 77 75 77 75 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+73 6 100 240 65517 65242 65468 65452 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+32 35 31 34 35 31 32 35 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65326 65252 65088 65004 65226 65281 65082 65126 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+29 31 31 31 31 30 31 31 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+10 10 12 9 12 12 11 11 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+108 109 108 108 108 104 106 109 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+44 46 47 45 45 47 46 46 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+15 18 16 17 18 17 17 18 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+28 27 26 29 25 27 27 26 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+18 17 19 20 20 16 19 19 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+79 77 78 77 78 77 77 74 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+27 29 28 27 28 25 27 28 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+11 9 9 13 11 11 11 11 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+60 65 63 59 66 63 61 64 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+26 25 27 27 26 26 31 28 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+6 5 7 4 5 6 4 4 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+14 14 14 14 12 13 12 12 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+31 33 33 33 35 34 35 35 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+33 30 33 31 32 31 31 30 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+25 26 25 24 27 25 27 28 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65520 65517 65520 65521 65520 65520 65520 65520 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65535 4 2 1 2 1 65534 0 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+32 34 30 34 32 32 33 32 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+14 17 17 15 18 18 18 18 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+40 38 39 40 41 39 40 40 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+4 7 6 3 6 9 6 6 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+8 10 10 9 9 9 10 8 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+27 26 25 26 27 26 24 29 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65523 65522 65524 65519 65523 65524 65521 65523 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+112 112 114 112 114 111 112 115 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65487 65484 65486 65486 65484 65488 65487 65484 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+25 29 26 24 24 27 24 24 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+51 51 50 54 52 51 54 49 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65498 65497 65500 65498 65500 65499 65497 65499 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+63 65 63 61 64 62 65 63 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65527 65527 65528 65528 65527 65530 65527 65529 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65531 65530 65529 65531 65532 65529 65528 65529 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+227 227 275 304 104 65462 65474 65476 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65178 64949 64947 65135 65230 65256 65528 236 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65423 65390 65390 65428 2 59 33 25 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65326 38 78 106 36 65470 65454 65464 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65519 65520 65411 65481 109 45 8 105 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+22 26 65504 65501 65533 9 65488 10 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+130 297 108 8 56 36 65487 65496 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65521 65528 1 14 50 51 26 9 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65353 65531 80 65434 64 158 6 50 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+514 316 374 370 229 81 65 93 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65491 65454 65457 65494 65470 65447 65468 65489 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+110 129 79 51 85 118 97 87 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65506 9 18 4 18 65530 65492 65501 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+260 276 341 435 294 138 189 241 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+148 65528 65162 65296 37 227 28 65271 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+15 17 19 24 23 21 26 25 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65375 65441 65453 65384 65430 34 65529 65486 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+10 47 35 105 66 65526 65526 65521 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+25 19 23 30 14 29 19 54 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65530 65535 65534 65533 65534 65531 65534 65534 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65511 65509 65512 65512 65509 65512 65513 65512 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65507 65506 65507 65504 65509 65506 65504 65510 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+17 16 18 20 18 15 19 18 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65532 65533 65533 65531 65534 1 65533 65534 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+37 36 39 39 37 38 38 35 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65528 65528 65528 65528 65530 65528 65530 65530 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65482 65480 65481 65482 65476 65481 65480 65479 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+3 6 5 3 7 3 6 7 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+2 65533 65533 65534 65532 65532 65529 65531 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65468 65475 65472 65471 65475 65473 65472 65472 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65509 65508 65510 65509 65508 65507 65509 65508 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65506 65507 65508 65507 65507 65509 65508 65506 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65529 65529 65527 65530 65529 65528 65531 65529 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+25 25 25 23 24 25 23 25 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65479 65478 65476 65479 65476 65477 65477 65476 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65515 65512 65514 65513 65515 65515 65515 65517 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65523 65525 65525 65521 65524 65525 65521 65525 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+8 12 13 10 13 11 12 13 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65513 65509 65513 65510 65509 65510 65513 65508 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65524 65529 65528 65527 65529 65529 65528 65531 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65218 65257 65205 65112 65069 65171 65216 65150 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+8 65498 34 39 3 32 30 34 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65522 65452 65440 58 21 65432 65469 65448 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65411 65450 65523 65419 65392 65463 65419 65312 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+33 52 65 65529 65498 65525 65516 65521 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+40 65488 65465 65483 65458 37 5 36 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65482 65474 65480 65496 65517 65506 65514 65517 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65205 65289 65342 65289 65426 11 60 131 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+0 65483 65455 65520 69 26 65489 65494 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65490 65400 65363 65473 65483 65376 65423 65479 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+49 35 56 13 65511 134 212 12 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+43 79 65211 65215 172 196 65439 65330 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+67 16 48 79 17 41 74 63 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+79 75 65531 65526 77 81 20 65522 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65532 65483 65441 65521 65512 65446 17 125 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65486 65439 65447 65484 65433 65414 65427 65434 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65456 65454 65452 65453 65457 65452 65453 65455 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65535 65533 65533 65534 65535 65531 65533 65533 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+24 23 22 28 22 21 27 22 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65499 65503 65504 65500 65502 65504 65499 65501 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65518 65521 65520 65521 65519 65519 65521 65517 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65528 65528 65530 65529 65530 65531 65530 65531 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65492 65494 65494 65493 65494 65493 65496 65494 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65526 65525 65526 65525 65524 65524 65526 65524 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65483 65484 65482 65480 65484 65483 65482 65482 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65514 65514 65516 65513 65513 65516 65514 65512 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65528 65529 65531 65525 65531 65529 65526 65529 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+14 11 13 13 9 12 12 12 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65484 65486 65488 65486 65485 65490 65487 65486 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+13 15 18 16 16 18 15 18 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65491 65494 65493 65494 65497 65495 65498 65498 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+33 32 31 30 30 32 32 30 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65520 65518 65517 65518 65518 65515 65517 65519 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65517 65516 65516 65518 65518 65516 65516 65518 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+25 32 28 28 28 27 26 29 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+12 10 11 9 6 5 7 5 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65521 65522 65520 65521 65521 65518 65518 65520 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65486 65487 65488 65486 65488 65490 65489 65489 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65523 65523 65522 65522 65523 65521 65522 65521 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+54 56 53 55 55 56 57 54 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+31 32 30 29 32 31 29 30 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+23 22 23 21 24 23 20 22 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65526 65528 65529 65527 65531 65530 65529 65532 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65509 65508 65512 65510 65507 65512 65510 65507 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+6 7 7 6 7 4 2 5 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+35 31 32 34 31 31 31 30 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65499 65499 65501 65499 65499 65502 65501 65501 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65528 65528 65527 65527 65529 65526 65527 65524 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65511 65512 65510 65510 65512 65508 65510 65511 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65485 65487 65487 65487 65486 65487 65486 65485 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65514 65517 65515 65514 65516 65514 65513 65514 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65528 65530 65532 65531 65529 65530 65531 65530 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65520 65523 65522 65522 65525 65523 65525 65524 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65526 65525 65524 65526 65525 65527 65525 65524 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65494 65501 65496 65494 65496 65495 65493 65497 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+35 35 34 35 35 35 34 33 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+39 39 38 33 41 40 33 39 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65494 65493 65495 65497 65497 65495 65496 65495 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65526 65533 65533 65528 65527 65532 65529 65526 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+3 65535 65527 65532 65535 65527 65535 65533 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+172 162 157 165 180 174 170 174 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+86 86 83 85 83 81 82 80 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65479 65481 65481 65481 65482 65480 65479 65483 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65399 65401 65399 65401 65401 65399 65401 65403 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65376 65379 65379 65378 65378 65382 65378 65382 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65393 65398 65396 65396 65396 65396 65399 65397 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65478 65481 65473 65478 65478 65474 65475 65474 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65528 65528 65522 65527 65525 65519 65526 65524 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65518 65517 65519 65518 65518 65521 65519 65521 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+8 11 9 12 11 12 10 12 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65524 65523 65522 65521 65520 65520 65520 65519 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+83 87 85 82 85 86 85 87 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+16 14 13 13 15 12 15 16 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65471 65472 65474 65473 65470 65474 65473 65469 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+12 12 13 14 12 12 12 11 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65481 65482 65481 65481 65482 65479 65482 65480 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65485 65484 65487 65484 65483 65484 65484 65485 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+16 15 14 16 16 16 17 20 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65469 65470 65472 65473 65469 65472 65473 65471 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65515 65515 65514 65515 65516 65513 65512 65516 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+32 31 33 34 33 34 34 33 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65531 65532 65530 65530 65531 65531 65532 65530 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+1 0 65535 1 1 65533 2 1 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+12 9 9 9 8 5 9 11 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65504 65508 65511 65506 65511 65498 65482 65508 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65532 0 65535 19 18 9 3 65534 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65457 57 158 172 65507 65498 39 332 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65401 65403 65389 65452 65444 65354 65276 65400 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+64200 64508 64542 64648 65001 64969 63832 63493 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65442 65267 65396 65443 65362 65324 65368 65363 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+2 65501 65512 32 5 65482 65514 65510 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+94 102 54 104 154 185 214 45 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65518 65534 8 65524 65531 65513 65523 65535 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65468 65493 65481 65496 65489 65505 65527 65511 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+17 65530 19 17 2 7 21 11 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+18 11 16 17 36 15 11 28 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65512 65501 65494 65503 65497 65507 65515 65511 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+5 7 1 8 11 8 10 14 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+45 6 65457 65509 38 65504 65494 43 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+80 126 89 74 65347 160 63 65245 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65519 65473 65448 81 34 65511 65427 65442 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+55 65455 93 82 1 52 65489 65348 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+81 97 65126 270 313 65377 180 585 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+64559 65144 351 65506 65027 64900 65483 73 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65495 70 263 65376 65406 65420 95 80 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65487 65487 148 20 65326 65449 65351 65184 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65410 65420 14 42 65366 22 58 65471 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65426 106 104 65374 141 261 65416 74 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+83 100 9 361 149 25 281 41 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+15 48 65526 65516 63 27 65500 62 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+60 44 45 54 39 43 62 53 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65491 65495 65492 65488 65497 65492 65488 65494 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65525 65522 65522 65524 65523 65520 65524 65524 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+15 15 13 12 11 13 10 10 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65437 65447 65439 65442 65443 65441 65443 65441 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65510 65514 65512 65511 65515 65516 65512 65512 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65486 65485 65486 65482 65487 65485 65484 65485 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65499 65497 65500 65498 65496 65495 65497 65496 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65526 65528 65528 65529 65524 65530 65529 65525 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65532 0 65535 65533 65535 0 65532 65534 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+32 32 29 30 32 30 31 28 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+16 16 16 15 14 16 15 14 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65479 65480 65477 65479 65480 65476 65480 65482 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65490 65493 65495 65492 65487 65495 65490 65486 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+9 14 11 13 13 12 12 13 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65478 65477 65479 65479 65478 65478 65478 65477 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65437 65439 65440 65440 65439 65440 65443 65441 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65417 65409 65422 65431 65412 65414 65424 65420 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+267 262 264 265 265 261 264 267 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+40 41 42 42 42 43 41 44 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65372 65376 65372 65373 65375 65373 65375 65374 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+54 53 55 50 52 56 50 52 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65516 65519 65518 65519 65518 65515 65518 65518 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65432 65431 65434 65431 65428 65434 65431 65427 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+10 17 13 11 14 14 13 12 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+10 9 9 11 10 11 10 8 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65465 65468 65469 65468 65470 65468 65469 65471 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+3 65535 5 3 5 1 7 7 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65525 65523 65525 65526 65525 65525 65529 65527 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65483 65485 65484 65483 65484 65486 65482 65482 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+35 36 35 33 35 35 32 35 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65524 65528 65528 65526 65528 65533 65530 65528 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+17 16 17 18 18 16 20 19 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65523 65521 65521 65523 65519 65523 65523 65520 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65492 65495 65492 65494 65492 65491 65490 65491 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65467 65464 65463 65466 65462 65465 65464 65462 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65494 65496 65496 65493 65498 65499 65497 65502 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+50 48 46 49 50 46 45 51 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+103 105 107 103 106 108 105 104 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65509 65514 65513 65512 65512 65512 65514 65515 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65461 65458 65458 65458 65457 65455 65459 65457 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+39 37 40 42 39 40 41 38 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65507 65510 65509 65509 65511 65508 65508 65512 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+67 66 67 71 68 74 70 69 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+19 21 19 19 24 21 19 23 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65487 65492 65489 65492 65490 65486 65491 65489 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65521 65522 65520 65522 65519 65521 65522 65516 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+15 13 12 13 14 13 17 14 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65506 65508 65509 65507 65506 65509 65509 65507 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65514 65519 65516 65517 65520 65515 65515 65519 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65486 65485 65486 65486 65481 65484 65485 65481 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+23 23 23 20 25 23 19 26 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+24 22 22 23 24 20 23 23 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+6 6 6 6 3 9 7 2 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65533 65530 65531 65535 65531 65530 65533 65533 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65502 65502 65500 65502 65501 65502 65503 65503 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65510 65514 65515 65509 65511 65513 65511 65510 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+55 51 42 42 52 49 43 48 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65506 65498 65498 65502 65504 65500 65499 65502 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65506 65508 65515 65510 65505 65511 65512 65501 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+20 14 16 16 18 22 15 14 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65461 65485 65483 65377 65353 65384 65379 65371 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+6 3 13 65530 65519 65520 65521 65517 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+56 60 55 57 57 54 52 56 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------
+BEGIN Before Queue -------------------------
+65464 65467 65465 65462 65471 65469 65461 65469 . . . 0 0 0 0 0 0 0 0 
+END Before Queue -------------------------

@@ -1,0 +1,787 @@
+Command: /home/abhi/.espressif/python_env/idf5.5_py3.13_env/bin/python /home/abhi/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyACM0 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 /home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/sonostream.elf /home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/bootloader.elf -m '/home/abhi/.espressif/python_env/idf5.5_py3.13_env/bin/python' '/home/abhi/esp/esp-idf/tools/idf.py' '-p' '/dev/ttyACM0'
+[0;33m--- esp-idf-monitor 1.5.0 on /dev/ttyACM0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x400450fe: ets_sha_process in ROM
+[0m
+[0;33m--- 0x403c8700: _stext at ??:?
+[0m
+[0;33m--- 0x403c8924: call_start_cpu0 at /home/abhi/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x4205082a: wep_encap at ??:?
+0x40385ef2: pm_dream at ??:?
+0x4208182f: pm_tx_data_process at ??:?
+0x4208188d: pm_on_data_tx at ??:?
+0x40384281: ppMapTxQueue at ??:?
+0x4003d7b3: ppTxPkt in ROM
+0x403834f1: ieee80211_output_process at ??:?
+0x40384929: ppTask at ??:?
+0x4037c789: vPortTaskWrapper at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b24: esp_restart_noos at /home/abhi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x403c8700: _stext at ??:?
+[0m
+[0;33m--- 0x403c8924: call_start_cpu0 at /home/abhi/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x4205082a: wep_encap at ??:?
+0x40385ef2: pm_dream at ??:?
+0x4208182f: pm_tx_data_process at ??:?
+0x4208188d: pm_on_data_tx at ??:?
+0x40384281: ppMapTxQueue at ??:?
+0x4003d7b3: ppTxPkt in ROM
+0x403834f1: ieee80211_output_process at ??:?
+0x40384929: ppTask at ??:?
+0x4037c789: vPortTaskWrapper at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b24: esp_restart_noos at /home/abhi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x403c8700: _stext at ??:?
+[0m
+[0;33m--- 0x403c8924: call_start_cpu0 at /home/abhi/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x4205082a: wep_encap at ??:?
+0x40385ef2: pm_dream at ??:?
+0x4208182f: pm_tx_data_process at ??:?
+0x4208188d: pm_on_data_tx at ??:?
+0x40384281: ppMapTxQueue at ??:?
+0x4003d7b3: ppTxPkt in ROM
+0x403834f1: ieee80211_output_process at ??:?
+0x40384929: ppTask at ??:?
+0x4037c789: vPortTaskWrapper at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b24: esp_restart_noos at /home/abhi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x403c8700: _stext at ??:?
+[0m
+[0;33m--- 0x403c8924: call_start_cpu0 at /home/abhi/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x4205082a: wep_encap at ??:?
+0x40385ef2: pm_dream at ??:?
+0x4208182f: pm_tx_data_process at ??:?
+0x4208188d: pm_on_data_tx at ??:?
+0x40384281: ppMapTxQueue at ??:?
+0x4003d7b3: ppTxPkt in ROM
+0x403834f1: ieee80211_output_process at ??:?
+0x40384929: ppTask at ??:?
+0x4037c789: vPortTaskWrapper at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b24: esp_restart_noos at /home/abhi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x403c8700: _stext at ??:?
+[0m
+[0;33m--- 0x403c8924: call_start_cpu0 at /home/abhi/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x4205082a: wep_encap at ??:?
+0x40385ef2: pm_dream at ??:?
+0x4208182f: pm_tx_data_process at ??:?
+0x4208188d: pm_on_data_tx at ??:?
+0x40384281: ppMapTxQueue at ??:?
+0x4003d7b3: ppTxPkt in ROM
+0x403834f1: ieee80211_output_process at ??:?
+0x40384929: ppTask at ??:?
+0x4037c789: vPortTaskWrapper at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b24: esp_restart_noos at /home/abhi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x403c8700: _stext at ??:?
+[0m
+[0;33m--- 0x403c8924: call_start_cpu0 at /home/abhi/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x4205082a: wep_encap at ??:?
+0x40385ef2: pm_dream at ??:?
+0x4208182f: pm_tx_data_process at ??:?
+0x4208188d: pm_on_data_tx at ??:?
+0x40384281: ppMapTxQueue at ??:?
+0x4003d7b3: ppTxPkt in ROM
+0x403834f1: ieee80211_output_process at ??:?
+0x40384929: ppTask at ??:?
+0x4037c789: vPortTaskWrapper at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b24: esp_restart_noos at /home/abhi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x403c8700: _stext at ??:?
+[0m
+[0;33m--- 0x403c8924: call_start_cpu0 at /home/abhi/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x4205082a: wep_encap at ??:?
+0x40385ef2: pm_dream at ??:?
+0x4208182f: pm_tx_data_process at ??:?
+0x4208188d: pm_on_data_tx at ??:?
+0x40384281: ppMapTxQueue at ??:?
+0x4003d7b3: ppTxPkt in ROM
+0x403834f1: ieee80211_output_process at ??:?
+0x40384929: ppTask at ??:?
+0x4037c789: vPortTaskWrapper at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b24: esp_restart_noos at /home/abhi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x403c8700: _stext at ??:?
+[0m
+[0;33m--- 0x403c8924: call_start_cpu0 at /home/abhi/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x4205082a: wep_encap at ??:?
+0x40385ef2: pm_dream at ??:?
+0x4208182f: pm_tx_data_process at ??:?
+0x4208188d: pm_on_data_tx at ??:?
+0x40384281: ppMapTxQueue at ??:?
+0x4003d7b3: ppTxPkt in ROM
+0x403834f1: ieee80211_output_process at ??:?
+0x40384929: ppTask at ??:?
+0x4037c789: vPortTaskWrapper at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b24: esp_restart_noos at /home/abhi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x403c8700: _stext at ??:?
+[0m
+[0;33m--- 0x403c8924: call_start_cpu0 at /home/abhi/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x4205082a: wep_encap at ??:?
+0x40385ef2: pm_dream at ??:?
+0x4208182f: pm_tx_data_process at ??:?
+0x4208188d: pm_on_data_tx at ??:?
+0x40384281: ppMapTxQueue at ??:?
+0x4003d7b3: ppTxPkt in ROM
+0x403834f1: ieee80211_output_process at ??:?
+0x40384929: ppTask at ??:?
+0x4037c789: vPortTaskWrapper at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b24: esp_restart_noos at /home/abhi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x403c8700: _stext at ??:?
+[0m
+[0;33m--- 0x403c8924: call_start_cpu0 at /home/abhi/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x4205082a: wep_encap at ??:?
+0x40385ef2: pm_dream at ??:?
+0x4208182f: pm_tx_data_process at ??:?
+0x4208188d: pm_on_data_tx at ??:?
+0x40384281: ppMapTxQueue at ??:?
+0x4003d7b3: ppTxPkt in ROM
+0x403834f1: ieee80211_output_process at ??:?
+0x40384929: ppTask at ??:?
+0x4037c789: vPortTaskWrapper at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b24: esp_restart_noos at /home/abhi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x403c8700: _stext at ??:?
+[0m
+[0;33m--- 0x403c8924: call_start_cpu0 at /home/abhi/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x4205082a: wep_encap at ??:?
+0x40385ef2: pm_dream at ??:?
+0x4208182f: pm_tx_data_process at ??:?
+0x4208188d: pm_on_data_tx at ??:?
+0x40384281: ppMapTxQueue at ??:?
+0x4003d7b3: ppTxPkt in ROM
+0x403834f1: ieee80211_output_process at ??:?
+0x40384929: ppTask at ??:?
+0x4037c789: vPortTaskWrapper at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b24: esp_restart_noos at /home/abhi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x403c8700: _stext at ??:?
+[0m
+[0;33m--- 0x403c8924: call_start_cpu0 at /home/abhi/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x4038686d: pm_on_beacon_rx at ??:?
+[0m
+[0;33m--- 0x40056f5c: memcpy in ROM
+0x40056f72: memcpy in ROM
+[0m
+[0;33m--- 0x4038686a: pm_on_beacon_rx at ??:?
+0x40384995: ppTask at ??:?
+0x4037c789: vPortTaskWrapper at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b24: esp_restart_noos at /home/abhi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x403c8700: _stext at ??:?
+[0m
+[0;33m--- 0x403c8924: call_start_cpu0 at /home/abhi/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x4205082a: wep_encap at ??:?
+0x40385ef2: pm_dream at ??:?
+0x4208182f: pm_tx_data_process at ??:?
+0x4208188d: pm_on_data_tx at ??:?
+0x40384281: ppMapTxQueue at ??:?
+0x4003d7b3: ppTxPkt in ROM
+0x403834f1: ieee80211_output_process at ??:?
+0x40384929: ppTask at ??:?
+0x4037c789: vPortTaskWrapper at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b24: esp_restart_noos at /home/abhi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x403c8700: _stext at ??:?
+[0m
+[0;33m--- 0x403c8924: call_start_cpu0 at /home/abhi/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x4205082a: wep_encap at ??:?
+0x40385ef2: pm_dream at ??:?
+0x4208182f: pm_tx_data_process at ??:?
+0x4208188d: pm_on_data_tx at ??:?
+0x40384281: ppMapTxQueue at ??:?
+0x4003d7b3: ppTxPkt in ROM
+0x403834f1: ieee80211_output_process at ??:?
+0x40384929: ppTask at ??:?
+0x4037c789: vPortTaskWrapper at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b24: esp_restart_noos at /home/abhi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x403c8700: _stext at ??:?
+[0m
+[0;33m--- 0x403c8924: call_start_cpu0 at /home/abhi/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x4205082a: wep_encap at ??:?
+0x40385ef2: pm_dream at ??:?
+0x4208182f: pm_tx_data_process at ??:?
+0x4208188d: pm_on_data_tx at ??:?
+0x40384281: ppMapTxQueue at ??:?
+0x4003d7b3: ppTxPkt in ROM
+0x403834f1: ieee80211_output_process at ??:?
+0x40384929: ppTask at ??:?
+0x4037c789: vPortTaskWrapper at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b24: esp_restart_noos at /home/abhi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x403c8700: _stext at ??:?
+[0m
+[0;33m--- 0x403c8924: call_start_cpu0 at /home/abhi/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x4205082a: wep_encap at ??:?
+0x40385ef2: pm_dream at ??:?
+0x4208182f: pm_tx_data_process at ??:?
+0x4208188d: pm_on_data_tx at ??:?
+0x40384281: ppMapTxQueue at ??:?
+0x4003d7b3: ppTxPkt in ROM
+0x403834f1: ieee80211_output_process at ??:?
+0x40384929: ppTask at ??:?
+0x4037c789: vPortTaskWrapper at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b24: esp_restart_noos at /home/abhi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x403c8700: _stext at ??:?
+[0m
+[0;33m--- 0x403c8924: call_start_cpu0 at /home/abhi/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x4205082a: wep_encap at ??:?
+0x40385ef2: pm_dream at ??:?
+0x4208182f: pm_tx_data_process at ??:?
+0x4208188d: pm_on_data_tx at ??:?
+0x40384281: ppMapTxQueue at ??:?
+0x4003d7b3: ppTxPkt in ROM
+0x403834f1: ieee80211_output_process at ??:?
+0x40384929: ppTask at ??:?
+0x4037c789: vPortTaskWrapper at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b24: esp_restart_noos at /home/abhi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x403c8700: _stext at ??:?
+[0m
+[0;33m--- 0x403c8924: call_start_cpu0 at /home/abhi/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x4205082a: wep_encap at ??:?
+0x40385ef2: pm_dream at ??:?
+0x4208182f: pm_tx_data_process at ??:?
+0x4208188d: pm_on_data_tx at ??:?
+0x40384281: ppMapTxQueue at ??:?
+0x4003d7b3: ppTxPkt in ROM
+0x403834f1: ieee80211_output_process at ??:?
+0x40384929: ppTask at ??:?
+0x4037c789: vPortTaskWrapper at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b24: esp_restart_noos at /home/abhi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x403c8700: _stext at ??:?
+[0m
+[0;33m--- 0x403c8924: call_start_cpu0 at /home/abhi/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x4205082a: wep_encap at ??:?
+0x40385ef2: pm_dream at ??:?
+0x4208182f: pm_tx_data_process at ??:?
+0x4208188d: pm_on_data_tx at ??:?
+0x40384281: ppMapTxQueue at ??:?
+0x4003d7b3: ppTxPkt in ROM
+0x403834f1: ieee80211_output_process at ??:?
+0x40384929: ppTask at ??:?
+0x4037c789: vPortTaskWrapper at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b24: esp_restart_noos at /home/abhi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x403c8700: _stext at ??:?
+[0m
+[0;33m--- 0x403c8924: call_start_cpu0 at /home/abhi/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x4205082a: wep_encap at ??:?
+0x40385ef2: pm_dream at ??:?
+0x4208182f: pm_tx_data_process at ??:?
+0x4208188d: pm_on_data_tx at ??:?
+0x40384281: ppMapTxQueue at ??:?
+0x4003d7b3: ppTxPkt in ROM
+0x403834f1: ieee80211_output_process at ??:?
+0x40384929: ppTask at ??:?
+0x4037c789: vPortTaskWrapper at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b24: esp_restart_noos at /home/abhi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x403c8700: _stext at ??:?
+[0m
+[0;33m--- 0x403c8924: call_start_cpu0 at /home/abhi/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x4038686d: pm_on_beacon_rx at ??:?
+[0m
+[0;33m--- 0x40056f5c: memcpy in ROM
+0x40056f72: memcpy in ROM
+[0m
+[0;33m--- 0x4038686a: pm_on_beacon_rx at ??:?
+0x40384995: ppTask at ??:?
+0x4037c789: vPortTaskWrapper at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b24: esp_restart_noos at /home/abhi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x403c8700: _stext at ??:?
+[0m
+[0;33m--- 0x403c8924: call_start_cpu0 at /home/abhi/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x4205082a: wep_encap at ??:?
+0x40385ef2: pm_dream at ??:?
+0x4208182f: pm_tx_data_process at ??:?
+0x4208188d: pm_on_data_tx at ??:?
+0x40384281: ppMapTxQueue at ??:?
+0x4003d7b3: ppTxPkt in ROM
+0x403834f1: ieee80211_output_process at ??:?
+0x40384929: ppTask at ??:?
+0x4037c789: vPortTaskWrapper at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b24: esp_restart_noos at /home/abhi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x403c8700: _stext at ??:?
+[0m
+[0;33m--- 0x403c8924: call_start_cpu0 at /home/abhi/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x4205082a: wep_encap at ??:?
+0x40385ef2: pm_dream at ??:?
+0x4208182f: pm_tx_data_process at ??:?
+0x4208188d: pm_on_data_tx at ??:?
+0x40384281: ppMapTxQueue at ??:?
+0x4003d7b3: ppTxPkt in ROM
+0x403834f1: ieee80211_output_process at ??:?
+0x40384929: ppTask at ??:?
+0x4037c789: vPortTaskWrapper at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b24: esp_restart_noos at /home/abhi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x403c8700: _stext at ??:?
+[0m
+[0;33m--- 0x403c8924: call_start_cpu0 at /home/abhi/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x4205082a: wep_encap at ??:?
+0x40385ef2: pm_dream at ??:?
+0x4208182f: pm_tx_data_process at ??:?
+0x4208188d: pm_on_data_tx at ??:?
+0x40384281: ppMapTxQueue at ??:?
+0x4003d7b3: ppTxPkt in ROM
+0x403834f1: ieee80211_output_process at ??:?
+0x40384929: ppTask at ??:?
+0x4037c789: vPortTaskWrapper at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b24: esp_restart_noos at /home/abhi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x403c8700: _stext at ??:?
+[0m
+[0;33m--- 0x403c8924: call_start_cpu0 at /home/abhi/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x403776e1: _xt_lowint1 at /home/abhi/esp/esp-idf/components/xtensa/xtensa_vectors.S:1205
+[0m
+[0;33m--- 0x420154a0: lwip_setsockopt_callback at /home/abhi/esp/esp-idf/components/lwip/lwip/src/api/sockets.c:3369
+[0m
+[0;33m--- 0x40056f5c: memcpy in ROM
+0x40056f72: memcpy in ROM
+[0m
+[0;33m--- 0x4201549d: lwip_setsockopt_callback at /home/abhi/esp/esp-idf/components/lwip/lwip/src/api/sockets.c:3366 (discriminator 1)
+0x420160fd: tcpip_thread_handle_msg at /home/abhi/esp/esp-idf/components/lwip/lwip/src/api/tcpip.c:201
+0x42016164: tcpip_thread at /home/abhi/esp/esp-idf/components/lwip/lwip/src/api/tcpip.c:148
+0x4037c789: vPortTaskWrapper at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b24: esp_restart_noos at /home/abhi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x403c8700: _stext at ??:?
+[0m
+[0;33m--- 0x403c8924: call_start_cpu0 at /home/abhi/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x40056fc0: memcpy in ROM
+[0m
+[0;33m--- 0x40056f5c: memcpy in ROM
+0x40056f72: memcpy in ROM
+[0m
+[0;33m--- 0x40056fbd: memcpy in ROM
+0x4037bcfb: prvCopyDataToQueue at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:2481
+0x4037c154: xQueueGenericSend at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:964
+0x4200be31: vpu_read_pdm_rx_task at /home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/main/sonostream.c:330
+0x4037c789: vPortTaskWrapper at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x4037a1be: esp_cpu_wait_for_intr at /home/abhi/esp/esp-idf/components/esp_hw_support/cpu.c:64
+[0m
+[0;33m--- 0x403c8700: _stext at ??:?
+[0m
+[0;33m--- 0x403c8924: call_start_cpu0 at /home/abhi/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x40056f5c: memcpy in ROM
+0x40056f72: memcpy in ROM
+[0m
+[0;33m--- 0x40386d9c: wDev_IndicateFrame at ??:?
+0x40387235: wDev_ProcessRxSucData at ??:?
+0x40041502: wdevProcessRxSucDataAll in ROM
+0x40384986: ppTask at ??:?
+0x4037c789: vPortTaskWrapper at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b24: esp_restart_noos at /home/abhi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x403c8700: _stext at ??:?
+[0m
+[0;33m--- 0x403c8924: call_start_cpu0 at /home/abhi/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x4205082a: wep_encap at ??:?
+0x40385ef2: pm_dream at ??:?
+0x4208182f: pm_tx_data_process at ??:?
+0x4208188d: pm_on_data_tx at ??:?
+0x40384281: ppMapTxQueue at ??:?
+0x4003d7b3: ppTxPkt in ROM
+0x403834f1: ieee80211_output_process at ??:?
+0x40384929: ppTask at ??:?
+0x4037c789: vPortTaskWrapper at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b24: esp_restart_noos at /home/abhi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x403c8700: _stext at ??:?
+[0m
+[0;33m--- 0x403c8924: call_start_cpu0 at /home/abhi/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x4205082a: wep_encap at ??:?
+0x40385ef2: pm_dream at ??:?
+0x4208182f: pm_tx_data_process at ??:?
+0x4208188d: pm_on_data_tx at ??:?
+0x40384281: ppMapTxQueue at ??:?
+0x4003d7b3: ppTxPkt in ROM
+0x403834f1: ieee80211_output_process at ??:?
+0x40384929: ppTask at ??:?
+0x4037c789: vPortTaskWrapper at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b24: esp_restart_noos at /home/abhi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x403c8700: _stext at ??:?
+[0m
+[0;33m--- 0x403c8924: call_start_cpu0 at /home/abhi/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x4205082a: wep_encap at ??:?
+0x40385ef2: pm_dream at ??:?
+0x4208182f: pm_tx_data_process at ??:?
+0x4208188d: pm_on_data_tx at ??:?
+0x40384281: ppMapTxQueue at ??:?
+0x4003d7b3: ppTxPkt in ROM
+0x403834f1: ieee80211_output_process at ??:?
+0x40384929: ppTask at ??:?
+0x4037c789: vPortTaskWrapper at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b24: esp_restart_noos at /home/abhi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x403c8700: _stext at ??:?
+[0m
+[0;33m--- 0x403c8924: call_start_cpu0 at /home/abhi/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x4205082a: wep_encap at ??:?
+0x40385ef2: pm_dream at ??:?
+0x4208182f: pm_tx_data_process at ??:?
+0x4208188d: pm_on_data_tx at ??:?
+0x40384281: ppMapTxQueue at ??:?
+0x4003d7b3: ppTxPkt in ROM
+0x403834f1: ieee80211_output_process at ??:?
+0x40384929: ppTask at ??:?
+0x4037c789: vPortTaskWrapper at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b24: esp_restart_noos at /home/abhi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x403c8700: _stext at ??:?
+[0m
+[0;33m--- 0x403c8924: call_start_cpu0 at /home/abhi/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x4205082a: wep_encap at ??:?
+0x40385ef2: pm_dream at ??:?
+0x4208182f: pm_tx_data_process at ??:?
+0x4208188d: pm_on_data_tx at ??:?
+0x40384281: ppMapTxQueue at ??:?
+0x4003d7b3: ppTxPkt in ROM
+0x403834f1: ieee80211_output_process at ??:?
+0x40384929: ppTask at ??:?
+0x4037c789: vPortTaskWrapper at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b24: esp_restart_noos at /home/abhi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x403c8700: _stext at ??:?
+[0m
+[0;33m--- 0x403c8924: call_start_cpu0 at /home/abhi/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x4205082a: wep_encap at ??:?
+0x40385ef2: pm_dream at ??:?
+0x4208182f: pm_tx_data_process at ??:?
+0x4208188d: pm_on_data_tx at ??:?
+0x40384281: ppMapTxQueue at ??:?
+0x4003d7b3: ppTxPkt in ROM
+0x403834f1: ieee80211_output_process at ??:?
+0x40384929: ppTask at ??:?
+0x4037c789: vPortTaskWrapper at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b24: esp_restart_noos at /home/abhi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x403c8700: _stext at ??:?
+[0m
+[0;33m--- 0x403c8924: call_start_cpu0 at /home/abhi/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x4205082a: wep_encap at ??:?
+0x40385ef2: pm_dream at ??:?
+0x4208182f: pm_tx_data_process at ??:?
+0x4208188d: pm_on_data_tx at ??:?
+0x40384281: ppMapTxQueue at ??:?
+0x4003d7b3: ppTxPkt in ROM
+0x403834f1: ieee80211_output_process at ??:?
+0x40384929: ppTask at ??:?
+0x4037c789: vPortTaskWrapper at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b24: esp_restart_noos at /home/abhi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x403c8700: _stext at ??:?
+[0m
+[0;33m--- 0x403c8924: call_start_cpu0 at /home/abhi/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x40056fc0: memcpy in ROM
+[0m
+[0;33m--- 0x40056f5c: memcpy in ROM
+0x40056f72: memcpy in ROM
+[0m
+[0;33m--- 0x40056fbd: memcpy in ROM
+0x4037bcfb: prvCopyDataToQueue at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:2481
+0x4037c154: xQueueGenericSend at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:964
+0x4200be31: vpu_read_pdm_rx_task at /home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/main/sonostream.c:330
+0x4037c789: vPortTaskWrapper at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x4037a1be: esp_cpu_wait_for_intr at /home/abhi/esp/esp-idf/components/esp_hw_support/cpu.c:64
+[0m
+[0;33m--- 0x403c8700: _stext at ??:?
+[0m
+[0;33m--- 0x403c8924: call_start_cpu0 at /home/abhi/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x4038686d: pm_on_beacon_rx at ??:?
+[0m
+[0;33m--- 0x40056f5c: memcpy in ROM
+0x40056f72: memcpy in ROM
+[0m
+[0;33m--- 0x4038686a: pm_on_beacon_rx at ??:?
+0x40384995: ppTask at ??:?
+0x4037c789: vPortTaskWrapper at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b24: esp_restart_noos at /home/abhi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x403c8700: _stext at ??:?
+[0m
+[0;33m--- 0x403c8924: call_start_cpu0 at /home/abhi/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x4205082a: wep_encap at ??:?
+0x40385ef2: pm_dream at ??:?
+0x4208182f: pm_tx_data_process at ??:?
+0x4208188d: pm_on_data_tx at ??:?
+0x40384281: ppMapTxQueue at ??:?
+0x4003d7b3: ppTxPkt in ROM
+0x403834f1: ieee80211_output_process at ??:?
+0x40384929: ppTask at ??:?
+0x4037c789: vPortTaskWrapper at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b24: esp_restart_noos at /home/abhi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x403c8700: _stext at ??:?
+[0m
+[0;33m--- 0x403c8924: call_start_cpu0 at /home/abhi/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x4205082a: wep_encap at ??:?
+0x40385ef2: pm_dream at ??:?
+0x4208182f: pm_tx_data_process at ??:?
+0x4208188d: pm_on_data_tx at ??:?
+0x40384281: ppMapTxQueue at ??:?
+0x4003d7b3: ppTxPkt in ROM
+0x403834f1: ieee80211_output_process at ??:?
+0x40384929: ppTask at ??:?
+0x4037c789: vPortTaskWrapper at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b24: esp_restart_noos at /home/abhi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x403c8700: _stext at ??:?
+[0m
+[0;33m--- 0x403c8924: call_start_cpu0 at /home/abhi/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x4205082a: wep_encap at ??:?
+0x40385ef2: pm_dream at ??:?
+0x4208182f: pm_tx_data_process at ??:?
+0x4208188d: pm_on_data_tx at ??:?
+0x40384281: ppMapTxQueue at ??:?
+0x4003d7b3: ppTxPkt in ROM
+0x403834f1: ieee80211_output_process at ??:?
+0x40384929: ppTask at ??:?
+0x4037c789: vPortTaskWrapper at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b24: esp_restart_noos at /home/abhi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x403c8700: _stext at ??:?
+[0m
+[0;33m--- 0x403c8924: call_start_cpu0 at /home/abhi/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x4205082a: wep_encap at ??:?
+0x40385ef2: pm_dream at ??:?
+0x4208182f: pm_tx_data_process at ??:?
+0x4208188d: pm_on_data_tx at ??:?
+0x40384281: ppMapTxQueue at ??:?
+0x4003d7b3: ppTxPkt in ROM
+0x403834f1: ieee80211_output_process at ??:?
+0x40384929: ppTask at ??:?
+0x4037c789: vPortTaskWrapper at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b24: esp_restart_noos at /home/abhi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x403c8700: _stext at ??:?
+[0m
+[0;33m--- 0x403c8924: call_start_cpu0 at /home/abhi/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x4205082a: wep_encap at ??:?
+0x40385ef2: pm_dream at ??:?
+0x4208182f: pm_tx_data_process at ??:?
+0x4208188d: pm_on_data_tx at ??:?
+0x40384281: ppMapTxQueue at ??:?
+0x4003d7b3: ppTxPkt in ROM
+0x403834f1: ieee80211_output_process at ??:?
+0x40384929: ppTask at ??:?
+0x4037c789: vPortTaskWrapper at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b24: esp_restart_noos at /home/abhi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x403c8700: _stext at ??:?
+[0m
+[0;33m--- 0x403c8924: call_start_cpu0 at /home/abhi/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x4205082a: wep_encap at ??:?
+0x40385ef2: pm_dream at ??:?
+0x4208182f: pm_tx_data_process at ??:?
+0x4208188d: pm_on_data_tx at ??:?
+0x40384281: ppMapTxQueue at ??:?
+0x4003d7b3: ppTxPkt in ROM
+0x403834f1: ieee80211_output_process at ??:?
+0x40384929: ppTask at ??:?
+0x4037c789: vPortTaskWrapper at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b24: esp_restart_noos at /home/abhi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x403c8700: _stext at ??:?
+[0m
+[0;33m--- 0x403c8924: call_start_cpu0 at /home/abhi/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0m

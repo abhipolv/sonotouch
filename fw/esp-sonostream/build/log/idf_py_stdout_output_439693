@@ -1,0 +1,2537 @@
+Command: /home/abhi/.espressif/python_env/idf5.5_py3.13_env/bin/python /home/abhi/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyACM0 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 /home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/sonostream.elf /home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/bootloader.elf -m '/home/abhi/.espressif/python_env/idf5.5_py3.13_env/bin/python' '/home/abhi/esp/esp-idf/tools/idf.py' '-p' '/dev/ttyACM0'
+[0;32mI (108) esp_image: segment 1: paddr=0002b028 vaddr=3fc99e00 sizeESP-ROM:esp32s3-20210327[0m
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x400451d6
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x15d0
+load:0x403c8700,len:0xd20
+load:0x403cb700,len:0x2f60
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v5.5-dev-2290-g94cfe394fe-dirty 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Mar  8 2025 22:06:51[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.1[0m
+[0;32mI (30) boot: efuse block revision: v1.2[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=1b000h (110592) map[0m
+[0;32mI (108) esp_image: segment 1: paddr=0002b028 vaddr=3fc99e00 size=049a0h ( 18848) load[0m
+[0;32mI (112) esp_image: segment 2: paddr=0002f9d0 vaddr=40374000 size=00648h (  1608) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=87900h (555264) map[0m
+[0;32mI (217) esp_image: segment 4: paddr=000b7928 vaddr=40374648 size=15760h ( 87904) load[0m
+[0;32mI (237) esp_image: segment 5: paddr=000cd090 vaddr=600fe000 size=0001ch (    28) load[0m
+[0;32mI (246) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (246) boot: Disabling RNG early entropy source...[0m
+[0;32mI (256) cpu_start: Multicore app[0m
+[0;32mI (265) cpu_start: Pro cpu start user code[0m
+[0;32mI (265) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (265) app_init: Application information:[0m
+[0;32mI (265) app_init: Project name:     sonostream[0m
+[0;32mI (269) app_init: App version:      52524e4-dirty[0m
+[0;32mI (274) app_init: Compile time:     Apr  6 2025 12:35:45[0m
+[0;32mI (279) app_init: ELF file SHA256:  3ecbb7231...[0m
+[0;32mI (283) app_init: ESP-IDF:          v5.5-dev-2290-g94cfe394fe-dirty[0m
+[0;32mI (289) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (293) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (297) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (301) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (307) heap_init: At 3FCA2440 len 000472D0 (284 KiB): RAM[0m
+[0;32mI (312) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (317) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (322) heap_init: At 600FE01C len 00001FCC (7 KiB): RTCRAM[0m
+[0;32mI (329) spi_flash: detected chip: generic[0m
+[0;32mI (331) spi_flash: flash io: dio[0m
+[0;33mW (334) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (347) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (353) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (360) main_task: Started on CPU0[0m
+[0;32mI (370) main_task: Calling app_main()[0m
+[0;32mI (370) Sonostream: Receiving data in PCM format[0m
+[0;32mI (390) pp: pp rom version: e7ae62f[0m
+[0;32mI (390) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (400) wifi:wifi driver task: 3fcc0838, prio:23, stack:6656, core=0[0m
+[0;32mI (410) wifi:wifi firmware version: 3a3aca644[0m
+[0;32mI (410) wifi:wifi certification version: v7.0[0m
+[0;32mI (410) wifi:config NVS flash: enabled[0m
+[0;32mI (410) wifi:config nano formatting: disabled[0m
+[0;32mI (410) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (420) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (420) wifi:Init management short buffer num: 32[0m
+[0;32mI (420) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (430) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (430) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (440) wifi:Init static rx buffer num: 10[0m
+[0;32mI (440) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (440) wifi_init: rx ba win: 6[0m
+[0;32mI (450) wifi_init: accept mbox: 6[0m
+[0;32mI (450) wifi_init: tcpip mbox: 32[0m
+[0;32mI (450) wifi_init: udp mbox: 6[0m
+[0;32mI (460) wifi_init: tcp mbox: 6[0m
+[0;32mI (460) wifi_init: tcp tx win: 5760[0m
+[0;32mI (460) wifi_init: tcp rx win: 5760[0m
+[0;32mI (460) wifi_init: tcp mss: 1440[0m
+[0;32mI (470) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (470) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (480) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (500) phy_init: phy_version 700,8582a7fd,Feb 10 2025,20:13:11[0m
+[0;32mI (550) wifi:mode : sta (34:85:18:50:81:30)[0m
+[0;32mI (550) wifi:enable tsf[0m
+[0;32mI (550) Sonostream: Device successfully initialized as a WiFi station![0m
+[0;32mI (560) wifi:new:<8,0>, old:<1,0>, ap:<255,255>, sta:<8,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (560) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (570) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (570) wifi:state: assoc -> init (0x2c0)[0m
+[0;32mI (580) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (580) Sonostream: Attempting to connect to the AP...[0m
+[0;32mI (580) Sonostream: Connection to the AP fail[0m
+[0;32mI (2990) Sonostream: Attempting to connect to the AP...[0m
+[0;32mI (2990) Sonostream: Connection to the AP fail[0m
+[0;32mI (3000) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3000) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (3010) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (3010) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (3030) wifi:connected with definitelynotarouter, aid = 31, channel 8, BW20, bssid = f0:2f:74:5f:62:70[0m
+[0;32mI (3030) wifi:security: WPA2-PSK, phy: bgn, rssi: -6[0m
+[0;32mI (3040) wifi:pm start, type: 1[0m
+
+[0;32mI (3040) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (3040) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (3060) wifi:<ba-add>idx:0 (ifx:0, f0:2f:74:5f:62:70), tid:6, ssn:1, winSize:64[0m
+[0;32mI (3070) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (4070) esp_netif_handlers: sta ip: 192.168.50.21, mask: 255.255.255.0, gw: 192.168.50.1[0m
+[0;32mI (4070) Sonostream: got ip:192.168.50.21[0m
+[0;32mI (4070) Sonostream: Connected to ap SSID:definitelynotarouter password:notapwd777[0m
+[0;32mI (4070) main_task: Returned from app_main()[0m
+[0;32mI (4070) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (4090) Sonostream: Successfully connected[0m
+[0;32mI (4260) Sonostream: PDM Rx duration: 182340 us[0m
+[0;32mI (4260) Sonostream: PDM task added an element, current size: 0[0m
+[0;32mI (4270) wifi:<ba-add>idx:1 (ifx:0, f0:2f:74:5f:62:70), tid:0, ssn:1, winSize:64[0m
+[1;31mE (4290) Sonostream: Error occurred during sending a chunk: errno 104[0m
+
+[1;31mE (4290) Sonostream: Error occurred during sending a frame: errno 104[0m
+[0;32mI (4510) Sonostream: PDM Rx duration: 254425 us[0m
+[0;32mI (4510) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (4510) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (4520) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (4770) Sonostream: PDM Rx duration: 254134 us[0m
+[0;32mI (4770) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (4770) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (4770) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (5020) Sonostream: PDM Rx duration: 254211 us[0m
+[0;32mI (5020) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (5020) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (5030) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (5280) Sonostream: PDM Rx duration: 254297 us[0m
+[0;32mI (5280) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (5280) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (5280) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (5530) Sonostream: PDM Rx duration: 254281 us[0m
+[0;32mI (5530) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (5530) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (5540) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (5790) Sonostream: PDM Rx duration: 253834 us[0m
+[0;32mI (5790) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (5790) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (5790) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (6040) Sonostream: PDM Rx duration: 254316 us[0m
+[0;32mI (6040) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (6040) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (6050) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (6300) Sonostream: PDM Rx duration: 254321 us[0m
+[0;32mI (6300) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (6300) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (6300) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (6550) Sonostream: PDM Rx duration: 254322 us[0m
+[0;32mI (6550) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (6550) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (6560) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (6810) Sonostream: PDM Rx duration: 254058 us[0m
+[0;32mI (6810) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (6810) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (6810) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (7060) Sonostream: PDM Rx duration: 254298 us[0m
+[0;32mI (7060) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (7060) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (7070) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (7320) Sonostream: PDM Rx duration: 254305 us[0m
+[0;32mI (7320) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (7320) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (7320) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (7570) Sonostream: PDM Rx duration: 254358 us[0m
+[0;32mI (7570) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (7570) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (7580) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (7830) Sonostream: PDM Rx duration: 254070 us[0m
+[0;32mI (7830) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (7830) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (7830) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (8100) Sonostream: PDM Rx duration: 269309 us[0m
+[0;32mI (8100) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (8100) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (8100) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (8350) Sonostream: PDM Rx duration: 254332 us[0m
+[0;32mI (8350) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (8350) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (8360) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (8610) Sonostream: PDM Rx duration: 254271 us[0m
+[0;32mI (8610) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (8610) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (8610) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (8860) Sonostream: PDM Rx duration: 254240 us[0m
+[0;32mI (8860) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (8860) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (8870) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (9120) Sonostream: PDM Rx duration: 254233 us[0m
+[0;32mI (9120) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (9120) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (9120) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (9370) Sonostream: PDM Rx duration: 254278 us[0m
+[0;32mI (9370) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (9370) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (9380) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (9630) Sonostream: PDM Rx duration: 254287 us[0m
+[0;32mI (9630) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (9630) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (9630) Sonostream: Error occurred during sending a frame: errno 128[0m
+[1;31mE (9770) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (9770) task_wdt:  - IDLE0 (CPU 0)[0m
+[1;31mE (9770) task_wdt: Tasks currently running:[0m
+[1;31mE (9770) task_wdt: CPU 0: socket_tx_task[0m
+[1;31mE (9770) task_wdt: CPU 1: IDLE1[0m
+[1;31mE (9770) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4200FBD2:0x3FC9C160 0x4200FFE8:0x3FC9C180 0x40377789:0x3FC9C1B0 0x400559DD:0x3FCC8E40 0x4037CB22:0x3FCC8E50 0x4037C52A:0x3FCC8E70 0x4200BEFD:0x3FCC8EB0 0x4037C7C1:0x3FCC8F30
+
+[0;32mI (9900) Sonostream: PDM Rx duration: 269047 us[0m
+[0;32mI (9900) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (9900) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (9900) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (10150) Sonostream: PDM Rx duration: 254277 us[0m
+[0;32mI (10150) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (10150) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (10160) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (10410) Sonostream: PDM Rx duration: 254294 us[0m
+[0;32mI (10410) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (10410) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (10410) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (10660) Sonostream: PDM Rx duration: 254251 us[0m
+[0;32mI (10660) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (10660) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (10670) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (10920) Sonostream: PDM Rx duration: 254227 us[0m
+[0;32mI (10920) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (10920) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (10920) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (11170) Sonostream: PDM Rx duration: 254318 us[0m
+[0;32mI (11170) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (11170) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (11180) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (11430) Sonostream: PDM Rx duration: 254322 us[0m
+[0;32mI (11430) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (11430) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (11430) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (11680) Sonostream: PDM Rx duration: 254196 us[0m
+[0;32mI (11680) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (11680) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (11690) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (11950) Sonostream: PDM Rx duration: 269303 us[0m
+[0;32mI (11950) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (11950) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (11960) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (12210) Sonostream: PDM Rx duration: 254388 us[0m
+[0;32mI (12210) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (12210) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (12210) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (12460) Sonostream: PDM Rx duration: 254380 us[0m
+[0;32mI (12460) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (12460) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (12470) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (12720) Sonostream: PDM Rx duration: 254182 us[0m
+[0;32mI (12720) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (12720) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (12720) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (12970) Sonostream: PDM Rx duration: 254293 us[0m
+[0;32mI (12970) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (12970) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (12980) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (13230) Sonostream: PDM Rx duration: 254387 us[0m
+[0;32mI (13230) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (13230) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (13230) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (13480) Sonostream: PDM Rx duration: 254338 us[0m
+[0;32mI (13480) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (13480) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (13490) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (13740) Sonostream: PDM Rx duration: 254286 us[0m
+[0;32mI (13740) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (13740) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (13740) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (13990) Sonostream: PDM Rx duration: 254352 us[0m
+[0;32mI (13990) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (13990) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (14000) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (14250) Sonostream: PDM Rx duration: 254362 us[0m
+[0;32mI (14250) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (14250) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (14250) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (14500) Sonostream: PDM Rx duration: 254349 us[0m
+[0;32mI (14500) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (14500) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (14510) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (14760) Sonostream: PDM Rx duration: 254145 us[0m
+[0;32mI (14760) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (14760) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (14770) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (14770) task_wdt:  - IDLE0 (CPU 0)[0m
+[1;31mE (14770) task_wdt: Tasks currently running:[0m
+[1;31mE (14770) task_wdt: CPU 0: socket_tx_task[0m
+[1;31mE (14770) task_wdt: CPU 1: IDLE1[0m
+[1;31mE (14770) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4200FBD2:0x3FC9C160 0x4200FFE8:0x3FC9C180 0x40377789:0x3FC9C1B0 0x42008836:0x3FCC8970 0x42009741:0x3FCC89A0 0x4200B292:0x3FCC89D0 0x4207296A:0x3FCC89F0 0x4200A8B4:0x3FCC8A10 0x4200B292:0x3FCC8A30 0x4207232A:0x3FCC8A50 0x4207199D:0x3FCC8A70 0x420719EE:0x3FCC8A90 0x42071FED:0x3FCC8AB0 0x4207904F:0x3FCC8AE0 0x42078A56:0x3FCC8B00 0x420723A1:0x3FCC8E20 0x40382D07:0x3FCC8E50 0x4200BF31:0x3FCC8EB0 0x4037C7C1:0x3FCC8F30
+
+[1;31mE (14760) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (15070) Sonostream: PDM Rx duration: 314297 us[0m
+[0;32mI (15070) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (15070) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (15080) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (15330) Sonostream: PDM Rx duration: 254222 us[0m
+[0;32mI (15330) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (15330) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (15330) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (15580) Sonostream: PDM Rx duration: 254349 us[0m
+[0;32mI (15580) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (15580) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (15590) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (15850) Sonostream: PDM Rx duration: 269291 us[0m
+[0;32mI (15850) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (15850) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (15860) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (16110) Sonostream: PDM Rx duration: 254320 us[0m
+[0;32mI (16110) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (16110) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (16110) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (16360) Sonostream: PDM Rx duration: 254366 us[0m
+[0;32mI (16360) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (16360) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (16370) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (16620) Sonostream: PDM Rx duration: 254353 us[0m
+[0;32mI (16620) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (16620) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (16620) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (16870) Sonostream: PDM Rx duration: 254182 us[0m
+[0;32mI (16870) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (16870) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (16880) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (17130) Sonostream: PDM Rx duration: 254346 us[0m
+[0;32mI (17130) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (17130) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (17130) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (17380) Sonostream: PDM Rx duration: 254346 us[0m
+[0;32mI (17380) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (17380) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (17390) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (17640) Sonostream: PDM Rx duration: 254308 us[0m
+[0;32mI (17640) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (17640) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (17640) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (17890) Sonostream: PDM Rx duration: 254209 us[0m
+[0;32mI (17890) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (17890) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (17900) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (18150) Sonostream: PDM Rx duration: 254395 us[0m
+[0;32mI (18150) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (18150) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (18150) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (18400) Sonostream: PDM Rx duration: 254223 us[0m
+[0;32mI (18400) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (18400) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (18410) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (18660) Sonostream: PDM Rx duration: 254298 us[0m
+[0;32mI (18660) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (18660) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (18660) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (18910) Sonostream: PDM Rx duration: 254362 us[0m
+[0;32mI (18910) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (18910) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (18920) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (19170) Sonostream: PDM Rx duration: 254375 us[0m
+[0;32mI (19170) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (19170) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (19170) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (19420) Sonostream: PDM Rx duration: 254393 us[0m
+[0;32mI (19420) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (19420) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (19430) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (19690) Sonostream: PDM Rx duration: 269213 us[0m
+[0;32mI (19690) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (19690) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (19700) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (19950) Sonostream: PDM Rx duration: 254402 us[0m
+[0;32mI (19950) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (19950) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (19950) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (20200) Sonostream: PDM Rx duration: 254296 us[0m
+[0;32mI (20200) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (20200) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (20210) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (20460) Sonostream: PDM Rx duration: 254293 us[0m
+[0;32mI (20460) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (20460) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (20460) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (20710) Sonostream: PDM Rx duration: 254149 us[0m
+[0;32mI (20710) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (20710) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (20720) Sonostream: Error occurred during sending a frame: errno 128[0m
+[1;31mE (20850) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (20850) task_wdt:  - IDLE0 (CPU 0)[0m
+[1;31mE (20850) task_wdt: Tasks currently running:[0m
+[1;31mE (20850) task_wdt: CPU 0: socket_tx_task[0m
+[1;31mE (20850) task_wdt: CPU 1: IDLE1[0m
+[1;31mE (20850) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4200FBD2:0x3FC9C160 0x4200FFE8:0x3FC9C180 0x40377789:0x3FC9C1B0 0x400559DD:0x3FCC8E40 0x4037CB22:0x3FCC8E50 0x4037C52A:0x3FCC8E70 0x4200BEFD:0x3FCC8EB0 0x4037C7C1:0x3FCC8F30
+
+[0;32mI (20980) Sonostream: PDM Rx duration: 269343 us[0m
+[0;32mI (20980) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (20980) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (20990) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (21240) Sonostream: PDM Rx duration: 254274 us[0m
+[0;32mI (21240) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (21240) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (21240) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (21490) Sonostream: PDM Rx duration: 254223 us[0m
+[0;32mI (21490) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (21490) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (21500) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (21750) Sonostream: PDM Rx duration: 254259 us[0m
+[0;32mI (21750) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (21750) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (21750) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (22000) Sonostream: PDM Rx duration: 254358 us[0m
+[0;32mI (22000) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (22000) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (22010) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (22260) Sonostream: PDM Rx duration: 254235 us[0m
+[0;32mI (22260) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (22260) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (22260) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (22510) Sonostream: PDM Rx duration: 254324 us[0m
+[0;32mI (22510) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (22510) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (22520) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (22770) Sonostream: PDM Rx duration: 254265 us[0m
+[0;32mI (22770) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (22770) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (22770) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (23020) Sonostream: PDM Rx duration: 254268 us[0m
+[0;32mI (23020) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (23020) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (23030) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (23280) Sonostream: PDM Rx duration: 254275 us[0m
+[0;32mI (23280) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (23280) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (23280) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (23550) Sonostream: PDM Rx duration: 269325 us[0m
+[0;32mI (23550) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (23550) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (23550) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (23800) Sonostream: PDM Rx duration: 254127 us[0m
+[0;32mI (23800) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (23800) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (23810) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (24060) Sonostream: PDM Rx duration: 254292 us[0m
+[0;32mI (24060) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (24060) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (24060) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (24310) Sonostream: PDM Rx duration: 254367 us[0m
+[0;32mI (24310) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (24310) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (24320) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (24570) Sonostream: PDM Rx duration: 254356 us[0m
+[0;32mI (24570) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (24570) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (24570) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (24820) Sonostream: PDM Rx duration: 254224 us[0m
+[0;32mI (24820) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (24820) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (24830) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (25080) Sonostream: PDM Rx duration: 254341 us[0m
+[0;32mI (25080) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (25080) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (25080) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (25330) Sonostream: PDM Rx duration: 254402 us[0m
+[0;32mI (25330) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (25330) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (25340) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (25590) Sonostream: PDM Rx duration: 254206 us[0m
+[0;32mI (25590) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (25590) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (25590) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (25840) Sonostream: PDM Rx duration: 254271 us[0m
+[0;32mI (25840) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (25840) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (25850) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (26100) Sonostream: PDM Rx duration: 254294 us[0m
+[0;32mI (26100) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (26100) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (26100) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (26350) Sonostream: PDM Rx duration: 254260 us[0m
+[0;32mI (26350) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (26350) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (26360) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (26610) Sonostream: PDM Rx duration: 254359 us[0m
+[0;32mI (26610) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (26610) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (26610) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (26860) Sonostream: PDM Rx duration: 254195 us[0m
+[0;32mI (26860) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (26860) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (26870) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (27120) Sonostream: PDM Rx duration: 254260 us[0m
+[0;32mI (27120) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (27120) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (27120) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (27390) Sonostream: PDM Rx duration: 269339 us[0m
+[0;32mI (27390) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (27390) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (27390) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (27640) Sonostream: PDM Rx duration: 254362 us[0m
+[0;32mI (27640) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (27640) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (27650) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (27900) Sonostream: PDM Rx duration: 254323 us[0m
+[0;32mI (27900) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (27900) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (27900) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (28150) Sonostream: PDM Rx duration: 254316 us[0m
+[0;32mI (28150) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (28150) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (28160) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (28410) Sonostream: PDM Rx duration: 254309 us[0m
+[0;32mI (28410) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (28410) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (28410) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (28660) Sonostream: PDM Rx duration: 254299 us[0m
+[0;32mI (28660) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (28660) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (28670) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (28920) Sonostream: PDM Rx duration: 254283 us[0m
+[0;32mI (28920) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (28920) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (28920) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (29170) Sonostream: PDM Rx duration: 254327 us[0m
+[0;32mI (29170) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (29170) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (29180) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (29430) Sonostream: PDM Rx duration: 254359 us[0m
+[0;32mI (29430) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (29430) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (29430) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (29680) Sonostream: PDM Rx duration: 254147 us[0m
+[0;32mI (29680) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (29680) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (29690) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (29940) Sonostream: PDM Rx duration: 254323 us[0m
+[0;32mI (29940) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (29940) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (29940) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (30190) Sonostream: PDM Rx duration: 254357 us[0m
+[0;32mI (30190) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (30190) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (30200) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (30450) Sonostream: PDM Rx duration: 254397 us[0m
+[0;32mI (30450) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (30450) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (30450) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (30700) Sonostream: PDM Rx duration: 254277 us[0m
+[0;32mI (30700) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (30700) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (30710) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (30960) Sonostream: PDM Rx duration: 254303 us[0m
+[0;32mI (30960) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (30960) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (30960) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (31230) Sonostream: PDM Rx duration: 269364 us[0m
+[0;32mI (31230) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (31230) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (31230) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (31480) Sonostream: PDM Rx duration: 254262 us[0m
+[0;32mI (31480) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (31480) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (31490) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (31740) Sonostream: PDM Rx duration: 254270 us[0m
+[0;32mI (31740) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (31740) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (31740) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (31990) Sonostream: PDM Rx duration: 254285 us[0m
+[0;32mI (31990) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (31990) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (32000) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (32250) Sonostream: PDM Rx duration: 254370 us[0m
+[0;32mI (32250) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (32250) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (32250) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (32500) Sonostream: PDM Rx duration: 254376 us[0m
+[0;32mI (32500) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (32500) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (32510) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (32760) Sonostream: PDM Rx duration: 254132 us[0m
+[0;32mI (32760) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (32760) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (32760) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (33010) Sonostream: PDM Rx duration: 254401 us[0m
+[0;32mI (33010) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (33010) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (33020) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (33270) Sonostream: PDM Rx duration: 254391 us[0m
+[0;32mI (33270) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (33270) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (33270) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (33520) Sonostream: PDM Rx duration: 254267 us[0m
+[0;32mI (33520) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (33520) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (33530) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (33780) Sonostream: PDM Rx duration: 254268 us[0m
+[0;32mI (33780) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (33780) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (33780) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (34030) Sonostream: PDM Rx duration: 254367 us[0m
+[0;32mI (34030) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (34030) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (34040) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (34290) Sonostream: PDM Rx duration: 254277 us[0m
+[0;32mI (34290) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (34290) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (34290) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (34540) Sonostream: PDM Rx duration: 254377 us[0m
+[0;32mI (34540) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (34540) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (34550) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (34800) Sonostream: PDM Rx duration: 254266 us[0m
+[0;32mI (34800) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (34800) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (34800) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (35070) Sonostream: PDM Rx duration: 269256 us[0m
+[0;32mI (35070) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (35070) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (35070) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (35320) Sonostream: PDM Rx duration: 254299 us[0m
+[0;32mI (35320) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (35320) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (35330) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (35580) Sonostream: PDM Rx duration: 254408 us[0m
+[0;32mI (35580) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (35580) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (35580) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (35830) Sonostream: PDM Rx duration: 254145 us[0m
+[0;32mI (35830) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (35830) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (35840) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (36090) Sonostream: PDM Rx duration: 254327 us[0m
+[0;32mI (36090) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (36090) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (36090) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (36340) Sonostream: PDM Rx duration: 254380 us[0m
+[0;32mI (36340) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (36340) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (36350) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (36600) Sonostream: PDM Rx duration: 254448 us[0m
+[0;32mI (36600) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (36600) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (36600) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (36850) Sonostream: PDM Rx duration: 254086 us[0m
+[0;32mI (36850) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (36850) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (36860) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (37110) Sonostream: PDM Rx duration: 254298 us[0m
+[0;32mI (37110) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (37110) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (37110) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (37360) Sonostream: PDM Rx duration: 254413 us[0m
+[0;32mI (37360) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (37360) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (37370) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (37620) Sonostream: PDM Rx duration: 254480 us[0m
+[0;32mI (37620) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (37620) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (37620) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (37870) Sonostream: PDM Rx duration: 254160 us[0m
+[0;32mI (37870) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (37870) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (37880) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (38130) Sonostream: PDM Rx duration: 254372 us[0m
+[0;32mI (38130) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (38130) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (38130) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (38380) Sonostream: PDM Rx duration: 254362 us[0m
+[0;32mI (38380) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (38380) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (38390) Sonostream: Error occurred during sending a frame: errno 128[0m
+[1;31mE (38520) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (38520) task_wdt:  - IDLE0 (CPU 0)[0m
+[1;31mE (38520) task_wdt: Tasks currently running:[0m
+[1;31mE (38520) task_wdt: CPU 0: socket_tx_task[0m
+[1;31mE (38520) task_wdt: CPU 1: IDLE1[0m
+[1;31mE (38520) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4200FBD2:0x3FC9C160 0x4200FFE8:0x3FC9C180 0x40377789:0x3FC9C1B0 0x400559DD:0x3FCC8E40 0x4037CB22:0x3FCC8E50 0x4037C52A:0x3FCC8E70 0x4200BEFD:0x3FCC8EB0 0x4037C7C1:0x3FCC8F30
+
+[0;32mI (38650) Sonostream: PDM Rx duration: 269397 us[0m
+[0;32mI (38650) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (38650) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (38660) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (38920) Sonostream: PDM Rx duration: 269305 us[0m
+[0;32mI (38920) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (38920) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (38930) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (39180) Sonostream: PDM Rx duration: 254393 us[0m
+[0;32mI (39180) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (39180) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (39180) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (39430) Sonostream: PDM Rx duration: 254331 us[0m
+[0;32mI (39430) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (39430) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (39440) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (39690) Sonostream: PDM Rx duration: 254215 us[0m
+[0;32mI (39690) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (39690) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (39690) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (39940) Sonostream: PDM Rx duration: 254388 us[0m
+[0;32mI (39940) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (39940) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (39950) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (40200) Sonostream: PDM Rx duration: 254318 us[0m
+[0;32mI (40200) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (40200) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (40200) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (40450) Sonostream: PDM Rx duration: 254303 us[0m
+[0;32mI (40450) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (40450) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (40460) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (40710) Sonostream: PDM Rx duration: 254162 us[0m
+[0;32mI (40710) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (40710) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (40710) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (40960) Sonostream: PDM Rx duration: 254424 us[0m
+[0;32mI (40960) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (40960) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (40970) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (41220) Sonostream: PDM Rx duration: 254397 us[0m
+[0;32mI (41220) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (41220) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (41220) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (41470) Sonostream: PDM Rx duration: 254242 us[0m
+[0;32mI (41470) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (41470) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (41480) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (41730) Sonostream: PDM Rx duration: 254292 us[0m
+[0;32mI (41730) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (41730) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (41730) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (41980) Sonostream: PDM Rx duration: 254401 us[0m
+[0;32mI (41980) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (41980) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (41990) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (42240) Sonostream: PDM Rx duration: 254238 us[0m
+[0;32mI (42240) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (42240) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (42240) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (42490) Sonostream: PDM Rx duration: 254332 us[0m
+[0;32mI (42490) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (42490) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (42500) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (42760) Sonostream: PDM Rx duration: 269198 us[0m
+[0;32mI (42760) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (42760) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (42770) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (43020) Sonostream: PDM Rx duration: 254298 us[0m
+[0;32mI (43020) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (43020) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (43020) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (43270) Sonostream: PDM Rx duration: 254302 us[0m
+[0;32mI (43270) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (43270) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (43280) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (43530) Sonostream: PDM Rx duration: 254339 us[0m
+[0;32mI (43530) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (43530) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (43530) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (43780) Sonostream: PDM Rx duration: 254136 us[0m
+[0;32mI (43780) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (43780) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (43790) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (44040) Sonostream: PDM Rx duration: 254364 us[0m
+[0;32mI (44040) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (44040) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (44040) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (44290) Sonostream: PDM Rx duration: 254376 us[0m
+[0;32mI (44290) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (44290) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (44300) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (44550) Sonostream: PDM Rx duration: 254331 us[0m
+[0;32mI (44550) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (44550) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (44550) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (44800) Sonostream: PDM Rx duration: 254288 us[0m
+[0;32mI (44800) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (44800) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (44810) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (45060) Sonostream: PDM Rx duration: 254312 us[0m
+[0;32mI (45060) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (45060) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (45060) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (45310) Sonostream: PDM Rx duration: 254330 us[0m
+[0;32mI (45310) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (45310) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (45320) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (45570) Sonostream: PDM Rx duration: 254372 us[0m
+[0;32mI (45570) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (45570) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (45570) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (45820) Sonostream: PDM Rx duration: 254167 us[0m
+[0;32mI (45820) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (45820) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (45830) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (46080) Sonostream: PDM Rx duration: 254327 us[0m
+[0;32mI (46080) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (46080) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (46080) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (46330) Sonostream: PDM Rx duration: 254343 us[0m
+[0;32mI (46330) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (46330) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (46340) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (46600) Sonostream: PDM Rx duration: 269410 us[0m
+[0;32mI (46600) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (46600) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (46610) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (46860) Sonostream: PDM Rx duration: 254274 us[0m
+[0;32mI (46860) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (46860) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (46860) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (47110) Sonostream: PDM Rx duration: 254301 us[0m
+[0;32mI (47110) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (47110) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (47120) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (47370) Sonostream: PDM Rx duration: 254314 us[0m
+[0;32mI (47370) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (47370) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (47370) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (47620) Sonostream: PDM Rx duration: 254429 us[0m
+[0;32mI (47620) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (47620) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (47630) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (47880) Sonostream: PDM Rx duration: 254147 us[0m
+[0;32mI (47880) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (47880) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (47880) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (48130) Sonostream: PDM Rx duration: 254354 us[0m
+[0;32mI (48130) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (48130) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (48140) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (48390) Sonostream: PDM Rx duration: 254357 us[0m
+[0;32mI (48390) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (48390) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (48390) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (48640) Sonostream: PDM Rx duration: 254375 us[0m
+[0;32mI (48640) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (48640) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (48650) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (48900) Sonostream: PDM Rx duration: 254334 us[0m
+[0;32mI (48900) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (48900) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (48900) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (49150) Sonostream: PDM Rx duration: 254240 us[0m
+[0;32mI (49150) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (49150) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (49160) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (49410) Sonostream: PDM Rx duration: 254317 us[0m
+[0;32mI (49410) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (49410) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (49410) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (49660) Sonostream: PDM Rx duration: 254265 us[0m
+[0;32mI (49660) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (49660) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (49670) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (49920) Sonostream: PDM Rx duration: 254220 us[0m
+[0;32mI (49920) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (49920) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (49920) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (50170) Sonostream: PDM Rx duration: 254383 us[0m
+[0;32mI (50170) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (50170) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (50180) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (50440) Sonostream: PDM Rx duration: 269327 us[0m
+[0;32mI (50440) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (50440) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (50450) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (50700) Sonostream: PDM Rx duration: 254251 us[0m
+[0;32mI (50700) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (50700) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (50700) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (50950) Sonostream: PDM Rx duration: 254287 us[0m
+[0;32mI (50950) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (50950) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (50960) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (51210) Sonostream: PDM Rx duration: 254389 us[0m
+[0;32mI (51210) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (51210) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (51210) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (51460) Sonostream: PDM Rx duration: 254284 us[0m
+[0;32mI (51460) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (51460) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (51470) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (51720) Sonostream: PDM Rx duration: 254189 us[0m
+[0;32mI (51720) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (51720) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (51720) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (51970) Sonostream: PDM Rx duration: 254253 us[0m
+[0;32mI (51970) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (51970) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (51980) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (52230) Sonostream: PDM Rx duration: 254386 us[0m
+[0;32mI (52230) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (52230) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (52230) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (52480) Sonostream: PDM Rx duration: 254300 us[0m
+[0;32mI (52480) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (52480) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (52490) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (52740) Sonostream: PDM Rx duration: 254160 us[0m
+[0;32mI (52740) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (52740) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (52740) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (52990) Sonostream: PDM Rx duration: 254375 us[0m
+[0;32mI (52990) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (52990) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (53000) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (53250) Sonostream: PDM Rx duration: 254445 us[0m
+[0;32mI (53250) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (53250) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (53250) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (53500) Sonostream: PDM Rx duration: 254278 us[0m
+[0;32mI (53500) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (53500) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (53510) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (53760) Sonostream: PDM Rx duration: 254297 us[0m
+[0;32mI (53760) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (53760) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (53760) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (54010) Sonostream: PDM Rx duration: 254335 us[0m
+[0;32mI (54010) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (54010) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (54020) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (54280) Sonostream: PDM Rx duration: 269330 us[0m
+[0;32mI (54280) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (54280) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (54290) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (54540) Sonostream: PDM Rx duration: 254237 us[0m
+[0;32mI (54540) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (54540) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (54540) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (54790) Sonostream: PDM Rx duration: 254261 us[0m
+[0;32mI (54790) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (54790) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (54800) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (55050) Sonostream: PDM Rx duration: 254391 us[0m
+[0;32mI (55050) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (55050) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (55050) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (55300) Sonostream: PDM Rx duration: 254196 us[0m
+[0;32mI (55300) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (55300) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (55310) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (55560) Sonostream: PDM Rx duration: 254355 us[0m
+[0;32mI (55560) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (55560) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (55560) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (55810) Sonostream: PDM Rx duration: 254304 us[0m
+[0;32mI (55810) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (55810) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (55820) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (56070) Sonostream: PDM Rx duration: 254388 us[0m
+[0;32mI (56070) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (56070) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (56070) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (56320) Sonostream: PDM Rx duration: 254219 us[0m
+[0;32mI (56320) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (56320) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (56330) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (56580) Sonostream: PDM Rx duration: 254405 us[0m
+[0;32mI (56580) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (56580) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (56580) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (56830) Sonostream: PDM Rx duration: 254264 us[0m
+[0;32mI (56830) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (56830) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (56840) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (57090) Sonostream: PDM Rx duration: 254303 us[0m
+[0;32mI (57090) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (57090) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (57090) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (57340) Sonostream: PDM Rx duration: 254342 us[0m
+[0;32mI (57340) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (57340) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (57350) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (57600) Sonostream: PDM Rx duration: 254317 us[0m
+[0;32mI (57600) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (57600) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (57600) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (57850) Sonostream: PDM Rx duration: 254215 us[0m
+[0;32mI (57850) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (57850) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (57860) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (58120) Sonostream: PDM Rx duration: 269387 us[0m
+[0;32mI (58120) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (58120) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (58130) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (58380) Sonostream: PDM Rx duration: 254350 us[0m
+[0;32mI (58380) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (58380) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (58380) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (58630) Sonostream: PDM Rx duration: 254462 us[0m
+[0;32mI (58630) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (58630) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (58640) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (58890) Sonostream: PDM Rx duration: 254381 us[0m
+[0;32mI (58890) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (58890) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (58890) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (59140) Sonostream: PDM Rx duration: 254322 us[0m
+[0;32mI (59140) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (59140) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (59150) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (59400) Sonostream: PDM Rx duration: 254365 us[0m
+[0;32mI (59400) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (59400) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (59400) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (59650) Sonostream: PDM Rx duration: 254281 us[0m
+[0;32mI (59650) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (59650) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (59660) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (59910) Sonostream: PDM Rx duration: 254369 us[0m
+[0;32mI (59910) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (59910) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (59910) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (60160) Sonostream: PDM Rx duration: 254367 us[0m
+[0;32mI (60160) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (60160) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (60170) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (60420) Sonostream: PDM Rx duration: 254293 us[0m
+[0;32mI (60420) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (60420) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (60420) Sonostream: Error occurred during sending a frame: errno 128[0m
+[1;31mE (60560) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (60560) task_wdt:  - IDLE0 (CPU 0)[0m
+[1;31mE (60560) task_wdt: Tasks currently running:[0m
+[1;31mE (60560) task_wdt: CPU 0: socket_tx_task[0m
+[1;31mE (60560) task_wdt: CPU 1: IDLE1[0m
+[1;31mE (60560) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4200FBD2:0x3FC9C160 0x4200FFE8:0x3FC9C180 0x40377789:0x3FC9C1B0 0x4200BEFA:0x3FCC8EB0 0x4037C7C1:0x3FCC8F30
+
+[0;32mI (60690) Sonostream: PDM Rx duration: 269255 us[0m
+[0;32mI (60690) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (60690) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (60690) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (60940) Sonostream: PDM Rx duration: 253944 us[0m
+[0;32mI (60940) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (60940) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (60950) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (61200) Sonostream: PDM Rx duration: 254354 us[0m
+[0;32mI (61200) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (61200) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (61200) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (61450) Sonostream: PDM Rx duration: 254337 us[0m
+[0;32mI (61450) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (61450) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (61460) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (61710) Sonostream: PDM Rx duration: 254282 us[0m
+[0;32mI (61710) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (61710) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (61710) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (61980) Sonostream: PDM Rx duration: 269324 us[0m
+[0;32mI (61980) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (61980) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (61980) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (62230) Sonostream: PDM Rx duration: 254327 us[0m
+[0;32mI (62230) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (62230) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (62240) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (62490) Sonostream: PDM Rx duration: 254426 us[0m
+[0;32mI (62490) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (62490) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (62490) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (62740) Sonostream: PDM Rx duration: 254233 us[0m
+[0;32mI (62740) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (62740) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (62750) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (63000) Sonostream: PDM Rx duration: 254320 us[0m
+[0;32mI (63000) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (63000) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (63000) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (63250) Sonostream: PDM Rx duration: 254417 us[0m
+[0;32mI (63250) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (63250) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (63260) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (63510) Sonostream: PDM Rx duration: 254303 us[0m
+[0;32mI (63510) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (63510) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (63510) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (63760) Sonostream: PDM Rx duration: 254299 us[0m
+[0;32mI (63760) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (63760) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (63770) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (64020) Sonostream: PDM Rx duration: 254364 us[0m
+[0;32mI (64020) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (64020) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (64020) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (64270) Sonostream: PDM Rx duration: 254218 us[0m
+[0;32mI (64270) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (64270) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (64280) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (64530) Sonostream: PDM Rx duration: 254384 us[0m
+[0;32mI (64530) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (64530) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (64530) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (64780) Sonostream: PDM Rx duration: 254213 us[0m
+[0;32mI (64780) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (64780) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (64790) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (65040) Sonostream: PDM Rx duration: 254278 us[0m
+[0;32mI (65040) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (65040) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (65040) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (65290) Sonostream: PDM Rx duration: 254369 us[0m
+[0;32mI (65290) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (65290) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (65300) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (65550) Sonostream: PDM Rx duration: 254329 us[0m
+[0;32mI (65550) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (65550) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (65560) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (65560) task_wdt:  - IDLE0 (CPU 0)[0m
+[1;31mE (65560) task_wdt: Tasks currently running:[0m
+[1;31mE (65560) task_wdt: CPU 0: socket_tx_task[0m
+[1;31mE (65560) task_wdt: CPU 1: IDLE1[0m
+[1;31mE (65560) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4200FBD2:0x3FC9C160 0x4200FFE8:0x3FC9C180 0x40377789:0x3FC9C1B0 0x42008836:0x3FCC8970 0x42009741:0x3FCC89A0 0x4200B292:0x3FCC89D0 0x4207296A:0x3FCC89F0 0x4200A8B4:0x3FCC8A10 0x4200B292:0x3FCC8A30 0x4207232A:0x3FCC8A50 0x4207199D:0x3FCC8A70 0x420719EE:0x3FCC8A90 0x42071FED:0x3FCC8AB0 0x4207904F:0x3FCC8AE0 0x42078A56:0x3FCC8B00 0x420723A1:0x3FCC8E20 0x40382D07:0x3FCC8E50 0x4200BF31:0x3FCC8EB0 0x4037C7C1:0x3FCC8F30
+
+[1;31mE (65550) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (65880) Sonostream: PDM Rx duration: 329160 us[0m
+[0;32mI (65880) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (65880) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (65880) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (66130) Sonostream: PDM Rx duration: 254281 us[0m
+[0;32mI (66130) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (66130) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (66140) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (66390) Sonostream: PDM Rx duration: 254307 us[0m
+[0;32mI (66390) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (66390) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (66390) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (66640) Sonostream: PDM Rx duration: 254340 us[0m
+[0;32mI (66640) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (66640) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (66650) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (66900) Sonostream: PDM Rx duration: 254337 us[0m
+[0;32mI (66900) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (66900) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (66900) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (67150) Sonostream: PDM Rx duration: 254241 us[0m
+[0;32mI (67150) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (67150) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (67160) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (67410) Sonostream: PDM Rx duration: 254365 us[0m
+[0;32mI (67410) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (67410) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (67410) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (67660) Sonostream: PDM Rx duration: 254296 us[0m
+[0;32mI (67660) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (67660) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (67670) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (67920) Sonostream: PDM Rx duration: 254245 us[0m
+[0;32mI (67920) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (67920) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (67920) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (68170) Sonostream: PDM Rx duration: 254303 us[0m
+[0;32mI (68170) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (68170) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (68180) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (68430) Sonostream: PDM Rx duration: 254423 us[0m
+[0;32mI (68430) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (68430) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (68430) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (68680) Sonostream: PDM Rx duration: 254282 us[0m
+[0;32mI (68680) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (68680) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (68690) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (68940) Sonostream: PDM Rx duration: 254248 us[0m
+[0;32mI (68940) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (68940) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (68940) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (69190) Sonostream: PDM Rx duration: 254381 us[0m
+[0;32mI (69190) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (69190) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (69200) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (69450) Sonostream: PDM Rx duration: 254332 us[0m
+[0;32mI (69450) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (69450) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (69450) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (69720) Sonostream: PDM Rx duration: 269256 us[0m
+[0;32mI (69720) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (69720) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (69720) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (69970) Sonostream: PDM Rx duration: 254351 us[0m
+[0;32mI (69970) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (69970) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (69980) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (70230) Sonostream: PDM Rx duration: 254159 us[0m
+[0;32mI (70230) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (70230) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (70230) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (70480) Sonostream: PDM Rx duration: 254295 us[0m
+[0;32mI (70480) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (70480) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (70490) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (70740) Sonostream: PDM Rx duration: 254306 us[0m
+[0;32mI (70740) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (70740) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (70740) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (70990) Sonostream: PDM Rx duration: 254246 us[0m
+[0;32mI (70990) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (70990) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (71000) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (71250) Sonostream: PDM Rx duration: 254321 us[0m
+[0;32mI (71250) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (71250) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (71250) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (71500) Sonostream: PDM Rx duration: 254348 us[0m
+[0;32mI (71500) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (71500) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (71510) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (71760) Sonostream: PDM Rx duration: 254215 us[0m
+[0;32mI (71760) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (71760) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (71760) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (72010) Sonostream: PDM Rx duration: 254343 us[0m
+[0;32mI (72010) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (72010) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (72020) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (72270) Sonostream: PDM Rx duration: 254282 us[0m
+[0;32mI (72270) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (72270) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (72270) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (72520) Sonostream: PDM Rx duration: 254322 us[0m
+[0;32mI (72520) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (72520) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (72530) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (72780) Sonostream: PDM Rx duration: 254262 us[0m
+[0;32mI (72780) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (72780) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (72780) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (73030) Sonostream: PDM Rx duration: 254289 us[0m
+[0;32mI (73030) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (73030) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (73040) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (73290) Sonostream: PDM Rx duration: 254369 us[0m
+[0;32mI (73290) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (73290) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (73290) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (73560) Sonostream: PDM Rx duration: 269334 us[0m
+[0;32mI (73560) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (73560) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (73560) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (73810) Sonostream: PDM Rx duration: 254138 us[0m
+[0;32mI (73810) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (73810) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (73820) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (74070) Sonostream: PDM Rx duration: 254342 us[0m
+[0;32mI (74070) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (74070) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (74070) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (74320) Sonostream: PDM Rx duration: 254253 us[0m
+[0;32mI (74320) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (74320) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (74330) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (74580) Sonostream: PDM Rx duration: 254336 us[0m
+[0;32mI (74580) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (74580) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (74580) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (74830) Sonostream: PDM Rx duration: 254241 us[0m
+[0;32mI (74830) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (74830) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (74840) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (75090) Sonostream: PDM Rx duration: 254304 us[0m
+[0;32mI (75090) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (75090) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (75090) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (75340) Sonostream: PDM Rx duration: 254307 us[0m
+[0;32mI (75340) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (75340) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (75350) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (75600) Sonostream: PDM Rx duration: 254355 us[0m
+[0;32mI (75600) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (75600) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (75600) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (75850) Sonostream: PDM Rx duration: 254141 us[0m
+[0;32mI (75850) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (75850) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (75860) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (76110) Sonostream: PDM Rx duration: 254311 us[0m
+[0;32mI (76110) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (76110) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (76110) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (76360) Sonostream: PDM Rx duration: 254431 us[0m
+[0;32mI (76360) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (76360) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (76370) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (76620) Sonostream: PDM Rx duration: 254239 us[0m
+[0;32mI (76620) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (76620) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (76620) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (76870) Sonostream: PDM Rx duration: 254212 us[0m
+[0;32mI (76870) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (76870) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (76880) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (77130) Sonostream: PDM Rx duration: 254366 us[0m
+[0;32mI (77130) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (77130) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (77130) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (77400) Sonostream: PDM Rx duration: 269236 us[0m
+[0;32mI (77400) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (77400) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (77400) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (77650) Sonostream: PDM Rx duration: 254187 us[0m
+[0;32mI (77650) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (77650) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (77660) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (77910) Sonostream: PDM Rx duration: 254212 us[0m
+[0;32mI (77910) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (77910) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (77910) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (78160) Sonostream: PDM Rx duration: 254391 us[0m
+[0;32mI (78160) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (78160) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (78170) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (78420) Sonostream: PDM Rx duration: 254318 us[0m
+[0;32mI (78420) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (78420) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (78420) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (78670) Sonostream: PDM Rx duration: 254214 us[0m
+[0;32mI (78670) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (78670) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (78680) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (78930) Sonostream: PDM Rx duration: 254165 us[0m
+[0;32mI (78930) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (78930) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (78930) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (79180) Sonostream: PDM Rx duration: 254381 us[0m
+[0;32mI (79180) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (79180) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (79190) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (79440) Sonostream: PDM Rx duration: 254490 us[0m
+[0;32mI (79440) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (79440) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (79440) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (79690) Sonostream: PDM Rx duration: 254169 us[0m
+[0;32mI (79690) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (79690) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (79700) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (79950) Sonostream: PDM Rx duration: 254260 us[0m
+[0;32mI (79950) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (79950) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (79950) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (80200) Sonostream: PDM Rx duration: 254296 us[0m
+[0;32mI (80200) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (80200) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (80210) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (80460) Sonostream: PDM Rx duration: 254304 us[0m
+[0;32mI (80460) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (80460) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (80460) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (80710) Sonostream: PDM Rx duration: 254180 us[0m
+[0;32mI (80710) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (80710) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (80720) Sonostream: Error occurred during sending a frame: errno 128[0m
+[1;31mE (80850) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (80850) task_wdt:  - IDLE0 (CPU 0)[0m
+[1;31mE (80850) task_wdt: Tasks currently running:[0m
+[1;31mE (80850) task_wdt: CPU 0: socket_tx_task[0m
+[1;31mE (80850) task_wdt: CPU 1: IDLE1[0m
+[1;31mE (80850) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4200FBD2:0x3FC9C160 0x4200FFE8:0x3FC9C180 0x40377789:0x3FC9C1B0 0x400559DD:0x3FCC8E40 0x4037CB22:0x3FCC8E50 0x4037C52A:0x3FCC8E70 0x4200BEFD:0x3FCC8EB0 0x4037C7C1:0x3FCC8F30
+
+[0;32mI (80980) Sonostream: PDM Rx duration: 269420 us[0m
+[0;32mI (80980) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (80980) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (80990) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (81250) Sonostream: PDM Rx duration: 269147 us[0m
+[0;32mI (81250) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (81250) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (81260) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (81510) Sonostream: PDM Rx duration: 254376 us[0m
+[0;32mI (81510) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (81510) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (81510) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (81760) Sonostream: PDM Rx duration: 254186 us[0m
+[0;32mI (81760) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (81760) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (81770) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (82020) Sonostream: PDM Rx duration: 254241 us[0m
+[0;32mI (82020) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (82020) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (82020) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (82270) Sonostream: PDM Rx duration: 254245 us[0m
+[0;32mI (82270) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (82270) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (82280) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (82530) Sonostream: PDM Rx duration: 254471 us[0m
+[0;32mI (82530) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (82530) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (82530) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (82780) Sonostream: PDM Rx duration: 254123 us[0m
+[0;32mI (82780) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (82780) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (82790) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (83040) Sonostream: PDM Rx duration: 254334 us[0m
+[0;32mI (83040) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (83040) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (83040) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (83290) Sonostream: PDM Rx duration: 254320 us[0m
+[0;32mI (83290) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (83290) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (83300) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (83550) Sonostream: PDM Rx duration: 254362 us[0m
+[0;32mI (83550) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (83550) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (83550) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (83800) Sonostream: PDM Rx duration: 254217 us[0m
+[0;32mI (83800) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (83800) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (83810) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (84060) Sonostream: PDM Rx duration: 254387 us[0m
+[0;32mI (84060) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (84060) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (84060) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (84310) Sonostream: PDM Rx duration: 254234 us[0m
+[0;32mI (84310) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (84310) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (84320) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (84570) Sonostream: PDM Rx duration: 254260 us[0m
+[0;32mI (84570) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (84570) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (84570) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (84820) Sonostream: PDM Rx duration: 254310 us[0m
+[0;32mI (84820) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (84820) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (84830) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (85090) Sonostream: PDM Rx duration: 269358 us[0m
+[0;32mI (85090) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (85090) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (85100) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (85350) Sonostream: PDM Rx duration: 254453 us[0m
+[0;32mI (85350) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (85350) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (85350) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (85600) Sonostream: PDM Rx duration: 254351 us[0m
+[0;32mI (85600) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (85600) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (85610) Sonostream: Error occurred during sending a frame: errno 128[0m
+[1;31mE (85850) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (85850) task_wdt:  - IDLE0 (CPU 0)[0m
+[1;31mE (85850) task_wdt: Tasks currently running:[0m
+[1;31mE (85850) task_wdt: CPU 0: socket_tx_task[0m
+[1;31mE (85850) task_wdt: CPU 1: IDLE1[0m
+[1;31mE (85850) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4200FBD2:0x3FC9C160 0x4200FFE8:0x3FC9C180 0x40377789:0x3FC9C1B0 0x400559DD:0x3FCC8E40 0x4037CB22:0x3FCC8E50 0x4037C52A:0x3FCC8E70 0x4200BEFD:0x3FCC8EB0 0x4037C7C1:0x3FCC8F30
+
+[0;32mI (85890) Sonostream: PDM Rx duration: 284043 us[0m
+[1;31mE (85890) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[0;32mI (85890) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (85900) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (86130) Sonostream: PDM Rx duration: 223350 us[0m
+[0;32mI (86130) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (86130) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (86130) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (86380) Sonostream: PDM Rx duration: 254337 us[0m
+[0;32mI (86380) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (86380) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (86390) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (86640) Sonostream: PDM Rx duration: 254352 us[0m
+[0;32mI (86640) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (86640) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (86640) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (86890) Sonostream: PDM Rx duration: 254189 us[0m
+[0;32mI (86890) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (86890) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (86900) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (87150) Sonostream: PDM Rx duration: 254357 us[0m
+[0;32mI (87150) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (87150) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (87150) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (87400) Sonostream: PDM Rx duration: 254439 us[0m
+[0;32mI (87400) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (87400) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (87410) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (87660) Sonostream: PDM Rx duration: 254224 us[0m
+[0;32mI (87660) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (87660) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (87660) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (87910) Sonostream: PDM Rx duration: 254374 us[0m
+[0;32mI (87910) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (87910) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (87920) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (88170) Sonostream: PDM Rx duration: 254419 us[0m
+[0;32mI (88170) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (88170) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (88170) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (88420) Sonostream: PDM Rx duration: 254272 us[0m
+[0;32mI (88420) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (88420) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (88430) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (88680) Sonostream: PDM Rx duration: 254103 us[0m
+[0;32mI (88680) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (88680) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (88680) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (88950) Sonostream: PDM Rx duration: 269316 us[0m
+[0;32mI (88950) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (88950) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (88950) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (89200) Sonostream: PDM Rx duration: 254370 us[0m
+[0;32mI (89200) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (89200) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (89210) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (89460) Sonostream: PDM Rx duration: 254341 us[0m
+[0;32mI (89460) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (89460) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (89460) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (89710) Sonostream: PDM Rx duration: 254239 us[0m
+[0;32mI (89710) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (89710) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (89720) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (89970) Sonostream: PDM Rx duration: 254258 us[0m
+[0;32mI (89970) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (89970) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (89970) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (90220) Sonostream: PDM Rx duration: 254352 us[0m
+[0;32mI (90220) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (90220) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (90230) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (90480) Sonostream: PDM Rx duration: 254385 us[0m
+[0;32mI (90480) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (90480) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (90480) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (90730) Sonostream: PDM Rx duration: 254278 us[0m
+[0;32mI (90730) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (90730) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (90740) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (90990) Sonostream: PDM Rx duration: 254366 us[0m
+[0;32mI (90990) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (90990) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (90990) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (91240) Sonostream: PDM Rx duration: 254354 us[0m
+[0;32mI (91240) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (91240) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (91250) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (91500) Sonostream: PDM Rx duration: 254381 us[0m
+[0;32mI (91500) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (91500) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (91500) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (91750) Sonostream: PDM Rx duration: 254106 us[0m
+[0;32mI (91750) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (91750) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (91760) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (92010) Sonostream: PDM Rx duration: 254328 us[0m
+[0;32mI (92010) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (92010) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (92010) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (92260) Sonostream: PDM Rx duration: 254360 us[0m
+[0;32mI (92260) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (92260) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (92270) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (92520) Sonostream: PDM Rx duration: 254293 us[0m
+[0;32mI (92520) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (92520) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (92520) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (92790) Sonostream: PDM Rx duration: 269237 us[0m
+[0;32mI (92790) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (92790) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (92790) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (93040) Sonostream: PDM Rx duration: 254393 us[0m
+[0;32mI (93040) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (93040) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (93050) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (93300) Sonostream: PDM Rx duration: 254280 us[0m
+[0;32mI (93300) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (93300) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (93300) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (93550) Sonostream: PDM Rx duration: 254358 us[0m
+[0;32mI (93550) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (93550) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (93560) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (93810) Sonostream: PDM Rx duration: 254288 us[0m
+[0;32mI (93810) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (93810) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (93810) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (94060) Sonostream: PDM Rx duration: 254380 us[0m
+[0;32mI (94060) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (94060) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (94070) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (94320) Sonostream: PDM Rx duration: 254220 us[0m
+[0;32mI (94320) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (94320) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (94320) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (94570) Sonostream: PDM Rx duration: 254393 us[0m
+[0;32mI (94570) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (94570) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (94580) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (94830) Sonostream: PDM Rx duration: 254263 us[0m
+[0;32mI (94830) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (94830) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (94830) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (95080) Sonostream: PDM Rx duration: 254307 us[0m
+[0;32mI (95080) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (95080) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (95090) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (95340) Sonostream: PDM Rx duration: 254390 us[0m
+[0;32mI (95340) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (95340) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (95340) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (95590) Sonostream: PDM Rx duration: 254422 us[0m
+[0;32mI (95590) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (95590) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (95600) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (95850) Sonostream: PDM Rx duration: 254313 us[0m
+[0;32mI (95850) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (95850) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (95850) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (96100) Sonostream: PDM Rx duration: 254292 us[0m
+[0;32mI (96100) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (96100) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (96110) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (96360) Sonostream: PDM Rx duration: 254252 us[0m
+[0;32mI (96360) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (96360) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (96360) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (96630) Sonostream: PDM Rx duration: 269356 us[0m
+[0;32mI (96630) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (96630) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (96630) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (96880) Sonostream: PDM Rx duration: 254218 us[0m
+[0;32mI (96880) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (96880) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (96890) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (97140) Sonostream: PDM Rx duration: 254255 us[0m
+[0;32mI (97140) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (97140) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (97140) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (97390) Sonostream: PDM Rx duration: 254369 us[0m
+[0;32mI (97390) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (97390) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (97400) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (97650) Sonostream: PDM Rx duration: 254273 us[0m
+[0;32mI (97650) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (97650) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (97650) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (97900) Sonostream: PDM Rx duration: 254323 us[0m
+[0;32mI (97900) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (97900) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (97910) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (98160) Sonostream: PDM Rx duration: 254381 us[0m
+[0;32mI (98160) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (98160) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (98160) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (98410) Sonostream: PDM Rx duration: 254382 us[0m
+[0;32mI (98410) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (98410) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (98420) Sonostream: Error occurred during sending a frame: errno 128[0m
+[1;31mE (98550) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (98550) task_wdt:  - IDLE0 (CPU 0)[0m
+[1;31mE (98550) task_wdt: Tasks currently running:[0m
+[1;31mE (98550) task_wdt: CPU 0: socket_tx_task[0m
+[1;31mE (98550) task_wdt: CPU 1: IDLE1[0m
+[1;31mE (98550) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4200FBD2:0x3FC9C160 0x4200FFE8:0x3FC9C180 0x40377789:0x3FC9C1B0 0x4200BEF0:0x3FCC8EB0 0x4037C7C1:0x3FCC8F30
+
+[0;32mI (98680) Sonostream: PDM Rx duration: 269251 us[0m
+[0;32mI (98680) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (98680) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (98690) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (98940) Sonostream: PDM Rx duration: 254204 us[0m
+[0;32mI (98940) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (98940) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (98940) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (99190) Sonostream: PDM Rx duration: 254420 us[0m
+[0;32mI (99190) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (99190) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (99200) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (99450) Sonostream: PDM Rx duration: 254401 us[0m
+[0;32mI (99450) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (99450) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (99450) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (99700) Sonostream: PDM Rx duration: 254289 us[0m
+[0;32mI (99700) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (99700) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (99710) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (99960) Sonostream: PDM Rx duration: 254372 us[0m
+[0;32mI (99960) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (99960) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (99960) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (100210) Sonostream: PDM Rx duration: 254259 us[0m
+[0;32mI (100210) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (100210) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (100220) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (100480) Sonostream: PDM Rx duration: 269263 us[0m
+[0;32mI (100480) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (100480) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (100490) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (100740) Sonostream: PDM Rx duration: 254262 us[0m
+[0;32mI (100740) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (100740) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (100740) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (100990) Sonostream: PDM Rx duration: 254248 us[0m
+[0;32mI (100990) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (100990) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (101000) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (101250) Sonostream: PDM Rx duration: 254395 us[0m
+[0;32mI (101250) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (101250) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (101250) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (101500) Sonostream: PDM Rx duration: 254370 us[0m
+[0;32mI (101500) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (101500) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (101510) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (101760) Sonostream: PDM Rx duration: 254210 us[0m
+[0;32mI (101760) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (101760) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (101760) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (102010) Sonostream: PDM Rx duration: 254353 us[0m
+[0;32mI (102010) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (102010) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (102020) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (102270) Sonostream: PDM Rx duration: 254307 us[0m
+[0;32mI (102270) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (102270) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (102270) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (102520) Sonostream: PDM Rx duration: 254338 us[0m
+[0;32mI (102520) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (102520) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (102530) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (102780) Sonostream: PDM Rx duration: 254109 us[0m
+[0;32mI (102780) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (102780) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (102780) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (103030) Sonostream: PDM Rx duration: 254394 us[0m
+[0;32mI (103030) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (103030) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (103040) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (103290) Sonostream: PDM Rx duration: 254397 us[0m
+[0;32mI (103290) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (103290) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (103290) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (103540) Sonostream: PDM Rx duration: 254296 us[0m
+[0;32mI (103540) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (103540) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (103550) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (103800) Sonostream: PDM Rx duration: 254278 us[0m
+[0;32mI (103800) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (103800) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (103800) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (104050) Sonostream: PDM Rx duration: 254207 us[0m
+[0;32mI (104050) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (104050) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (104060) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (104320) Sonostream: PDM Rx duration: 269276 us[0m
+[0;32mI (104320) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (104320) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (104330) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (104580) Sonostream: PDM Rx duration: 254281 us[0m
+[0;32mI (104580) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (104580) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (104580) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (104830) Sonostream: PDM Rx duration: 254198 us[0m
+[0;32mI (104830) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (104830) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (104840) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (105090) Sonostream: PDM Rx duration: 254340 us[0m
+[0;32mI (105090) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (105090) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (105090) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (105340) Sonostream: PDM Rx duration: 254351 us[0m
+[0;32mI (105340) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (105340) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (105350) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (105600) Sonostream: PDM Rx duration: 254346 us[0m
+[0;32mI (105600) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (105600) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (105600) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (105850) Sonostream: PDM Rx duration: 254189 us[0m
+[0;32mI (105850) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (105850) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (105860) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (106110) Sonostream: PDM Rx duration: 254346 us[0m
+[0;32mI (106110) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (106110) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (106110) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (106360) Sonostream: PDM Rx duration: 254236 us[0m
+[0;32mI (106360) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (106360) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (106370) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (106620) Sonostream: PDM Rx duration: 254335 us[0m
+[0;32mI (106620) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (106620) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (106620) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (106870) Sonostream: PDM Rx duration: 254255 us[0m
+[0;32mI (106870) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (106870) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (106880) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (107130) Sonostream: PDM Rx duration: 254289 us[0m
+[0;32mI (107130) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (107130) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (107130) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (107380) Sonostream: PDM Rx duration: 254262 us[0m
+[0;32mI (107380) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (107380) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (107390) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (107640) Sonostream: PDM Rx duration: 254411 us[0m
+[0;32mI (107640) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (107640) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (107640) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (107890) Sonostream: PDM Rx duration: 254167 us[0m
+[0;32mI (107890) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (107890) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (107900) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (108160) Sonostream: PDM Rx duration: 269362 us[0m
+[0;32mI (108160) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (108160) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (108170) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (108420) Sonostream: PDM Rx duration: 254359 us[0m
+[0;32mI (108420) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (108420) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (108420) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (108670) Sonostream: PDM Rx duration: 254142 us[0m
+[0;32mI (108670) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (108670) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (108680) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (108930) Sonostream: PDM Rx duration: 254318 us[0m
+[0;32mI (108930) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (108930) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (108930) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (109180) Sonostream: PDM Rx duration: 254394 us[0m
+[0;32mI (109180) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (109180) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (109190) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (109440) Sonostream: PDM Rx duration: 254199 us[0m
+[0;32mI (109440) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (109440) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (109440) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (109690) Sonostream: PDM Rx duration: 254223 us[0m
+[0;32mI (109690) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (109690) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (109700) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (109950) Sonostream: PDM Rx duration: 254225 us[0m
+[0;32mI (109950) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (109950) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (109950) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (110200) Sonostream: PDM Rx duration: 254280 us[0m
+[0;32mI (110200) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (110200) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (110210) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (110460) Sonostream: PDM Rx duration: 254393 us[0m
+[0;32mI (110460) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (110460) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (110460) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (110710) Sonostream: PDM Rx duration: 254246 us[0m
+[0;32mI (110710) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (110710) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (110720) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (110970) Sonostream: PDM Rx duration: 254337 us[0m
+[0;32mI (110970) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (110970) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (110970) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (111220) Sonostream: PDM Rx duration: 254338 us[0m
+[0;32mI (111220) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (111220) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (111230) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (111480) Sonostream: PDM Rx duration: 254349 us[0m
+[0;32mI (111480) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (111480) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (111480) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (111730) Sonostream: PDM Rx duration: 254314 us[0m
+[0;32mI (111730) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (111730) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (111740) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (112000) Sonostream: PDM Rx duration: 269296 us[0m
+[0;32mI (112000) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (112000) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (112010) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (112260) Sonostream: PDM Rx duration: 254373 us[0m
+[0;32mI (112260) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (112260) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (112260) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (112510) Sonostream: PDM Rx duration: 254387 us[0m
+[0;32mI (112510) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (112510) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (112520) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (112770) Sonostream: PDM Rx duration: 254246 us[0m
+[0;32mI (112770) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (112770) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (112770) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (113020) Sonostream: PDM Rx duration: 254329 us[0m
+[0;32mI (113020) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (113020) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (113030) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (113280) Sonostream: PDM Rx duration: 254335 us[0m
+[0;32mI (113280) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (113280) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (113280) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (113530) Sonostream: PDM Rx duration: 254291 us[0m
+[0;32mI (113530) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (113530) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (113540) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (113790) Sonostream: PDM Rx duration: 254244 us[0m
+[0;32mI (113790) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (113790) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (113790) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (114040) Sonostream: PDM Rx duration: 254352 us[0m
+[0;32mI (114040) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (114040) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (114050) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (114300) Sonostream: PDM Rx duration: 254364 us[0m
+[0;32mI (114300) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (114300) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (114300) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (114550) Sonostream: PDM Rx duration: 254317 us[0m
+[0;32mI (114550) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (114550) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (114560) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (114810) Sonostream: PDM Rx duration: 254266 us[0m
+[0;32mI (114810) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (114810) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (114810) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (115060) Sonostream: PDM Rx duration: 254341 us[0m
+[0;32mI (115060) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (115060) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (115070) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (115320) Sonostream: PDM Rx duration: 254334 us[0m
+[0;32mI (115320) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (115320) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (115320) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (115570) Sonostream: PDM Rx duration: 254353 us[0m
+[0;32mI (115570) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (115570) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (115580) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (115840) Sonostream: PDM Rx duration: 269211 us[0m
+[0;32mI (115840) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (115840) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (115850) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (116100) Sonostream: PDM Rx duration: 254339 us[0m
+[0;32mI (116100) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (116100) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (116100) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (116350) Sonostream: PDM Rx duration: 254393 us[0m
+[0;32mI (116350) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (116350) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (116360) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (116610) Sonostream: PDM Rx duration: 254296 us[0m
+[0;32mI (116610) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (116610) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (116610) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (116860) Sonostream: PDM Rx duration: 254215 us[0m
+[0;32mI (116860) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (116860) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (116870) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (117120) Sonostream: PDM Rx duration: 254273 us[0m
+[0;32mI (117120) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (117120) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (117120) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (117370) Sonostream: PDM Rx duration: 254405 us[0m
+[0;32mI (117370) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (117370) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (117380) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (117630) Sonostream: PDM Rx duration: 254290 us[0m
+[0;32mI (117630) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (117630) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (117630) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (117880) Sonostream: PDM Rx duration: 254187 us[0m
+[0;32mI (117880) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (117880) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (117890) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (118140) Sonostream: PDM Rx duration: 254338 us[0m
+[0;32mI (118140) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (118140) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (118140) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (118390) Sonostream: PDM Rx duration: 254383 us[0m
+[0;32mI (118390) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (118390) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (118400) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (118650) Sonostream: PDM Rx duration: 254150 us[0m
+[0;32mI (118650) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (118650) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (118650) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (118900) Sonostream: PDM Rx duration: 254252 us[0m
+[0;32mI (118900) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (118900) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (118910) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (119160) Sonostream: PDM Rx duration: 254321 us[0m
+[0;32mI (119160) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (119160) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (119160) Sonostream: Error occurred during sending a frame: errno 128[0m
+[1;31mE (119300) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (119300) task_wdt:  - IDLE0 (CPU 0)[0m
+[1;31mE (119300) task_wdt: Tasks currently running:[0m
+[1;31mE (119300) task_wdt: CPU 0: socket_tx_task[0m
+[1;31mE (119300) task_wdt: CPU 1: IDLE1[0m
+[1;31mE (119300) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4200FBD2:0x3FC9C160 0x4200FFE8:0x3FC9C180 0x40377789:0x3FC9C1B0 0x4037C939:0x3FCC8E70 0x4200BEFD:0x3FCC8EB0 0x4037C7C1:0x3FCC8F30
+
+[0;32mI (119430) Sonostream: PDM Rx duration: 269245 us[0m
+[0;32mI (119430) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (119430) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (119430) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (119700) Sonostream: PDM Rx duration: 269141 us[0m
+[0;32mI (119700) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (119700) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (119700) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (119950) Sonostream: PDM Rx duration: 254274 us[0m
+[0;32mI (119950) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (119950) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (119960) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (120210) Sonostream: PDM Rx duration: 254271 us[0m
+[0;32mI (120210) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (120210) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (120210) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (120460) Sonostream: PDM Rx duration: 254361 us[0m
+[0;32mI (120460) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (120460) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (120470) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (120720) Sonostream: PDM Rx duration: 254176 us[0m
+[0;32mI (120720) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (120720) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (120720) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (120970) Sonostream: PDM Rx duration: 253997 us[0m
+[0;32mI (120970) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (120970) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (120980) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (121230) Sonostream: PDM Rx duration: 254303 us[0m
+[0;32mI (121230) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (121230) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (121230) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (121480) Sonostream: PDM Rx duration: 254225 us[0m
+[0;32mI (121480) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (121480) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (121490) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (121740) Sonostream: PDM Rx duration: 254247 us[0m
+[0;32mI (121740) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (121740) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (121740) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (121990) Sonostream: PDM Rx duration: 254289 us[0m
+[0;32mI (121990) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (121990) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (122000) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (122250) Sonostream: PDM Rx duration: 254250 us[0m
+[0;32mI (122250) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (122250) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (122250) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (122500) Sonostream: PDM Rx duration: 254374 us[0m
+[0;32mI (122500) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (122500) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (122510) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (122760) Sonostream: PDM Rx duration: 254219 us[0m
+[0;32mI (122760) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (122760) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (122760) Sonostream: Error occurred during sending a frame: errno 128[0m
+[0;32mI (123010) Sonostream: PDM Rx duration: 254294 us[0m
+[0;32mI (123010) Sonostream: PDM task added an element, current size: 0[0m
+[1;31mE (123010) Sonostream: Error occurred during sending a chunk: errno 128[0m
+
+[1;31mE (123020) Sonostream: Error occurred during sending a frame: errno 128[0m

@@ -1,0 +1,381 @@
+Command: /home/abhi/.espressif/python_env/idf5.5_py3.13_env/bin/python /home/abhi/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyACM0 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 /home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/sonostream.elf /home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/bootloader.elf -m '/home/abhi/.espressif/python_env/idf5.5_py3.13_env/bin/python' '/home/abhi/esp/esp-idf/tools/idf.py' '-p' '/dev/ttyACM0'
+[0;33m--- esp-idf-monitor 1.5.0 on /dev/ttyACM0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40056f5c: memcpy in ROM
+[0m
+[0;33m--- 0x403c8700: _stext at ??:?
+[0m
+[0;33m--- 0x403c8924: call_start_cpu0 at /home/abhi/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x40381e28: remove_free_block at /home/abhi/esp/esp-idf/components/heap/tlsf/tlsf_control_functions.h:375
+ (inlined by) block_locate_free at /home/abhi/esp/esp-idf/components/heap/tlsf/tlsf_control_functions.h:619
+ (inlined by) tlsf_malloc at /home/abhi/esp/esp-idf/components/heap/tlsf/tlsf.c:443
+[0m
+[0;33m--- 0x40056f5c: memcpy in ROM
+0x40056f72: memcpy in ROM
+[0m
+[0;33m--- 0x40381e25: remove_free_block at /home/abhi/esp/esp-idf/components/heap/tlsf/tlsf_control_functions.h:373 (discriminator 1)
+ (inlined by) block_locate_free at /home/abhi/esp/esp-idf/components/heap/tlsf/tlsf_control_functions.h:619 (discriminator 1)
+ (inlined by) tlsf_malloc at /home/abhi/esp/esp-idf/components/heap/tlsf/tlsf.c:443 (discriminator 1)
+0x403817f9: multi_heap_malloc_impl at /home/abhi/esp/esp-idf/components/heap/multi_heap.c:209
+0x403763e9: aligned_or_unaligned_alloc at /home/abhi/esp/esp-idf/components/heap/heap_caps_base.c:82
+0x40376501: heap_caps_aligned_alloc_base at /home/abhi/esp/esp-idf/components/heap/heap_caps_base.c:156
+0x40376531: heap_caps_malloc_base at /home/abhi/esp/esp-idf/components/heap/heap_caps_base.c:176
+0x4037610c: heap_caps_malloc at /home/abhi/esp/esp-idf/components/heap/heap_caps.c:84
+0x4037cd71: pvPortMalloc at /home/abhi/esp/esp-idf/components/freertos/heap_idf.c:55
+0x4037bfe2: xQueueGenericCreate at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:545
+0x4202582b: sys_thread_sem_init at /home/abhi/esp/esp-idf/components/lwip/port/freertos/sys_arch.c:514
+0x42025879: sys_thread_sem_get at /home/abhi/esp/esp-idf/components/lwip/port/freertos/sys_arch.c:482
+0x42025b5f: netconn_apimsg at /home/abhi/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:128
+0x42025c06: netconn_new_with_proto_and_callback at /home/abhi/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x42015961: lwip_socket at /home/abhi/esp/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x4200bc75: socket at /home/abhi/esp/esp-idf/components/lwip/include/lwip/sockets.h:70
+ (inlined by) socket_tx_task at /home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/main/sonostream.c:163
+0x4037c789: vPortTaskWrapper at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b24: esp_restart_noos at /home/abhi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x403c8700: _stext at ??:?
+[0m
+[0;33m--- 0x403c8924: call_start_cpu0 at /home/abhi/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x40381e26: remove_free_block at /home/abhi/esp/esp-idf/components/heap/tlsf/tlsf_control_functions.h:374
+ (inlined by) block_locate_free at /home/abhi/esp/esp-idf/components/heap/tlsf/tlsf_control_functions.h:619
+ (inlined by) tlsf_malloc at /home/abhi/esp/esp-idf/components/heap/tlsf/tlsf.c:443
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x40381e23: remove_free_block at /home/abhi/esp/esp-idf/components/heap/tlsf/tlsf_control_functions.h:373 (discriminator 1)
+ (inlined by) block_locate_free at /home/abhi/esp/esp-idf/components/heap/tlsf/tlsf_control_functions.h:619 (discriminator 1)
+ (inlined by) tlsf_malloc at /home/abhi/esp/esp-idf/components/heap/tlsf/tlsf.c:443 (discriminator 1)
+0x403817f9: multi_heap_malloc_impl at /home/abhi/esp/esp-idf/components/heap/multi_heap.c:209
+0x403763e9: aligned_or_unaligned_alloc at /home/abhi/esp/esp-idf/components/heap/heap_caps_base.c:82
+0x40376501: heap_caps_aligned_alloc_base at /home/abhi/esp/esp-idf/components/heap/heap_caps_base.c:156
+0x40376531: heap_caps_malloc_base at /home/abhi/esp/esp-idf/components/heap/heap_caps_base.c:176
+0x4037610c: heap_caps_malloc at /home/abhi/esp/esp-idf/components/heap/heap_caps.c:84
+0x4037cd71: pvPortMalloc at /home/abhi/esp/esp-idf/components/freertos/heap_idf.c:55
+0x4037f481: xTaskCreatePinnedToCore at /home/abhi/esp/esp-idf/components/freertos/esp_additions/freertos_tasks_c_additions.h:236
+0x4200c336: app_main at /home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/main/sonostream.c:358
+0x42085960: main_task at /home/abhi/esp/esp-idf/components/freertos/app_startup.c:208
+0x4037c789: vPortTaskWrapper at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b24: esp_restart_noos at /home/abhi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x403c8700: _stext at ??:?
+[0m
+[0;33m--- 0x403c8924: call_start_cpu0 at /home/abhi/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x40381e26: remove_free_block at /home/abhi/esp/esp-idf/components/heap/tlsf/tlsf_control_functions.h:374
+ (inlined by) block_locate_free at /home/abhi/esp/esp-idf/components/heap/tlsf/tlsf_control_functions.h:619
+ (inlined by) tlsf_malloc at /home/abhi/esp/esp-idf/components/heap/tlsf/tlsf.c:443
+[0m
+[0;33m--- 0x4037cb72: _frxt_int_enter at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:140
+[0m
+[0;33m--- 0x4037cb7e: _frxt_int_enter at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:143
+0x40056f5c: memcpy in ROM
+0x40056f72: memcpy in ROM
+[0m
+[0;33m--- 0x40381e23: remove_free_block at /home/abhi/esp/esp-idf/components/heap/tlsf/tlsf_control_functions.h:373 (discriminator 1)
+ (inlined by) block_locate_free at /home/abhi/esp/esp-idf/components/heap/tlsf/tlsf_control_functions.h:619 (discriminator 1)
+ (inlined by) tlsf_malloc at /home/abhi/esp/esp-idf/components/heap/tlsf/tlsf.c:443 (discriminator 1)
+0x403817f9: multi_heap_malloc_impl at /home/abhi/esp/esp-idf/components/heap/multi_heap.c:209
+0x403763e9: aligned_or_unaligned_alloc at /home/abhi/esp/esp-idf/components/heap/heap_caps_base.c:82
+0x40376501: heap_caps_aligned_alloc_base at /home/abhi/esp/esp-idf/components/heap/heap_caps_base.c:156
+0x40376531: heap_caps_malloc_base at /home/abhi/esp/esp-idf/components/heap/heap_caps_base.c:176
+0x4037610c: heap_caps_malloc at /home/abhi/esp/esp-idf/components/heap/heap_caps.c:84
+0x40376141: heap_caps_malloc_default at /home/abhi/esp/esp-idf/components/heap/heap_caps.c:110
+0x40383ea1: malloc at /home/abhi/esp/esp-idf/components/newlib/src/heap.c:24
+0x42016374: mem_malloc at /home/abhi/esp/esp-idf/components/lwip/lwip/src/core/mem.c:209
+0x42016418: do_memp_malloc_pool at /home/abhi/esp/esp-idf/components/lwip/lwip/src/core/memp.c:268
+0x420164aa: memp_malloc at /home/abhi/esp/esp-idf/components/lwip/lwip/src/core/memp.c:370
+0x42018c00: tcp_alloc at /home/abhi/esp/esp-idf/components/lwip/lwip/src/core/tcp.c:1856
+0x42018cd1: tcp_new_ip_type at /home/abhi/esp/esp-idf/components/lwip/lwip/src/core/tcp.c:2010
+0x42026431: pcb_new at /home/abhi/esp/esp-idf/components/lwip/lwip/src/api/api_msg.c:673
+0x42026cf3: lwip_netconn_do_newconn at /home/abhi/esp/esp-idf/components/lwip/lwip/src/api/api_msg.c:711
+0x42016069: tcpip_thread_handle_msg at /home/abhi/esp/esp-idf/components/lwip/lwip/src/api/tcpip.c:162
+0x42016124: tcpip_thread at /home/abhi/esp/esp-idf/components/lwip/lwip/src/api/tcpip.c:148
+0x4037c789: vPortTaskWrapper at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x4037a0d1: xt_utils_compare_and_set at /home/abhi/esp/esp-idf/components/xtensa/include/xt_utils.h:223
+ (inlined by) esp_cpu_compare_and_set at /home/abhi/esp/esp-idf/components/esp_hw_support/cpu.c:232
+[0m
+[0;33m--- 0x403c8700: _stext at ??:?
+[0m
+[0;33m--- 0x403c8924: call_start_cpu0 at /home/abhi/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x40381e26: remove_free_block at /home/abhi/esp/esp-idf/components/heap/tlsf/tlsf_control_functions.h:374
+ (inlined by) block_locate_free at /home/abhi/esp/esp-idf/components/heap/tlsf/tlsf_control_functions.h:619
+ (inlined by) tlsf_malloc at /home/abhi/esp/esp-idf/components/heap/tlsf/tlsf.c:443
+[0m
+[0;33m--- 0x40056f5c: memcpy in ROM
+0x40056f72: memcpy in ROM
+[0m
+[0;33m--- 0x40381e23: remove_free_block at /home/abhi/esp/esp-idf/components/heap/tlsf/tlsf_control_functions.h:373 (discriminator 1)
+ (inlined by) block_locate_free at /home/abhi/esp/esp-idf/components/heap/tlsf/tlsf_control_functions.h:619 (discriminator 1)
+ (inlined by) tlsf_malloc at /home/abhi/esp/esp-idf/components/heap/tlsf/tlsf.c:443 (discriminator 1)
+0x403817f9: multi_heap_malloc_impl at /home/abhi/esp/esp-idf/components/heap/multi_heap.c:209
+0x403763e9: aligned_or_unaligned_alloc at /home/abhi/esp/esp-idf/components/heap/heap_caps_base.c:82
+0x40376501: heap_caps_aligned_alloc_base at /home/abhi/esp/esp-idf/components/heap/heap_caps_base.c:156
+0x40376531: heap_caps_malloc_base at /home/abhi/esp/esp-idf/components/heap/heap_caps_base.c:176
+0x4037610c: heap_caps_malloc at /home/abhi/esp/esp-idf/components/heap/heap_caps.c:84
+0x4037cd71: pvPortMalloc at /home/abhi/esp/esp-idf/components/freertos/heap_idf.c:55
+0x4037bfe2: xQueueGenericCreate at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:545
+0x4202582b: sys_thread_sem_init at /home/abhi/esp/esp-idf/components/lwip/port/freertos/sys_arch.c:514
+0x42025879: sys_thread_sem_get at /home/abhi/esp/esp-idf/components/lwip/port/freertos/sys_arch.c:482
+0x42025b5f: netconn_apimsg at /home/abhi/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:128
+0x42025c06: netconn_new_with_proto_and_callback at /home/abhi/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x42015961: lwip_socket at /home/abhi/esp/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x4200bc75: socket at /home/abhi/esp/esp-idf/components/lwip/include/lwip/sockets.h:70
+ (inlined by) socket_tx_task at /home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/main/sonostream.c:163
+0x4037c789: vPortTaskWrapper at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b24: esp_restart_noos at /home/abhi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x403c8700: _stext at ??:?
+[0m
+[0;33m--- 0x403c8924: call_start_cpu0 at /home/abhi/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x40375be5: panic_abort at /home/abhi/esp/esp-idf/components/esp_system/panic.c:468
+0x4037bc89: esp_system_abort at /home/abhi/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40383e91: __assert_func at /home/abhi/esp/esp-idf/components/newlib/src/assert.c:80
+0x4037c562: xQueueSemaphoreTake at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+0x42025581: sys_arch_sem_wait at /home/abhi/esp/esp-idf/components/lwip/port/freertos/sys_arch.c:165
+0x4201628d: tcpip_send_msg_wait_sem at /home/abhi/esp/esp-idf/components/lwip/lwip/src/api/tcpip.c:461
+0x42025b72: netconn_apimsg at /home/abhi/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x42025c06: netconn_new_with_proto_and_callback at /home/abhi/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x42015961: lwip_socket at /home/abhi/esp/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x4200bc75: socket at /home/abhi/esp/esp-idf/components/lwip/include/lwip/sockets.h:70
+ (inlined by) socket_tx_task at /home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/main/sonostream.c:163
+0x4037c789: vPortTaskWrapper at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40381e23: remove_free_block at /home/abhi/esp/esp-idf/components/heap/tlsf/tlsf_control_functions.h:373 (discriminator 1)
+ (inlined by) block_locate_free at /home/abhi/esp/esp-idf/components/heap/tlsf/tlsf_control_functions.h:619 (discriminator 1)
+ (inlined by) tlsf_malloc at /home/abhi/esp/esp-idf/components/heap/tlsf/tlsf.c:443 (discriminator 1)
+0x403817f9: multi_heap_malloc_impl at /home/abhi/esp/esp-idf/components/heap/multi_heap.c:209
+0x403763e9: aligned_or_unaligned_alloc at /home/abhi/esp/esp-idf/components/heap/heap_caps_base.c:82
+0x40376501: heap_caps_aligned_alloc_base at /home/abhi/esp/esp-idf/components/heap/heap_caps_base.c:156
+0x40376531: heap_caps_malloc_base at /home/abhi/esp/esp-idf/components/heap/heap_caps_base.c:176
+0x4037610c: heap_caps_malloc at /home/abhi/esp/esp-idf/components/heap/heap_caps.c:84
+0x40376141: heap_caps_malloc_default at /home/abhi/esp/esp-idf/components/heap/heap_caps.c:110
+0x40383ea1: malloc at /home/abhi/esp/esp-idf/components/newlib/src/heap.c:24
+0x42016374: mem_malloc at /home/abhi/esp/esp-idf/components/lwip/lwip/src/core/mem.c:209
+0x42016418: do_memp_malloc_pool at /home/abhi/esp/esp-idf/components/lwip/lwip/src/core/memp.c:268
+0x420164aa: memp_malloc at /home/abhi/esp/esp-idf/components/lwip/lwip/src/core/memp.c:370
+0x42018c00: tcp_alloc at /home/abhi/esp/esp-idf/components/lwip/lwip/src/core/tcp.c:1856
+0x42018cd1: tcp_new_ip_type at /home/abhi/esp/esp-idf/components/lwip/lwip/src/core/tcp.c:2010
+0x42026431: pcb_new at /home/abhi/esp/esp-idf/components/lwip/lwip/src/api/api_msg.c:673
+0x42026cf3: lwip_netconn_do_newconn at /home/abhi/esp/esp-idf/components/lwip/lwip/src/api/api_msg.c:711
+0x42016069: tcpip_thread_handle_msg at /home/abhi/esp/esp-idf/components/lwip/lwip/src/api/tcpip.c:162
+0x42016124: tcpip_thread at /home/abhi/esp/esp-idf/components/lwip/lwip/src/api/tcpip.c:148
+0x4037c789: vPortTaskWrapper at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b24: esp_restart_noos at /home/abhi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x403c8700: _stext at ??:?
+[0m
+[0;33m--- 0x403c8924: call_start_cpu0 at /home/abhi/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x40375be5: panic_abort at /home/abhi/esp/esp-idf/components/esp_system/panic.c:468
+0x4037bc89: esp_system_abort at /home/abhi/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40383e91: __assert_func at /home/abhi/esp/esp-idf/components/newlib/src/assert.c:80
+0x4037c9be: spinlock_acquire at /home/abhi/esp/esp-idf/components/esp_hw_support/include/spinlock.h:142 (discriminator 1)
+ (inlined by) xPortEnterCriticalTimeout at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:479 (discriminator 1)
+0x4037c598: vPortEnterCritical at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:567
+ (inlined by) xQueueSemaphoreTake at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1727
+0x42025581: sys_arch_sem_wait at /home/abhi/esp/esp-idf/components/lwip/port/freertos/sys_arch.c:165
+0x4201628d: tcpip_send_msg_wait_sem at /home/abhi/esp/esp-idf/components/lwip/lwip/src/api/tcpip.c:461
+0x42025b72: netconn_apimsg at /home/abhi/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x42025c06: netconn_new_with_proto_and_callback at /home/abhi/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x42015961: lwip_socket at /home/abhi/esp/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x4200bc75: socket at /home/abhi/esp/esp-idf/components/lwip/include/lwip/sockets.h:70
+ (inlined by) socket_tx_task at /home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/main/sonostream.c:163
+0x4037c789: vPortTaskWrapper at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375be5: panic_abort at /home/abhi/esp/esp-idf/components/esp_system/panic.c:468
+0x4037bc89: esp_system_abort at /home/abhi/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40383e91: __assert_func at /home/abhi/esp/esp-idf/components/newlib/src/assert.c:80
+0x4037c0f6: xQueueGenericSend at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:937 (discriminator 2)
+0x42025536: sys_sem_signal at /home/abhi/esp/esp-idf/components/lwip/port/freertos/sys_arch.c:134
+0x42026cf8: lwip_netconn_do_newconn at /home/abhi/esp/esp-idf/components/lwip/lwip/src/api/api_msg.c:717
+0x42016069: tcpip_thread_handle_msg at /home/abhi/esp/esp-idf/components/lwip/lwip/src/api/tcpip.c:162
+0x42016124: tcpip_thread at /home/abhi/esp/esp-idf/components/lwip/lwip/src/api/tcpip.c:148
+0x4037c789: vPortTaskWrapper at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b24: esp_restart_noos at /home/abhi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x403c8700: _stext at ??:?
+[0m
+[0;33m--- 0x403c8924: call_start_cpu0 at /home/abhi/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x40381e26: remove_free_block at /home/abhi/esp/esp-idf/components/heap/tlsf/tlsf_control_functions.h:374
+ (inlined by) block_locate_free at /home/abhi/esp/esp-idf/components/heap/tlsf/tlsf_control_functions.h:619
+ (inlined by) tlsf_malloc at /home/abhi/esp/esp-idf/components/heap/tlsf/tlsf.c:443
+[0m
+[0;33m--- 0x40377701: _xt_lowint1 at /home/abhi/esp/esp-idf/components/xtensa/xtensa_vectors.S:1233
+[0m
+[0;33m--- 0x40056f5c: memcpy in ROM
+0x40056f72: memcpy in ROM
+[0m
+[0;33m--- 0x40381e23: remove_free_block at /home/abhi/esp/esp-idf/components/heap/tlsf/tlsf_control_functions.h:373 (discriminator 1)
+ (inlined by) block_locate_free at /home/abhi/esp/esp-idf/components/heap/tlsf/tlsf_control_functions.h:619 (discriminator 1)
+ (inlined by) tlsf_malloc at /home/abhi/esp/esp-idf/components/heap/tlsf/tlsf.c:443 (discriminator 1)
+0x403817f9: multi_heap_malloc_impl at /home/abhi/esp/esp-idf/components/heap/multi_heap.c:209
+0x403763e9: aligned_or_unaligned_alloc at /home/abhi/esp/esp-idf/components/heap/heap_caps_base.c:82
+0x40376501: heap_caps_aligned_alloc_base at /home/abhi/esp/esp-idf/components/heap/heap_caps_base.c:156
+0x40376531: heap_caps_malloc_base at /home/abhi/esp/esp-idf/components/heap/heap_caps_base.c:176
+0x4037610c: heap_caps_malloc at /home/abhi/esp/esp-idf/components/heap/heap_caps.c:84
+0x40376141: heap_caps_malloc_default at /home/abhi/esp/esp-idf/components/heap/heap_caps.c:110
+0x40383ea1: malloc at /home/abhi/esp/esp-idf/components/newlib/src/heap.c:24
+0x42016374: mem_malloc at /home/abhi/esp/esp-idf/components/lwip/lwip/src/core/mem.c:209
+0x42016418: do_memp_malloc_pool at /home/abhi/esp/esp-idf/components/lwip/lwip/src/core/memp.c:268
+0x420164aa: memp_malloc at /home/abhi/esp/esp-idf/components/lwip/lwip/src/core/memp.c:370
+0x42018c00: tcp_alloc at /home/abhi/esp/esp-idf/components/lwip/lwip/src/core/tcp.c:1856
+0x42018cd1: tcp_new_ip_type at /home/abhi/esp/esp-idf/components/lwip/lwip/src/core/tcp.c:2010
+0x42026431: pcb_new at /home/abhi/esp/esp-idf/components/lwip/lwip/src/api/api_msg.c:673
+0x42026cf3: lwip_netconn_do_newconn at /home/abhi/esp/esp-idf/components/lwip/lwip/src/api/api_msg.c:711
+0x42016069: tcpip_thread_handle_msg at /home/abhi/esp/esp-idf/components/lwip/lwip/src/api/tcpip.c:162
+0x42016124: tcpip_thread at /home/abhi/esp/esp-idf/components/lwip/lwip/src/api/tcpip.c:148
+0x4037c789: vPortTaskWrapper at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x4037c990: spinlock_acquire at /home/abhi/esp/esp-idf/components/esp_hw_support/include/spinlock.h:133
+ (inlined by) xPortEnterCriticalTimeout at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:479
+[0m
+[0;33m--- 0x403c8700: _stext at ??:?
+[0m
+[0;33m--- 0x403c8924: call_start_cpu0 at /home/abhi/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x4202643a: pcb_new at /home/abhi/esp/esp-idf/components/lwip/lwip/src/api/api_msg.c:674
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x42026437: pcb_new at /home/abhi/esp/esp-idf/components/lwip/lwip/src/api/api_msg.c:674
+0x42026cf3: lwip_netconn_do_newconn at /home/abhi/esp/esp-idf/components/lwip/lwip/src/api/api_msg.c:711
+0x42016069: tcpip_thread_handle_msg at /home/abhi/esp/esp-idf/components/lwip/lwip/src/api/tcpip.c:162
+0x42016124: tcpip_thread at /home/abhi/esp/esp-idf/components/lwip/lwip/src/api/tcpip.c:148
+0x4037c789: vPortTaskWrapper at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x42078396: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1766 (discriminator 1)
+[0m
+[0;33m--- 0x403c8700: _stext at ??:?
+[0m
+[0;33m--- 0x403c8924: call_start_cpu0 at /home/abhi/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x40381e28: remove_free_block at /home/abhi/esp/esp-idf/components/heap/tlsf/tlsf_control_functions.h:375
+ (inlined by) block_locate_free at /home/abhi/esp/esp-idf/components/heap/tlsf/tlsf_control_functions.h:619
+ (inlined by) tlsf_malloc at /home/abhi/esp/esp-idf/components/heap/tlsf/tlsf.c:443
+[0m
+[0;33m--- 0x40056f5c: memcpy in ROM
+0x40056f72: memcpy in ROM
+[0m
+[0;33m--- 0x40381e25: remove_free_block at /home/abhi/esp/esp-idf/components/heap/tlsf/tlsf_control_functions.h:373 (discriminator 1)
+ (inlined by) block_locate_free at /home/abhi/esp/esp-idf/components/heap/tlsf/tlsf_control_functions.h:619 (discriminator 1)
+ (inlined by) tlsf_malloc at /home/abhi/esp/esp-idf/components/heap/tlsf/tlsf.c:443 (discriminator 1)
+0x403817f9: multi_heap_malloc_impl at /home/abhi/esp/esp-idf/components/heap/multi_heap.c:209
+0x403763e9: aligned_or_unaligned_alloc at /home/abhi/esp/esp-idf/components/heap/heap_caps_base.c:82
+0x40376501: heap_caps_aligned_alloc_base at /home/abhi/esp/esp-idf/components/heap/heap_caps_base.c:156
+0x40376531: heap_caps_malloc_base at /home/abhi/esp/esp-idf/components/heap/heap_caps_base.c:176
+0x4037610c: heap_caps_malloc at /home/abhi/esp/esp-idf/components/heap/heap_caps.c:84
+0x40376141: heap_caps_malloc_default at /home/abhi/esp/esp-idf/components/heap/heap_caps.c:110
+0x40383ea1: malloc at /home/abhi/esp/esp-idf/components/newlib/src/heap.c:24
+0x42016374: mem_malloc at /home/abhi/esp/esp-idf/components/lwip/lwip/src/core/mem.c:209
+0x42016418: do_memp_malloc_pool at /home/abhi/esp/esp-idf/components/lwip/lwip/src/core/memp.c:268
+0x420164aa: memp_malloc at /home/abhi/esp/esp-idf/components/lwip/lwip/src/core/memp.c:370
+0x42018c00: tcp_alloc at /home/abhi/esp/esp-idf/components/lwip/lwip/src/core/tcp.c:1856
+0x42018cd1: tcp_new_ip_type at /home/abhi/esp/esp-idf/components/lwip/lwip/src/core/tcp.c:2010
+0x42026431: pcb_new at /home/abhi/esp/esp-idf/components/lwip/lwip/src/api/api_msg.c:673
+0x42026cf3: lwip_netconn_do_newconn at /home/abhi/esp/esp-idf/components/lwip/lwip/src/api/api_msg.c:711
+0x42016069: tcpip_thread_handle_msg at /home/abhi/esp/esp-idf/components/lwip/lwip/src/api/tcpip.c:162
+0x42016124: tcpip_thread at /home/abhi/esp/esp-idf/components/lwip/lwip/src/api/tcpip.c:148
+0x4037c789: vPortTaskWrapper at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x4037a0c8: esp_cpu_compare_and_set at /home/abhi/esp/esp-idf/components/esp_hw_support/cpu.c:200
+[0m
+[0;33m--- 0x403c8700: _stext at ??:?
+[0m
+[0;33m--- 0x403c8924: call_start_cpu0 at /home/abhi/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x40381e26: remove_free_block at /home/abhi/esp/esp-idf/components/heap/tlsf/tlsf_control_functions.h:374
+ (inlined by) block_locate_free at /home/abhi/esp/esp-idf/components/heap/tlsf/tlsf_control_functions.h:619
+ (inlined by) tlsf_malloc at /home/abhi/esp/esp-idf/components/heap/tlsf/tlsf.c:443
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x40381e23: remove_free_block at /home/abhi/esp/esp-idf/components/heap/tlsf/tlsf_control_functions.h:373 (discriminator 1)
+ (inlined by) block_locate_free at /home/abhi/esp/esp-idf/components/heap/tlsf/tlsf_control_functions.h:619 (discriminator 1)
+ (inlined by) tlsf_malloc at /home/abhi/esp/esp-idf/components/heap/tlsf/tlsf.c:443 (discriminator 1)
+0x403817f9: multi_heap_malloc_impl at /home/abhi/esp/esp-idf/components/heap/multi_heap.c:209
+0x403763e9: aligned_or_unaligned_alloc at /home/abhi/esp/esp-idf/components/heap/heap_caps_base.c:82
+0x40376501: heap_caps_aligned_alloc_base at /home/abhi/esp/esp-idf/components/heap/heap_caps_base.c:156
+0x40376531: heap_caps_malloc_base at /home/abhi/esp/esp-idf/components/heap/heap_caps_base.c:176
+0x4037610c: heap_caps_malloc at /home/abhi/esp/esp-idf/components/heap/heap_caps.c:84
+0x4037cd71: pvPortMalloc at /home/abhi/esp/esp-idf/components/freertos/heap_idf.c:55
+0x4037f481: xTaskCreatePinnedToCore at /home/abhi/esp/esp-idf/components/freertos/esp_additions/freertos_tasks_c_additions.h:236
+0x4200c336: app_main at /home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/main/sonostream.c:358
+0x42085960: main_task at /home/abhi/esp/esp-idf/components/freertos/app_startup.c:208
+0x4037c789: vPortTaskWrapper at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b24: esp_restart_noos at /home/abhi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x403c8700: _stext at ??:?
+[0m
+[0;33m--- 0x403c8924: call_start_cpu0 at /home/abhi/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x40381e26: remove_free_block at /home/abhi/esp/esp-idf/components/heap/tlsf/tlsf_control_functions.h:374
+ (inlined by) block_locate_free at /home/abhi/esp/esp-idf/components/heap/tlsf/tlsf_control_functions.h:619
+ (inlined by) tlsf_malloc at /home/abhi/esp/esp-idf/components/heap/tlsf/tlsf.c:443
+[0m
+[0;33m--- 0x40056f5c: memcpy in ROM
+0x40056f72: memcpy in ROM
+[0m
+[0;33m--- 0x40381e23: remove_free_block at /home/abhi/esp/esp-idf/components/heap/tlsf/tlsf_control_functions.h:373 (discriminator 1)
+ (inlined by) block_locate_free at /home/abhi/esp/esp-idf/components/heap/tlsf/tlsf_control_functions.h:619 (discriminator 1)
+ (inlined by) tlsf_malloc at /home/abhi/esp/esp-idf/components/heap/tlsf/tlsf.c:443 (discriminator 1)
+0x403817f9: multi_heap_malloc_impl at /home/abhi/esp/esp-idf/components/heap/multi_heap.c:209
+0x403763e9: aligned_or_unaligned_alloc at /home/abhi/esp/esp-idf/components/heap/heap_caps_base.c:82
+0x40376501: heap_caps_aligned_alloc_base at /home/abhi/esp/esp-idf/components/heap/heap_caps_base.c:156
+0x40376531: heap_caps_malloc_base at /home/abhi/esp/esp-idf/components/heap/heap_caps_base.c:176
+0x4037610c: heap_caps_malloc at /home/abhi/esp/esp-idf/components/heap/heap_caps.c:84
+0x4037cd71: pvPortMalloc at /home/abhi/esp/esp-idf/components/freertos/heap_idf.c:55
+0x4037bfe2: xQueueGenericCreate at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:545
+0x4202582b: sys_thread_sem_init at /home/abhi/esp/esp-idf/components/lwip/port/freertos/sys_arch.c:514
+0x42025879: sys_thread_sem_get at /home/abhi/esp/esp-idf/components/lwip/port/freertos/sys_arch.c:482
+0x42025b5f: netconn_apimsg at /home/abhi/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:128
+0x42025c06: netconn_new_with_proto_and_callback at /home/abhi/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x42015961: lwip_socket at /home/abhi/esp/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x4200bc75: socket at /home/abhi/esp/esp-idf/components/lwip/include/lwip/sockets.h:70
+ (inlined by) socket_tx_task at /home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/main/sonostream.c:163
+0x4037c789: vPortTaskWrapper at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b24: esp_restart_noos at /home/abhi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x403c8700: _stext at ??:?
+[0m
+[0;33m--- 0x403c8924: call_start_cpu0 at /home/abhi/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x40375be5: panic_abort at /home/abhi/esp/esp-idf/components/esp_system/panic.c:468
+0x4037bc89: esp_system_abort at /home/abhi/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40383e91: __assert_func at /home/abhi/esp/esp-idf/components/newlib/src/assert.c:80
+0x40381e12: remove_free_block at /home/abhi/esp/esp-idf/components/heap/tlsf/tlsf_control_functions.h:372 (discriminator 1)
+ (inlined by) block_locate_free at /home/abhi/esp/esp-idf/components/heap/tlsf/tlsf_control_functions.h:619 (discriminator 1)
+ (inlined by) tlsf_malloc at /home/abhi/esp/esp-idf/components/heap/tlsf/tlsf.c:443 (discriminator 1)
+0x403817f9: multi_heap_malloc_impl at /home/abhi/esp/esp-idf/components/heap/multi_heap.c:209
+0x403763e9: aligned_or_unaligned_alloc at /home/abhi/esp/esp-idf/components/heap/heap_caps_base.c:82
+0x40376501: heap_caps_aligned_alloc_base at /home/abhi/esp/esp-idf/components/heap/heap_caps_base.c:156
+0x40376531: heap_caps_malloc_base at /home/abhi/esp/esp-idf/components/heap/heap_caps_base.c:176
+0x4037610c: heap_caps_malloc at /home/abhi/esp/esp-idf/components/heap/heap_caps.c:84
+0x4037cd71: pvPortMalloc at /home/abhi/esp/esp-idf/components/freertos/heap_idf.c:55
+0x4037f481: xTaskCreatePinnedToCore at /home/abhi/esp/esp-idf/components/freertos/esp_additions/freertos_tasks_c_additions.h:236
+0x4200c336: app_main at /home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/main/sonostream.c:358
+0x42085960: main_task at /home/abhi/esp/esp-idf/components/freertos/app_startup.c:208
+0x4037c789: vPortTaskWrapper at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b24: esp_restart_noos at /home/abhi/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x403c8700: _stext at ??:?
+[0m
+[0;33m--- 0x403c8924: call_start_cpu0 at /home/abhi/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0m

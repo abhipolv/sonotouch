@@ -1,0 +1,237 @@
+# ninja log v6
+561	600	1741489612012499008	esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/xt_trax.c.obj	98896277de148994
+154	400	1741489611605494930	esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/efuse_controller/keys/with_key_purposes/esp_efuse_api_key.c.obj	2dcc93de40f2b4ea
+492	519	1741489611943498317	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/adc_periph.c.obj	eb70a7927dbd2999
+442	466	1741489611893497816	esp-idf/esp_system/libesp_system.a	246767c88eca9888
+204	291	1741489611655495431	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_mem.c.obj	6a771f92a89fc495
+455	493	1741489611906497947	esp-idf/soc/CMakeFiles/__idf_soc.dir/dport_access_common.c.obj	1458199a030ae971
+39	71	1741489611490493777	esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_cache_writeback_esp32s3.S.obj	e6d2cb5ff870edc2
+376	437	1741489611828497165	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_panic.c.obj	3d9ef260da64b83a
+234	393	1741489611685681925	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/flash_encrypt.c.obj	2b2b18fdb88a4130
+291	471	1741489611742714646	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/bootloader_flash/src/bootloader_flash_config_esp32s3.c.obj	5112ca77de09e785
+437	894	1741489611888497766	esp-idf/micro-ecc/CMakeFiles/__idf_micro-ecc.dir/uECC_verify_antifault.c.obj	ea4dc94540ce2f9b
+24	100	1741489611475493627	esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_gpio.c.obj	b5ce756b3869e78e
+338	393	1741489611789496774	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/esp32s3/bootloader_sha.c.obj	3c4db5a36fdb9a1f
+233	296	1741489611684495721	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_efuse.c.obj	c29418bb8a0ac6ce
+402	495	1741489611853497415	esp-idf/hal/CMakeFiles/__idf_hal.dir/mpu_hal.c.obj	ac2d6cd3df5f0e43
+393	426	1741489611844497325	esp-idf/esp_bootloader_format/CMakeFiles/__idf_esp_bootloader_format.dir/esp_bootloader_desc.c.obj	62f7d34e4ac1e719
+445	498	1741489611896497846	esp-idf/soc/CMakeFiles/__idf_soc.dir/lldesc.c.obj	334f4a8a1d99b6f4
+495	550	1741489611946498347	esp-idf/efuse/libefuse.a	f5f720374ac2d0f8
+303	402	1741489611754496423	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/flash_partitions.c.obj	7c2684a86a18ed24
+545	578	1741489611996498848	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/twai_periph.c.obj	794d78baf10554a0
+133	445	1741489611584494719	esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_api.c.obj	60d2c70dac18a416
+266	590	1741489611717496052	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/bootloader_flash/src/bootloader_flash.c.obj	a7948d1c36019af3
+5	33	1744310569535508707	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	3b0d7927ccbd7463
+528	566	1741489611979498678	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/timer_periph.c.obj	94b9c8fa6be0baf3
+71	395	1741489611522494098	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk.c.obj	ec8d40500abd59bf
+552	565	1741420496598729432	CMakeFiles/bootloader.elf.dir/project_elf_src_esp32s3.c.obj	6950070622cbbf66
+395	509	1741489611846497345	esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_wrap.c.obj	cc01475357a96a2d
+913	938	1741489612364502526	esp-idf/soc/libsoc.a	6636de01fb78636
+50	154	1741489611501493887	esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/esp_err_to_name.c.obj	f3239f0bd7c0802f
+4	5578	1744311830866093571	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/soc/cmake_install.cmake	46a3aa0f1221c1ba
+519	535	1741489611970498588	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/sdm_periph.c.obj	1b3b27a16e2f3c0b
+938	952	1741489612389502776	esp-idf/xtensa/libxtensa.a	7ed2a46e788956ee
+11	87	1741489611462913888	esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_sys.c.obj	e53c585f815209c6
+566	613	1741489612017499058	esp-idf/main/CMakeFiles/__idf_main.dir/bootloader_start.c.obj	b917061e848675be
+466	511	1741489611917498057	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/interrupts.c.obj	ab2c6b2b038d4b6
+426	569	1741489611877497656	esp-idf/hal/CMakeFiles/__idf_hal.dir/cache_hal.c.obj	ea60c0d1fc479539
+495	527	1741489611947004184	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/gdma_periph.c.obj	1cc7ea51819eb8d4
+400	509	1741489611851497395	esp-idf/hal/CMakeFiles/__idf_hal.dir/hal_utils.c.obj	665635c3cbe42364
+529	556	1741489611980498688	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/lcd_periph.c.obj	4acab99ec4cde1d8
+524	555	1741489611975498638	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/i2s_periph.c.obj	26e95d69bdd2367f
+66	115	1741489611517494048	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/esp_memory_utils.c.obj	4dec9fed6bb6cbcb
+7	32	1741489611459259538	esp-idf/log/CMakeFiles/__idf_log.dir/src/noos/util.c.obj	1a7eee35d201970b
+309	491	1741489611760496483	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_init.c.obj	ca6c9073809c0623
+668	682	1741489612119500078	esp-idf/esp_bootloader_format/libesp_bootloader_format.a	935e7de5990b4b88
+96	171	1741489611547494348	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/chip_info.c.obj	52f2bb58e83b6911
+21	113	1741489611472907626	esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_spiflash.c.obj	7013beb02da50382
+8	67	1741489611459770176	esp-idf/log/CMakeFiles/__idf_log.dir/src/log_print.c.obj	9a980eff72afcabf
+498	543	1741489611949762402	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/spi_periph.c.obj	5b677600c73b3ea2
+6	78	1741489611457493446	esp-idf/log/CMakeFiles/__idf_log.dir/src/noos/log_timestamp.c.obj	9fc22478bb0c86b3
+296	615	1741489611747496353	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_utility.c.obj	198082cc18a78509
+4	5578	1744311830870258458	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/hal/cmake_install.cmake	46a3aa0f1221c1ba
+4	5578	1744311830873093535	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/spi_flash/cmake_install.cmake	46a3aa0f1221c1ba
+201	303	1741489611652495401	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_clock_init.c.obj	97c2c1e8c59ebc14
+4	5578	1744311830898093406	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/esp_rom/cmake_install.cmake	46a3aa0f1221c1ba
+525	567	1741489611976498648	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/i2c_periph.c.obj	c54eba929cf406d3
+4	5578	1744311830885093473	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/efuse/cmake_install.cmake	46a3aa0f1221c1ba
+4	5578	1744311830887093463	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/esp_system/cmake_install.cmake	46a3aa0f1221c1ba
+4	5578	1744311830894093427	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/esp_common/cmake_install.cmake	46a3aa0f1221c1ba
+4	5578	1744311830881093494	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/bootloader_support/cmake_install.cmake	46a3aa0f1221c1ba
+92	271	1741489611543541028	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_time.c.obj	5a3b767e35fe7386
+4	5578	1744311830902093386	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/freertos/cmake_install.cmake	46a3aa0f1221c1ba
+4	5578	1744311830901093391	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/log/cmake_install.cmake	46a3aa0f1221c1ba
+511	543	1741489611962963923	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/rmt_periph.c.obj	b832c02e3f3f5393
+4	5578	1744311830901093391	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/esptool_py/cmake_install.cmake	46a3aa0f1221c1ba
+4	5578	1744311830904093375	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/main/cmake_install.cmake	46a3aa0f1221c1ba
+697	715	1741489612148500368	esp-idf/hal/libhal.a	ba97451495444636
+4	5578	1744311830875093524	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/esp_bootloader_format/cmake_install.cmake	46a3aa0f1221c1ba
+4	5578	1744311830902093386	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/partition_table/cmake_install.cmake	46a3aa0f1221c1ba
+472	529	1741489611923498117	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/gpio_periph.c.obj	e6cf1808f3ddbe44
+14	53	1741489611465821719	esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_crc.c.obj	ac9dba6d2ad53ead
+4	5578	1744311830902093386	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/bootloader/cmake_install.cmake	46a3aa0f1221c1ba
+644	668	1741489612095499838	esp-idf/bootloader_support/libbootloader_support.a	16485006a77489c1
+58	138	1741489611509845408	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/esp_cpu_intr.c.obj	e0c8c325e997145a
+148	242	1743786675615952901	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/.bin_timestamp	bfe1cb6f78f05ad2
+8	92	1741489611459953779	esp-idf/log/CMakeFiles/__idf_log.dir/src/log.c.obj	85ef3e8c84d64766
+509	545	1741489611960498488	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/ledc_periph.c.obj	467f134f814fc865
+4	5578	1744311830861093596	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/newlib/cmake_install.cmake	46a3aa0f1221c1ba
+556	573	1741489612007498959	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/power_supply_periph.c.obj	44eecdd84f5c6c60
+395	442	1741489611847407315	esp-idf/esp_hw_support/libesp_hw_support.a	42d31742d713378a
+548	582	1741489611999498879	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/wdt_periph.c.obj	6ee07dac8cef0736
+543	573	1741489611994498828	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/sdmmc_periph.c.obj	8ddfe54b6d2d8240
+82	322	1741489611533494208	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_init.c.obj	ee1a395a7f692161
+3	148	1743786675377949737	bootloader.elf	ca3f9374fe08a40b
+100	204	1741489611551494388	esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32s3/esp_efuse_table.c.obj	9ffae29f4c6c91d7
+559	585	1741489612010498989	esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/eri.c.obj	2fc227970cd67cdb
+4	5578	1744311830891093442	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/esp_hw_support/cmake_install.cmake	46a3aa0f1221c1ba
+486	525	1741489611937498257	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/uart_periph.c.obj	10f9486f5217668f
+4	5578	1744311830868093560	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/micro-ecc/cmake_install.cmake	46a3aa0f1221c1ba
+551	588	1741489612002498909	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/usb_dwc_periph.c.obj	7bb648af58f82332
+148	242	1743786675615952901	.bin_timestamp	bfe1cb6f78f05ad2
+423	591	1741489611874497626	esp-idf/hal/CMakeFiles/__idf_hal.dir/mmu_hal.c.obj	547f8560db02ea40
+4	5578	1744311830860093602	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/xtensa/cmake_install.cmake	46a3aa0f1221c1ba
+32	92	1741489611483493707	esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_wdt.c.obj	d2c0758f93fcdcaa
+354	416	1741489611805496934	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/esp32s3/bootloader_soc.c.obj	a22e1da394ef89c8
+531	569	1741489611983048062	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/mcpwm_periph.c.obj	a352e4b75ddb6cab
+14	286	1741489611465493527	esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_print.c.obj	fc68b4ee80aea98a
+21	98	1741489611473071077	esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_efuse.c.obj	6fefd6882448a514
+311	356	1741489611762496503	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_clock_loader.c.obj	558a6e90ac7d45e6
+235	311	1741489611686495741	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/secure_boot.c.obj	6ed044dd8495994
+555	593	1741489612006498949	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/rtc_io_periph.c.obj	9e64c6dd86850d28
+123	252	1741489611574494619	esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32s3/esp_efuse_utility.c.obj	850ece2541139cbc
+98	231	1741489611549494368	esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/esp_err.c.obj	f882d9faa64d8e1c
+7	58	1741489611458493456	esp-idf/log/CMakeFiles/__idf_log.dir/src/log_timestamp_common.c.obj	e2185d643e73898d
+134	266	1741489611585494729	esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_fields.c.obj	f6f0002f4deca315
+7	39	1741489611459541491	esp-idf/log/CMakeFiles/__idf_log.dir/src/util.c.obj	b364a4131489a8b7
+4	5578	1744311830892093437	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/esp_hw_support/lowpower/cmake_install.cmake	46a3aa0f1221c1ba
+30	82	1741489611481493687	esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_systimer.c.obj	a36721a52a720952
+4	5578	1744311830891093442	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/esp_hw_support/mspi_timing_tuning/port/esp32s3/cmake_install.cmake	46a3aa0f1221c1ba
+4	5578	1744311830857093617	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/cmake_install.cmake	46a3aa0f1221c1ba
+4	5578	1744311830885093473	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/esp_security/cmake_install.cmake	46a3aa0f1221c1ba
+271	422	1741489611722496102	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/bootloader_flash/src/flash_qio_mode.c.obj	25cb89704dfcb444
+4	5578	1744311830858421068	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/cmake_install.cmake	46a3aa0f1221c1ba
+7	66	1741489611458865600	esp-idf/log/CMakeFiles/__idf_log.dir/src/noos/log_lock.c.obj	afafc1359e5c6a13
+4	5578	1744311830908093355	build.ninja	46a3aa0f1221c1ba
+511	545	1741489611962498508	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/pcnt_periph.c.obj	cb282d73e9ace0a3
+24	50	1741489611476432643	esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_longjmp.S.obj	496eaec3cf6173d
+5	33	1744310569535508707	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	3b0d7927ccbd7463
+4	5578	1744311830875093524	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/esp_app_format/cmake_install.cmake	46a3aa0f1221c1ba
+138	493	1741489611589494769	esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_utility.c.obj	e9f7bf86027eabf6
+313	454	1741489611764496523	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_console.c.obj	31370b30d5b313f2
+533	552	1741420496597729432	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/project_elf_src_esp32s3.c	8605ea40cf968ac5
+53	233	1741489611504493917	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/cpu.c.obj	459f03c9f2ca518f
+536	573	1741489611987498758	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/mpi_periph.c.obj	70f2ed2aa2209a8c
+303	644	1741489611755042969	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/esp_image_format.c.obj	f193cb79254aead0
+113	201	1741489611564494519	esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32s3/esp_efuse_fields.c.obj	bc4445dc6c892c3f
+682	697	1741489612133500218	esp-idf/spi_flash/libspi_flash.a	f74e60be220a5282
+952	964	1741489612403502916	esp-idf/main/libmain.a	3dcff156cae8cd35
+7	144	1741489611459065933	esp-idf/log/CMakeFiles/__idf_log.dir/src/buffer/log_buffers.c.obj	d21ca9011551e06f
+32	134	1741489611483976928	esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_cache_esp32s2_esp32s3.c.obj	227d870bbaf9f28e
+356	523	1741489611807496954	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/esp32s3/bootloader_esp32s3.c.obj	bf9563311f87de23
+78	234	1741489611529494168	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk_init.c.obj	e9073899d45849f0
+894	913	1741489612345502336	esp-idf/micro-ecc/libmicro-ecc.a	1dbce96ed302ceee
+231	303	1741489611682495701	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_random.c.obj	359afffdd1cacf1c
+322	418	1741489611773496613	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_console_loader.c.obj	c4033c35b876717
+21	121	1741489611472493597	esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_uart.c.obj	ec763b9d5dc43933
+171	376	1741489611622495100	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_common.c.obj	ff036958fdca2b9
+318	338	1741489611769496573	esp-idf/esp_common/libesp_common.a	75f2de40f386c90a
+533	552	1741420496597729432	project_elf_src_esp32s3.c	8605ea40cf968ac5
+543	561	1741489611995390719	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/touch_sensor_periph.c.obj	40dcaf34ac3baceb
+289	318	1741489611740496283	esp-idf/esp_rom/libesp_rom.a	f5ecd7cc68324fb9
+416	486	1741489611867497556	esp-idf/hal/CMakeFiles/__idf_hal.dir/efuse_hal.c.obj	6351d71ed541b159
+418	531	1741489611869497576	esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32s3/efuse_hal.c.obj	a7a923298bfa8641
+252	313	1741489611703495912	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_random_esp32s3.c.obj	27bca1b4aa40b1bb
+87	309	1741489611538848639	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_sleep.c.obj	9e1f5a42e24bd54f
+527	559	1741489611978498668	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/temperature_sensor_periph.c.obj	8045c8342e5deacb
+67	131	1741489611518494058	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/cpu_region_protect.c.obj	3a00613b39980fcd
+4	5578	1744311830891093442	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/esp_hw_support/port/esp32s3/cmake_install.cmake	46a3aa0f1221c1ba
+144	194	1741489611595494829	esp-idf/log/liblog.a	f959ba838a9dc14d
+115	234	1741489611566494539	esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32s3/esp_efuse_rtc_calib.c.obj	b779cf8729afc60f
+493	527	1741489611944498327	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/dedic_gpio_periph.c.obj	dd19e17cde0a72cd
+194	353	1741489611645495331	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_common_loader.c.obj	d1cf5541094da5e2
+10	3758	1744311830908093355	build.ninja	46a3aa0f1221c1ba
+10	3758	1744311830908093355	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/cmake_install.cmake	46a3aa0f1221c1ba
+10	3758	1744311830908093355	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/cmake_install.cmake	46a3aa0f1221c1ba
+10	3758	1744311830908093355	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/xtensa/cmake_install.cmake	46a3aa0f1221c1ba
+10	3758	1744311830908093355	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/newlib/cmake_install.cmake	46a3aa0f1221c1ba
+10	3758	1744311830908093355	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/soc/cmake_install.cmake	46a3aa0f1221c1ba
+10	3758	1744311830908093355	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/micro-ecc/cmake_install.cmake	46a3aa0f1221c1ba
+10	3758	1744311830908093355	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/hal/cmake_install.cmake	46a3aa0f1221c1ba
+10	3758	1744311830908093355	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/spi_flash/cmake_install.cmake	46a3aa0f1221c1ba
+10	3758	1744311830908093355	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/esp_bootloader_format/cmake_install.cmake	46a3aa0f1221c1ba
+10	3758	1744311830908093355	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/esp_app_format/cmake_install.cmake	46a3aa0f1221c1ba
+10	3758	1744311830908093355	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/bootloader_support/cmake_install.cmake	46a3aa0f1221c1ba
+10	3758	1744311830908093355	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/efuse/cmake_install.cmake	46a3aa0f1221c1ba
+10	3758	1744311830908093355	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/esp_security/cmake_install.cmake	46a3aa0f1221c1ba
+10	3758	1744311830908093355	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/esp_system/cmake_install.cmake	46a3aa0f1221c1ba
+10	3758	1744311830908093355	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/esp_hw_support/cmake_install.cmake	46a3aa0f1221c1ba
+10	3758	1744311830908093355	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/esp_hw_support/port/esp32s3/cmake_install.cmake	46a3aa0f1221c1ba
+10	3758	1744311830908093355	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/esp_hw_support/mspi_timing_tuning/port/esp32s3/cmake_install.cmake	46a3aa0f1221c1ba
+10	3758	1744311830908093355	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/esp_hw_support/lowpower/cmake_install.cmake	46a3aa0f1221c1ba
+10	3758	1744311830908093355	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/esp_common/cmake_install.cmake	46a3aa0f1221c1ba
+10	3758	1744311830908093355	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/esp_rom/cmake_install.cmake	46a3aa0f1221c1ba
+10	3758	1744311830908093355	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/log/cmake_install.cmake	46a3aa0f1221c1ba
+10	3758	1744311830908093355	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/esptool_py/cmake_install.cmake	46a3aa0f1221c1ba
+10	3758	1744311830908093355	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/partition_table/cmake_install.cmake	46a3aa0f1221c1ba
+10	3758	1744311830908093355	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/bootloader/cmake_install.cmake	46a3aa0f1221c1ba
+10	3758	1744311830908093355	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/freertos/cmake_install.cmake	46a3aa0f1221c1ba
+10	3758	1744311830908093355	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/main/cmake_install.cmake	46a3aa0f1221c1ba
+10	69	1744311830948093149	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	3b0d7927ccbd7463
+10	69	1744311830948093149	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	3b0d7927ccbd7463
+7	67	1744311835050072045	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	3b0d7927ccbd7463
+7	67	1744311835050072045	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	3b0d7927ccbd7463
+6	39	1744425998191067210	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	3b0d7927ccbd7463
+6	39	1744425998191067210	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	3b0d7927ccbd7463
+6	40	1744426002650777618	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	3b0d7927ccbd7463
+6	40	1744426002650777618	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	3b0d7927ccbd7463
+5	41	1744426043834103379	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	3b0d7927ccbd7463
+5	41	1744426043834103379	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	3b0d7927ccbd7463
+5	42	1744426043963095002	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	3b0d7927ccbd7463
+5	42	1744426043963095002	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	3b0d7927ccbd7463
+5	37	1744426057114241034	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	3b0d7927ccbd7463
+5	37	1744426057114241034	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	3b0d7927ccbd7463
+4	42	1744426057235233178	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	3b0d7927ccbd7463
+4	42	1744426057235233178	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	3b0d7927ccbd7463
+5	32	1744426353039330825	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	3b0d7927ccbd7463
+5	32	1744426353039330825	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	3b0d7927ccbd7463
+4	34	1744426353155320800	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	3b0d7927ccbd7463
+4	34	1744426353155320800	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	3b0d7927ccbd7463
+5	31	1744426810217709655	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	3b0d7927ccbd7463
+5	31	1744426810217709655	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	3b0d7927ccbd7463
+8	43	1744426814377664510	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	3b0d7927ccbd7463
+8	43	1744426814377664510	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	3b0d7927ccbd7463
+5	32	1744426945395223406	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	3b0d7927ccbd7463
+5	32	1744426945395223406	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	3b0d7927ccbd7463
+3	41	1744426949296180216	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	3b0d7927ccbd7463
+3	41	1744426949296180216	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	3b0d7927ccbd7463
+6	34	1744427080359726861	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	3b0d7927ccbd7463
+6	34	1744427080359726861	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	3b0d7927ccbd7463
+5	34	1744427084261683559	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	3b0d7927ccbd7463
+5	34	1744427084261683559	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	3b0d7927ccbd7463
+5	32	1744427247357873208	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	3b0d7927ccbd7463
+5	32	1744427247357873208	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	3b0d7927ccbd7463
+5	31	1744427251172830858	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	3b0d7927ccbd7463
+5	31	1744427251172830858	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	3b0d7927ccbd7463
+5	34	1745033356817834468	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	3b0d7927ccbd7463
+5	34	1745033356817834468	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	3b0d7927ccbd7463
+4	31	1745033378275999367	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	3b0d7927ccbd7463
+4	31	1745033378275999367	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	3b0d7927ccbd7463
+5	35	1745033382259029975	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	3b0d7927ccbd7463
+5	35	1745033382259029975	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	3b0d7927ccbd7463
+6	30	1745039548730150620	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	3b0d7927ccbd7463
+6	30	1745039548730150620	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	3b0d7927ccbd7463
+4	35	1745039551140202042	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	3b0d7927ccbd7463
+4	35	1745039551140202042	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	3b0d7927ccbd7463
+5	34	1745041552301164649	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	3b0d7927ccbd7463
+5	34	1745041552301164649	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	3b0d7927ccbd7463
+4	35	1745041552415165724	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	3b0d7927ccbd7463
+4	35	1745041552415165724	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	3b0d7927ccbd7463
+21	83	1745266191912356630	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	3b0d7927ccbd7463
+21	83	1745266191912356630	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	3b0d7927ccbd7463
+9	54	1745266196691411474	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	3b0d7927ccbd7463
+9	54	1745266196691411474	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	3b0d7927ccbd7463
+8	66	1745266339415123096	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	3b0d7927ccbd7463
+8	66	1745266339415123096	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	3b0d7927ccbd7463
+8	64	1745266346564211903	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	3b0d7927ccbd7463
+8	64	1745266346564211903	/home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	3b0d7927ccbd7463

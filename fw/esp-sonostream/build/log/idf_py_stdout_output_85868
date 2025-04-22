@@ -1,0 +1,3173 @@
+Command: /home/abhi/.espressif/python_env/idf5.5_py3.13_env/bin/python /home/abhi/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyACM0 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 /home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/sonostream.elf /home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/bootloader.elf -m '/home/abhi/.espressif/python_env/idf5.5_py3.13_env/bin/python' '/home/abhi/esp/esp-idf/tools/idf.py' '-p' '/dev/ttyACM0'
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x2b (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40056f62
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x15d0
+load:0x403c8700,len:0xd20
+load:0x403cb700,len:0x2f60
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v5.5-dev-2290-g94cfe394fe-dirty 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Mar  8 2025 22:06:51[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.1[0m
+[0;32mI (30) boot: efuse block revision: v1.2[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=1a7c8h (108488) map[0m
+[0;32mI (108) esp_image: segment 1: paddr=0002a7f0 vaddr=3fc99e00 size=049a0h ( 18848) load[0m
+[0;32mI (112) esp_image: segment 2: paddr=0002f198 vaddr=40374000 size=00e80h (  3712) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=86988h (551304) map[0m
+[0;32mI (216) esp_image: segment 4: paddr=000b69b0 vaddr=40374e80 size=14ea8h ( 85672) load[0m
+[0;32mI (235) esp_image: segment 5: paddr=000cb860 vaddr=600fe000 size=0001ch (    28) load[0m
+[0;32mI (244) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (244) boot: Disabling RNG early entropy source...[0m
+[0;32mI (254) cpu_start: Multicore app[0m
+[0;32mI (263) cpu_start: Pro cpu start user code[0m
+[0;32mI (263) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (264) app_init: Application information:[0m
+[0;32mI (264) app_init: Project name:     sonostream[0m
+[0;32mI (268) app_init: App version:      52524e4-dirty[0m
+[0;32mI (272) app_init: Compile time:     Apr  6 2025 12:35:45[0m
+[0;32mI (277) app_init: ELF file SHA256:  90214a59c...[0m
+[0;32mI (281) app_init: ESP-IDF:          v5.5-dev-2290-g94cfe394fe-dirty[0m
+[0;32mI (287) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (291) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (295) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (299) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (305) heap_init: At 3FCA2430 len 000472E0 (284 KiB): RAM[0m
+[0;32mI (311) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (316) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (321) heap_init: At 600FE01C len 00001FCC (7 KiB): RTCRAM[0m
+[0;32mI (327) spi_flash: detected chip: generic[0m
+[0;32mI (330) spi_flash: flash io: dio[0m
+[0;33mW (333) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (345) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (351) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (358) main_task: Started on CPU0[0m
+[0;32mI (368) main_task: Calling app_main()[0m
+[0;32mI (368) Sonostream: Receiving data in PCM format[0m
+[0;32mI (388) pp: pp rom version: e7ae62f[0m
+[0;32mI (388) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (398) wifi:wifi driver task: 3fcb448c, prio:23, stack:6656, core=0[0m
+[0;32mI (408) wifi:wifi firmware version: 3a3aca644[0m
+[0;32mI (408) wifi:wifi certification version: v7.0[0m
+[0;32mI (408) wifi:config NVS flash: enabled[0m
+[0;32mI (408) wifi:config nano formatting: disabled[0m
+[0;32mI (408) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (418) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (418) wifi:Init management short buffer num: 32[0m
+[0;32mI (418) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (428) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (428) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (438) wifi:Init static rx buffer num: 10[0m
+[0;32mI (438) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (438) wifi_init: rx ba win: 6[0m
+[0;32mI (448) wifi_init: accept mbox: 6[0m
+[0;32mI (448) wifi_init: tcpip mbox: 32[0m
+[0;32mI (448) wifi_init: udp mbox: 6[0m
+[0;32mI (458) wifi_init: tcp mbox: 6[0m
+[0;32mI (458) wifi_init: tcp tx win: 5760[0m
+[0;32mI (458) wifi_init: tcp rx win: 5760[0m
+[0;32mI (468) wifi_init: tcp mss: 1440[0m
+[0;32mI (468) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (468) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (478) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (498) phy_init: phy_version 700,8582a7fd,Feb 10 2025,20:13:11[0m
+[0;32mI (538) wifi:mode : sta (34:85:18:50:81:30)[0m
+[0;32mI (538) wifi:enable tsf[0m
+[0;32mI (548) Sonostream: Device successfully initialized as a WiFi station![0m
+[0;32mI (558) wifi:new:<8,0>, old:<1,0>, ap:<255,255>, sta:<8,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (558) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (558) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (568) wifi:state: assoc -> init (0x2c0)[0m
+[0;32mI (578) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (578) Sonostream: Attempting to connect to the AP...[0m
+[0;32mI (578) Sonostream: Connection to the AP fail[0m
+[0;32mI (2988) Sonostream: Attempting to connect to the AP...[0m
+[0;32mI (2988) Sonostream: Connection to the AP fail[0m
+[0;32mI (2998) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (2998) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (3008) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (3018) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (3028) wifi:connected with definitelynotarouter, aid = 22, channel 8, BW20, bssid = f0:2f:74:5f:62:70[0m
+[0;32mI (3028) wifi:security: WPA2-PSK, phy: bgn, rssi: -13[0m
+[0;32mI (3048) wifi:pm start, type: 1[0m
+
+[0;32mI (3048) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (3048) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (3058) wifi:<ba-add>idx:0 (ifx:0, f0:2f:74:5f:62:70), tid:6, ssn:1, winSize:64[0m
+[0;32mI (3108) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (4068) esp_netif_handlers: sta ip: 192.168.50.21, mask: 255.255.255.0, gw: 192.168.50.1[0m
+[0;32mI (4068) Sonostream: got ip:192.168.50.21[0m
+[0;32mI (4068) Sonostream: Connected to ap SSID:definitelynotarouter password:notapwd777[0m
+[0;32mI (4068) main_task: Returned from app_main()[0m
+[0;32mI (4068) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (4088) Sonostream: Successfully connected[0m
+[0;32mI (4108) wifi:<ba-add>idx:1 (ifx:0, f0:2f:74:5f:62:70), tid:0, ssn:1, winSize:64[0m
+[1;31mE (4128) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (4128) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (4128) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (4138) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (4138) Sonostream: Successfully connected[0m
+[1;31mE (4148) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (4158) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (4158) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (4158) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (4168) Sonostream: Successfully connected[0m
+[1;31mE (4178) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (4178) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (4178) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (4188) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (4198) Sonostream: Successfully connected[0m
+[1;31mE (4258) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (4258) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (4258) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (4258) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (4268) Sonostream: Successfully connected[0m
+[1;31mE (4318) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (4318) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (4318) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (4318) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (4328) Sonostream: Successfully connected[0m
+[1;31mE (4378) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (4378) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (4378) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (4378) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (4388) Sonostream: Successfully connected[0m
+[1;31mE (4438) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (4438) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (4438) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (4438) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (4448) Sonostream: Successfully connected[0m
+[1;31mE (4508) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (4508) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (4508) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (4518) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (4528) Sonostream: Successfully connected[0m
+[1;31mE (4568) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (4568) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (4568) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (4578) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (4588) Sonostream: Successfully connected[0m
+[1;31mE (4628) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (4628) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (4628) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (4638) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (4648) Sonostream: Successfully connected[0m
+[1;31mE (4688) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (4688) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (4688) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (4698) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (4708) Sonostream: Successfully connected[0m
+[1;31mE (4768) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (4768) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (4768) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (4768) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (4778) Sonostream: Successfully connected[0m
+[1;31mE (4828) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (4828) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (4828) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (4828) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (4838) Sonostream: Successfully connected[0m
+[1;31mE (4888) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (4888) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (4888) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (4888) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (4898) Sonostream: Successfully connected[0m
+[1;31mE (4948) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (4948) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (4948) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (4948) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (4958) Sonostream: Successfully connected[0m
+[1;31mE (5018) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (5018) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (5018) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (5028) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (5038) Sonostream: Successfully connected[0m
+[1;31mE (5078) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (5078) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (5078) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (5088) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (5098) Sonostream: Successfully connected[0m
+[1;31mE (5138) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (5138) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (5138) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (5148) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (5158) Sonostream: Successfully connected[0m
+[1;31mE (5218) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (5218) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (5218) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (5218) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (5228) Sonostream: Successfully connected[0m
+[1;31mE (5278) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (5278) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (5278) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (5278) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (5288) Sonostream: Successfully connected[0m
+[1;31mE (5338) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (5338) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (5338) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (5338) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (5348) Sonostream: Successfully connected[0m
+[1;31mE (5398) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (5398) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (5398) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (5398) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (5408) Sonostream: Successfully connected[0m
+[1;31mE (5468) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (5468) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (5468) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (5478) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (5488) Sonostream: Successfully connected[0m
+[1;31mE (5528) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (5528) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (5528) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (5538) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (5548) Sonostream: Successfully connected[0m
+[1;31mE (5588) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (5588) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (5588) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (5598) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (5608) Sonostream: Successfully connected[0m
+[1;31mE (5648) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (5648) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (5648) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (5658) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (5668) Sonostream: Successfully connected[0m
+[1;31mE (5728) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (5728) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (5728) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (5728) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (5738) Sonostream: Successfully connected[0m
+[1;31mE (5788) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (5788) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (5788) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (5788) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (5798) Sonostream: Successfully connected[0m
+[1;31mE (5848) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (5848) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (5848) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (5848) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (5858) Sonostream: Successfully connected[0m
+[1;31mE (5908) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (5908) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (5908) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (5908) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (5918) Sonostream: Successfully connected[0m
+[1;31mE (5978) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (5978) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (5978) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (5988) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (5998) Sonostream: Successfully connected[0m
+[1;31mE (6038) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (6038) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (6038) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (6048) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (6058) Sonostream: Successfully connected[0m
+[1;31mE (6098) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (6098) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (6098) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (6108) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (6118) Sonostream: Successfully connected[0m
+[1;31mE (6178) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (6178) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (6178) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (6178) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (6188) Sonostream: Successfully connected[0m
+[1;31mE (6238) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (6238) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (6238) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (6238) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (6248) Sonostream: Successfully connected[0m
+[1;31mE (6298) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (6298) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (6298) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (6298) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (6308) Sonostream: Successfully connected[0m
+[1;31mE (6358) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (6358) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (6358) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (6358) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (6368) Sonostream: Successfully connected[0m
+[1;31mE (6428) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (6428) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (6428) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (6438) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (6448) Sonostream: Successfully connected[0m
+[1;31mE (6488) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (6488) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (6488) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (6498) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (6508) Sonostream: Successfully connected[0m
+[1;31mE (6548) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (6548) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (6548) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (6558) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (6568) Sonostream: Successfully connected[0m
+[1;31mE (6608) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (6608) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (6608) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (6618) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (6628) Sonostream: Successfully connected[0m
+[1;31mE (6688) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (6688) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (6688) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (6688) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (6698) Sonostream: Successfully connected[0m
+[1;31mE (6748) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (6748) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (6748) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (6748) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (6758) Sonostream: Successfully connected[0m
+[1;31mE (6808) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (6808) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (6808) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (6808) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (6818) Sonostream: Successfully connected[0m
+[0;32mI (6868) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (6868) Sonostream: Successfully connected[0m
+[0;32mI (6938) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (6938) Sonostream: Successfully connected[0m
+[0;32mI (6998) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (6998) Sonostream: Successfully connected[0m
+[0;32mI (7058) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (7058) Sonostream: Successfully connected[0m
+[0;32mI (7138) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (7138) Sonostream: Successfully connected[0m
+[0;32mI (7198) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (7198) Sonostream: Successfully connected[0m
+[0;32mI (7258) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (7258) Sonostream: Successfully connected[0m
+[0;32mI (7318) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (7318) Sonostream: Successfully connected[0m
+[0;32mI (7388) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (7388) Sonostream: Successfully connected[0m
+[0;32mI (7448) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (7448) Sonostream: Successfully connected[0m
+[0;32mI (7508) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (7508) Sonostream: Successfully connected[0m
+[0;32mI (7568) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (7568) Sonostream: Successfully connected[0m
+[0;32mI (7648) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (7648) Sonostream: Successfully connected[0m
+[0;32mI (7708) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (7708) Sonostream: Successfully connected[0m
+[0;32mI (7768) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (7768) Sonostream: Successfully connected[0m
+[0;32mI (7828) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (7828) Sonostream: Successfully connected[0m
+[0;32mI (7898) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (7898) Sonostream: Successfully connected[0m
+[0;32mI (7958) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (7958) Sonostream: Successfully connected[0m
+[0;32mI (8018) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (8018) Sonostream: Successfully connected[0m
+[0;32mI (8098) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (8098) Sonostream: Successfully connected[0m
+[0;32mI (8158) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (8158) Sonostream: Successfully connected[0m
+[0;32mI (8218) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (8218) Sonostream: Successfully connected[0m
+[0;32mI (8278) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (8278) Sonostream: Successfully connected[0m
+[0;32mI (8348) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (8348) Sonostream: Successfully connected[0m
+[0;32mI (8408) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (8408) Sonostream: Successfully connected[0m
+[0;32mI (8468) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (8468) Sonostream: Successfully connected[0m
+[0;32mI (8528) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (8528) Sonostream: Successfully connected[0m
+[0;32mI (8608) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (8608) Sonostream: Successfully connected[0m
+[0;32mI (8668) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (8668) Sonostream: Successfully connected[0m
+[0;32mI (8728) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (8728) Sonostream: Successfully connected[0m
+[0;32mI (8788) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (8788) Sonostream: Successfully connected[0m
+[0;32mI (8858) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (8858) Sonostream: Successfully connected[0m
+[0;32mI (8918) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (8918) Sonostream: Successfully connected[0m
+[0;32mI (8978) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (8978) Sonostream: Successfully connected[0m
+[0;32mI (9058) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (9058) Sonostream: Successfully connected[0m
+[0;32mI (9118) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (9118) Sonostream: Successfully connected[0m
+[0;32mI (9178) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (9178) Sonostream: Successfully connected[0m
+[0;32mI (9238) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (9238) Sonostream: Successfully connected[0m
+[0;32mI (9308) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (9308) Sonostream: Successfully connected[0m
+[0;32mI (9368) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (9368) Sonostream: Successfully connected[0m
+[0;32mI (9428) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (9428) Sonostream: Successfully connected[0m
+[0;32mI (9488) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (9488) Sonostream: Successfully connected[0m
+[0;32mI (9568) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (9568) Sonostream: Successfully connected[0m
+[0;32mI (9628) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (9628) Sonostream: Successfully connected[0m
+[0;32mI (9688) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (9688) Sonostream: Successfully connected[0m
+[0;32mI (9748) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (9748) Sonostream: Successfully connected[0m
+[0;32mI (9818) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (9818) Sonostream: Successfully connected[0m
+[0;32mI (9878) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (9878) Sonostream: Successfully connected[0m
+[0;32mI (9938) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (9938) Sonostream: Successfully connected[0m
+[0;32mI (10018) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (10018) Sonostream: Successfully connected[0m
+[0;32mI (10078) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (10078) Sonostream: Successfully connected[0m
+[0;32mI (10138) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (10138) Sonostream: Successfully connected[0m
+[0;32mI (10198) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (10198) Sonostream: Successfully connected[0m
+[0;32mI (10268) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (10268) Sonostream: Successfully connected[0m
+[0;32mI (10328) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (10328) Sonostream: Successfully connected[0m
+[0;32mI (10388) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (10388) Sonostream: Successfully connected[0m
+[0;32mI (10448) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (10448) Sonostream: Successfully connected[0m
+[0;32mI (10528) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (10528) Sonostream: Successfully connected[0m
+[0;32mI (10588) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (10588) Sonostream: Successfully connected[0m
+[0;32mI (10648) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (10648) Sonostream: Successfully connected[0m
+[0;32mI (10708) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (10708) Sonostream: Successfully connected[0m
+[0;32mI (10778) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (10778) Sonostream: Successfully connected[0m
+[0;32mI (10838) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (10838) Sonostream: Successfully connected[0m
+[0;32mI (10898) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (10898) Sonostream: Successfully connected[0m
+[0;32mI (10978) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (10978) Sonostream: Successfully connected[0m
+[0;32mI (11038) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (11038) Sonostream: Successfully connected[0m
+[0;32mI (11098) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (11098) Sonostream: Successfully connected[0m
+[0;32mI (11158) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (11158) Sonostream: Successfully connected[0m
+[0;32mI (11228) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (11228) Sonostream: Successfully connected[0m
+[0;32mI (11288) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (11288) Sonostream: Successfully connected[0m
+[0;32mI (11348) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (11348) Sonostream: Successfully connected[0m
+[0;32mI (11408) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (11408) Sonostream: Successfully connected[0m
+[0;32mI (11488) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (11488) Sonostream: Successfully connected[0m
+[0;32mI (11548) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (11548) Sonostream: Successfully connected[0m
+[0;32mI (11608) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (11608) Sonostream: Successfully connected[0m
+[0;32mI (11668) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (11668) Sonostream: Successfully connected[0m
+[0;32mI (11738) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (11738) Sonostream: Successfully connected[0m
+[0;32mI (11798) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (11798) Sonostream: Successfully connected[0m
+[0;32mI (11858) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (11858) Sonostream: Successfully connected[0m
+[0;32mI (11938) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (11938) Sonostream: Successfully connected[0m
+[0;32mI (11998) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (11998) Sonostream: Successfully connected[0m
+[0;32mI (12058) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (12058) Sonostream: Successfully connected[0m
+[0;32mI (12118) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (12118) Sonostream: Successfully connected[0m
+[0;32mI (12188) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (12188) Sonostream: Successfully connected[0m
+[0;32mI (12248) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (12248) Sonostream: Successfully connected[0m
+[0;32mI (12308) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (12308) Sonostream: Successfully connected[0m
+[0;32mI (12368) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (12368) Sonostream: Successfully connected[0m
+[0;32mI (12448) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (12448) Sonostream: Successfully connected[0m
+[0;32mI (12508) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (12508) Sonostream: Successfully connected[0m
+[0;32mI (12568) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (12568) Sonostream: Successfully connected[0m
+[0;32mI (12628) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (12628) Sonostream: Successfully connected[0m
+[0;32mI (12698) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (12698) Sonostream: Successfully connected[0m
+[0;32mI (12758) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (12758) Sonostream: Successfully connected[0m
+[0;32mI (12818) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (12818) Sonostream: Successfully connected[0m
+[0;32mI (12898) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (12898) Sonostream: Successfully connected[0m
+[0;32mI (12958) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (12958) Sonostream: Successfully connected[0m
+[0;32mI (13018) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (13018) Sonostream: Successfully connected[0m
+[0;32mI (13078) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (13078) Sonostream: Successfully connected[0m
+[0;32mI (13148) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (13148) Sonostream: Successfully connected[0m
+[0;32mI (13208) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (13208) Sonostream: Successfully connected[0m
+[0;32mI (13268) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (13268) Sonostream: Successfully connected[0m
+[0;32mI (13328) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (13328) Sonostream: Successfully connected[0m
+[0;32mI (13408) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (13408) Sonostream: Successfully connected[0m
+[0;32mI (13468) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (13468) Sonostream: Successfully connected[0m
+[0;32mI (13528) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (13528) Sonostream: Successfully connected[0m
+[0;32mI (13588) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (13588) Sonostream: Successfully connected[0m
+[0;32mI (13658) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (13658) Sonostream: Successfully connected[0m
+[0;32mI (13718) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (13718) Sonostream: Successfully connected[0m
+[0;32mI (13778) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (13778) Sonostream: Successfully connected[0m
+[0;32mI (13858) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (13858) Sonostream: Successfully connected[0m
+[0;32mI (13918) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (13918) Sonostream: Successfully connected[0m
+[0;32mI (13978) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (13978) Sonostream: Successfully connected[0m
+[0;32mI (14038) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (14038) Sonostream: Successfully connected[0m
+[0;32mI (14108) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (14108) Sonostream: Successfully connected[0m
+[0;32mI (14168) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (14168) Sonostream: Successfully connected[0m
+[0;32mI (14228) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (14228) Sonostream: Successfully connected[0m
+[0;32mI (14288) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (14288) Sonostream: Successfully connected[0m
+[0;32mI (14368) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (14368) Sonostream: Successfully connected[0m
+[0;32mI (14428) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (14428) Sonostream: Successfully connected[0m
+[0;32mI (14488) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (14488) Sonostream: Successfully connected[0m
+[0;32mI (14548) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (14548) Sonostream: Successfully connected[0m
+[0;32mI (14618) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (14618) Sonostream: Successfully connected[0m
+[0;32mI (14678) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (14678) Sonostream: Successfully connected[0m
+[0;32mI (14738) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (14738) Sonostream: Successfully connected[0m
+[0;32mI (14818) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (14818) Sonostream: Successfully connected[0m
+[0;32mI (14878) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (14878) Sonostream: Successfully connected[0m
+[0;32mI (14938) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (14938) Sonostream: Successfully connected[0m
+[0;32mI (14998) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (14998) Sonostream: Successfully connected[0m
+[0;32mI (15068) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (15068) Sonostream: Successfully connected[0m
+[0;32mI (15128) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (15128) Sonostream: Successfully connected[0m
+[0;32mI (15188) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (15188) Sonostream: Successfully connected[0m
+[0;32mI (15248) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (15248) Sonostream: Successfully connected[0m
+[0;32mI (15328) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (15328) Sonostream: Successfully connected[0m
+[0;32mI (15388) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (15388) Sonostream: Successfully connected[0m
+[0;32mI (15448) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (15448) Sonostream: Successfully connected[0m
+[0;32mI (15508) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (15508) Sonostream: Successfully connected[0m
+[0;32mI (15578) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (15578) Sonostream: Successfully connected[0m
+[0;32mI (15638) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (15638) Sonostream: Successfully connected[0m
+[0;32mI (15698) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (15698) Sonostream: Successfully connected[0m
+[0;32mI (15778) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (15778) Sonostream: Successfully connected[0m
+[0;32mI (15838) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (15838) Sonostream: Successfully connected[0m
+[0;32mI (15898) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (15898) Sonostream: Successfully connected[0m
+[0;32mI (15958) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (15958) Sonostream: Successfully connected[0m
+[0;32mI (16028) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (16028) Sonostream: Successfully connected[0m
+[0;32mI (16088) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (16088) Sonostream: Successfully connected[0m
+[0;32mI (16148) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (16148) Sonostream: Successfully connected[0m
+[0;32mI (16208) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (16208) Sonostream: Successfully connected[0m
+[0;32mI (16288) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (16288) Sonostream: Successfully connected[0m
+[0;32mI (16348) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (16348) Sonostream: Successfully connected[0m
+[0;32mI (16408) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (16408) Sonostream: Successfully connected[0m
+[0;32mI (16468) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (16468) Sonostream: Successfully connected[0m
+[0;32mI (16538) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (16538) Sonostream: Successfully connected[0m
+[0;32mI (16598) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (16598) Sonostream: Successfully connected[0m
+[0;32mI (16658) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (16658) Sonostream: Successfully connected[0m
+[0;32mI (16738) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (16738) Sonostream: Successfully connected[0m
+[0;32mI (16798) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (16798) Sonostream: Successfully connected[0m
+[0;32mI (16858) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (16858) Sonostream: Successfully connected[0m
+[0;32mI (16918) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (16918) Sonostream: Successfully connected[0m
+[0;32mI (16988) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (16988) Sonostream: Successfully connected[0m
+[0;32mI (17048) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (17048) Sonostream: Successfully connected[0m
+[0;32mI (17108) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (17108) Sonostream: Successfully connected[0m
+[0;32mI (17168) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (17168) Sonostream: Successfully connected[0m
+[0;32mI (17248) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (17248) Sonostream: Successfully connected[0m
+[0;32mI (17308) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (17308) Sonostream: Successfully connected[0m
+[0;32mI (17368) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (17368) Sonostream: Successfully connected[0m
+[0;32mI (17428) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (17428) Sonostream: Successfully connected[0m
+[0;32mI (17498) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (17498) Sonostream: Successfully connected[0m
+[0;32mI (17558) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (17558) Sonostream: Successfully connected[0m
+[0;32mI (17618) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (17618) Sonostream: Successfully connected[0m
+[0;32mI (17698) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (17698) Sonostream: Successfully connected[0m
+[0;32mI (17758) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (17758) Sonostream: Successfully connected[0m
+[0;32mI (17818) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (17818) Sonostream: Successfully connected[0m
+[0;32mI (17878) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (17878) Sonostream: Successfully connected[0m
+[0;32mI (17948) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (17948) Sonostream: Successfully connected[0m
+[0;32mI (18008) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (18008) Sonostream: Successfully connected[0m
+[0;32mI (18068) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (18068) Sonostream: Successfully connected[0m
+[0;32mI (18128) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (18128) Sonostream: Successfully connected[0m
+[0;32mI (18208) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (18208) Sonostream: Successfully connected[0m
+[0;32mI (18268) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (18268) Sonostream: Successfully connected[0m
+[0;32mI (18328) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (18328) Sonostream: Successfully connected[0m
+[0;32mI (18388) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (18388) Sonostream: Successfully connected[0m
+[0;32mI (18458) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (18458) Sonostream: Successfully connected[0m
+[0;32mI (18518) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (18518) Sonostream: Successfully connected[0m
+[0;32mI (18578) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (18578) Sonostream: Successfully connected[0m
+[0;32mI (18658) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (18658) Sonostream: Successfully connected[0m
+[0;32mI (18718) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (18718) Sonostream: Successfully connected[0m
+[0;32mI (18778) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (18778) Sonostream: Successfully connected[0m
+[0;32mI (18838) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (18838) Sonostream: Successfully connected[0m
+[0;32mI (18908) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (18908) Sonostream: Successfully connected[0m
+[0;32mI (18968) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (18968) Sonostream: Successfully connected[0m
+[0;32mI (19028) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (19028) Sonostream: Successfully connected[0m
+[0;32mI (19088) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (19088) Sonostream: Successfully connected[0m
+[0;32mI (19168) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (19168) Sonostream: Successfully connected[0m
+[0;32mI (19228) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (19228) Sonostream: Successfully connected[0m
+[0;32mI (19288) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (19288) Sonostream: Successfully connected[0m
+[0;32mI (19348) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (19348) Sonostream: Successfully connected[0m
+[0;32mI (19418) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (19418) Sonostream: Successfully connected[0m
+[0;32mI (19478) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (19478) Sonostream: Successfully connected[0m
+[0;32mI (19538) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (19538) Sonostream: Successfully connected[0m
+[0;32mI (19618) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (19618) Sonostream: Successfully connected[0m
+[0;32mI (19678) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (19678) Sonostream: Successfully connected[0m
+[0;32mI (19738) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (19738) Sonostream: Successfully connected[0m
+[0;32mI (19798) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (19798) Sonostream: Successfully connected[0m
+[0;32mI (19868) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (19868) Sonostream: Successfully connected[0m
+[0;32mI (19928) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (19928) Sonostream: Successfully connected[0m
+[0;32mI (19988) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (19988) Sonostream: Successfully connected[0m
+[0;32mI (20048) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (20048) Sonostream: Successfully connected[0m
+[0;32mI (20128) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (20128) Sonostream: Successfully connected[0m
+[0;32mI (20188) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (20188) Sonostream: Successfully connected[0m
+[0;32mI (20248) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (20248) Sonostream: Successfully connected[0m
+[0;32mI (20308) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (20308) Sonostream: Successfully connected[0m
+[0;32mI (20378) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (20378) Sonostream: Successfully connected[0m
+[0;32mI (20438) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (20438) Sonostream: Successfully connected[0m
+[0;32mI (20498) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (20498) Sonostream: Successfully connected[0m
+[0;32mI (20578) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (20578) Sonostream: Successfully connected[0m
+[0;32mI (20638) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (20638) Sonostream: Successfully connected[0m
+[0;32mI (20698) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (20698) Sonostream: Successfully connected[0m
+[0;32mI (20758) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (20758) Sonostream: Successfully connected[0m
+[0;32mI (20828) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (20828) Sonostream: Successfully connected[0m
+[0;32mI (20888) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (20888) Sonostream: Successfully connected[0m
+[0;32mI (20948) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (20948) Sonostream: Successfully connected[0m
+[0;32mI (21008) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (21008) Sonostream: Successfully connected[0m
+[0;32mI (21088) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (21088) Sonostream: Successfully connected[0m
+[0;32mI (21148) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (21148) Sonostream: Successfully connected[0m
+[0;32mI (21208) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (21208) Sonostream: Successfully connected[0m
+[0;32mI (21268) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (21268) Sonostream: Successfully connected[0m
+[0;32mI (21338) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (21338) Sonostream: Successfully connected[0m
+[0;32mI (21398) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (21398) Sonostream: Successfully connected[0m
+[0;32mI (21458) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (21458) Sonostream: Successfully connected[0m
+[0;32mI (21538) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (21538) Sonostream: Successfully connected[0m
+[0;32mI (21598) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (21598) Sonostream: Successfully connected[0m
+[0;32mI (21658) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (21658) Sonostream: Successfully connected[0m
+[0;32mI (21718) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (21718) Sonostream: Successfully connected[0m
+[0;32mI (21788) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (21788) Sonostream: Successfully connected[0m
+[0;32mI (21848) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (21848) Sonostream: Successfully connected[0m
+[0;32mI (21908) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (21908) Sonostream: Successfully connected[0m
+[0;32mI (21968) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (21968) Sonostream: Successfully connected[0m
+[0;32mI (22048) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (22048) Sonostream: Successfully connected[0m
+[0;32mI (22108) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (22108) Sonostream: Successfully connected[0m
+[0;32mI (22168) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (22168) Sonostream: Successfully connected[0m
+[0;32mI (22228) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (22228) Sonostream: Successfully connected[0m
+[0;32mI (22298) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (22298) Sonostream: Successfully connected[0m
+[0;32mI (22358) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (22358) Sonostream: Successfully connected[0m
+[0;32mI (22418) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (22418) Sonostream: Successfully connected[0m
+[0;32mI (22498) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (22498) Sonostream: Successfully connected[0m
+[0;32mI (22558) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (22558) Sonostream: Successfully connected[0m
+[0;32mI (22618) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (22618) Sonostream: Successfully connected[0m
+[0;32mI (22678) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (22678) Sonostream: Successfully connected[0m
+[0;32mI (22748) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (22748) Sonostream: Successfully connected[0m
+[0;32mI (22808) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (22808) Sonostream: Successfully connected[0m
+[0;32mI (22868) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (22868) Sonostream: Successfully connected[0m
+[0;32mI (22928) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (22928) Sonostream: Successfully connected[0m
+[0;32mI (23008) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (23008) Sonostream: Successfully connected[0m
+[0;32mI (23068) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (23068) Sonostream: Successfully connected[0m
+[0;32mI (23128) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (23128) Sonostream: Successfully connected[0m
+[0;32mI (23188) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (23188) Sonostream: Successfully connected[0m
+[0;32mI (23258) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (23258) Sonostream: Successfully connected[0m
+[0;32mI (23318) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (23318) Sonostream: Successfully connected[0m
+[0;32mI (23378) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (23378) Sonostream: Successfully connected[0m
+[0;32mI (23458) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (23458) Sonostream: Successfully connected[0m
+[0;32mI (23518) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (23518) Sonostream: Successfully connected[0m
+[0;32mI (23578) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (23578) Sonostream: Successfully connected[0m
+[0;32mI (23648) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (23648) Sonostream: Successfully connected[0m
+[0;32mI (23708) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (23708) Sonostream: Successfully connected[0m
+[0;32mI (23768) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (23768) Sonostream: Successfully connected[0m
+[0;32mI (23828) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (23828) Sonostream: Successfully connected[0m
+[0;32mI (23888) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (23888) Sonostream: Successfully connected[0m
+[0;32mI (23968) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (23968) Sonostream: Successfully connected[0m
+[0;32mI (24028) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (24028) Sonostream: Successfully connected[0m
+[0;32mI (24088) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (24088) Sonostream: Successfully connected[0m
+[0;32mI (24148) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (24148) Sonostream: Successfully connected[0m
+[0;32mI (24218) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (24218) Sonostream: Successfully connected[0m
+[0;32mI (24278) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (24278) Sonostream: Successfully connected[0m
+[0;32mI (24338) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (24338) Sonostream: Successfully connected[0m
+[0;32mI (24418) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (24418) Sonostream: Successfully connected[0m
+[0;32mI (24478) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (24478) Sonostream: Successfully connected[0m
+[0;32mI (24538) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (24538) Sonostream: Successfully connected[0m
+[0;32mI (24598) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (24598) Sonostream: Successfully connected[0m
+[0;32mI (24668) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (24668) Sonostream: Successfully connected[0m
+[0;32mI (24728) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (24728) Sonostream: Successfully connected[0m
+[0;32mI (24788) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (24788) Sonostream: Successfully connected[0m
+[0;32mI (24848) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (24848) Sonostream: Successfully connected[0m
+[0;32mI (24928) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (24928) Sonostream: Successfully connected[0m
+[0;32mI (24988) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (24988) Sonostream: Successfully connected[0m
+[0;32mI (25048) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (25048) Sonostream: Successfully connected[0m
+[0;32mI (25108) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (25108) Sonostream: Successfully connected[0m
+[0;32mI (25178) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (25178) Sonostream: Successfully connected[0m
+[0;32mI (25238) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (25238) Sonostream: Successfully connected[0m
+[0;32mI (25298) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (25298) Sonostream: Successfully connected[0m
+[0;32mI (25378) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (25378) Sonostream: Successfully connected[0m
+[0;32mI (25438) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (25438) Sonostream: Successfully connected[0m
+[0;32mI (25498) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (25498) Sonostream: Successfully connected[0m
+[0;32mI (25558) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (25558) Sonostream: Successfully connected[0m
+[0;32mI (25628) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (25628) Sonostream: Successfully connected[0m
+[0;32mI (25688) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (25688) Sonostream: Successfully connected[0m
+[0;32mI (25748) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (25748) Sonostream: Successfully connected[0m
+[0;32mI (25808) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (25808) Sonostream: Successfully connected[0m
+[0;32mI (25888) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (25888) Sonostream: Successfully connected[0m
+[0;32mI (25948) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (25948) Sonostream: Successfully connected[0m
+[0;32mI (26008) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (26008) Sonostream: Successfully connected[0m
+[0;32mI (26068) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (26068) Sonostream: Successfully connected[0m
+[0;32mI (26138) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (26138) Sonostream: Successfully connected[0m
+[0;32mI (26198) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (26198) Sonostream: Successfully connected[0m
+[0;32mI (26258) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (26258) Sonostream: Successfully connected[0m
+[0;32mI (26338) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (26338) Sonostream: Successfully connected[0m
+[0;32mI (26398) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (26398) Sonostream: Successfully connected[0m
+[0;32mI (26458) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (26458) Sonostream: Successfully connected[0m
+[0;32mI (26518) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (26518) Sonostream: Successfully connected[0m
+[0;32mI (26588) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (26588) Sonostream: Successfully connected[0m
+[0;32mI (26648) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (26648) Sonostream: Successfully connected[0m
+[0;32mI (26708) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (26708) Sonostream: Successfully connected[0m
+[0;32mI (26768) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (26768) Sonostream: Successfully connected[0m
+[0;32mI (26848) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (26848) Sonostream: Successfully connected[0m
+[0;32mI (26908) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (26908) Sonostream: Successfully connected[0m
+[0;32mI (26968) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (26968) Sonostream: Successfully connected[0m
+[0;32mI (27028) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (27028) Sonostream: Successfully connected[0m
+[0;32mI (27098) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (27098) Sonostream: Successfully connected[0m
+[0;32mI (27158) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (27158) Sonostream: Successfully connected[0m
+[0;32mI (27218) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (27218) Sonostream: Successfully connected[0m
+[0;32mI (27298) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (27298) Sonostream: Successfully connected[0m
+[0;32mI (27358) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (27358) Sonostream: Successfully connected[0m
+[0;32mI (27418) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (27418) Sonostream: Successfully connected[0m
+[0;32mI (27478) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (27478) Sonostream: Successfully connected[0m
+[0;32mI (27548) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (27548) Sonostream: Successfully connected[0m
+[0;32mI (27608) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (27608) Sonostream: Successfully connected[0m
+[0;32mI (27668) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (27668) Sonostream: Successfully connected[0m
+[0;32mI (27728) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (27728) Sonostream: Successfully connected[0m
+[0;32mI (27808) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (27808) Sonostream: Successfully connected[0m
+[0;32mI (27868) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (27868) Sonostream: Successfully connected[0m
+[0;32mI (27928) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (27928) Sonostream: Successfully connected[0m
+[0;32mI (27988) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (27988) Sonostream: Successfully connected[0m
+[0;32mI (28058) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (28058) Sonostream: Successfully connected[0m
+[0;32mI (28118) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (28118) Sonostream: Successfully connected[0m
+[0;32mI (28178) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (28178) Sonostream: Successfully connected[0m
+[0;32mI (28258) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (28258) Sonostream: Successfully connected[0m
+[0;32mI (28318) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (28318) Sonostream: Successfully connected[0m
+[0;32mI (28378) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (28378) Sonostream: Successfully connected[0m
+[0;32mI (28438) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (28438) Sonostream: Successfully connected[0m
+[0;32mI (28508) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (28508) Sonostream: Successfully connected[0m
+[0;32mI (28568) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (28568) Sonostream: Successfully connected[0m
+[0;32mI (28628) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (28628) Sonostream: Successfully connected[0m
+[0;32mI (28688) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (28688) Sonostream: Successfully connected[0m
+[0;32mI (28768) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (28768) Sonostream: Successfully connected[0m
+[0;32mI (28828) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (28828) Sonostream: Successfully connected[0m
+[0;32mI (28888) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (28888) Sonostream: Successfully connected[0m
+[0;32mI (28948) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (28948) Sonostream: Successfully connected[0m
+[0;32mI (29018) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (29018) Sonostream: Successfully connected[0m
+[0;32mI (29078) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (29078) Sonostream: Successfully connected[0m
+[0;32mI (29138) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (29138) Sonostream: Successfully connected[0m
+[0;32mI (29218) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (29218) Sonostream: Successfully connected[0m
+[0;32mI (29278) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (29278) Sonostream: Successfully connected[0m
+[0;32mI (29338) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (29338) Sonostream: Successfully connected[0m
+[0;32mI (29398) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (29398) Sonostream: Successfully connected[0m
+[0;32mI (29468) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (29468) Sonostream: Successfully connected[0m
+[0;32mI (29528) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (29528) Sonostream: Successfully connected[0m
+[0;32mI (29588) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (29588) Sonostream: Successfully connected[0m
+[0;32mI (29648) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (29648) Sonostream: Successfully connected[0m
+[0;32mI (29728) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (29728) Sonostream: Successfully connected[0m
+[0;32mI (29788) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (29788) Sonostream: Successfully connected[0m
+[0;32mI (29848) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (29848) Sonostream: Successfully connected[0m
+[0;32mI (29908) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (29908) Sonostream: Successfully connected[0m
+[0;32mI (29978) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (29978) Sonostream: Successfully connected[0m
+[0;32mI (30038) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (30038) Sonostream: Successfully connected[0m
+[0;32mI (30098) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (30098) Sonostream: Successfully connected[0m
+[0;32mI (30178) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (30178) Sonostream: Successfully connected[0m
+[0;32mI (30238) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (30238) Sonostream: Successfully connected[0m
+[0;32mI (30298) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (30298) Sonostream: Successfully connected[0m
+[0;32mI (30358) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (30358) Sonostream: Successfully connected[0m
+[0;32mI (30428) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (30428) Sonostream: Successfully connected[0m
+[0;32mI (30488) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (30488) Sonostream: Successfully connected[0m
+[0;32mI (30548) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (30548) Sonostream: Successfully connected[0m
+[0;32mI (30608) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (30608) Sonostream: Successfully connected[0m
+[0;32mI (30688) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (30688) Sonostream: Successfully connected[0m
+[0;32mI (30748) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (30748) Sonostream: Successfully connected[0m
+[0;32mI (30808) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (30808) Sonostream: Successfully connected[0m
+[0;32mI (30868) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (30868) Sonostream: Successfully connected[0m
+[0;32mI (30938) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (30938) Sonostream: Successfully connected[0m
+[0;32mI (30998) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (30998) Sonostream: Successfully connected[0m
+[0;32mI (31058) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (31058) Sonostream: Successfully connected[0m
+[0;32mI (31138) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (31138) Sonostream: Successfully connected[0m
+[0;32mI (31198) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (31198) Sonostream: Successfully connected[0m
+[0;32mI (31258) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (31258) Sonostream: Successfully connected[0m
+[0;32mI (31318) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (31318) Sonostream: Successfully connected[0m
+[0;32mI (31388) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (31388) Sonostream: Successfully connected[0m
+[0;32mI (31448) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (31448) Sonostream: Successfully connected[0m
+[0;32mI (31508) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (31508) Sonostream: Successfully connected[0m
+[0;32mI (31568) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (31568) Sonostream: Successfully connected[0m
+[0;32mI (31648) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (31648) Sonostream: Successfully connected[0m
+[0;32mI (31708) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (31708) Sonostream: Successfully connected[0m
+[0;32mI (31768) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (31768) Sonostream: Successfully connected[0m
+[0;32mI (31828) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (31828) Sonostream: Successfully connected[0m
+[0;32mI (31898) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (31898) Sonostream: Successfully connected[0m
+[0;32mI (31958) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (31958) Sonostream: Successfully connected[0m
+[0;32mI (32018) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (32018) Sonostream: Successfully connected[0m
+[0;32mI (32098) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (32098) Sonostream: Successfully connected[0m
+[0;32mI (32158) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (32158) Sonostream: Successfully connected[0m
+[0;32mI (32218) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (32218) Sonostream: Successfully connected[0m
+[0;32mI (32278) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (32278) Sonostream: Successfully connected[0m
+[0;32mI (32348) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (32348) Sonostream: Successfully connected[0m
+[0;32mI (32408) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (32408) Sonostream: Successfully connected[0m
+[0;32mI (32468) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (32468) Sonostream: Successfully connected[0m
+[0;32mI (32528) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (32528) Sonostream: Successfully connected[0m
+[0;32mI (32608) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (32608) Sonostream: Successfully connected[0m
+[0;32mI (32668) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (32668) Sonostream: Successfully connected[0m
+[0;32mI (32728) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (32728) Sonostream: Successfully connected[0m
+[0;32mI (32788) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (32788) Sonostream: Successfully connected[0m
+[0;32mI (32858) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (32858) Sonostream: Successfully connected[0m
+[0;32mI (32918) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (32918) Sonostream: Successfully connected[0m
+[0;32mI (32978) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (32978) Sonostream: Successfully connected[0m
+[0;32mI (33058) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (33058) Sonostream: Successfully connected[0m
+[0;32mI (33118) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (33118) Sonostream: Successfully connected[0m
+[0;32mI (33178) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (33178) Sonostream: Successfully connected[0m
+[0;32mI (33238) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (33238) Sonostream: Successfully connected[0m
+[0;32mI (33308) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (33308) Sonostream: Successfully connected[0m
+[0;32mI (33368) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (33368) Sonostream: Successfully connected[0m
+[0;32mI (33428) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (33428) Sonostream: Successfully connected[0m
+[0;32mI (33488) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (33488) Sonostream: Successfully connected[0m
+[0;32mI (33568) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (33568) Sonostream: Successfully connected[0m
+[0;32mI (33628) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (33628) Sonostream: Successfully connected[0m
+[0;32mI (33688) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (33688) Sonostream: Successfully connected[0m
+[0;32mI (33748) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (33748) Sonostream: Successfully connected[0m
+[0;32mI (33818) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (33818) Sonostream: Successfully connected[0m
+[0;32mI (33878) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (33878) Sonostream: Successfully connected[0m
+[0;32mI (33938) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (33938) Sonostream: Successfully connected[0m
+[0;32mI (34018) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (34018) Sonostream: Successfully connected[0m
+[0;32mI (34078) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (34078) Sonostream: Successfully connected[0m
+[0;32mI (34138) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (34138) Sonostream: Successfully connected[0m
+[0;32mI (34198) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (34198) Sonostream: Successfully connected[0m
+[0;32mI (34268) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (34268) Sonostream: Successfully connected[0m
+[0;32mI (34328) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (34328) Sonostream: Successfully connected[0m
+[0;32mI (34388) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (34388) Sonostream: Successfully connected[0m
+[0;32mI (34448) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (34448) Sonostream: Successfully connected[0m
+[0;32mI (34528) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (34528) Sonostream: Successfully connected[0m
+[0;32mI (34588) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (34588) Sonostream: Successfully connected[0m
+[0;32mI (34648) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (34648) Sonostream: Successfully connected[0m
+[0;32mI (34708) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (34708) Sonostream: Successfully connected[0m
+[0;32mI (34778) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (34778) Sonostream: Successfully connected[0m
+[0;32mI (34838) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (34838) Sonostream: Successfully connected[0m
+[0;32mI (34898) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (34898) Sonostream: Successfully connected[0m
+[0;32mI (34978) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (34978) Sonostream: Successfully connected[0m
+[0;32mI (35038) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (35038) Sonostream: Successfully connected[0m
+[0;32mI (35098) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (35098) Sonostream: Successfully connected[0m
+[0;32mI (35158) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (35158) Sonostream: Successfully connected[0m
+[0;32mI (35228) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (35228) Sonostream: Successfully connected[0m
+[0;32mI (35288) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (35288) Sonostream: Successfully connected[0m
+[0;32mI (35348) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (35348) Sonostream: Successfully connected[0m
+[0;32mI (35408) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (35408) Sonostream: Successfully connected[0m
+[0;32mI (35488) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (35488) Sonostream: Successfully connected[0m
+[0;32mI (35548) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (35548) Sonostream: Successfully connected[0m
+[0;32mI (35608) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (35608) Sonostream: Successfully connected[0m
+[0;32mI (35668) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (35668) Sonostream: Successfully connected[0m
+[0;32mI (35738) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (35738) Sonostream: Successfully connected[0m
+[0;32mI (35798) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (35798) Sonostream: Successfully connected[0m
+[0;32mI (35858) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (35858) Sonostream: Successfully connected[0m
+[0;32mI (35938) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (35938) Sonostream: Successfully connected[0m
+[0;32mI (35998) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (35998) Sonostream: Successfully connected[0m
+[0;32mI (36058) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (36058) Sonostream: Successfully connected[0m
+[0;32mI (36118) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (36118) Sonostream: Successfully connected[0m
+[0;32mI (36188) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (36188) Sonostream: Successfully connected[0m
+[0;32mI (36248) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (36248) Sonostream: Successfully connected[0m
+[0;32mI (36308) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (36308) Sonostream: Successfully connected[0m
+[0;32mI (36368) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (36368) Sonostream: Successfully connected[0m
+[0;32mI (36448) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (36448) Sonostream: Successfully connected[0m
+[0;32mI (36508) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (36508) Sonostream: Successfully connected[0m
+[0;32mI (36568) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (36568) Sonostream: Successfully connected[0m
+[0;32mI (36628) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (36628) Sonostream: Successfully connected[0m
+[0;32mI (36698) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (36698) Sonostream: Successfully connected[0m
+[0;32mI (36758) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (36758) Sonostream: Successfully connected[0m
+[0;32mI (36818) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (36818) Sonostream: Successfully connected[0m
+[0;32mI (36898) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (36898) Sonostream: Successfully connected[0m
+[0;32mI (36958) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (36958) Sonostream: Successfully connected[0m
+[0;32mI (37018) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (37018) Sonostream: Successfully connected[0m
+[0;32mI (37078) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (37078) Sonostream: Successfully connected[0m
+[0;32mI (37148) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (37148) Sonostream: Successfully connected[0m
+[0;32mI (37208) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (37208) Sonostream: Successfully connected[0m
+[0;32mI (37268) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (37268) Sonostream: Successfully connected[0m
+[0;32mI (37328) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (37328) Sonostream: Successfully connected[0m
+[0;32mI (37408) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (37408) Sonostream: Successfully connected[0m
+[0;32mI (37468) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (37468) Sonostream: Successfully connected[0m
+[0;32mI (37528) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (37528) Sonostream: Successfully connected[0m
+[0;32mI (37588) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (37588) Sonostream: Successfully connected[0m
+[0;32mI (37658) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (37658) Sonostream: Successfully connected[0m
+[0;32mI (37718) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (37718) Sonostream: Successfully connected[0m
+[0;32mI (37778) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (37778) Sonostream: Successfully connected[0m
+[0;32mI (37858) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (37858) Sonostream: Successfully connected[0m
+[0;32mI (37918) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (37918) Sonostream: Successfully connected[0m
+[0;32mI (37978) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (37978) Sonostream: Successfully connected[0m
+[0;32mI (38038) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (38038) Sonostream: Successfully connected[0m
+[0;32mI (38108) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (38108) Sonostream: Successfully connected[0m
+[0;32mI (38168) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (38168) Sonostream: Successfully connected[0m
+[0;32mI (38228) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (38228) Sonostream: Successfully connected[0m
+[0;32mI (38288) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (38288) Sonostream: Successfully connected[0m
+[0;32mI (38368) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (38368) Sonostream: Successfully connected[0m
+[0;32mI (38428) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (38428) Sonostream: Successfully connected[0m
+[0;32mI (38488) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (38488) Sonostream: Successfully connected[0m
+[0;32mI (38548) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (38548) Sonostream: Successfully connected[0m
+[0;32mI (38618) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (38618) Sonostream: Successfully connected[0m
+[0;32mI (38678) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (38678) Sonostream: Successfully connected[0m
+[0;32mI (38738) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (38738) Sonostream: Successfully connected[0m
+[0;32mI (38818) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (38818) Sonostream: Successfully connected[0m
+[0;32mI (38878) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (38878) Sonostream: Successfully connected[0m
+[0;32mI (38938) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (38938) Sonostream: Successfully connected[0m
+[0;32mI (38998) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (38998) Sonostream: Successfully connected[0m
+[0;32mI (39068) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (39068) Sonostream: Successfully connected[0m
+[0;32mI (39128) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (39128) Sonostream: Successfully connected[0m
+[0;32mI (39188) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (39188) Sonostream: Successfully connected[0m
+[0;32mI (39248) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (39248) Sonostream: Successfully connected[0m
+[0;32mI (39328) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (39328) Sonostream: Successfully connected[0m
+[0;32mI (39388) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (39388) Sonostream: Successfully connected[0m
+[0;32mI (39448) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (39448) Sonostream: Successfully connected[0m
+[0;32mI (39508) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (39508) Sonostream: Successfully connected[0m
+[0;32mI (39578) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (39578) Sonostream: Successfully connected[0m
+[0;32mI (39638) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (39638) Sonostream: Successfully connected[0m
+[0;32mI (39698) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (39698) Sonostream: Successfully connected[0m
+[0;32mI (39778) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (39778) Sonostream: Successfully connected[0m
+[0;32mI (39838) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (39838) Sonostream: Successfully connected[0m
+[0;32mI (39898) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (39898) Sonostream: Successfully connected[0m
+[0;32mI (39958) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (39958) Sonostream: Successfully connected[0m
+[0;32mI (40028) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (40028) Sonostream: Successfully connected[0m
+[0;32mI (40088) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (40088) Sonostream: Successfully connected[0m
+[0;32mI (40148) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (40148) Sonostream: Successfully connected[0m
+[0;32mI (40208) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (40208) Sonostream: Successfully connected[0m
+[0;32mI (40288) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (40288) Sonostream: Successfully connected[0m
+[0;32mI (40348) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (40348) Sonostream: Successfully connected[0m
+[0;32mI (40408) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (40408) Sonostream: Successfully connected[0m
+[0;32mI (40468) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (40468) Sonostream: Successfully connected[0m
+[0;32mI (40538) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (40538) Sonostream: Successfully connected[0m
+[0;32mI (40598) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (40598) Sonostream: Successfully connected[0m
+[0;32mI (40658) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (40658) Sonostream: Successfully connected[0m
+[0;32mI (40738) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (40738) Sonostream: Successfully connected[0m
+[0;32mI (40798) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (40798) Sonostream: Successfully connected[0m
+[0;32mI (40858) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (40858) Sonostream: Successfully connected[0m
+[0;32mI (40918) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (40918) Sonostream: Successfully connected[0m
+[0;32mI (40988) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (40988) Sonostream: Successfully connected[0m
+[0;32mI (41048) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (41048) Sonostream: Successfully connected[0m
+[0;32mI (41108) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (41108) Sonostream: Successfully connected[0m
+[0;32mI (41168) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (41168) Sonostream: Successfully connected[0m
+[0;32mI (41248) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (41248) Sonostream: Successfully connected[0m
+[0;32mI (41308) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (41308) Sonostream: Successfully connected[0m
+[0;32mI (41368) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (41368) Sonostream: Successfully connected[0m
+[0;32mI (41428) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (41428) Sonostream: Successfully connected[0m
+[0;32mI (41498) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (41498) Sonostream: Successfully connected[0m
+[0;32mI (41558) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (41558) Sonostream: Successfully connected[0m
+[0;32mI (41618) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (41618) Sonostream: Successfully connected[0m
+[0;32mI (41698) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (41698) Sonostream: Successfully connected[0m
+[0;32mI (41758) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (41758) Sonostream: Successfully connected[0m
+[0;32mI (41818) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (41818) Sonostream: Successfully connected[0m
+[0;32mI (41878) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (41878) Sonostream: Successfully connected[0m
+[0;32mI (41948) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (41948) Sonostream: Successfully connected[0m
+[0;32mI (42008) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (42008) Sonostream: Successfully connected[0m
+[0;32mI (42068) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (42068) Sonostream: Successfully connected[0m
+[0;32mI (42128) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (42128) Sonostream: Successfully connected[0m
+[0;32mI (42208) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (42208) Sonostream: Successfully connected[0m
+[0;32mI (42268) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (42268) Sonostream: Successfully connected[0m
+[0;32mI (42328) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (42328) Sonostream: Successfully connected[0m
+[0;32mI (42388) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (42388) Sonostream: Successfully connected[0m
+[0;32mI (42458) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (42458) Sonostream: Successfully connected[0m
+[0;32mI (42518) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (42518) Sonostream: Successfully connected[0m
+[0;32mI (42578) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (42578) Sonostream: Successfully connected[0m
+[0;32mI (42658) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (42658) Sonostream: Successfully connected[0m
+[0;32mI (42718) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (42718) Sonostream: Successfully connected[0m
+[0;32mI (42778) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (42778) Sonostream: Successfully connected[0m
+[0;32mI (42838) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (42838) Sonostream: Successfully connected[0m
+[0;32mI (42908) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (42908) Sonostream: Successfully connected[0m
+[0;32mI (42968) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (42968) Sonostream: Successfully connected[0m
+[0;32mI (43028) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (43028) Sonostream: Successfully connected[0m
+[0;32mI (43088) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (43088) Sonostream: Successfully connected[0m
+[0;32mI (43168) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (43168) Sonostream: Successfully connected[0m
+[0;32mI (43228) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (43228) Sonostream: Successfully connected[0m
+[0;32mI (43288) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (43288) Sonostream: Successfully connected[0m
+[0;32mI (43348) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (43348) Sonostream: Successfully connected[0m
+[0;32mI (43418) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (43418) Sonostream: Successfully connected[0m
+[0;32mI (43478) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (43478) Sonostream: Successfully connected[0m
+[0;32mI (43538) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (43538) Sonostream: Successfully connected[0m
+[0;32mI (43618) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (43618) Sonostream: Successfully connected[0m
+[0;32mI (43678) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (43678) Sonostream: Successfully connected[0m
+[0;32mI (43738) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (43738) Sonostream: Successfully connected[0m
+[0;32mI (43798) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (43798) Sonostream: Successfully connected[0m
+[0;32mI (43868) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (43868) Sonostream: Successfully connected[0m
+[0;32mI (43928) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (43928) Sonostream: Successfully connected[0m
+[0;32mI (43988) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (43988) Sonostream: Successfully connected[0m
+[0;32mI (44048) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (44048) Sonostream: Successfully connected[0m
+[0;32mI (44128) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (44128) Sonostream: Successfully connected[0m
+[0;32mI (44188) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (44188) Sonostream: Successfully connected[0m
+[0;32mI (44248) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (44248) Sonostream: Successfully connected[0m
+[0;32mI (44308) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (44308) Sonostream: Successfully connected[0m
+[0;32mI (44378) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (44378) Sonostream: Successfully connected[0m
+[0;32mI (44438) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (44438) Sonostream: Successfully connected[0m
+[0;32mI (44498) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (44498) Sonostream: Successfully connected[0m
+[0;32mI (44578) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (44578) Sonostream: Successfully connected[0m
+[0;32mI (44638) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (44638) Sonostream: Successfully connected[0m
+[0;32mI (44698) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (44698) Sonostream: Successfully connected[0m
+[0;32mI (44758) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (44758) Sonostream: Successfully connected[0m
+[0;32mI (44828) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (44828) Sonostream: Successfully connected[0m
+[0;32mI (44888) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (44888) Sonostream: Successfully connected[0m
+[0;32mI (44948) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (44948) Sonostream: Successfully connected[0m
+[0;32mI (45008) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (45008) Sonostream: Successfully connected[0m
+[0;32mI (45088) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (45088) Sonostream: Successfully connected[0m
+[0;32mI (45148) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (45148) Sonostream: Successfully connected[0m
+[0;32mI (45208) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (45208) Sonostream: Successfully connected[0m
+[0;32mI (45268) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (45268) Sonostream: Successfully connected[0m
+[0;32mI (45338) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (45338) Sonostream: Successfully connected[0m
+[0;32mI (45398) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (45398) Sonostream: Successfully connected[0m
+[0;32mI (45458) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (45458) Sonostream: Successfully connected[0m
+[0;32mI (45538) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (45538) Sonostream: Successfully connected[0m
+[0;32mI (46878) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (46878) Sonostream: Successfully connected[0m
+[0;32mI (46888) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (46888) Sonostream: Successfully connected[0m
+[0;32mI (46898) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (46898) Sonostream: Successfully connected[0m
+[0;32mI (46908) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (46908) Sonostream: Successfully connected[0m
+[0;32mI (46908) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (46908) Sonostream: Successfully connected[0m
+[0;32mI (46918) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (46918) Sonostream: Successfully connected[0m
+[0;32mI (46928) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (46928) Sonostream: Successfully connected[0m
+[0;32mI (46938) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (46938) Sonostream: Successfully connected[0m
+[0;32mI (46948) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (46948) Sonostream: Successfully connected[0m
+[0;32mI (46948) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (46958) Sonostream: Successfully connected[0m
+[0;32mI (46998) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (46998) Sonostream: Successfully connected[0m
+[0;32mI (46998) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (46998) Sonostream: Successfully connected[0m
+[0;32mI (47008) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (47008) Sonostream: Successfully connected[0m
+[0;32mI (47068) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (47068) Sonostream: Successfully connected[0m
+[0;32mI (47128) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (47128) Sonostream: Successfully connected[0m
+[0;32mI (47188) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (47188) Sonostream: Successfully connected[0m
+[0;32mI (47258) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (47258) Sonostream: Successfully connected[0m
+[0;32mI (47318) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (47318) Sonostream: Successfully connected[0m
+[0;32mI (47378) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (47378) Sonostream: Successfully connected[0m
+[0;32mI (47458) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (47458) Sonostream: Successfully connected[0m
+[0;32mI (47518) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (47518) Sonostream: Successfully connected[0m
+[0;32mI (47578) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (47578) Sonostream: Successfully connected[0m
+[0;32mI (47638) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (47638) Sonostream: Successfully connected[0m
+[0;32mI (47708) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (47708) Sonostream: Successfully connected[0m
+[0;32mI (47768) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (47768) Sonostream: Successfully connected[0m
+[0;32mI (47828) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (47828) Sonostream: Successfully connected[0m
+[0;32mI (47888) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (47888) Sonostream: Successfully connected[0m
+[0;32mI (47968) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (47968) Sonostream: Successfully connected[0m
+[0;32mI (48028) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (48028) Sonostream: Successfully connected[0m
+[0;32mI (48088) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (48088) Sonostream: Successfully connected[0m
+[0;32mI (48148) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (48148) Sonostream: Successfully connected[0m
+[0;32mI (48218) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (48218) Sonostream: Successfully connected[0m
+[0;32mI (48278) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (48278) Sonostream: Successfully connected[0m
+[0;32mI (48338) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (48338) Sonostream: Successfully connected[0m
+[0;32mI (48418) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (48418) Sonostream: Successfully connected[0m
+[0;32mI (48478) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (48478) Sonostream: Successfully connected[0m
+[0;32mI (48538) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (48538) Sonostream: Successfully connected[0m
+[0;32mI (48598) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (48598) Sonostream: Successfully connected[0m
+[0;32mI (48668) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (48668) Sonostream: Successfully connected[0m
+[0;32mI (48728) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (48728) Sonostream: Successfully connected[0m
+[0;32mI (48788) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (48788) Sonostream: Successfully connected[0m
+[0;32mI (48848) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (48848) Sonostream: Successfully connected[0m
+[0;32mI (48928) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (48928) Sonostream: Successfully connected[0m
+[0;32mI (48988) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (48988) Sonostream: Successfully connected[0m
+[0;32mI (49048) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (49048) Sonostream: Successfully connected[0m
+[0;32mI (49108) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (49108) Sonostream: Successfully connected[0m
+[0;32mI (49178) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (49178) Sonostream: Successfully connected[0m
+[0;32mI (49238) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (49238) Sonostream: Successfully connected[0m
+[0;32mI (49298) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (49298) Sonostream: Successfully connected[0m
+[0;32mI (49378) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (49378) Sonostream: Successfully connected[0m
+[0;32mI (49438) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (49438) Sonostream: Successfully connected[0m
+[0;32mI (49498) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (49498) Sonostream: Successfully connected[0m
+[0;32mI (49558) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (49558) Sonostream: Successfully connected[0m
+[0;32mI (49628) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (49628) Sonostream: Successfully connected[0m
+[0;32mI (49688) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (49688) Sonostream: Successfully connected[0m
+[0;32mI (49748) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (49748) Sonostream: Successfully connected[0m
+[0;32mI (49808) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (49808) Sonostream: Successfully connected[0m
+[0;32mI (49888) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (49888) Sonostream: Successfully connected[0m
+[0;32mI (49948) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (49948) Sonostream: Successfully connected[0m
+[0;32mI (50008) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (50008) Sonostream: Successfully connected[0m
+[0;32mI (50068) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (50068) Sonostream: Successfully connected[0m
+[0;32mI (50138) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (50138) Sonostream: Successfully connected[0m
+[0;32mI (50198) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (50198) Sonostream: Successfully connected[0m
+[0;32mI (50258) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (50258) Sonostream: Successfully connected[0m
+[0;32mI (50338) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (50338) Sonostream: Successfully connected[0m
+[0;32mI (50398) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (50398) Sonostream: Successfully connected[0m
+[0;32mI (50458) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (50458) Sonostream: Successfully connected[0m
+[0;32mI (50518) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (50518) Sonostream: Successfully connected[0m
+[0;32mI (50588) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (50588) Sonostream: Successfully connected[0m
+[0;32mI (50648) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (50648) Sonostream: Successfully connected[0m
+[0;32mI (50708) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (50708) Sonostream: Successfully connected[0m
+[0;32mI (50768) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (50768) Sonostream: Successfully connected[0m
+[0;32mI (50848) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (50848) Sonostream: Successfully connected[0m
+[0;32mI (50908) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (50908) Sonostream: Successfully connected[0m
+[0;32mI (50968) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (50968) Sonostream: Successfully connected[0m
+[0;32mI (51028) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (51028) Sonostream: Successfully connected[0m
+[0;32mI (51098) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (51098) Sonostream: Successfully connected[0m
+[0;32mI (51158) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (51158) Sonostream: Successfully connected[0m
+[0;32mI (51218) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (51218) Sonostream: Successfully connected[0m
+[0;32mI (51298) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (51298) Sonostream: Successfully connected[0m
+[0;32mI (51358) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (51358) Sonostream: Successfully connected[0m
+[0;32mI (51418) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (51418) Sonostream: Successfully connected[0m
+[0;32mI (51478) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (51478) Sonostream: Successfully connected[0m
+[0;32mI (51548) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (51548) Sonostream: Successfully connected[0m
+[0;32mI (51608) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (51608) Sonostream: Successfully connected[0m
+[0;32mI (51668) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (51668) Sonostream: Successfully connected[0m
+[0;32mI (51728) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (51728) Sonostream: Successfully connected[0m
+[0;32mI (51808) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (51808) Sonostream: Successfully connected[0m
+[0;32mI (51868) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (51868) Sonostream: Successfully connected[0m
+[0;32mI (51928) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (51928) Sonostream: Successfully connected[0m
+[0;32mI (51988) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (51988) Sonostream: Successfully connected[0m
+[0;32mI (52058) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (52058) Sonostream: Successfully connected[0m
+[0;32mI (52118) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (52118) Sonostream: Successfully connected[0m
+[0;32mI (52178) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (52178) Sonostream: Successfully connected[0m
+[0;32mI (52258) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (52258) Sonostream: Successfully connected[0m
+[0;32mI (52318) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (52318) Sonostream: Successfully connected[0m
+[0;32mI (52378) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (52378) Sonostream: Successfully connected[0m
+[0;32mI (52438) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (52438) Sonostream: Successfully connected[0m
+[0;32mI (52508) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (52508) Sonostream: Successfully connected[0m
+[0;32mI (52568) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (52568) Sonostream: Successfully connected[0m
+[0;32mI (52628) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (52628) Sonostream: Successfully connected[0m
+[0;32mI (52688) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (52688) Sonostream: Successfully connected[0m
+[0;32mI (52768) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (52768) Sonostream: Successfully connected[0m
+[0;32mI (52828) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (52828) Sonostream: Successfully connected[0m
+[0;32mI (52888) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (52888) Sonostream: Successfully connected[0m
+[0;32mI (52948) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (52948) Sonostream: Successfully connected[0m
+[0;32mI (53018) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (53018) Sonostream: Successfully connected[0m
+[0;32mI (53078) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (53078) Sonostream: Successfully connected[0m
+[0;32mI (53138) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (53138) Sonostream: Successfully connected[0m
+[0;32mI (53218) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (53218) Sonostream: Successfully connected[0m
+[0;32mI (53278) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (53278) Sonostream: Successfully connected[0m
+[0;32mI (53338) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (53338) Sonostream: Successfully connected[0m
+[0;32mI (53398) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (53398) Sonostream: Successfully connected[0m
+[0;32mI (53468) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (53468) Sonostream: Successfully connected[0m
+[0;32mI (53528) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (53528) Sonostream: Successfully connected[0m
+[0;32mI (53588) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (53588) Sonostream: Successfully connected[0m
+[0;32mI (53648) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (53648) Sonostream: Successfully connected[0m
+[0;32mI (53728) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (53728) Sonostream: Successfully connected[0m
+[0;32mI (53788) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (53788) Sonostream: Successfully connected[0m
+[0;32mI (53848) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (53848) Sonostream: Successfully connected[0m
+[0;32mI (53908) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (53908) Sonostream: Successfully connected[0m
+[0;32mI (53978) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (53978) Sonostream: Successfully connected[0m
+[0;32mI (54038) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (54038) Sonostream: Successfully connected[0m
+[0;32mI (54098) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (54098) Sonostream: Successfully connected[0m
+[0;32mI (54178) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (54178) Sonostream: Successfully connected[0m
+[0;32mI (54238) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (54238) Sonostream: Successfully connected[0m
+[0;32mI (54298) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (54298) Sonostream: Successfully connected[0m
+[0;32mI (54358) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (54358) Sonostream: Successfully connected[0m
+[0;32mI (54428) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (54428) Sonostream: Successfully connected[0m
+[0;32mI (54488) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (54488) Sonostream: Successfully connected[0m
+[0;32mI (54548) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (54548) Sonostream: Successfully connected[0m
+[0;32mI (54608) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (54608) Sonostream: Successfully connected[0m
+[0;32mI (54688) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (54688) Sonostream: Successfully connected[0m
+[0;32mI (54748) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (54748) Sonostream: Successfully connected[0m
+[0;32mI (54808) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (54808) Sonostream: Successfully connected[0m
+[0;32mI (54868) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (54868) Sonostream: Successfully connected[0m
+[0;32mI (54938) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (54938) Sonostream: Successfully connected[0m
+[0;32mI (54998) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (54998) Sonostream: Successfully connected[0m
+[0;32mI (55058) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (55058) Sonostream: Successfully connected[0m
+[0;32mI (55138) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (55138) Sonostream: Successfully connected[0m
+[0;32mI (55198) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (55198) Sonostream: Successfully connected[0m
+[0;32mI (55258) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (55258) Sonostream: Successfully connected[0m
+[0;32mI (55318) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (55318) Sonostream: Successfully connected[0m
+[0;32mI (55388) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (55388) Sonostream: Successfully connected[0m
+[0;32mI (55448) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (55448) Sonostream: Successfully connected[0m
+[0;32mI (55508) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (55508) Sonostream: Successfully connected[0m
+[0;32mI (55568) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (55568) Sonostream: Successfully connected[0m
+[0;32mI (55648) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (55648) Sonostream: Successfully connected[0m
+[0;32mI (55718) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (55718) Sonostream: Successfully connected[0m
+[0;32mI (55768) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (55768) Sonostream: Successfully connected[0m
+[0;32mI (55828) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (55828) Sonostream: Successfully connected[0m
+[0;32mI (55898) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (55898) Sonostream: Successfully connected[0m
+[0;32mI (55958) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (55958) Sonostream: Successfully connected[0m
+[0;32mI (56018) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (56018) Sonostream: Successfully connected[0m
+[0;32mI (56098) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (56098) Sonostream: Successfully connected[0m
+[0;32mI (56158) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (56158) Sonostream: Successfully connected[0m
+[0;32mI (56218) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (56218) Sonostream: Successfully connected[0m
+[0;32mI (56278) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (56278) Sonostream: Successfully connected[0m
+[0;32mI (56348) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (56348) Sonostream: Successfully connected[0m
+[0;32mI (56408) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (56408) Sonostream: Successfully connected[0m
+[0;32mI (56468) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (56468) Sonostream: Successfully connected[0m
+[0;32mI (56528) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (56528) Sonostream: Successfully connected[0m
+[0;32mI (56608) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (56608) Sonostream: Successfully connected[0m
+[0;32mI (56668) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (56668) Sonostream: Successfully connected[0m
+[0;32mI (56728) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (56728) Sonostream: Successfully connected[0m
+[0;32mI (56788) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (56788) Sonostream: Successfully connected[0m
+[0;32mI (56858) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (56858) Sonostream: Successfully connected[0m
+[0;32mI (56918) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (56918) Sonostream: Successfully connected[0m
+[0;32mI (56978) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (56978) Sonostream: Successfully connected[0m
+[0;32mI (57058) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (57058) Sonostream: Successfully connected[0m
+[0;32mI (57118) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (57118) Sonostream: Successfully connected[0m
+[0;32mI (57178) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (57178) Sonostream: Successfully connected[0m
+[0;32mI (57238) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (57238) Sonostream: Successfully connected[0m
+[0;32mI (57308) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (57308) Sonostream: Successfully connected[0m
+[0;32mI (57368) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (57368) Sonostream: Successfully connected[0m
+[0;32mI (57428) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (57428) Sonostream: Successfully connected[0m
+[0;32mI (57488) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (57488) Sonostream: Successfully connected[0m
+[0;32mI (57568) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (57568) Sonostream: Successfully connected[0m
+[0;32mI (57628) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (57628) Sonostream: Successfully connected[0m
+[0;32mI (57688) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (57688) Sonostream: Successfully connected[0m
+[0;32mI (57748) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (57748) Sonostream: Successfully connected[0m
+[0;32mI (57818) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (57818) Sonostream: Successfully connected[0m
+[0;32mI (57878) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (57878) Sonostream: Successfully connected[0m
+[0;32mI (57938) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (57938) Sonostream: Successfully connected[0m
+[0;32mI (58018) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (58018) Sonostream: Successfully connected[0m
+[0;32mI (58078) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (58078) Sonostream: Successfully connected[0m
+[0;32mI (58138) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (58138) Sonostream: Successfully connected[0m
+[0;32mI (58198) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (58198) Sonostream: Successfully connected[0m
+[0;32mI (58268) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (58268) Sonostream: Successfully connected[0m
+[0;32mI (58328) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (58328) Sonostream: Successfully connected[0m
+[0;32mI (58388) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (58388) Sonostream: Successfully connected[0m
+[0;32mI (58448) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (58448) Sonostream: Successfully connected[0m
+[0;32mI (58528) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (58528) Sonostream: Successfully connected[0m
+[0;32mI (58588) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (58588) Sonostream: Successfully connected[0m
+[0;32mI (58648) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (58648) Sonostream: Successfully connected[0m
+[0;32mI (58708) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (58708) Sonostream: Successfully connected[0m
+[0;32mI (58778) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (58778) Sonostream: Successfully connected[0m
+[0;32mI (58838) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (58838) Sonostream: Successfully connected[0m
+[0;32mI (58898) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (58898) Sonostream: Successfully connected[0m
+[0;32mI (58978) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (58978) Sonostream: Successfully connected[0m
+[0;32mI (59038) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (59038) Sonostream: Successfully connected[0m
+[0;32mI (59098) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (59098) Sonostream: Successfully connected[0m
+[0;32mI (59158) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (59158) Sonostream: Successfully connected[0m
+[0;32mI (59228) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (59228) Sonostream: Successfully connected[0m
+[0;32mI (59288) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (59288) Sonostream: Successfully connected[0m
+[0;32mI (59348) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (59348) Sonostream: Successfully connected[0m
+[0;32mI (59408) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (59408) Sonostream: Successfully connected[0m
+[0;32mI (59488) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (59488) Sonostream: Successfully connected[0m
+[0;32mI (59548) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (59548) Sonostream: Successfully connected[0m
+[0;32mI (59608) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (59608) Sonostream: Successfully connected[0m
+[0;32mI (59668) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (59668) Sonostream: Successfully connected[0m
+[0;32mI (59738) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (59738) Sonostream: Successfully connected[0m
+[0;32mI (59798) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (59798) Sonostream: Successfully connected[0m
+[0;32mI (59858) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (59858) Sonostream: Successfully connected[0m
+[0;32mI (59938) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (59938) Sonostream: Successfully connected[0m
+[0;32mI (59998) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (59998) Sonostream: Successfully connected[0m
+[0;32mI (60058) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (60058) Sonostream: Successfully connected[0m
+[0;32mI (60118) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (60118) Sonostream: Successfully connected[0m
+[0;32mI (60188) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (60188) Sonostream: Successfully connected[0m
+[0;32mI (60248) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (60248) Sonostream: Successfully connected[0m
+[0;32mI (60308) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (60308) Sonostream: Successfully connected[0m
+[0;32mI (60368) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (60368) Sonostream: Successfully connected[0m
+[0;32mI (60448) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (60448) Sonostream: Successfully connected[0m
+[0;32mI (60508) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (60508) Sonostream: Successfully connected[0m
+[0;32mI (60568) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (60568) Sonostream: Successfully connected[0m
+[0;32mI (60628) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (60628) Sonostream: Successfully connected[0m
+[0;32mI (60698) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (60698) Sonostream: Successfully connected[0m
+[0;32mI (60758) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (60758) Sonostream: Successfully connected[0m
+[0;32mI (60818) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (60818) Sonostream: Successfully connected[0m
+[0;32mI (60898) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (60898) Sonostream: Successfully connected[0m
+[0;32mI (60958) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (60958) Sonostream: Successfully connected[0m
+[0;32mI (61018) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (61018) Sonostream: Successfully connected[0m
+[0;32mI (61078) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (61078) Sonostream: Successfully connected[0m
+[0;32mI (61148) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (61148) Sonostream: Successfully connected[0m
+[0;32mI (61208) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (61208) Sonostream: Successfully connected[0m
+[0;32mI (61268) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (61268) Sonostream: Successfully connected[0m
+[0;32mI (61328) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (61328) Sonostream: Successfully connected[0m
+[0;32mI (61408) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (61408) Sonostream: Successfully connected[0m
+[0;32mI (61468) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (61468) Sonostream: Successfully connected[0m
+[0;32mI (61528) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (61528) Sonostream: Successfully connected[0m
+[0;32mI (61588) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (61588) Sonostream: Successfully connected[0m
+[0;32mI (61658) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (61658) Sonostream: Successfully connected[0m
+[0;32mI (61718) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (61718) Sonostream: Successfully connected[0m
+[0;32mI (61778) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (61778) Sonostream: Successfully connected[0m
+[0;32mI (61858) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (61858) Sonostream: Successfully connected[0m
+[0;32mI (61918) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (61918) Sonostream: Successfully connected[0m
+[0;32mI (61978) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (61978) Sonostream: Successfully connected[0m
+[0;32mI (62038) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (62038) Sonostream: Successfully connected[0m
+[0;32mI (62108) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (62108) Sonostream: Successfully connected[0m
+[0;32mI (62168) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (62168) Sonostream: Successfully connected[0m
+[0;32mI (62228) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (62228) Sonostream: Successfully connected[0m
+[0;32mI (62288) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (62288) Sonostream: Successfully connected[0m
+[0;32mI (62368) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (62368) Sonostream: Successfully connected[0m
+[0;32mI (62428) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (62428) Sonostream: Successfully connected[0m
+[0;32mI (62488) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (62488) Sonostream: Successfully connected[0m
+[0;32mI (62548) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (62548) Sonostream: Successfully connected[0m
+[0;32mI (62618) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (62618) Sonostream: Successfully connected[0m
+[0;32mI (62678) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (62678) Sonostream: Successfully connected[0m
+[0;32mI (62738) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (62738) Sonostream: Successfully connected[0m
+[0;32mI (62818) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (62818) Sonostream: Successfully connected[0m
+[0;32mI (62878) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (62878) Sonostream: Successfully connected[0m
+[0;32mI (62938) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (62938) Sonostream: Successfully connected[0m
+[0;32mI (62998) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (62998) Sonostream: Successfully connected[0m
+[0;32mI (63068) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (63068) Sonostream: Successfully connected[0m
+[0;32mI (63128) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (63128) Sonostream: Successfully connected[0m
+[0;32mI (63188) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (63188) Sonostream: Successfully connected[0m
+[0;32mI (63248) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (63248) Sonostream: Successfully connected[0m
+[0;32mI (63328) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (63328) Sonostream: Successfully connected[0m
+[0;32mI (63388) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (63388) Sonostream: Successfully connected[0m
+[0;32mI (63448) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (63448) Sonostream: Successfully connected[0m
+[0;32mI (63508) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (63508) Sonostream: Successfully connected[0m
+[0;32mI (63578) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (63578) Sonostream: Successfully connected[0m
+[0;32mI (63638) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (63638) Sonostream: Successfully connected[0m
+[0;32mI (63698) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (63698) Sonostream: Successfully connected[0m
+[0;32mI (63778) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (63778) Sonostream: Successfully connected[0m
+[0;32mI (63838) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (63838) Sonostream: Successfully connected[0m
+[0;32mI (63898) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (63898) Sonostream: Successfully connected[0m
+[0;32mI (63958) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (63958) Sonostream: Successfully connected[0m
+[0;32mI (64028) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (64028) Sonostream: Successfully connected[0m
+[0;32mI (64088) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (64088) Sonostream: Successfully connected[0m
+[0;32mI (64148) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (64148) Sonostream: Successfully connected[0m
+[0;32mI (64208) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (64208) Sonostream: Successfully connected[0m
+[0;32mI (64288) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (64288) Sonostream: Successfully connected[0m
+[0;32mI (64348) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (64348) Sonostream: Successfully connected[0m
+[0;32mI (64408) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (64408) Sonostream: Successfully connected[0m
+[0;32mI (64468) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (64468) Sonostream: Successfully connected[0m
+[0;32mI (64538) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (64538) Sonostream: Successfully connected[0m
+[0;32mI (64598) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (64598) Sonostream: Successfully connected[0m
+[0;32mI (64658) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (64658) Sonostream: Successfully connected[0m
+[0;32mI (64738) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (64738) Sonostream: Successfully connected[0m
+[0;32mI (64798) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (64798) Sonostream: Successfully connected[0m
+[0;32mI (64858) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (64858) Sonostream: Successfully connected[0m
+[0;32mI (64918) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (64918) Sonostream: Successfully connected[0m
+[0;32mI (64988) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (64988) Sonostream: Successfully connected[0m
+[0;32mI (65048) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (65048) Sonostream: Successfully connected[0m
+[0;32mI (65108) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (65108) Sonostream: Successfully connected[0m
+[0;32mI (65168) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (65168) Sonostream: Successfully connected[0m
+[0;32mI (65248) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (65248) Sonostream: Successfully connected[0m
+[0;32mI (65308) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (65308) Sonostream: Successfully connected[0m
+[0;32mI (65368) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (65368) Sonostream: Successfully connected[0m
+[0;32mI (65428) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (65428) Sonostream: Successfully connected[0m
+[0;32mI (65498) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (65498) Sonostream: Successfully connected[0m
+[0;32mI (65558) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (65558) Sonostream: Successfully connected[0m
+[0;32mI (65618) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (65618) Sonostream: Successfully connected[0m
+[0;32mI (65698) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (65698) Sonostream: Successfully connected[0m
+[0;32mI (65758) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (65758) Sonostream: Successfully connected[0m
+[0;32mI (65818) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (65818) Sonostream: Successfully connected[0m
+[0;32mI (65878) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (65878) Sonostream: Successfully connected[0m
+[0;32mI (65948) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (65948) Sonostream: Successfully connected[0m
+[0;32mI (66008) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (66008) Sonostream: Successfully connected[0m
+[0;32mI (66068) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (66068) Sonostream: Successfully connected[0m
+[0;32mI (66128) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (66128) Sonostream: Successfully connected[0m
+[0;32mI (66208) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (66208) Sonostream: Successfully connected[0m
+[0;32mI (66268) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (66268) Sonostream: Successfully connected[0m
+[0;32mI (66328) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (66328) Sonostream: Successfully connected[0m
+[0;32mI (66388) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (66388) Sonostream: Successfully connected[0m
+[0;32mI (66458) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (66458) Sonostream: Successfully connected[0m
+[0;32mI (66518) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (66518) Sonostream: Successfully connected[0m
+[0;32mI (66578) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (66578) Sonostream: Successfully connected[0m
+[0;32mI (66658) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (66658) Sonostream: Successfully connected[0m
+[0;32mI (66718) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (66718) Sonostream: Successfully connected[0m
+[0;32mI (66778) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (66778) Sonostream: Successfully connected[0m
+[0;32mI (66838) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (66838) Sonostream: Successfully connected[0m
+[0;32mI (66908) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (66908) Sonostream: Successfully connected[0m
+[0;32mI (66968) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (66968) Sonostream: Successfully connected[0m
+[0;32mI (67028) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (67028) Sonostream: Successfully connected[0m
+[0;32mI (67088) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (67088) Sonostream: Successfully connected[0m
+[0;32mI (67168) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (67168) Sonostream: Successfully connected[0m
+[0;32mI (67228) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (67228) Sonostream: Successfully connected[0m
+[0;32mI (67288) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (67288) Sonostream: Successfully connected[0m
+[0;32mI (67348) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (67348) Sonostream: Successfully connected[0m
+[0;32mI (67418) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (67418) Sonostream: Successfully connected[0m
+[0;32mI (67478) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (67478) Sonostream: Successfully connected[0m
+[0;32mI (67538) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (67538) Sonostream: Successfully connected[0m
+[0;32mI (67618) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (67618) Sonostream: Successfully connected[0m
+[0;32mI (67678) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (67678) Sonostream: Successfully connected[0m
+[0;32mI (67738) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (67738) Sonostream: Successfully connected[0m
+[0;32mI (67798) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (67798) Sonostream: Successfully connected[0m
+[0;32mI (67868) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (67868) Sonostream: Successfully connected[0m
+[0;32mI (67928) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (67928) Sonostream: Successfully connected[0m
+[0;32mI (67988) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (67988) Sonostream: Successfully connected[0m
+[0;32mI (68048) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (68048) Sonostream: Successfully connected[0m
+[0;32mI (68128) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (68128) Sonostream: Successfully connected[0m
+[0;32mI (68188) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (68188) Sonostream: Successfully connected[0m
+[0;32mI (68248) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (68248) Sonostream: Successfully connected[0m
+[0;32mI (68308) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (68308) Sonostream: Successfully connected[0m
+[0;32mI (68378) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (68378) Sonostream: Successfully connected[0m
+[0;32mI (68438) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (68438) Sonostream: Successfully connected[0m
+[0;32mI (68498) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (68498) Sonostream: Successfully connected[0m
+[0;32mI (68578) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (68578) Sonostream: Successfully connected[0m
+[0;32mI (68638) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (68638) Sonostream: Successfully connected[0m
+[0;32mI (68698) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (68698) Sonostream: Successfully connected[0m
+[0;32mI (68758) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (68758) Sonostream: Successfully connected[0m
+[0;32mI (68828) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (68828) Sonostream: Successfully connected[0m
+[0;32mI (68888) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (68888) Sonostream: Successfully connected[0m
+[0;32mI (68948) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (68948) Sonostream: Successfully connected[0m
+[0;32mI (69008) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (69008) Sonostream: Successfully connected[0m
+[0;32mI (69088) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (69088) Sonostream: Successfully connected[0m
+[0;32mI (69148) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (69148) Sonostream: Successfully connected[0m
+[0;32mI (69208) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (69208) Sonostream: Successfully connected[0m
+[0;32mI (69268) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (69268) Sonostream: Successfully connected[0m
+[0;32mI (69338) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (69338) Sonostream: Successfully connected[0m
+[0;32mI (69398) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (69398) Sonostream: Successfully connected[0m
+[0;32mI (69458) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (69458) Sonostream: Successfully connected[0m
+[0;32mI (69538) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (69538) Sonostream: Successfully connected[0m
+[0;32mI (69598) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (69598) Sonostream: Successfully connected[0m
+[0;32mI (69658) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (69658) Sonostream: Successfully connected[0m
+[0;32mI (69718) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (69718) Sonostream: Successfully connected[0m
+[0;32mI (69788) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (69788) Sonostream: Successfully connected[0m
+[0;32mI (69848) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (69848) Sonostream: Successfully connected[0m
+[0;32mI (69908) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (69908) Sonostream: Successfully connected[0m
+[0;32mI (69968) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (69968) Sonostream: Successfully connected[0m
+[0;32mI (70048) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (70048) Sonostream: Successfully connected[0m
+[0;32mI (70108) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (70108) Sonostream: Successfully connected[0m
+[0;32mI (70168) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (70168) Sonostream: Successfully connected[0m
+[0;32mI (70228) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (70228) Sonostream: Successfully connected[0m
+[0;32mI (70298) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (70298) Sonostream: Successfully connected[0m
+[0;32mI (70358) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (70358) Sonostream: Successfully connected[0m
+[0;32mI (70418) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (70418) Sonostream: Successfully connected[0m
+[0;32mI (70498) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (70498) Sonostream: Successfully connected[0m
+[0;32mI (70558) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (70558) Sonostream: Successfully connected[0m
+[0;32mI (70618) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (70618) Sonostream: Successfully connected[0m
+[0;32mI (70678) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (70678) Sonostream: Successfully connected[0m
+[0;32mI (70748) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (70748) Sonostream: Successfully connected[0m
+[0;32mI (70808) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (70808) Sonostream: Successfully connected[0m
+[0;32mI (70868) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (70868) Sonostream: Successfully connected[0m
+[0;32mI (70928) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (70928) Sonostream: Successfully connected[0m
+[0;32mI (71008) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (71008) Sonostream: Successfully connected[0m
+[0;32mI (71068) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (71068) Sonostream: Successfully connected[0m
+[0;32mI (71128) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (71128) Sonostream: Successfully connected[0m
+[0;32mI (71188) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (71188) Sonostream: Successfully connected[0m
+[0;32mI (71258) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (71258) Sonostream: Successfully connected[0m
+[0;32mI (71318) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (71318) Sonostream: Successfully connected[0m
+[0;32mI (71378) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (71378) Sonostream: Successfully connected[0m
+[0;32mI (71458) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (71458) Sonostream: Successfully connected[0m
+[0;32mI (71518) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (71518) Sonostream: Successfully connected[0m
+[0;32mI (71578) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (71578) Sonostream: Successfully connected[0m
+[0;32mI (71638) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (71638) Sonostream: Successfully connected[0m
+[0;32mI (71708) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (71708) Sonostream: Successfully connected[0m
+[0;32mI (71768) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (71768) Sonostream: Successfully connected[0m
+[0;32mI (71828) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (71828) Sonostream: Successfully connected[0m
+[0;32mI (71888) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (71888) Sonostream: Successfully connected[0m
+[0;32mI (71968) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (71968) Sonostream: Successfully connected[0m
+[0;32mI (72028) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (72028) Sonostream: Successfully connected[0m
+[0;32mI (72088) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (72088) Sonostream: Successfully connected[0m
+[0;32mI (72148) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (72148) Sonostream: Successfully connected[0m
+[0;32mI (72218) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (72218) Sonostream: Successfully connected[0m
+[0;32mI (72278) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (72278) Sonostream: Successfully connected[0m
+[0;32mI (72338) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (72338) Sonostream: Successfully connected[0m
+[0;32mI (72418) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (72418) Sonostream: Successfully connected[0m
+[0;32mI (72478) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (72478) Sonostream: Successfully connected[0m
+[0;32mI (72538) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (72538) Sonostream: Successfully connected[0m
+[0;32mI (72598) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (72598) Sonostream: Successfully connected[0m
+[0;32mI (72668) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (72668) Sonostream: Successfully connected[0m
+[0;32mI (72728) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (72728) Sonostream: Successfully connected[0m
+[0;32mI (72788) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (72788) Sonostream: Successfully connected[0m
+[0;32mI (72848) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (72848) Sonostream: Successfully connected[0m
+[0;32mI (72928) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (72928) Sonostream: Successfully connected[0m
+[0;32mI (72988) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (72988) Sonostream: Successfully connected[0m
+[0;32mI (73048) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (73048) Sonostream: Successfully connected[0m
+[0;32mI (73108) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (73108) Sonostream: Successfully connected[0m
+[0;32mI (73178) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (73178) Sonostream: Successfully connected[0m
+[0;32mI (73238) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (73238) Sonostream: Successfully connected[0m
+[0;32mI (73298) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (73298) Sonostream: Successfully connected[0m
+[0;32mI (73378) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (73378) Sonostream: Successfully connected[0m
+[0;32mI (73438) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (73438) Sonostream: Successfully connected[0m
+[0;32mI (73498) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (73498) Sonostream: Successfully connected[0m
+[0;32mI (73558) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (73558) Sonostream: Successfully connected[0m
+[0;32mI (73628) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (73628) Sonostream: Successfully connected[0m
+[0;32mI (73688) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (73688) Sonostream: Successfully connected[0m
+[0;32mI (73748) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (73748) Sonostream: Successfully connected[0m
+[0;32mI (73808) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (73808) Sonostream: Successfully connected[0m
+[0;32mI (73888) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (73888) Sonostream: Successfully connected[0m
+[0;32mI (73948) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (73948) Sonostream: Successfully connected[0m
+[0;32mI (74008) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (74008) Sonostream: Successfully connected[0m
+[0;32mI (74068) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (74068) Sonostream: Successfully connected[0m
+[0;32mI (74138) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (74138) Sonostream: Successfully connected[0m
+[0;32mI (74198) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (74198) Sonostream: Successfully connected[0m
+[0;32mI (74258) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (74258) Sonostream: Successfully connected[0m
+[0;32mI (74338) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (74338) Sonostream: Successfully connected[0m
+[0;32mI (74398) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (74398) Sonostream: Successfully connected[0m
+[0;32mI (74458) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (74458) Sonostream: Successfully connected[0m
+[0;32mI (74518) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (74518) Sonostream: Successfully connected[0m
+[0;32mI (74588) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (74588) Sonostream: Successfully connected[0m
+[0;32mI (74648) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (74648) Sonostream: Successfully connected[0m
+[0;32mI (74708) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (74708) Sonostream: Successfully connected[0m
+[0;32mI (74768) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (74768) Sonostream: Successfully connected[0m
+[0;32mI (74848) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (74848) Sonostream: Successfully connected[0m
+[0;32mI (74908) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (74908) Sonostream: Successfully connected[0m
+[0;32mI (74968) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (74968) Sonostream: Successfully connected[0m
+[0;32mI (75028) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (75028) Sonostream: Successfully connected[0m
+[0;32mI (75098) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (75098) Sonostream: Successfully connected[0m
+[0;32mI (75158) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (75158) Sonostream: Successfully connected[0m
+[0;32mI (75218) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (75218) Sonostream: Successfully connected[0m
+[0;32mI (75298) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (75298) Sonostream: Successfully connected[0m
+[0;32mI (75358) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (75358) Sonostream: Successfully connected[0m
+[0;32mI (75418) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (75418) Sonostream: Successfully connected[0m
+[0;32mI (75478) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (75478) Sonostream: Successfully connected[0m
+[0;32mI (75548) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (75548) Sonostream: Successfully connected[0m
+[0;32mI (75608) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (75608) Sonostream: Successfully connected[0m
+[0;32mI (75668) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (75668) Sonostream: Successfully connected[0m
+[0;32mI (75728) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (75728) Sonostream: Successfully connected[0m
+[0;32mI (75808) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (75808) Sonostream: Successfully connected[0m
+[0;32mI (75868) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (75868) Sonostream: Successfully connected[0m
+[0;32mI (75928) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (75928) Sonostream: Successfully connected[0m
+[0;32mI (75988) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (75988) Sonostream: Successfully connected[0m
+[0;32mI (76058) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (76058) Sonostream: Successfully connected[0m
+[0;32mI (76118) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (76118) Sonostream: Successfully connected[0m
+[0;32mI (76178) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (76178) Sonostream: Successfully connected[0m
+[0;32mI (76258) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (76258) Sonostream: Successfully connected[0m
+[0;32mI (76318) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (76318) Sonostream: Successfully connected[0m
+[0;32mI (76378) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (76378) Sonostream: Successfully connected[0m
+[0;32mI (76438) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (76438) Sonostream: Successfully connected[0m
+[0;32mI (76508) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (76508) Sonostream: Successfully connected[0m
+[0;32mI (76568) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (76568) Sonostream: Successfully connected[0m
+[0;32mI (76628) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (76628) Sonostream: Successfully connected[0m
+[0;32mI (76688) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (76688) Sonostream: Successfully connected[0m
+[0;32mI (76768) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (76768) Sonostream: Successfully connected[0m
+[0;32mI (76828) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (76828) Sonostream: Successfully connected[0m
+[0;32mI (76888) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (76888) Sonostream: Successfully connected[0m
+[0;32mI (76948) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (76948) Sonostream: Successfully connected[0m
+[0;32mI (77018) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (77018) Sonostream: Successfully connected[0m
+[0;32mI (77078) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (77078) Sonostream: Successfully connected[0m
+[0;32mI (77138) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (77138) Sonostream: Successfully connected[0m
+[0;32mI (77218) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (77218) Sonostream: Successfully connected[0m
+[0;32mI (77278) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (77278) Sonostream: Successfully connected[0m
+[0;32mI (77338) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (77338) Sonostream: Successfully connected[0m
+[0;32mI (77398) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (77398) Sonostream: Successfully connected[0m
+[0;32mI (77468) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (77468) Sonostream: Successfully connected[0m
+[0;32mI (77528) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (77528) Sonostream: Successfully connected[0m
+[0;32mI (77588) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (77588) Sonostream: Successfully connected[0m
+[0;32mI (77648) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (77648) Sonostream: Successfully connected[0m
+[0;32mI (77728) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (77728) Sonostream: Successfully connected[0m
+[0;32mI (77788) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (77788) Sonostream: Successfully connected[0m
+[0;32mI (77848) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (77848) Sonostream: Successfully connected[0m
+[0;32mI (77908) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (77908) Sonostream: Successfully connected[0m
+[0;32mI (77978) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (77978) Sonostream: Successfully connected[0m
+[0;32mI (78038) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (78038) Sonostream: Successfully connected[0m
+[0;32mI (78098) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (78098) Sonostream: Successfully connected[0m
+[0;32mI (78178) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (78178) Sonostream: Successfully connected[0m
+[0;32mI (78238) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (78238) Sonostream: Successfully connected[0m
+[0;32mI (78298) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (78298) Sonostream: Successfully connected[0m
+[0;32mI (78358) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (78358) Sonostream: Successfully connected[0m
+[0;32mI (78428) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (78428) Sonostream: Successfully connected[0m
+[0;32mI (78488) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (78488) Sonostream: Successfully connected[0m
+[0;32mI (78548) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (78548) Sonostream: Successfully connected[0m
+[0;32mI (78608) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (78608) Sonostream: Successfully connected[0m
+[0;32mI (78688) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (78688) Sonostream: Successfully connected[0m
+[0;32mI (78748) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (78748) Sonostream: Successfully connected[0m
+[0;32mI (78808) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (78808) Sonostream: Successfully connected[0m
+[0;32mI (78868) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (78868) Sonostream: Successfully connected[0m
+[0;32mI (78938) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (78938) Sonostream: Successfully connected[0m
+[0;32mI (78998) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (78998) Sonostream: Successfully connected[0m
+[0;32mI (79058) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (79058) Sonostream: Successfully connected[0m
+[0;32mI (79138) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (79138) Sonostream: Successfully connected[0m
+[0;32mI (79198) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (79198) Sonostream: Successfully connected[0m
+[0;32mI (79258) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (79258) Sonostream: Successfully connected[0m
+[0;32mI (79318) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (79318) Sonostream: Successfully connected[0m
+[0;32mI (79388) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (79388) Sonostream: Successfully connected[0m
+[0;32mI (79448) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (79448) Sonostream: Successfully connected[0m
+[0;32mI (79508) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (79508) Sonostream: Successfully connected[0m
+[0;32mI (79568) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (79568) Sonostream: Successfully connected[0m
+[0;32mI (79648) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (79648) Sonostream: Successfully connected[0m
+[0;32mI (79708) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (79708) Sonostream: Successfully connected[0m
+[0;32mI (79768) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (79768) Sonostream: Successfully connected[0m
+[0;32mI (79828) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (79828) Sonostream: Successfully connected[0m
+[0;32mI (79898) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (79898) Sonostream: Successfully connected[0m
+[0;32mI (79958) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (79958) Sonostream: Successfully connected[0m
+[0;32mI (80018) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (80018) Sonostream: Successfully connected[0m
+[0;32mI (80098) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (80098) Sonostream: Successfully connected[0m
+[0;32mI (80158) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (80158) Sonostream: Successfully connected[0m
+[0;32mI (80218) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (80218) Sonostream: Successfully connected[0m
+[0;32mI (80278) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (80278) Sonostream: Successfully connected[0m
+[0;32mI (80348) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (80348) Sonostream: Successfully connected[0m
+[0;32mI (80408) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (80408) Sonostream: Successfully connected[0m
+[0;32mI (80468) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (80468) Sonostream: Successfully connected[0m
+[0;32mI (80528) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (80528) Sonostream: Successfully connected[0m
+[0;32mI (80608) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (80608) Sonostream: Successfully connected[0m
+[0;32mI (80668) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (80668) Sonostream: Successfully connected[0m
+[0;32mI (80728) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (80728) Sonostream: Successfully connected[0m
+[0;32mI (80788) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (80788) Sonostream: Successfully connected[0m
+[0;32mI (80858) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (80858) Sonostream: Successfully connected[0m
+[0;32mI (80918) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (80918) Sonostream: Successfully connected[0m
+[0;32mI (80978) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (80978) Sonostream: Successfully connected[0m
+[0;32mI (81058) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (81058) Sonostream: Successfully connected[0m
+[0;32mI (81118) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (81118) Sonostream: Successfully connected[0m
+[0;32mI (81178) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (81178) Sonostream: Successfully connected[0m
+[0;32mI (81238) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (81238) Sonostream: Successfully connected[0m
+[0;32mI (81308) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (81308) Sonostream: Successfully connected[0m
+[0;32mI (81368) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (81368) Sonostream: Successfully connected[0m
+[0;32mI (81428) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (81428) Sonostream: Successfully connected[0m
+[0;32mI (81488) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (81488) Sonostream: Successfully connected[0m
+[0;32mI (81568) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (81568) Sonostream: Successfully connected[0m
+[0;32mI (81628) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (81628) Sonostream: Successfully connected[0m
+[0;32mI (81688) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (81688) Sonostream: Successfully connected[0m
+[0;32mI (81748) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (81748) Sonostream: Successfully connected[0m
+[0;32mI (81818) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (81818) Sonostream: Successfully connected[0m
+[0;32mI (81878) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (81878) Sonostream: Successfully connected[0m
+[0;32mI (81938) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (81938) Sonostream: Successfully connected[0m
+[0;32mI (82018) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (82018) Sonostream: Successfully connected[0m
+[0;32mI (82078) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (82078) Sonostream: Successfully connected[0m
+[0;32mI (82138) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (82138) Sonostream: Successfully connected[0m
+[0;32mI (82198) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (82198) Sonostream: Successfully connected[0m
+[0;32mI (82268) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (82268) Sonostream: Successfully connected[0m
+[0;32mI (82328) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (82328) Sonostream: Successfully connected[0m
+[0;32mI (82388) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (82388) Sonostream: Successfully connected[0m
+[0;32mI (82448) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (82448) Sonostream: Successfully connected[0m
+[0;32mI (82528) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (82528) Sonostream: Successfully connected[0m
+[0;32mI (82588) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (82588) Sonostream: Successfully connected[0m
+[0;32mI (82648) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (82648) Sonostream: Successfully connected[0m
+[0;32mI (82708) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (82708) Sonostream: Successfully connected[0m
+[0;32mI (82778) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (82778) Sonostream: Successfully connected[0m
+[0;32mI (82838) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (82838) Sonostream: Successfully connected[0m
+[0;32mI (82898) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (82898) Sonostream: Successfully connected[0m
+[0;32mI (82978) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (82978) Sonostream: Successfully connected[0m
+[0;32mI (83038) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (83038) Sonostream: Successfully connected[0m
+[0;32mI (83098) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (83098) Sonostream: Successfully connected[0m
+[0;32mI (83158) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (83158) Sonostream: Successfully connected[0m
+[0;32mI (83228) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (83228) Sonostream: Successfully connected[0m
+[0;32mI (83288) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (83288) Sonostream: Successfully connected[0m
+[0;32mI (83348) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (83348) Sonostream: Successfully connected[0m
+[0;32mI (83408) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (83408) Sonostream: Successfully connected[0m
+[0;32mI (83488) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (83488) Sonostream: Successfully connected[0m
+[0;32mI (83548) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (83548) Sonostream: Successfully connected[0m
+[0;32mI (83608) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (83608) Sonostream: Successfully connected[0m
+[0;32mI (83668) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (83668) Sonostream: Successfully connected[0m
+[0;32mI (83738) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (83738) Sonostream: Successfully connected[0m
+[0;32mI (83798) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (83798) Sonostream: Successfully connected[0m
+[0;32mI (83858) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (83858) Sonostream: Successfully connected[0m
+[0;32mI (83938) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (83938) Sonostream: Successfully connected[0m
+[0;32mI (83998) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (83998) Sonostream: Successfully connected[0m
+[0;32mI (84058) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (84058) Sonostream: Successfully connected[0m
+[0;32mI (84118) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (84118) Sonostream: Successfully connected[0m
+[0;32mI (84188) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (84188) Sonostream: Successfully connected[0m
+[0;32mI (84248) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (84248) Sonostream: Successfully connected[0m
+[0;32mI (84308) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (84308) Sonostream: Successfully connected[0m
+[0;32mI (84368) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (84368) Sonostream: Successfully connected[0m
+[0;32mI (84448) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (84448) Sonostream: Successfully connected[0m
+[0;32mI (84508) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (84508) Sonostream: Successfully connected[0m
+[0;32mI (84568) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (84568) Sonostream: Successfully connected[0m
+[0;32mI (84628) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (84628) Sonostream: Successfully connected[0m
+[0;32mI (84698) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (84698) Sonostream: Successfully connected[0m
+[0;32mI (84758) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (84758) Sonostream: Successfully connected[0m
+[0;32mI (84818) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (84818) Sonostream: Successfully connected[0m
+[0;32mI (84898) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (84898) Sonostream: Successfully connected[0m
+[0;32mI (84958) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (84958) Sonostream: Successfully connected[0m
+[0;32mI (85018) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (85018) Sonostream: Successfully connected[0m
+[0;32mI (85078) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (85078) Sonostream: Successfully connected[0m
+[0;32mI (85148) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (85148) Sonostream: Successfully connected[0m
+[0;32mI (85208) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (85208) Sonostream: Successfully connected[0m
+[0;32mI (85268) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (85268) Sonostream: Successfully connected[0m
+[0;32mI (85328) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (85328) Sonostream: Successfully connected[0m
+[0;32mI (85408) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (85408) Sonostream: Successfully connected[0m
+[0;32mI (85468) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (85468) Sonostream: Successfully connected[0m
+[0;32mI (85528) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (85528) Sonostream: Successfully connected[0m
+[0;32mI (85588) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (85588) Sonostream: Successfully connected[0m
+[0;32mI (85658) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (85658) Sonostream: Successfully connected[0m
+[0;32mI (85718) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (85718) Sonostream: Successfully connected[0m
+[0;32mI (85778) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (85778) Sonostream: Successfully connected[0m
+[0;32mI (85858) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (85858) Sonostream: Successfully connected[0m
+[0;32mI (85918) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (85918) Sonostream: Successfully connected[0m
+[0;32mI (85978) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (85978) Sonostream: Successfully connected[0m
+[0;32mI (86038) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (86038) Sonostream: Successfully connected[0m
+[0;32mI (86108) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (86108) Sonostream: Successfully connected[0m
+[0;32mI (86168) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (86168) Sonostream: Successfully connected[0m
+[0;32mI (86228) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (86228) Sonostream: Successfully connected[0m
+[0;32mI (86288) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (86288) Sonostream: Successfully connected[0m
+[0;32mI (86368) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (86368) Sonostream: Successfully connected[0m
+[0;32mI (86428) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (86428) Sonostream: Successfully connected[0m
+[0;32mI (86488) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (86488) Sonostream: Successfully connected[0m
+[0;32mI (86548) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (86548) Sonostream: Successfully connected[0m
+[0;32mI (86618) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (86618) Sonostream: Successfully connected[0m
+[0;32mI (86678) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (86678) Sonostream: Successfully connected[0m
+[0;32mI (86738) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (86738) Sonostream: Successfully connected[0m
+[0;32mI (86818) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (86818) Sonostream: Successfully connected[0m
+[0;32mI (86878) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (86878) Sonostream: Successfully connected[0m
+[0;32mI (86938) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (86938) Sonostream: Successfully connected[0m
+[0;32mI (86998) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (86998) Sonostream: Successfully connected[0m
+[0;32mI (87068) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (87068) Sonostream: Successfully connected[0m
+[0;32mI (87128) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (87128) Sonostream: Successfully connected[0m
+[0;32mI (87188) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (87188) Sonostream: Successfully connected[0m
+[0;32mI (87248) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (87248) Sonostream: Successfully connected[0m
+[0;32mI (87328) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (87328) Sonostream: Successfully connected[0m
+[0;32mI (87388) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (87388) Sonostream: Successfully connected[0m
+[0;32mI (87448) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (87448) Sonostream: Successfully connected[0m
+[0;32mI (87508) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (87508) Sonostream: Successfully connected[0m
+[0;32mI (87578) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (87578) Sonostream: Successfully connected[0m
+[0;32mI (87638) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (87638) Sonostream: Successfully connected[0m
+[0;32mI (87698) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (87698) Sonostream: Successfully connected[0m
+[0;32mI (87778) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (87778) Sonostream: Successfully connected[0m
+[0;32mI (87838) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (87838) Sonostream: Successfully connected[0m
+[0;32mI (87898) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (87898) Sonostream: Successfully connected[0m
+[0;32mI (87958) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (87958) Sonostream: Successfully connected[0m
+[0;32mI (88028) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (88028) Sonostream: Successfully connected[0m
+[0;32mI (88088) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (88088) Sonostream: Successfully connected[0m
+[0;32mI (88148) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (88148) Sonostream: Successfully connected[0m
+[0;32mI (88208) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (88208) Sonostream: Successfully connected[0m
+[0;32mI (88288) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (88288) Sonostream: Successfully connected[0m
+[0;32mI (88348) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (88348) Sonostream: Successfully connected[0m
+[0;32mI (88408) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (88408) Sonostream: Successfully connected[0m
+[0;32mI (88468) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (88468) Sonostream: Successfully connected[0m
+[0;32mI (88538) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (88538) Sonostream: Successfully connected[0m
+[0;32mI (88598) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (88598) Sonostream: Successfully connected[0m
+[0;32mI (88658) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (88658) Sonostream: Successfully connected[0m
+[0;32mI (88738) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (88738) Sonostream: Successfully connected[0m
+[0;32mI (88798) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (88798) Sonostream: Successfully connected[0m
+[0;32mI (88858) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (88858) Sonostream: Successfully connected[0m
+[0;32mI (88918) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (88918) Sonostream: Successfully connected[0m
+[0;32mI (88988) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (88988) Sonostream: Successfully connected[0m
+[0;32mI (89048) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (89048) Sonostream: Successfully connected[0m
+[0;32mI (89108) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (89108) Sonostream: Successfully connected[0m
+[0;32mI (89168) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (89168) Sonostream: Successfully connected[0m
+[0;32mI (89248) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (89248) Sonostream: Successfully connected[0m
+[0;32mI (89308) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (89308) Sonostream: Successfully connected[0m
+[0;32mI (89368) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (89368) Sonostream: Successfully connected[0m
+[0;32mI (89428) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (89428) Sonostream: Successfully connected[0m
+[0;32mI (89498) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (89498) Sonostream: Successfully connected[0m
+[0;32mI (89558) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (89558) Sonostream: Successfully connected[0m
+[0;32mI (89618) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (89618) Sonostream: Successfully connected[0m
+[0;32mI (89698) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (89698) Sonostream: Successfully connected[0m
+[0;32mI (89758) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (89758) Sonostream: Successfully connected[0m
+[0;32mI (89818) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (89818) Sonostream: Successfully connected[0m
+[0;32mI (89878) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (89878) Sonostream: Successfully connected[0m
+[0;32mI (89948) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (89948) Sonostream: Successfully connected[0m
+[0;32mI (90008) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (90008) Sonostream: Successfully connected[0m
+[0;32mI (90068) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (90068) Sonostream: Successfully connected[0m
+[0;32mI (90128) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (90128) Sonostream: Successfully connected[0m
+[0;32mI (90208) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (90208) Sonostream: Successfully connected[0m
+[0;32mI (90268) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (90268) Sonostream: Successfully connected[0m
+[0;32mI (90328) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (90328) Sonostream: Successfully connected[0m
+[0;32mI (90388) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (90388) Sonostream: Successfully connected[0m
+[0;32mI (90458) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (90458) Sonostream: Successfully connected[0m
+[0;32mI (90518) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (90518) Sonostream: Successfully connected[0m
+[0;32mI (90578) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (90578) Sonostream: Successfully connected[0m
+[0;32mI (90658) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (90658) Sonostream: Successfully connected[0m
+[0;32mI (90718) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (90718) Sonostream: Successfully connected[0m
+[0;32mI (90778) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (90778) Sonostream: Successfully connected[0m
+[0;32mI (90838) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (90838) Sonostream: Successfully connected[0m
+[0;32mI (90908) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (90908) Sonostream: Successfully connected[0m
+[0;32mI (90968) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (90968) Sonostream: Successfully connected[0m
+[0;32mI (91028) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (91028) Sonostream: Successfully connected[0m
+[0;32mI (91088) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (91088) Sonostream: Successfully connected[0m
+[0;32mI (91168) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (91168) Sonostream: Successfully connected[0m
+[0;32mI (91228) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (91228) Sonostream: Successfully connected[0m
+[0;32mI (91288) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (91288) Sonostream: Successfully connected[0m
+[0;32mI (91348) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (91348) Sonostream: Successfully connected[0m
+[0;32mI (91418) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (91418) Sonostream: Successfully connected[0m
+[0;32mI (91478) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (91478) Sonostream: Successfully connected[0m
+[0;32mI (91538) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (91538) Sonostream: Successfully connected[0m
+[0;32mI (91618) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (91618) Sonostream: Successfully connected[0m
+[0;32mI (91678) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (91678) Sonostream: Successfully connected[0m
+[0;32mI (91738) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (91738) Sonostream: Successfully connected[0m
+[0;32mI (91798) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (91798) Sonostream: Successfully connected[0m
+[0;32mI (91868) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (91868) Sonostream: Successfully connected[0m
+[0;32mI (91928) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (91928) Sonostream: Successfully connected[0m
+[0;32mI (91988) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (91988) Sonostream: Successfully connected[0m
+[0;32mI (92048) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (92048) Sonostream: Successfully connected[0m
+[0;32mI (92128) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (92128) Sonostream: Successfully connected[0m
+[0;32mI (92188) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (92188) Sonostream: Successfully connected[0m
+[0;32mI (92248) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (92248) Sonostream: Successfully connected[0m
+[0;32mI (92308) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (92308) Sonostream: Successfully connected[0m
+[0;32mI (92378) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (92378) Sonostream: Successfully connected[0m
+[0;32mI (92438) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (92438) Sonostream: Successfully connected[0m
+[0;32mI (92498) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (92498) Sonostream: Successfully connected[0m
+[0;32mI (92578) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (92578) Sonostream: Successfully connected[0m
+[0;32mI (92638) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (92638) Sonostream: Successfully connected[0m
+[0;32mI (92698) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (92698) Sonostream: Successfully connected[0m
+[0;32mI (92758) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (92758) Sonostream: Successfully connected[0m
+[0;32mI (92828) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (92828) Sonostream: Successfully connected[0m
+[0;32mI (92888) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (92888) Sonostream: Successfully connected[0m
+[0;32mI (92948) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (92948) Sonostream: Successfully connected[0m
+[0;32mI (93008) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (93008) Sonostream: Successfully connected[0m
+[0;32mI (93088) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (93088) Sonostream: Successfully connected[0m
+[0;32mI (93148) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (93148) Sonostream: Successfully connected[0m
+[0;32mI (93208) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (93208) Sonostream: Successfully connected[0m
+[0;32mI (93268) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (93268) Sonostream: Successfully connected[0m
+[0;32mI (93338) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (93338) Sonostream: Successfully connected[0m
+[0;32mI (93398) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (93398) Sonostream: Successfully connected[0m
+[0;32mI (93458) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (93458) Sonostream: Successfully connected[0m
+[0;32mI (93538) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (93538) Sonostream: Successfully connected[0m
+[0;32mI (93598) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (93598) Sonostream: Successfully connected[0m
+[0;32mI (93658) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (93658) Sonostream: Successfully connected[0m
+[0;32mI (93718) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (93718) Sonostream: Successfully connected[0m
+[0;32mI (93788) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (93788) Sonostream: Successfully connected[0m
+[0;32mI (93848) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (93848) Sonostream: Successfully connected[0m
+[0;32mI (93908) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (93908) Sonostream: Successfully connected[0m
+[0;32mI (93968) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (93968) Sonostream: Successfully connected[0m
+[0;32mI (94048) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (94048) Sonostream: Successfully connected[0m
+[0;32mI (94108) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (94108) Sonostream: Successfully connected[0m
+[0;32mI (94168) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (94168) Sonostream: Successfully connected[0m
+[0;32mI (94228) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (94228) Sonostream: Successfully connected[0m
+[0;32mI (94298) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (94298) Sonostream: Successfully connected[0m
+[0;32mI (94358) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (94358) Sonostream: Successfully connected[0m
+[0;32mI (94418) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (94418) Sonostream: Successfully connected[0m
+[0;32mI (94498) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (94498) Sonostream: Successfully connected[0m
+[0;32mI (94558) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (94558) Sonostream: Successfully connected[0m
+[0;32mI (94618) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (94618) Sonostream: Successfully connected[0m
+[0;32mI (94678) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (94678) Sonostream: Successfully connected[0m
+[0;32mI (94748) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (94748) Sonostream: Successfully connected[0m
+[0;32mI (94808) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (94808) Sonostream: Successfully connected[0m
+[0;32mI (94868) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (94868) Sonostream: Successfully connected[0m
+[0;32mI (94928) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (94928) Sonostream: Successfully connected[0m
+[0;32mI (95008) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (95008) Sonostream: Successfully connected[0m
+[0;32mI (95068) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (95068) Sonostream: Successfully connected[0m
+[0;32mI (95128) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (95128) Sonostream: Successfully connected[0m
+[0;32mI (95188) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (95188) Sonostream: Successfully connected[0m
+[0;32mI (95258) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (95258) Sonostream: Successfully connected[0m
+[0;32mI (95318) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (95318) Sonostream: Successfully connected[0m
+[0;32mI (95378) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (95378) Sonostream: Successfully connected[0m
+[0;32mI (95458) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (95458) Sonostream: Successfully connected[0m
+[0;32mI (95518) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (95518) Sonostream: Successfully connected[0m
+[0;32mI (95578) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (95578) Sonostream: Successfully connected[0m
+[0;32mI (95638) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (95638) Sonostream: Successfully connected[0m
+[0;32mI (95708) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (95708) Sonostream: Successfully connected[0m
+[0;32mI (95768) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (95768) Sonostream: Successfully connected[0m
+[0;32mI (95828) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (95828) Sonostream: Successfully connected[0m
+[0;32mI (95888) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (95888) Sonostream: Successfully connected[0m
+[0;32mI (95968) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (95968) Sonostream: Successfully connected[0m
+[0;32mI (96028) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (96028) Sonostream: Successfully connected[0m
+[0;32mI (96088) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (96088) Sonostream: Successfully connected[0m
+[0;32mI (96148) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (96148) Sonostream: Successfully connected[0m
+[0;32mI (96218) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (96218) Sonostream: Successfully connected[0m
+[0;32mI (96278) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (96278) Sonostream: Successfully connected[0m
+[0;32mI (96338) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (96338) Sonostream: Successfully connected[0m
+[0;32mI (96418) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (96418) Sonostream: Successfully connected[0m
+[0;32mI (96478) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (96478) Sonostream: Successfully connected[0m
+[0;32mI (96538) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (96538) Sonostream: Successfully connected[0m
+[0;32mI (96598) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (96598) Sonostream: Successfully connected[0m
+[0;32mI (96668) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (96668) Sonostream: Successfully connected[0m
+[0;32mI (96728) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (96728) Sonostream: Successfully connected[0m
+[0;32mI (96788) Sonostream: Success: 4096 bytes sent[0m
+[0;32mI (96788) Sonostream: Successfully connected[0m

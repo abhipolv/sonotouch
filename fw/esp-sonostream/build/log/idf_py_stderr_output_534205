@@ -1,0 +1,154 @@
+Command: /home/abhi/.espressif/python_env/idf5.5_py3.13_env/bin/python /home/abhi/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyACM0 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 /home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/sonostream.elf /home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/bootloader.elf -m '/home/abhi/.espressif/python_env/idf5.5_py3.13_env/bin/python' '/home/abhi/esp/esp-idf/tools/idf.py' '-p' '/dev/ttyACM0'
+[0;33m--- esp-idf-monitor 1.5.0 on /dev/ttyACM0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40041a76: ets_delay_us in ROM
+[0m
+[0;33m--- 0x403c8700: _stext at ??:?
+[0m
+[0;33m--- 0x403c8924: call_start_cpu0 at /home/abhi/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x4200f1ca: find_entry_from_task_handle_and_check_all_reset at /home/abhi/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:148
+[0m
+[0;33m--- 0x4200f1c7: find_entry_from_task_handle_and_check_all_reset at /home/abhi/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:148
+0x4200f6be: esp_task_wdt_reset at /home/abhi/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:700
+0x4200f713: idle_hook_cb at /home/abhi/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:456
+0x4200405d: esp_vApplicationIdleHook at /home/abhi/esp/esp-idf/components/esp_system/freertos_hooks.c:46 (discriminator 1)
+0x4037d979: prvIdleTask at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4362 (discriminator 1)
+0x4037c789: vPortTaskWrapper at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x42008737: uart_ll_get_txfifo_len at /home/abhi/esp/esp-idf/components/hal/esp32s3/include/hal/uart_ll.h:411
+ (inlined by) uart_tx_char at /home/abhi/esp/esp-idf/components/esp_driver_uart/src/uart_vfs.c:190
+[0m
+[0;33m--- 0x403c8700: _stext at ??:?
+[0m
+[0;33m--- 0x403c8924: call_start_cpu0 at /home/abhi/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x4200f1ca: find_entry_from_task_handle_and_check_all_reset at /home/abhi/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:148
+[0m
+[0;33m--- 0x4200f1c7: find_entry_from_task_handle_and_check_all_reset at /home/abhi/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:148
+0x4200f6be: esp_task_wdt_reset at /home/abhi/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:700
+0x4200f713: idle_hook_cb at /home/abhi/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:456
+0x4200405d: esp_vApplicationIdleHook at /home/abhi/esp/esp-idf/components/esp_system/freertos_hooks.c:46 (discriminator 1)
+0x4037d979: prvIdleTask at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4362 (discriminator 1)
+0x4037c789: vPortTaskWrapper at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x42008737: uart_ll_get_txfifo_len at /home/abhi/esp/esp-idf/components/hal/esp32s3/include/hal/uart_ll.h:411
+ (inlined by) uart_tx_char at /home/abhi/esp/esp-idf/components/esp_driver_uart/src/uart_vfs.c:190
+[0m
+[0;33m--- 0x403c8700: _stext at ??:?
+[0m
+[0;33m--- 0x403c8924: call_start_cpu0 at /home/abhi/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x4200f1ca: find_entry_from_task_handle_and_check_all_reset at /home/abhi/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:148
+[0m
+[0;33m--- 0x4200f1c7: find_entry_from_task_handle_and_check_all_reset at /home/abhi/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:148
+0x4200f6be: esp_task_wdt_reset at /home/abhi/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:700
+0x4200f713: idle_hook_cb at /home/abhi/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:456
+0x4200405d: esp_vApplicationIdleHook at /home/abhi/esp/esp-idf/components/esp_system/freertos_hooks.c:46 (discriminator 1)
+0x4037d979: prvIdleTask at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4362 (discriminator 1)
+0x4037c789: vPortTaskWrapper at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x42074ea6: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:688
+[0m
+[0;33m--- 0x403c8700: _stext at ??:?
+[0m
+[0;33m--- 0x403c8924: call_start_cpu0 at /home/abhi/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x4200f1ca: find_entry_from_task_handle_and_check_all_reset at /home/abhi/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:148
+[0m
+[0;33m--- 0x4200f1c7: find_entry_from_task_handle_and_check_all_reset at /home/abhi/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:148
+0x4200f6be: esp_task_wdt_reset at /home/abhi/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:700
+0x4200f713: idle_hook_cb at /home/abhi/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:456
+0x4200405d: esp_vApplicationIdleHook at /home/abhi/esp/esp-idf/components/esp_system/freertos_hooks.c:46 (discriminator 1)
+0x4037d979: prvIdleTask at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4362 (discriminator 1)
+0x4037c789: vPortTaskWrapper at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x403740d8: _WindowUnderflow8 at /home/abhi/esp/esp-idf/components/xtensa/xtensa_vectors.S:2151
+[0m
+[0;33m--- 0x403c8700: _stext at ??:?
+[0m
+[0;33m--- 0x403c8924: call_start_cpu0 at /home/abhi/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x4200f1ca: find_entry_from_task_handle_and_check_all_reset at /home/abhi/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:148
+[0m
+[0;33m--- 0x4200f1c7: find_entry_from_task_handle_and_check_all_reset at /home/abhi/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:148
+0x4200f6be: esp_task_wdt_reset at /home/abhi/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:700
+0x4200f713: idle_hook_cb at /home/abhi/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:456
+0x4200405d: esp_vApplicationIdleHook at /home/abhi/esp/esp-idf/components/esp_system/freertos_hooks.c:46 (discriminator 1)
+0x4037d979: prvIdleTask at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4362 (discriminator 1)
+0x4037c789: vPortTaskWrapper at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x403740cc: _WindowUnderflow8 at /home/abhi/esp/esp-idf/components/xtensa/xtensa_vectors.S:2147
+[0m
+[0;33m--- 0x403c8700: _stext at ??:?
+[0m
+[0;33m--- 0x403c8924: call_start_cpu0 at /home/abhi/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x4200f1ca: find_entry_from_task_handle_and_check_all_reset at /home/abhi/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:148
+[0m
+[0;33m--- 0x4200f1c7: find_entry_from_task_handle_and_check_all_reset at /home/abhi/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:148
+0x4200f6be: esp_task_wdt_reset at /home/abhi/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:700
+0x4200f713: idle_hook_cb at /home/abhi/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:456
+0x4200405d: esp_vApplicationIdleHook at /home/abhi/esp/esp-idf/components/esp_system/freertos_hooks.c:46 (discriminator 1)
+0x4037d979: prvIdleTask at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4362 (discriminator 1)
+0x4037c789: vPortTaskWrapper at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x403740d8: _WindowUnderflow8 at /home/abhi/esp/esp-idf/components/xtensa/xtensa_vectors.S:2151
+[0m
+[0;33m--- 0x403c8700: _stext at ??:?
+[0m
+[0;33m--- 0x403c8924: call_start_cpu0 at /home/abhi/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x4200f1ca: find_entry_from_task_handle_and_check_all_reset at /home/abhi/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:148
+[0m
+[0;33m--- 0x4200f1c7: find_entry_from_task_handle_and_check_all_reset at /home/abhi/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:148
+0x4200f6be: esp_task_wdt_reset at /home/abhi/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:700
+0x4200f713: idle_hook_cb at /home/abhi/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:456
+0x4200405d: esp_vApplicationIdleHook at /home/abhi/esp/esp-idf/components/esp_system/freertos_hooks.c:46 (discriminator 1)
+0x4037d979: prvIdleTask at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4362 (discriminator 1)
+0x4037c789: vPortTaskWrapper at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x42076ea6: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1673
+[0m
+[0;33m--- 0x403c8700: _stext at ??:?
+[0m
+[0;33m--- 0x403c8924: call_start_cpu0 at /home/abhi/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x4200f1ca: find_entry_from_task_handle_and_check_all_reset at /home/abhi/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:148
+[0m
+[0;33m--- 0x4200f1c7: find_entry_from_task_handle_and_check_all_reset at /home/abhi/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:148
+0x4200f6be: esp_task_wdt_reset at /home/abhi/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:700
+0x4200f713: idle_hook_cb at /home/abhi/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:456
+0x4200405d: esp_vApplicationIdleHook at /home/abhi/esp/esp-idf/components/esp_system/freertos_hooks.c:46 (discriminator 1)
+0x4037d979: prvIdleTask at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4362 (discriminator 1)
+0x4037c789: vPortTaskWrapper at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x42076ec8: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1678
+[0m
+[0;33m--- 0x403c8700: _stext at ??:?
+[0m
+[0;33m--- 0x403c8924: call_start_cpu0 at /home/abhi/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x420185d6: tcp_slowtmr at /home/abhi/esp/esp-idf/components/lwip/lwip/src/core/tcp.c:1224
+[0m
+[0;33m--- 0x42025abc: err_tcp at /home/abhi/esp/esp-idf/components/lwip/lwip/src/api/api_msg.c:446
+[0m
+[0;33m--- 0x40056f5c: memcpy in ROM
+0x40056f72: memcpy in ROM
+[0m
+[0;33m--- 0x420185d3: tcp_slowtmr at /home/abhi/esp/esp-idf/components/lwip/lwip/src/core/tcp.c:1222
+0x42018a4f: tcp_tmr at /home/abhi/esp/esp-idf/components/lwip/lwip/src/core/tcp.c:242
+0x4201c1a3: tcpip_tcp_timer at /home/abhi/esp/esp-idf/components/lwip/lwip/src/core/timeouts.c:153
+0x4201c261: sys_check_timeouts at /home/abhi/esp/esp-idf/components/lwip/lwip/src/core/timeouts.c:403
+0x42015602: tcpip_timeouts_mbox_fetch at /home/abhi/esp/esp-idf/components/lwip/lwip/src/api/tcpip.c:109
+0x420156d2: tcpip_thread at /home/abhi/esp/esp-idf/components/lwip/lwip/src/api/tcpip.c:142
+0x4037c789: vPortTaskWrapper at /home/abhi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x42008737: uart_ll_get_txfifo_len at /home/abhi/esp/esp-idf/components/hal/esp32s3/include/hal/uart_ll.h:411
+ (inlined by) uart_tx_char at /home/abhi/esp/esp-idf/components/esp_driver_uart/src/uart_vfs.c:190
+[0m
+[0;33m--- 0x403c8700: _stext at ??:?
+[0m
+[0;33m--- 0x403c8924: call_start_cpu0 at /home/abhi/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0m

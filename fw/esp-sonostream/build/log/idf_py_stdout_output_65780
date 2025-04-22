@@ -1,0 +1,82 @@
+Command: /home/abhi/.espressif/python_env/idf5.5_py3.13_env/bin/python /home/abhi/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyACM0 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 /home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/sonostream.elf /home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/bootloader.elf -m '/home/abhi/.espressif/python_env/idf5.5_py3.13_env/bin/python' '/home/abhi/esp/esp-idf/tools/idf.py' '-p' '/dev/ttyACM0'
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037810a
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x15d0
+load:0x403c8700,len:0xd20
+load:0x403cb700,len:0x2f60
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v5.5-dev-2290-g94cfe394fe-dirty 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Mar  8 2025 22:06:51[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.1[0m
+[0;32mI (30) boot: efuse block revision: v1.2[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0b224h ( 45604) map[0m
+[0;32mI (96) esp_image: segment 1: paddr=0001b24c vaddr=3fc92c00 size=02a10h ( 10768) load[0m
+[0;32mI (99) esp_image: segment 2: paddr=0001dc64 vaddr=40374000 size=023b4h (  9140) load[0m
+[0;32mI (105) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1b4d4h (111828) map[0m
+[0;32mI (130) esp_image: segment 4: paddr=0003b4fc vaddr=403763b4 size=0c7a4h ( 51108) load[0m
+[0;32mI (142) esp_image: segment 5: paddr=00047ca8 vaddr=600fe000 size=0001ch (    28) load[0m
+[0;32mI (148) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (148) boot: Disabling RNG early entropy source...[0m
+[0;32mI (160) cpu_start: Multicore app[0m
+[0;32mI (169) cpu_start: Pro cpu start user code[0m
+[0;32mI (169) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (169) app_init: Application information:[0m
+[0;32mI (169) app_init: Project name:     sonostream[0m
+[0;32mI (173) app_init: App version:      52524e4[0m
+[0;32mI (177) app_init: Compile time:     Mar  9 2025 14:31:32[0m
+[0;32mI (182) app_init: ELF file SHA256:  8fd765335...[0m
+[0;32mI (186) app_init: ESP-IDF:          v5.5-dev-2290-g94cfe394fe-dirty[0m
+[0;32mI (192) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (196) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (200) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (204) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (210) heap_init: At 3FC95ED0 len 00053840 (334 KiB): RAM[0m
+[0;32mI (215) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (220) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (226) heap_init: At 600FE01C len 00001FCC (7 KiB): RTCRAM[0m
+[0;32mI (232) spi_flash: detected chip: generic[0m
+[0;32mI (235) spi_flash: flash io: dio[0m
+[0;33mW (238) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (250) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (256) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (263) main_task: Started on CPU0[0m
+[0;32mI (273) main_task: Calling app_main()[0m
+[0;32mI (273) sonostream: Receiving data in PCM format[0m
+[0;32mI (273) main_task: Returned from app_main()[0m
+0 58941 32768 36337 33380 35333 34188 34832 34473 34671 34563 34621 34590 34607 34598 40326 
+1373 1377 1380 1378 1382 1384 1384 1387 1387 1391 1391 1394 1392 1394 1397 1397 
+1961 1960 1959 1960 1959 1962 1961 1965 1962 1961 1965 1961 1960 1962 1960 1963 
+2013 2014 2015 2015 2015 2015 2015 2019 2014 2017 2019 2020 2018 2016 2019 2017 
+1901 1906 1904 1903 1903 1905 1904 1899 1907 1900 1904 1904 1900 1903 1901 1902 
+1753 1752 1753 1751 1750 1753 1751 1751 1751 1752 1752 1751 1750 1750 1751 1750 
+1596 1595 1598 1593 1595 1593 1592 1593 1595 1592 1592 1595 1591 1596 1594 1592 
+1443 1442 1443 1445 1443 1443 1446 1445 1440 1444 1448 1442 1443 1446 1441 1441 
+1279 1278 1272 1271 1279 1291 1291 1289 1278 1270 1279 1294 1297 1289 1284 1277 
+1149 1158 1154 1153 1154 1153 1143 1135 1145 1155 1149 1150 1150 1150 1146 1145 
+1046 1047 1043 1037 1035 1036 1033 1032 1034 1032 1031 1032 1032 1031 1035 1037 
+939 936 935 932 935 936 940 947 950 950 950 954 955 962 963 961 
+843 839 836 827 820 818 817 820 822 816 813 814 815 822 824 831 
+710 713 713 711 713 713 714 711 706 707 708 709 709 708 707 708 
+602 603 602 602 601 599 601 602 601 600 599 603 601 600 600 601 
+510 509 511 506 509 511 504 509 511 505 505 505 509 505 500 513 
+408 411 412 406 412 413 409 408 406 406 408 412 409 411 411 410 
+321 323 325 324 324 322 321 324 324 323 326 326 325 326 322 325 
+228 231 231 230 230 230 230 230 229 228 228 229 229 228 226 227 
+158 164 161 161 162 164 164 160 166 160 163 161 163 162 159 162 
+94 93 96 94 94 98 94 94 95 95 93 94 94 95 94 94 
+17 18 19 16 18 17 15 16 15 17 17 16 16 17 16 15 

@@ -1,0 +1,1955 @@
+Command: /home/abhi/.espressif/python_env/idf5.5_py3.13_env/bin/python /home/abhi/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyACM0 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 /home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/sonostream.elf /home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/bootloader.elf -m '/home/abhi/.espressif/python_env/idf5.5_py3.13_env/bin/python' '/home/abhi/esp/esp-idf/tools/idf.py' '-p' '/dev/ttyACM0'
+[0;32mI (107) esp_image: segment 1: paddr=0002a7b0 vaddr=3fc99e00 sizeESP-ROM:esp32s3-20210327[0m
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403cd809
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x15d0
+load:0x403c8700,len:0xd20
+load:0x403cb700,len:0x2f60
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v5.5-dev-2290-g94cfe394fe-dirty 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Mar  8 2025 22:06:51[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.1[0m
+[0;32mI (30) boot: efuse block revision: v1.2[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=1a788h (108424) map[0m
+[0;32mI (107) esp_image: segment 1: paddr=0002a7b0 vaddr=3fc99e00 size=049a0h ( 18848) load[0m
+[0;32mI (112) esp_image: segment 2: paddr=0002f158 vaddr=40374000 size=00ec0h (  3776) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=86920h (551200) map[0m
+[0;32mI (216) esp_image: segment 4: paddr=000b6948 vaddr=40374ec0 size=14e68h ( 85608) load[0m
+[0;32mI (235) esp_image: segment 5: paddr=000cb7b8 vaddr=600fe000 size=0001ch (    28) load[0m
+[0;32mI (244) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (244) boot: Disabling RNG early entropy source...[0m
+[0;32mI (254) cpu_start: Multicore app[0m
+[0;32mI (263) cpu_start: Pro cpu start user code[0m
+[0;32mI (263) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (264) app_init: Application information:[0m
+[0;32mI (264) app_init: Project name:     sonostream[0m
+[0;32mI (268) app_init: App version:      52524e4-dirty[0m
+[0;32mI (272) app_init: Compile time:     Apr  6 2025 12:35:45[0m
+[0;32mI (277) app_init: ELF file SHA256:  8c1599df1...[0m
+[0;32mI (281) app_init: ESP-IDF:          v5.5-dev-2290-g94cfe394fe-dirty[0m
+[0;32mI (287) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (291) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (295) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (299) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (305) heap_init: At 3FCA2430 len 000472E0 (284 KiB): RAM[0m
+[0;32mI (310) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (316) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (321) heap_init: At 600FE01C len 00001FCC (7 KiB): RTCRAM[0m
+[0;32mI (327) spi_flash: detected chip: generic[0m
+[0;32mI (330) spi_flash: flash io: dio[0m
+[0;33mW (333) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (345) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (351) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (358) main_task: Started on CPU0[0m
+[0;32mI (368) main_task: Calling app_main()[0m
+[0;32mI (368) Sonostream: Receiving data in PCM format[0m
+[0;32mI (388) pp: pp rom version: e7ae62f[0m
+[0;32mI (388) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (398) wifi:wifi driver task: 3fcd8fa4, prio:23, stack:6656, core=0[0m
+[0;32mI (408) wifi:wifi firmware version: 3a3aca644[0m
+[0;32mI (408) wifi:wifi certification version: v7.0[0m
+[0;32mI (408) wifi:config NVS flash: enabled[0m
+[0;32mI (408) wifi:config nano formatting: disabled[0m
+[0;32mI (408) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (418) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (418) wifi:Init management short buffer num: 32[0m
+[0;32mI (418) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (428) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (428) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (438) wifi:Init static rx buffer num: 10[0m
+[0;32mI (438) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (438) wifi_init: rx ba win: 6[0m
+[0;32mI (448) wifi_init: accept mbox: 6[0m
+[0;32mI (448) wifi_init: tcpip mbox: 32[0m
+[0;32mI (448) wifi_init: udp mbox: 6[0m
+[0;32mI (458) wifi_init: tcp mbox: 6[0m
+[0;32mI (458) wifi_init: tcp tx win: 5760[0m
+[0;32mI (458) wifi_init: tcp rx win: 5760[0m
+[0;32mI (468) wifi_init: tcp mss: 1440[0m
+[0;32mI (468) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (468) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (478) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (498) phy_init: phy_version 700,8582a7fd,Feb 10 2025,20:13:11[0m
+[0;32mI (538) wifi:mode : sta (34:85:18:50:81:30)[0m
+[0;32mI (538) wifi:enable tsf[0m
+[0;32mI (538) Sonostream: Device successfully initialized as a WiFi station![0m
+[0;32mI (548) wifi:new:<3,0>, old:<1,0>, ap:<255,255>, sta:<3,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (548) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (558) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (558) wifi:state: assoc -> init (0x2c0)[0m
+[0;32mI (568) wifi:new:<3,0>, old:<3,0>, ap:<255,255>, sta:<3,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (568) Sonostream: Attempting to connect to the AP...[0m
+[0;32mI (568) Sonostream: Connection to the AP fail[0m
+[0;32mI (2978) Sonostream: Attempting to connect to the AP...[0m
+[0;32mI (2978) Sonostream: Connection to the AP fail[0m
+[0;32mI (2988) wifi:new:<3,0>, old:<3,0>, ap:<255,255>, sta:<3,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (2988) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (2998) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (3008) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (3018) wifi:connected with definitelynotarouter, aid = 27, channel 3, BW20, bssid = f0:2f:74:5f:62:70[0m
+[0;32mI (3018) wifi:security: WPA2-PSK, phy: bgn, rssi: -5[0m
+[0;32mI (3038) wifi:pm start, type: 1[0m
+
+[0;32mI (3038) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (3038) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (3048) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (3068) wifi:<ba-add>idx:0 (ifx:0, f0:2f:74:5f:62:70), tid:6, ssn:1, winSize:64[0m
+[0;32mI (4078) esp_netif_handlers: sta ip: 192.168.50.21, mask: 255.255.255.0, gw: 192.168.50.1[0m
+[0;32mI (4078) Sonostream: got ip:192.168.50.21[0m
+[0;32mI (4078) Sonostream: Connected to ap SSID:definitelynotarouter password:notapwd777[0m
+[0;32mI (4078) main_task: Returned from app_main()[0m
+[0;32mI (4088) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (4098) wifi:<ba-add>idx:1 (ifx:0, f0:2f:74:5f:62:70), tid:0, ssn:1, winSize:64[0m
+[0;32mI (4198) Sonostream: Successfully connected[0m
+[0;32mI (4298) Sonostream: Successfully connected[0m
+[1;31mE (4378) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (4378) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (4378) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (4478) Sonostream: Successfully connected[0m
+[0;32mI (4578) Sonostream: Successfully connected[0m
+[1;31mE (4628) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (4628) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (4628) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (4738) Sonostream: Successfully connected[0m
+[0;32mI (4838) Sonostream: Successfully connected[0m
+[1;31mE (4888) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (4888) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (4888) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (4988) Sonostream: Successfully connected[0m
+[0;32mI (5088) Sonostream: Successfully connected[0m
+[1;31mE (5138) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (5138) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (5138) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (5248) Sonostream: Successfully connected[0m
+[0;32mI (5348) Sonostream: Successfully connected[0m
+[1;31mE (5398) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (5398) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (5398) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (5498) Sonostream: Successfully connected[0m
+[0;32mI (5598) Sonostream: Successfully connected[0m
+[1;31mE (5648) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (5648) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (5648) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (5758) Sonostream: Successfully connected[0m
+[0;32mI (5858) Sonostream: Successfully connected[0m
+[1;31mE (5908) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (5908) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (5908) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (6008) Sonostream: Successfully connected[0m
+[0;32mI (6108) Sonostream: Successfully connected[0m
+[1;31mE (6158) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (6158) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (6158) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (6268) Sonostream: Successfully connected[0m
+[0;32mI (6368) Sonostream: Successfully connected[0m
+[1;31mE (6418) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (6418) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (6418) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (6518) Sonostream: Successfully connected[0m
+[0;32mI (6618) Sonostream: Successfully connected[0m
+[1;31mE (6668) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (6668) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (6668) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (6778) Sonostream: Successfully connected[0m
+[0;32mI (6878) Sonostream: Successfully connected[0m
+[1;31mE (6928) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (6928) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (6928) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (7028) Sonostream: Successfully connected[0m
+[0;32mI (7128) Sonostream: Successfully connected[0m
+[1;31mE (7178) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (7178) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (7178) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (7288) Sonostream: Successfully connected[0m
+[0;32mI (7388) Sonostream: Successfully connected[0m
+[1;31mE (7438) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (7438) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (7438) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (7538) Sonostream: Successfully connected[0m
+[0;32mI (7638) Sonostream: Successfully connected[0m
+[1;31mE (7688) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (7688) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (7688) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (7798) Sonostream: Successfully connected[0m
+[0;32mI (7898) Sonostream: Successfully connected[0m
+[1;31mE (7948) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (7948) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (7948) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (8048) Sonostream: Successfully connected[0m
+[0;32mI (8148) Sonostream: Successfully connected[0m
+[1;31mE (8218) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (8218) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (8218) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (8318) Sonostream: Successfully connected[0m
+[0;32mI (8418) Sonostream: Successfully connected[0m
+[1;31mE (8468) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (8468) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (8468) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (8578) Sonostream: Successfully connected[0m
+[0;32mI (8678) Sonostream: Successfully connected[0m
+[1;31mE (8728) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (8728) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (8728) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (8828) Sonostream: Successfully connected[0m
+[0;32mI (8928) Sonostream: Successfully connected[0m
+[1;31mE (8978) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (8978) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (8978) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (9088) Sonostream: Successfully connected[0m
+[0;32mI (9188) Sonostream: Successfully connected[0m
+[1;31mE (9238) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (9238) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (9238) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (9338) Sonostream: Successfully connected[0m
+[0;32mI (9438) Sonostream: Successfully connected[0m
+[1;31mE (9488) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (9488) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (9488) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (9598) Sonostream: Successfully connected[0m
+[0;32mI (9698) Sonostream: Successfully connected[0m
+[1;31mE (9748) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (9748) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (9748) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (9848) Sonostream: Successfully connected[0m
+[0;32mI (9948) Sonostream: Successfully connected[0m
+[1;31mE (9998) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (9998) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (9998) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (10108) Sonostream: Successfully connected[0m
+[0;32mI (10208) Sonostream: Successfully connected[0m
+[1;31mE (10258) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (10258) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (10258) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (10358) Sonostream: Successfully connected[0m
+[0;32mI (10458) Sonostream: Successfully connected[0m
+[1;31mE (10508) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (10508) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (10508) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (10618) Sonostream: Successfully connected[0m
+[0;32mI (10718) Sonostream: Successfully connected[0m
+[1;31mE (10768) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (10768) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (10768) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (10868) Sonostream: Successfully connected[0m
+[0;32mI (10968) Sonostream: Successfully connected[0m
+[1;31mE (11018) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (11018) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (11018) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (11128) Sonostream: Successfully connected[0m
+[0;32mI (11228) Sonostream: Successfully connected[0m
+[1;31mE (11278) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (11278) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (11278) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (11378) Sonostream: Successfully connected[0m
+[0;32mI (11478) Sonostream: Successfully connected[0m
+[1;31mE (11528) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (11528) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (11528) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (11638) Sonostream: Successfully connected[0m
+[0;32mI (11738) Sonostream: Successfully connected[0m
+[1;31mE (11788) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (11788) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (11788) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (11888) Sonostream: Successfully connected[0m
+[0;32mI (11988) Sonostream: Successfully connected[0m
+[1;31mE (12058) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (12058) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (12058) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (12158) Sonostream: Successfully connected[0m
+[0;32mI (12258) Sonostream: Successfully connected[0m
+[1;31mE (12308) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (12308) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (12308) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (12418) Sonostream: Successfully connected[0m
+[0;32mI (12518) Sonostream: Successfully connected[0m
+[1;31mE (12568) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (12568) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (12568) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (12668) Sonostream: Successfully connected[0m
+[0;32mI (12768) Sonostream: Successfully connected[0m
+[1;31mE (12818) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (12818) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (12818) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (12928) Sonostream: Successfully connected[0m
+[0;32mI (13028) Sonostream: Successfully connected[0m
+[1;31mE (13078) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (13078) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (13078) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (13178) Sonostream: Successfully connected[0m
+[0;32mI (13278) Sonostream: Successfully connected[0m
+[1;31mE (13328) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (13328) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (13328) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (13438) Sonostream: Successfully connected[0m
+[0;32mI (13538) Sonostream: Successfully connected[0m
+[1;31mE (13588) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (13588) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (13588) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (13698) Sonostream: Successfully connected[0m
+[0;32mI (13798) Sonostream: Successfully connected[0m
+[1;31mE (13838) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (13838) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (13838) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (13948) Sonostream: Successfully connected[0m
+[0;32mI (14048) Sonostream: Successfully connected[0m
+[1;31mE (14098) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (14098) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (14098) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (14198) Sonostream: Successfully connected[0m
+[0;32mI (14298) Sonostream: Successfully connected[0m
+[1;31mE (14348) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (14348) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (14348) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (14458) Sonostream: Successfully connected[0m
+[0;32mI (14558) Sonostream: Successfully connected[0m
+[1;31mE (14608) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (14608) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (14608) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (14718) Sonostream: Successfully connected[0m
+[0;32mI (14818) Sonostream: Successfully connected[0m
+[1;31mE (14858) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (14858) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (14858) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (14968) Sonostream: Successfully connected[0m
+[0;32mI (15068) Sonostream: Successfully connected[0m
+[1;31mE (15118) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (15118) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (15118) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (15228) Sonostream: Successfully connected[0m
+[0;32mI (15328) Sonostream: Successfully connected[0m
+[1;31mE (15368) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (15368) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (15368) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (15478) Sonostream: Successfully connected[0m
+[0;32mI (15578) Sonostream: Successfully connected[0m
+[1;31mE (15628) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (15628) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (15628) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (15738) Sonostream: Successfully connected[0m
+[0;32mI (15838) Sonostream: Successfully connected[0m
+[1;31mE (15898) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (15898) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (15898) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (15998) Sonostream: Successfully connected[0m
+[0;32mI (16098) Sonostream: Successfully connected[0m
+[1;31mE (16148) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (16148) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (16148) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (16258) Sonostream: Successfully connected[0m
+[0;32mI (16358) Sonostream: Successfully connected[0m
+[1;31mE (16408) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (16408) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (16408) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (16508) Sonostream: Successfully connected[0m
+[0;32mI (16608) Sonostream: Successfully connected[0m
+[1;31mE (16658) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (16658) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (16658) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (16768) Sonostream: Successfully connected[0m
+[0;32mI (16868) Sonostream: Successfully connected[0m
+[1;31mE (16918) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (16918) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (16918) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (17018) Sonostream: Successfully connected[0m
+[0;32mI (17118) Sonostream: Successfully connected[0m
+[1;31mE (17168) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (17168) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (17168) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (17278) Sonostream: Successfully connected[0m
+[0;32mI (17378) Sonostream: Successfully connected[0m
+[1;31mE (17428) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (17428) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (17428) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (17528) Sonostream: Successfully connected[0m
+[0;32mI (17628) Sonostream: Successfully connected[0m
+[1;31mE (17678) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (17678) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (17678) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (17788) Sonostream: Successfully connected[0m
+[0;32mI (17888) Sonostream: Successfully connected[0m
+[1;31mE (17938) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (17938) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (17938) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (18038) Sonostream: Successfully connected[0m
+[0;32mI (18138) Sonostream: Successfully connected[0m
+[1;31mE (18188) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (18188) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (18188) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (18298) Sonostream: Successfully connected[0m
+[0;32mI (18398) Sonostream: Successfully connected[0m
+[1;31mE (18448) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (18448) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (18448) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (18548) Sonostream: Successfully connected[0m
+[0;32mI (18648) Sonostream: Successfully connected[0m
+[1;31mE (18698) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (18698) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (18698) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (18808) Sonostream: Successfully connected[0m
+[0;32mI (18908) Sonostream: Successfully connected[0m
+[1;31mE (18958) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (18958) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (18958) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (19058) Sonostream: Successfully connected[0m
+[0;32mI (19158) Sonostream: Successfully connected[0m
+[1;31mE (19208) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (19208) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (19208) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (19318) Sonostream: Successfully connected[0m
+[0;32mI (19418) Sonostream: Successfully connected[0m
+[1;31mE (19468) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (19468) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (19468) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (19568) Sonostream: Successfully connected[0m
+[0;32mI (19668) Sonostream: Successfully connected[0m
+[1;31mE (19738) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (19738) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (19738) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (19838) Sonostream: Successfully connected[0m
+[0;32mI (19938) Sonostream: Successfully connected[0m
+[1;31mE (19988) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (19988) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (19988) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (20098) Sonostream: Successfully connected[0m
+[0;32mI (20198) Sonostream: Successfully connected[0m
+[1;31mE (20248) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (20248) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (20248) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (20348) Sonostream: Successfully connected[0m
+[0;32mI (20448) Sonostream: Successfully connected[0m
+[1;31mE (20498) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (20498) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (20498) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (20608) Sonostream: Successfully connected[0m
+[0;32mI (20708) Sonostream: Successfully connected[0m
+[1;31mE (20758) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (20758) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (20758) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (20858) Sonostream: Successfully connected[0m
+[0;32mI (20958) Sonostream: Successfully connected[0m
+[1;31mE (21008) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (21008) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (21008) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (21118) Sonostream: Successfully connected[0m
+[0;32mI (21218) Sonostream: Successfully connected[0m
+[1;31mE (21268) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (21268) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (21268) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (21368) Sonostream: Successfully connected[0m
+[0;32mI (21468) Sonostream: Successfully connected[0m
+[1;31mE (21518) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (21518) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (21518) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (21628) Sonostream: Successfully connected[0m
+[0;32mI (21728) Sonostream: Successfully connected[0m
+[1;31mE (21778) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (21778) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (21778) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (21878) Sonostream: Successfully connected[0m
+[0;32mI (21978) Sonostream: Successfully connected[0m
+[1;31mE (22028) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (22028) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (22028) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (22138) Sonostream: Successfully connected[0m
+[0;32mI (22238) Sonostream: Successfully connected[0m
+[1;31mE (22288) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (22288) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (22288) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (22388) Sonostream: Successfully connected[0m
+[0;32mI (22488) Sonostream: Successfully connected[0m
+[1;31mE (22538) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (22538) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (22538) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (22648) Sonostream: Successfully connected[0m
+[0;32mI (22748) Sonostream: Successfully connected[0m
+[1;31mE (22798) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (22798) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (22798) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (22908) Sonostream: Successfully connected[0m
+[0;32mI (23008) Sonostream: Successfully connected[0m
+[1;31mE (23048) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (23048) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (23048) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (23158) Sonostream: Successfully connected[0m
+[0;32mI (23258) Sonostream: Successfully connected[0m
+[1;31mE (23308) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (23308) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (23308) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (23408) Sonostream: Successfully connected[0m
+[0;32mI (23508) Sonostream: Successfully connected[0m
+[1;31mE (23578) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (23578) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (23578) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (23678) Sonostream: Successfully connected[0m
+[0;32mI (23778) Sonostream: Successfully connected[0m
+[1;31mE (23828) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (23828) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (23828) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (23938) Sonostream: Successfully connected[0m
+[0;32mI (24038) Sonostream: Successfully connected[0m
+[1;31mE (24088) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (24088) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (24088) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (24188) Sonostream: Successfully connected[0m
+[0;32mI (24288) Sonostream: Successfully connected[0m
+[1;31mE (24338) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (24338) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (24338) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (24448) Sonostream: Successfully connected[0m
+[0;32mI (24548) Sonostream: Successfully connected[0m
+[1;31mE (24598) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (24598) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (24598) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (24698) Sonostream: Successfully connected[0m
+[0;32mI (24798) Sonostream: Successfully connected[0m
+[1;31mE (24848) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (24848) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (24848) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (24958) Sonostream: Successfully connected[0m
+[0;32mI (25058) Sonostream: Successfully connected[0m
+[1;31mE (25108) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (25108) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (25108) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (25208) Sonostream: Successfully connected[0m
+[0;32mI (25308) Sonostream: Successfully connected[0m
+[1;31mE (25358) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (25358) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (25358) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (25468) Sonostream: Successfully connected[0m
+[0;32mI (25568) Sonostream: Successfully connected[0m
+[1;31mE (25618) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (25618) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (25618) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (25718) Sonostream: Successfully connected[0m
+[0;32mI (25818) Sonostream: Successfully connected[0m
+[1;31mE (25868) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (25868) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (25868) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (25978) Sonostream: Successfully connected[0m
+[0;32mI (26078) Sonostream: Successfully connected[0m
+[1;31mE (26128) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (26128) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (26128) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (26228) Sonostream: Successfully connected[0m
+[0;32mI (26328) Sonostream: Successfully connected[0m
+[1;31mE (26378) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (26378) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (26378) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (26488) Sonostream: Successfully connected[0m
+[0;32mI (26588) Sonostream: Successfully connected[0m
+[1;31mE (26638) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (26638) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (26638) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (26738) Sonostream: Successfully connected[0m
+[0;32mI (26838) Sonostream: Successfully connected[0m
+[1;31mE (26888) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (26888) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (26888) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (26998) Sonostream: Successfully connected[0m
+[0;32mI (27098) Sonostream: Successfully connected[0m
+[1;31mE (27148) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (27148) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (27148) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (27248) Sonostream: Successfully connected[0m
+[0;32mI (27348) Sonostream: Successfully connected[0m
+[1;31mE (27418) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (27418) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (27418) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (27518) Sonostream: Successfully connected[0m
+[0;32mI (27618) Sonostream: Successfully connected[0m
+[1;31mE (27668) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (27668) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (27668) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (27778) Sonostream: Successfully connected[0m
+[0;32mI (27878) Sonostream: Successfully connected[0m
+[1;31mE (27928) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (27928) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (27928) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (28028) Sonostream: Successfully connected[0m
+[0;32mI (28128) Sonostream: Successfully connected[0m
+[1;31mE (28178) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (28178) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (28178) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (28288) Sonostream: Successfully connected[0m
+[0;32mI (28388) Sonostream: Successfully connected[0m
+[1;31mE (28438) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (28438) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (28438) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (28538) Sonostream: Successfully connected[0m
+[0;32mI (28638) Sonostream: Successfully connected[0m
+[1;31mE (28688) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (28688) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (28688) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (28798) Sonostream: Successfully connected[0m
+[0;32mI (28898) Sonostream: Successfully connected[0m
+[1;31mE (28948) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (28948) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (28948) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (29048) Sonostream: Successfully connected[0m
+[0;32mI (29148) Sonostream: Successfully connected[0m
+[1;31mE (29198) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (29198) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (29198) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (29308) Sonostream: Successfully connected[0m
+[0;32mI (29408) Sonostream: Successfully connected[0m
+[0;32mI (29458) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (29458) Sonostream: Successfully connected[0m
+[0;32mI (29558) Sonostream: Successfully connected[0m
+[0;32mI (29658) Sonostream: Successfully connected[0m
+[0;32mI (29708) Sonostream: Success: 4320 bytes sent[0m
+[0;32mI (29708) Sonostream: Successfully connected[0m
+[0;32mI (29808) Sonostream: Successfully connected[0m
+[0;32mI (29908) Sonostream: Successfully connected[0m
+[1;31mE (29968) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (29968) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (29968) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (30078) Sonostream: Successfully connected[0m
+[0;32mI (30178) Sonostream: Successfully connected[0m
+[0;32mI (30218) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (30218) Sonostream: Successfully connected[0m
+[0;32mI (30318) Sonostream: Successfully connected[0m
+[0;32mI (30418) Sonostream: Successfully connected[0m
+[1;31mE (30478) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (30478) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (30478) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (30578) Sonostream: Successfully connected[0m
+[0;32mI (30678) Sonostream: Successfully connected[0m
+[0;32mI (30728) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (30728) Sonostream: Successfully connected[0m
+[0;32mI (30828) Sonostream: Successfully connected[0m
+[0;32mI (30928) Sonostream: Successfully connected[0m
+[1;31mE (30988) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (30988) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (30988) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (31098) Sonostream: Successfully connected[0m
+[0;32mI (31198) Sonostream: Successfully connected[0m
+[0;32mI (31258) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (31258) Sonostream: Successfully connected[0m
+[0;32mI (31358) Sonostream: Successfully connected[0m
+[0;32mI (31458) Sonostream: Successfully connected[0m
+[1;31mE (31508) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (31508) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (31508) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (31618) Sonostream: Successfully connected[0m
+[0;32mI (31718) Sonostream: Successfully connected[0m
+[0;32mI (31768) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (31768) Sonostream: Successfully connected[0m
+[0;32mI (31868) Sonostream: Successfully connected[0m
+[0;32mI (31968) Sonostream: Successfully connected[0m
+[1;31mE (32018) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (32018) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (32018) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (32128) Sonostream: Successfully connected[0m
+[0;32mI (32228) Sonostream: Successfully connected[0m
+[0;32mI (32278) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (32278) Sonostream: Successfully connected[0m
+[0;32mI (32378) Sonostream: Successfully connected[0m
+[0;32mI (32478) Sonostream: Successfully connected[0m
+[1;31mE (32528) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (32528) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (32528) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (32638) Sonostream: Successfully connected[0m
+[0;32mI (32738) Sonostream: Successfully connected[0m
+[0;32mI (32788) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (32788) Sonostream: Successfully connected[0m
+[0;32mI (32888) Sonostream: Successfully connected[0m
+[0;32mI (32988) Sonostream: Successfully connected[0m
+[1;31mE (33038) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (33038) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (33038) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (33148) Sonostream: Successfully connected[0m
+[0;32mI (33248) Sonostream: Successfully connected[0m
+[0;32mI (33298) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (33298) Sonostream: Successfully connected[0m
+[0;32mI (33398) Sonostream: Successfully connected[0m
+[0;32mI (33498) Sonostream: Successfully connected[0m
+[1;31mE (33548) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (33548) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (33548) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (33658) Sonostream: Successfully connected[0m
+[0;32mI (33758) Sonostream: Successfully connected[0m
+[0;32mI (33808) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (33808) Sonostream: Successfully connected[0m
+[0;32mI (33908) Sonostream: Successfully connected[0m
+[0;32mI (34008) Sonostream: Successfully connected[0m
+[1;31mE (34058) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (34058) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (34058) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (34168) Sonostream: Successfully connected[0m
+[0;32mI (34268) Sonostream: Successfully connected[0m
+[0;32mI (34318) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (34318) Sonostream: Successfully connected[0m
+[0;32mI (34418) Sonostream: Successfully connected[0m
+[0;32mI (34518) Sonostream: Successfully connected[0m
+[1;31mE (34568) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (34568) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (34568) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (34678) Sonostream: Successfully connected[0m
+[0;32mI (34778) Sonostream: Successfully connected[0m
+[0;32mI (34828) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (34828) Sonostream: Successfully connected[0m
+[0;32mI (34928) Sonostream: Successfully connected[0m
+[0;32mI (35028) Sonostream: Successfully connected[0m
+[1;31mE (35098) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (35098) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (35098) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (35208) Sonostream: Successfully connected[0m
+[0;32mI (35308) Sonostream: Successfully connected[0m
+[0;32mI (35348) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (35348) Sonostream: Successfully connected[0m
+[0;32mI (35448) Sonostream: Successfully connected[0m
+[0;32mI (35548) Sonostream: Successfully connected[0m
+[1;31mE (35608) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (35608) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (35608) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (35708) Sonostream: Successfully connected[0m
+[0;32mI (35808) Sonostream: Successfully connected[0m
+[0;32mI (35858) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (35858) Sonostream: Successfully connected[0m
+[0;32mI (35958) Sonostream: Successfully connected[0m
+[0;32mI (36058) Sonostream: Successfully connected[0m
+[1;31mE (36118) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (36118) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (36118) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (36218) Sonostream: Successfully connected[0m
+[0;32mI (36318) Sonostream: Successfully connected[0m
+[0;32mI (36368) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (36368) Sonostream: Successfully connected[0m
+[0;32mI (36468) Sonostream: Successfully connected[0m
+[0;32mI (36568) Sonostream: Successfully connected[0m
+[1;31mE (36628) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (36628) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (36628) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (36728) Sonostream: Successfully connected[0m
+[0;32mI (36828) Sonostream: Successfully connected[0m
+[0;32mI (36878) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (36878) Sonostream: Successfully connected[0m
+[0;32mI (36978) Sonostream: Successfully connected[0m
+[0;32mI (37078) Sonostream: Successfully connected[0m
+[1;31mE (37138) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (37138) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (37138) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (37238) Sonostream: Successfully connected[0m
+[0;32mI (37338) Sonostream: Successfully connected[0m
+[0;32mI (37388) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (37388) Sonostream: Successfully connected[0m
+[0;32mI (37488) Sonostream: Successfully connected[0m
+[0;32mI (37588) Sonostream: Successfully connected[0m
+[1;31mE (37648) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (37648) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (37648) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (37758) Sonostream: Successfully connected[0m
+[0;32mI (37858) Sonostream: Successfully connected[0m
+[0;32mI (37898) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (37898) Sonostream: Successfully connected[0m
+[0;32mI (37998) Sonostream: Successfully connected[0m
+[0;32mI (38098) Sonostream: Successfully connected[0m
+[1;31mE (38158) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (38158) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (38158) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (38258) Sonostream: Successfully connected[0m
+[0;32mI (38358) Sonostream: Successfully connected[0m
+[0;32mI (38408) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (38408) Sonostream: Successfully connected[0m
+[0;32mI (38508) Sonostream: Successfully connected[0m
+[0;32mI (38608) Sonostream: Successfully connected[0m
+[1;31mE (38668) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (38668) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (38668) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (38768) Sonostream: Successfully connected[0m
+[0;32mI (38868) Sonostream: Successfully connected[0m
+[0;32mI (38938) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (38938) Sonostream: Successfully connected[0m
+[0;32mI (39038) Sonostream: Successfully connected[0m
+[0;32mI (39138) Sonostream: Successfully connected[0m
+[1;31mE (39188) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (39188) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (39188) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (39298) Sonostream: Successfully connected[0m
+[0;32mI (39398) Sonostream: Successfully connected[0m
+[0;32mI (39448) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (39448) Sonostream: Successfully connected[0m
+[0;32mI (39548) Sonostream: Successfully connected[0m
+[0;32mI (39648) Sonostream: Successfully connected[0m
+[1;31mE (39698) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (39698) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (39698) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (39808) Sonostream: Successfully connected[0m
+[0;32mI (39908) Sonostream: Successfully connected[0m
+[0;32mI (39958) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (39958) Sonostream: Successfully connected[0m
+[0;32mI (40058) Sonostream: Successfully connected[0m
+[0;32mI (40158) Sonostream: Successfully connected[0m
+[1;31mE (40208) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (40208) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (40208) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (40318) Sonostream: Successfully connected[0m
+[0;32mI (40418) Sonostream: Successfully connected[0m
+[0;32mI (40468) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (40468) Sonostream: Successfully connected[0m
+[0;32mI (40568) Sonostream: Successfully connected[0m
+[0;32mI (40668) Sonostream: Successfully connected[0m
+[1;31mE (40718) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (40718) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (40718) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (40828) Sonostream: Successfully connected[0m
+[0;32mI (40928) Sonostream: Successfully connected[0m
+[0;32mI (40978) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (40978) Sonostream: Successfully connected[0m
+[0;32mI (41078) Sonostream: Successfully connected[0m
+[0;32mI (41178) Sonostream: Successfully connected[0m
+[1;31mE (41228) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (41228) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (41228) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (41338) Sonostream: Successfully connected[0m
+[0;32mI (41438) Sonostream: Successfully connected[0m
+[0;32mI (41488) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (41488) Sonostream: Successfully connected[0m
+[0;32mI (41588) Sonostream: Successfully connected[0m
+[0;32mI (41688) Sonostream: Successfully connected[0m
+[1;31mE (41738) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (41738) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (41738) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (41848) Sonostream: Successfully connected[0m
+[0;32mI (41948) Sonostream: Successfully connected[0m
+[0;32mI (41998) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (41998) Sonostream: Successfully connected[0m
+[0;32mI (42098) Sonostream: Successfully connected[0m
+[0;32mI (42198) Sonostream: Successfully connected[0m
+[1;31mE (42248) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (42248) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (42248) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (42358) Sonostream: Successfully connected[0m
+[0;32mI (42458) Sonostream: Successfully connected[0m
+[0;32mI (42508) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (42508) Sonostream: Successfully connected[0m
+[0;32mI (42608) Sonostream: Successfully connected[0m
+[0;32mI (42708) Sonostream: Successfully connected[0m
+[1;31mE (42778) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (42778) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (42778) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (42888) Sonostream: Successfully connected[0m
+[0;32mI (42988) Sonostream: Successfully connected[0m
+[0;32mI (43028) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (43028) Sonostream: Successfully connected[0m
+[0;32mI (43128) Sonostream: Successfully connected[0m
+[0;32mI (43228) Sonostream: Successfully connected[0m
+[1;31mE (43288) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (43288) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (43288) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (43388) Sonostream: Successfully connected[0m
+[0;32mI (43488) Sonostream: Successfully connected[0m
+[0;32mI (43538) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (43538) Sonostream: Successfully connected[0m
+[0;32mI (43638) Sonostream: Successfully connected[0m
+[0;32mI (43738) Sonostream: Successfully connected[0m
+[1;31mE (43798) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (43798) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (43798) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (43898) Sonostream: Successfully connected[0m
+[0;32mI (43998) Sonostream: Successfully connected[0m
+[0;32mI (44048) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (44048) Sonostream: Successfully connected[0m
+[0;32mI (44148) Sonostream: Successfully connected[0m
+[0;32mI (44248) Sonostream: Successfully connected[0m
+[1;31mE (44308) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (44308) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (44308) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (44408) Sonostream: Successfully connected[0m
+[0;32mI (44508) Sonostream: Successfully connected[0m
+[0;32mI (44558) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (44558) Sonostream: Successfully connected[0m
+[0;32mI (44658) Sonostream: Successfully connected[0m
+[0;32mI (44758) Sonostream: Successfully connected[0m
+[1;31mE (44818) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (44818) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (44818) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (44918) Sonostream: Successfully connected[0m
+[0;32mI (45018) Sonostream: Successfully connected[0m
+[0;32mI (45068) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (45068) Sonostream: Successfully connected[0m
+[0;32mI (45168) Sonostream: Successfully connected[0m
+[0;32mI (45268) Sonostream: Successfully connected[0m
+[1;31mE (45328) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (45328) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (45328) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (45428) Sonostream: Successfully connected[0m
+[0;32mI (45528) Sonostream: Successfully connected[0m
+[0;32mI (45578) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (45578) Sonostream: Successfully connected[0m
+[0;32mI (45678) Sonostream: Successfully connected[0m
+[0;32mI (45778) Sonostream: Successfully connected[0m
+[1;31mE (45838) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (45838) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (45838) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (45948) Sonostream: Successfully connected[0m
+[0;32mI (46048) Sonostream: Successfully connected[0m
+[0;32mI (46088) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (46088) Sonostream: Successfully connected[0m
+[0;32mI (46188) Sonostream: Successfully connected[0m
+[0;32mI (46288) Sonostream: Successfully connected[0m
+[1;31mE (46348) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (46348) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (46348) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (46458) Sonostream: Successfully connected[0m
+[0;32mI (46558) Sonostream: Successfully connected[0m
+[0;32mI (46618) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (46618) Sonostream: Successfully connected[0m
+[0;32mI (46718) Sonostream: Successfully connected[0m
+[0;32mI (46818) Sonostream: Successfully connected[0m
+[1;31mE (46868) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (46868) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (46868) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (46978) Sonostream: Successfully connected[0m
+[0;32mI (47078) Sonostream: Successfully connected[0m
+[0;32mI (47128) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (47128) Sonostream: Successfully connected[0m
+[0;32mI (47228) Sonostream: Successfully connected[0m
+[0;32mI (47328) Sonostream: Successfully connected[0m
+[1;31mE (47378) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (47378) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (47378) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (47488) Sonostream: Successfully connected[0m
+[0;32mI (47588) Sonostream: Successfully connected[0m
+[0;32mI (47638) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (47638) Sonostream: Successfully connected[0m
+[0;32mI (47738) Sonostream: Successfully connected[0m
+[0;32mI (47838) Sonostream: Successfully connected[0m
+[1;31mE (47888) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (47888) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (47888) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (47998) Sonostream: Successfully connected[0m
+[0;32mI (48098) Sonostream: Successfully connected[0m
+[0;32mI (48148) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (48148) Sonostream: Successfully connected[0m
+[0;32mI (48248) Sonostream: Successfully connected[0m
+[0;32mI (48348) Sonostream: Successfully connected[0m
+[1;31mE (48398) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (48398) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (48398) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (48508) Sonostream: Successfully connected[0m
+[0;32mI (48608) Sonostream: Successfully connected[0m
+[0;32mI (48658) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (48658) Sonostream: Successfully connected[0m
+[0;32mI (48758) Sonostream: Successfully connected[0m
+[0;32mI (48858) Sonostream: Successfully connected[0m
+[1;31mE (48908) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (48908) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (48908) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (49018) Sonostream: Successfully connected[0m
+[0;32mI (49118) Sonostream: Successfully connected[0m
+[0;32mI (49168) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (49168) Sonostream: Successfully connected[0m
+[0;32mI (49268) Sonostream: Successfully connected[0m
+[0;32mI (49368) Sonostream: Successfully connected[0m
+[1;31mE (49418) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (49418) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (49418) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (49528) Sonostream: Successfully connected[0m
+[0;32mI (49628) Sonostream: Successfully connected[0m
+[0;32mI (49678) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (49678) Sonostream: Successfully connected[0m
+[0;32mI (49778) Sonostream: Successfully connected[0m
+[0;32mI (49878) Sonostream: Successfully connected[0m
+[1;31mE (49928) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (49928) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (49928) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (50038) Sonostream: Successfully connected[0m
+[0;32mI (50138) Sonostream: Successfully connected[0m
+[0;32mI (50188) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (50188) Sonostream: Successfully connected[0m
+[0;32mI (50288) Sonostream: Successfully connected[0m
+[0;32mI (50388) Sonostream: Successfully connected[0m
+[1;31mE (50458) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (50458) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (50458) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (50558) Sonostream: Successfully connected[0m
+[0;32mI (50658) Sonostream: Successfully connected[0m
+[0;32mI (50708) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (50708) Sonostream: Successfully connected[0m
+[0;32mI (50808) Sonostream: Successfully connected[0m
+[0;32mI (50908) Sonostream: Successfully connected[0m
+[1;31mE (50968) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (50968) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (50968) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (51068) Sonostream: Successfully connected[0m
+[0;32mI (51168) Sonostream: Successfully connected[0m
+[0;32mI (51218) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (51218) Sonostream: Successfully connected[0m
+[0;32mI (51318) Sonostream: Successfully connected[0m
+[0;32mI (51418) Sonostream: Successfully connected[0m
+[1;31mE (51478) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (51478) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (51478) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (51578) Sonostream: Successfully connected[0m
+[0;32mI (51678) Sonostream: Successfully connected[0m
+[0;32mI (51728) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (51728) Sonostream: Successfully connected[0m
+[0;32mI (51828) Sonostream: Successfully connected[0m
+[0;32mI (51928) Sonostream: Successfully connected[0m
+[1;31mE (51988) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (51988) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (51988) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (52088) Sonostream: Successfully connected[0m
+[0;32mI (52188) Sonostream: Successfully connected[0m
+[0;32mI (52238) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (52238) Sonostream: Successfully connected[0m
+[0;32mI (52338) Sonostream: Successfully connected[0m
+[0;32mI (52438) Sonostream: Successfully connected[0m
+[1;31mE (52498) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (52498) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (52498) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (52598) Sonostream: Successfully connected[0m
+[0;32mI (52698) Sonostream: Successfully connected[0m
+[0;32mI (52748) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (52748) Sonostream: Successfully connected[0m
+[0;32mI (52848) Sonostream: Successfully connected[0m
+[0;32mI (52948) Sonostream: Successfully connected[0m
+[1;31mE (53008) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (53008) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (53008) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (53118) Sonostream: Successfully connected[0m
+[0;32mI (53218) Sonostream: Successfully connected[0m
+[0;32mI (53258) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (53258) Sonostream: Successfully connected[0m
+[0;32mI (53358) Sonostream: Successfully connected[0m
+[0;32mI (53458) Sonostream: Successfully connected[0m
+[1;31mE (53518) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (53518) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (53518) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (53628) Sonostream: Successfully connected[0m
+[0;32mI (53728) Sonostream: Successfully connected[0m
+[0;32mI (53768) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (53768) Sonostream: Successfully connected[0m
+[0;32mI (53868) Sonostream: Successfully connected[0m
+[0;32mI (53968) Sonostream: Successfully connected[0m
+[1;31mE (54028) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (54028) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (54028) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (54138) Sonostream: Successfully connected[0m
+[0;32mI (54238) Sonostream: Successfully connected[0m
+[0;32mI (54298) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (54298) Sonostream: Successfully connected[0m
+[0;32mI (54398) Sonostream: Successfully connected[0m
+[0;32mI (54498) Sonostream: Successfully connected[0m
+[1;31mE (54548) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (54548) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (54548) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (54658) Sonostream: Successfully connected[0m
+[0;32mI (54758) Sonostream: Successfully connected[0m
+[0;32mI (54808) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (54808) Sonostream: Successfully connected[0m
+[0;32mI (54908) Sonostream: Successfully connected[0m
+[0;32mI (55008) Sonostream: Successfully connected[0m
+[1;31mE (55058) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (55058) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (55058) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (55168) Sonostream: Successfully connected[0m
+[0;32mI (55268) Sonostream: Successfully connected[0m
+[0;32mI (55318) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (55318) Sonostream: Successfully connected[0m
+[0;32mI (55418) Sonostream: Successfully connected[0m
+[0;32mI (55518) Sonostream: Successfully connected[0m
+[1;31mE (55568) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (55568) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (55568) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (55678) Sonostream: Successfully connected[0m
+[0;32mI (55778) Sonostream: Successfully connected[0m
+[0;32mI (55828) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (55828) Sonostream: Successfully connected[0m
+[0;32mI (55928) Sonostream: Successfully connected[0m
+[0;32mI (56028) Sonostream: Successfully connected[0m
+[1;31mE (56078) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (56078) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (56078) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (56188) Sonostream: Successfully connected[0m
+[0;32mI (56288) Sonostream: Successfully connected[0m
+[0;32mI (56338) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (56338) Sonostream: Successfully connected[0m
+[0;32mI (56438) Sonostream: Successfully connected[0m
+[0;32mI (56538) Sonostream: Successfully connected[0m
+[1;31mE (56588) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (56588) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (56588) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (56698) Sonostream: Successfully connected[0m
+[0;32mI (56798) Sonostream: Successfully connected[0m
+[0;32mI (56848) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (56848) Sonostream: Successfully connected[0m
+[0;32mI (56948) Sonostream: Successfully connected[0m
+[0;32mI (57048) Sonostream: Successfully connected[0m
+[1;31mE (57098) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (57098) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (57098) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (57208) Sonostream: Successfully connected[0m
+[0;32mI (57308) Sonostream: Successfully connected[0m
+[0;32mI (57358) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (57358) Sonostream: Successfully connected[0m
+[0;32mI (57458) Sonostream: Successfully connected[0m
+[0;32mI (57558) Sonostream: Successfully connected[0m
+[1;31mE (57608) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (57608) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (57608) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (57718) Sonostream: Successfully connected[0m
+[0;32mI (57818) Sonostream: Successfully connected[0m
+[0;32mI (57868) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (57868) Sonostream: Successfully connected[0m
+[0;32mI (57968) Sonostream: Successfully connected[0m
+[0;32mI (58068) Sonostream: Successfully connected[0m
+[1;31mE (58138) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (58138) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (58138) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (58238) Sonostream: Successfully connected[0m
+[0;32mI (58338) Sonostream: Successfully connected[0m
+[0;32mI (58388) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (58388) Sonostream: Successfully connected[0m
+[0;32mI (58488) Sonostream: Successfully connected[0m
+[0;32mI (58588) Sonostream: Successfully connected[0m
+[1;31mE (58648) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (58648) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (58648) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (58748) Sonostream: Successfully connected[0m
+[0;32mI (58848) Sonostream: Successfully connected[0m
+[0;32mI (58898) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (58898) Sonostream: Successfully connected[0m
+[0;32mI (58998) Sonostream: Successfully connected[0m
+[0;32mI (59098) Sonostream: Successfully connected[0m
+[1;31mE (59158) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (59158) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (59158) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (59258) Sonostream: Successfully connected[0m
+[0;32mI (59358) Sonostream: Successfully connected[0m
+[0;32mI (59408) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (59408) Sonostream: Successfully connected[0m
+[0;32mI (59508) Sonostream: Successfully connected[0m
+[0;32mI (59608) Sonostream: Successfully connected[0m
+[1;31mE (59668) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (59668) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (59668) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (59778) Sonostream: Successfully connected[0m
+[0;32mI (59878) Sonostream: Successfully connected[0m
+[0;32mI (59918) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (59918) Sonostream: Successfully connected[0m
+[0;32mI (60018) Sonostream: Successfully connected[0m
+[0;32mI (60118) Sonostream: Successfully connected[0m
+[1;31mE (60178) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (60178) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (60178) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (60278) Sonostream: Successfully connected[0m
+[0;32mI (60378) Sonostream: Successfully connected[0m
+[0;32mI (60428) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (60428) Sonostream: Successfully connected[0m
+[0;32mI (60528) Sonostream: Successfully connected[0m
+[0;32mI (60628) Sonostream: Successfully connected[0m
+[1;31mE (60688) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (60688) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (60688) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (60798) Sonostream: Successfully connected[0m
+[0;32mI (60898) Sonostream: Successfully connected[0m
+[0;32mI (60938) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (60938) Sonostream: Successfully connected[0m
+[0;32mI (61038) Sonostream: Successfully connected[0m
+[0;32mI (61138) Sonostream: Successfully connected[0m
+[1;31mE (61198) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (61198) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (61198) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (61298) Sonostream: Successfully connected[0m
+[0;32mI (61398) Sonostream: Successfully connected[0m
+[0;32mI (61448) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (61448) Sonostream: Successfully connected[0m
+[0;32mI (61548) Sonostream: Successfully connected[0m
+[0;32mI (61648) Sonostream: Successfully connected[0m
+[1;31mE (61708) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (61708) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (61708) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (61818) Sonostream: Successfully connected[0m
+[0;32mI (61918) Sonostream: Successfully connected[0m
+[0;32mI (61978) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (61978) Sonostream: Successfully connected[0m
+[0;32mI (62078) Sonostream: Successfully connected[0m
+[0;32mI (62178) Sonostream: Successfully connected[0m
+[1;31mE (62228) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (62228) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (62228) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (62338) Sonostream: Successfully connected[0m
+[0;32mI (62438) Sonostream: Successfully connected[0m
+[0;32mI (62488) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (62488) Sonostream: Successfully connected[0m
+[0;32mI (62588) Sonostream: Successfully connected[0m
+[0;32mI (62688) Sonostream: Successfully connected[0m
+[1;31mE (62738) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (62738) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (62738) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (62848) Sonostream: Successfully connected[0m
+[0;32mI (62948) Sonostream: Successfully connected[0m
+[0;32mI (62998) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (62998) Sonostream: Successfully connected[0m
+[0;32mI (63098) Sonostream: Successfully connected[0m
+[0;32mI (63198) Sonostream: Successfully connected[0m
+[1;31mE (63248) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (63248) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (63248) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (63358) Sonostream: Successfully connected[0m
+[0;32mI (63458) Sonostream: Successfully connected[0m
+[0;32mI (63508) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (63508) Sonostream: Successfully connected[0m
+[0;32mI (63608) Sonostream: Successfully connected[0m
+[0;32mI (63708) Sonostream: Successfully connected[0m
+[1;31mE (63758) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (63758) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (63758) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (63868) Sonostream: Successfully connected[0m
+[0;32mI (63968) Sonostream: Successfully connected[0m
+[0;32mI (64018) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (64018) Sonostream: Successfully connected[0m
+[0;32mI (64118) Sonostream: Successfully connected[0m
+[0;32mI (64218) Sonostream: Successfully connected[0m
+[1;31mE (64268) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (64268) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (64268) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (64378) Sonostream: Successfully connected[0m
+[0;32mI (64478) Sonostream: Successfully connected[0m
+[0;32mI (64528) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (64528) Sonostream: Successfully connected[0m
+[0;32mI (64628) Sonostream: Successfully connected[0m
+[0;32mI (64728) Sonostream: Successfully connected[0m
+[1;31mE (64778) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (64778) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (64778) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (64888) Sonostream: Successfully connected[0m
+[0;32mI (64988) Sonostream: Successfully connected[0m
+[0;32mI (65038) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (65038) Sonostream: Successfully connected[0m
+[0;32mI (65138) Sonostream: Successfully connected[0m
+[0;32mI (65238) Sonostream: Successfully connected[0m
+[1;31mE (65288) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (65288) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (65288) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (65398) Sonostream: Successfully connected[0m
+[0;32mI (65498) Sonostream: Successfully connected[0m
+[0;32mI (65548) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (65548) Sonostream: Successfully connected[0m
+[0;32mI (65648) Sonostream: Successfully connected[0m
+[0;32mI (65748) Sonostream: Successfully connected[0m
+[1;31mE (65818) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (65818) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (65818) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (65928) Sonostream: Successfully connected[0m
+[0;32mI (66028) Sonostream: Successfully connected[0m
+[0;32mI (66068) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (66068) Sonostream: Successfully connected[0m
+[0;32mI (66168) Sonostream: Successfully connected[0m
+[0;32mI (66268) Sonostream: Successfully connected[0m
+[1;31mE (66328) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (66328) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (66328) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (66428) Sonostream: Successfully connected[0m
+[0;32mI (66528) Sonostream: Successfully connected[0m
+[0;32mI (66578) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (66578) Sonostream: Successfully connected[0m
+[0;32mI (66678) Sonostream: Successfully connected[0m
+[0;32mI (66778) Sonostream: Successfully connected[0m
+[1;31mE (66838) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (66838) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (66838) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (66948) Sonostream: Successfully connected[0m
+[0;32mI (67048) Sonostream: Successfully connected[0m
+[0;32mI (67088) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (67088) Sonostream: Successfully connected[0m
+[0;32mI (67188) Sonostream: Successfully connected[0m
+[0;32mI (67288) Sonostream: Successfully connected[0m
+[1;31mE (67348) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (67348) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (67348) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (67448) Sonostream: Successfully connected[0m
+[0;32mI (67548) Sonostream: Successfully connected[0m
+[0;32mI (67598) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (67598) Sonostream: Successfully connected[0m
+[0;32mI (67698) Sonostream: Successfully connected[0m
+[0;32mI (67798) Sonostream: Successfully connected[0m
+[1;31mE (67858) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (67858) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (67858) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (67968) Sonostream: Successfully connected[0m
+[0;32mI (68068) Sonostream: Successfully connected[0m
+[0;32mI (68108) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (68108) Sonostream: Successfully connected[0m
+[0;32mI (68208) Sonostream: Successfully connected[0m
+[0;32mI (68308) Sonostream: Successfully connected[0m
+[1;31mE (68368) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (68368) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (68368) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (68468) Sonostream: Successfully connected[0m
+[0;32mI (68568) Sonostream: Successfully connected[0m
+[0;32mI (68618) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (68618) Sonostream: Successfully connected[0m
+[0;32mI (68718) Sonostream: Successfully connected[0m
+[0;32mI (68818) Sonostream: Successfully connected[0m
+[1;31mE (68878) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (68878) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (68878) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (68988) Sonostream: Successfully connected[0m
+[0;32mI (69088) Sonostream: Successfully connected[0m
+[0;32mI (69128) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (69128) Sonostream: Successfully connected[0m
+[0;32mI (69228) Sonostream: Successfully connected[0m
+[0;32mI (69328) Sonostream: Successfully connected[0m
+[1;31mE (69388) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (69388) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (69388) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (69498) Sonostream: Successfully connected[0m
+[0;32mI (69598) Sonostream: Successfully connected[0m
+[0;32mI (69658) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (69658) Sonostream: Successfully connected[0m
+[0;32mI (69758) Sonostream: Successfully connected[0m
+[0;32mI (69858) Sonostream: Successfully connected[0m
+[1;31mE (69908) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (69908) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (69908) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (70018) Sonostream: Successfully connected[0m
+[0;32mI (70118) Sonostream: Successfully connected[0m
+[0;32mI (70168) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (70168) Sonostream: Successfully connected[0m
+[0;32mI (70268) Sonostream: Successfully connected[0m
+[0;32mI (70368) Sonostream: Successfully connected[0m
+[1;31mE (70418) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (70418) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (70418) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (70528) Sonostream: Successfully connected[0m
+[0;32mI (70628) Sonostream: Successfully connected[0m
+[0;32mI (70678) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (70678) Sonostream: Successfully connected[0m
+[0;32mI (70778) Sonostream: Successfully connected[0m
+[0;32mI (70878) Sonostream: Successfully connected[0m
+[1;31mE (70928) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (70928) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (70928) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (71038) Sonostream: Successfully connected[0m
+[0;32mI (71138) Sonostream: Successfully connected[0m
+[0;32mI (71188) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (71188) Sonostream: Successfully connected[0m
+[0;32mI (71288) Sonostream: Successfully connected[0m
+[0;32mI (71388) Sonostream: Successfully connected[0m
+[1;31mE (71438) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (71438) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (71438) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (71548) Sonostream: Successfully connected[0m
+[0;32mI (71648) Sonostream: Successfully connected[0m
+[0;32mI (71698) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (71698) Sonostream: Successfully connected[0m
+[0;32mI (71798) Sonostream: Successfully connected[0m
+[0;32mI (71898) Sonostream: Successfully connected[0m
+[1;31mE (71948) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (71948) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (71948) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (72058) Sonostream: Successfully connected[0m
+[0;32mI (72158) Sonostream: Successfully connected[0m
+[0;32mI (72208) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (72208) Sonostream: Successfully connected[0m
+[0;32mI (72308) Sonostream: Successfully connected[0m
+[0;32mI (72408) Sonostream: Successfully connected[0m
+[1;31mE (72458) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (72458) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (72458) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (72568) Sonostream: Successfully connected[0m
+[0;32mI (72668) Sonostream: Successfully connected[0m
+[0;32mI (72718) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (72718) Sonostream: Successfully connected[0m
+[0;32mI (72818) Sonostream: Successfully connected[0m
+[0;32mI (72918) Sonostream: Successfully connected[0m
+[1;31mE (72968) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (72968) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (72968) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (73078) Sonostream: Successfully connected[0m
+[0;32mI (73178) Sonostream: Successfully connected[0m
+[0;32mI (73228) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (73228) Sonostream: Successfully connected[0m
+[0;32mI (73328) Sonostream: Successfully connected[0m
+[0;32mI (73428) Sonostream: Successfully connected[0m
+[1;31mE (73498) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (73498) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (73498) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (73598) Sonostream: Successfully connected[0m
+[0;32mI (73698) Sonostream: Successfully connected[0m
+[0;32mI (73748) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (73748) Sonostream: Successfully connected[0m
+[0;32mI (73848) Sonostream: Successfully connected[0m
+[0;32mI (73948) Sonostream: Successfully connected[0m
+[1;31mE (74008) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (74008) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (74008) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (74108) Sonostream: Successfully connected[0m
+[0;32mI (74208) Sonostream: Successfully connected[0m
+[0;32mI (74258) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (74258) Sonostream: Successfully connected[0m
+[0;32mI (74358) Sonostream: Successfully connected[0m
+[0;32mI (74458) Sonostream: Successfully connected[0m
+[1;31mE (74518) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (74518) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (74518) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (74618) Sonostream: Successfully connected[0m
+[0;32mI (74718) Sonostream: Successfully connected[0m
+[0;32mI (74768) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (74768) Sonostream: Successfully connected[0m
+[0;32mI (74868) Sonostream: Successfully connected[0m
+[0;32mI (74968) Sonostream: Successfully connected[0m
+[1;31mE (75028) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (75028) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (75028) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (75128) Sonostream: Successfully connected[0m
+[0;32mI (75228) Sonostream: Successfully connected[0m
+[0;32mI (75278) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (75278) Sonostream: Successfully connected[0m
+[0;32mI (75378) Sonostream: Successfully connected[0m
+[0;32mI (75478) Sonostream: Successfully connected[0m
+[1;31mE (75538) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (75538) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (75538) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (75638) Sonostream: Successfully connected[0m
+[0;32mI (75738) Sonostream: Successfully connected[0m
+[0;32mI (75788) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (75788) Sonostream: Successfully connected[0m
+[0;32mI (75888) Sonostream: Successfully connected[0m
+[0;32mI (75988) Sonostream: Successfully connected[0m
+[1;31mE (76048) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (76048) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (76048) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (76158) Sonostream: Successfully connected[0m
+[0;32mI (76258) Sonostream: Successfully connected[0m
+[0;32mI (76298) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (76298) Sonostream: Successfully connected[0m
+[0;32mI (76398) Sonostream: Successfully connected[0m
+[0;32mI (76498) Sonostream: Successfully connected[0m
+[1;31mE (76558) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (76558) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (76558) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (76658) Sonostream: Successfully connected[0m
+[0;32mI (76758) Sonostream: Successfully connected[0m
+[0;32mI (76808) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (76808) Sonostream: Successfully connected[0m
+[0;32mI (76908) Sonostream: Successfully connected[0m
+[0;32mI (77008) Sonostream: Successfully connected[0m
+[1;31mE (77068) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (77068) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (77068) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (77168) Sonostream: Successfully connected[0m
+[0;32mI (77268) Sonostream: Successfully connected[0m
+[0;32mI (77338) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (77338) Sonostream: Successfully connected[0m
+[0;32mI (77438) Sonostream: Successfully connected[0m
+[0;32mI (77538) Sonostream: Successfully connected[0m
+[1;31mE (77588) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (77588) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (77588) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (77698) Sonostream: Successfully connected[0m
+[0;32mI (77798) Sonostream: Successfully connected[0m
+[0;32mI (77848) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (77848) Sonostream: Successfully connected[0m
+[0;32mI (77948) Sonostream: Successfully connected[0m
+[0;32mI (78048) Sonostream: Successfully connected[0m
+[1;31mE (78098) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (78098) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (78098) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (78208) Sonostream: Successfully connected[0m
+[0;32mI (78308) Sonostream: Successfully connected[0m
+[0;32mI (78358) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (78358) Sonostream: Successfully connected[0m
+[0;32mI (78458) Sonostream: Successfully connected[0m
+[0;32mI (78558) Sonostream: Successfully connected[0m
+[1;31mE (78608) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (78608) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (78608) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (78718) Sonostream: Successfully connected[0m
+[0;32mI (78818) Sonostream: Successfully connected[0m
+[0;32mI (78868) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (78868) Sonostream: Successfully connected[0m
+[0;32mI (78968) Sonostream: Successfully connected[0m
+[0;32mI (79068) Sonostream: Successfully connected[0m
+[1;31mE (79118) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (79118) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (79118) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (79228) Sonostream: Successfully connected[0m
+[0;32mI (79328) Sonostream: Successfully connected[0m
+[0;32mI (79378) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (79378) Sonostream: Successfully connected[0m
+[0;32mI (79478) Sonostream: Successfully connected[0m
+[0;32mI (79578) Sonostream: Successfully connected[0m
+[1;31mE (79628) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (79628) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (79628) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (79738) Sonostream: Successfully connected[0m
+[0;32mI (79838) Sonostream: Successfully connected[0m
+[0;32mI (79888) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (79888) Sonostream: Successfully connected[0m
+[0;32mI (79988) Sonostream: Successfully connected[0m
+[0;32mI (80088) Sonostream: Successfully connected[0m
+[1;31mE (80138) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (80138) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (80138) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (80248) Sonostream: Successfully connected[0m
+[0;32mI (80348) Sonostream: Successfully connected[0m
+[0;32mI (80398) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (80398) Sonostream: Successfully connected[0m
+[0;32mI (80498) Sonostream: Successfully connected[0m
+[0;32mI (80598) Sonostream: Successfully connected[0m
+[1;31mE (80648) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (80648) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (80648) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (80758) Sonostream: Successfully connected[0m
+[0;32mI (80858) Sonostream: Successfully connected[0m
+[0;32mI (80908) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (80908) Sonostream: Successfully connected[0m
+[0;32mI (81008) Sonostream: Successfully connected[0m
+[0;32mI (81108) Sonostream: Successfully connected[0m
+[1;31mE (81178) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (81178) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (81178) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (81278) Sonostream: Successfully connected[0m
+[0;32mI (81378) Sonostream: Successfully connected[0m
+[0;32mI (81428) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (81428) Sonostream: Successfully connected[0m
+[0;32mI (81528) Sonostream: Successfully connected[0m
+[0;32mI (81628) Sonostream: Successfully connected[0m
+[1;31mE (81688) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (81688) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (81688) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (81788) Sonostream: Successfully connected[0m
+[0;32mI (81888) Sonostream: Successfully connected[0m
+[0;32mI (81938) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (81938) Sonostream: Successfully connected[0m
+[0;32mI (82038) Sonostream: Successfully connected[0m
+[0;32mI (82138) Sonostream: Successfully connected[0m
+[1;31mE (82198) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (82198) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (82198) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (82298) Sonostream: Successfully connected[0m
+[0;32mI (82398) Sonostream: Successfully connected[0m
+[0;32mI (82448) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (82448) Sonostream: Successfully connected[0m
+[0;32mI (82548) Sonostream: Successfully connected[0m
+[0;32mI (82648) Sonostream: Successfully connected[0m
+[1;31mE (82708) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (82708) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (82708) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (82808) Sonostream: Successfully connected[0m
+[0;32mI (82908) Sonostream: Successfully connected[0m
+[0;32mI (82958) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (82958) Sonostream: Successfully connected[0m
+[0;32mI (83058) Sonostream: Successfully connected[0m
+[0;32mI (83158) Sonostream: Successfully connected[0m
+[1;31mE (83218) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (83218) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (83218) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (83318) Sonostream: Successfully connected[0m
+[0;32mI (83418) Sonostream: Successfully connected[0m
+[0;32mI (83468) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (83468) Sonostream: Successfully connected[0m
+[0;32mI (83568) Sonostream: Successfully connected[0m
+[0;32mI (83668) Sonostream: Successfully connected[0m
+[1;31mE (83728) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (83728) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (83728) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (83838) Sonostream: Successfully connected[0m
+[0;32mI (83938) Sonostream: Successfully connected[0m
+[0;32mI (83978) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (83978) Sonostream: Successfully connected[0m
+[0;32mI (84078) Sonostream: Successfully connected[0m
+[0;32mI (84178) Sonostream: Successfully connected[0m
+[1;31mE (84238) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (84238) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (84238) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (84338) Sonostream: Successfully connected[0m
+[0;32mI (84438) Sonostream: Successfully connected[0m
+[0;32mI (84488) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (84488) Sonostream: Successfully connected[0m
+[0;32mI (84588) Sonostream: Successfully connected[0m
+[0;32mI (84688) Sonostream: Successfully connected[0m
+[1;31mE (84748) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (84748) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (84748) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (84848) Sonostream: Successfully connected[0m
+[0;32mI (84948) Sonostream: Successfully connected[0m
+[0;32mI (85018) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (85018) Sonostream: Successfully connected[0m
+[0;32mI (85118) Sonostream: Successfully connected[0m
+[0;32mI (85218) Sonostream: Successfully connected[0m
+[1;31mE (85268) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (85268) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (85268) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (85378) Sonostream: Successfully connected[0m
+[0;32mI (85478) Sonostream: Successfully connected[0m
+[0;32mI (85528) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (85528) Sonostream: Successfully connected[0m
+[0;32mI (85628) Sonostream: Successfully connected[0m
+[0;32mI (85728) Sonostream: Successfully connected[0m
+[1;31mE (85778) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (85778) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (85778) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (85888) Sonostream: Successfully connected[0m
+[0;32mI (85988) Sonostream: Successfully connected[0m
+[0;32mI (86038) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (86038) Sonostream: Successfully connected[0m
+[0;32mI (86138) Sonostream: Successfully connected[0m
+[0;32mI (86238) Sonostream: Successfully connected[0m
+[1;31mE (86288) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (86288) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (86288) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (86398) Sonostream: Successfully connected[0m
+[0;32mI (86498) Sonostream: Successfully connected[0m
+[0;32mI (86548) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (86548) Sonostream: Successfully connected[0m
+[0;32mI (86648) Sonostream: Successfully connected[0m
+[0;32mI (86748) Sonostream: Successfully connected[0m
+[1;31mE (86798) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (86798) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (86798) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (86908) Sonostream: Successfully connected[0m
+[0;32mI (87008) Sonostream: Successfully connected[0m
+[0;32mI (87058) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (87058) Sonostream: Successfully connected[0m
+[0;32mI (87158) Sonostream: Successfully connected[0m
+[0;32mI (87258) Sonostream: Successfully connected[0m
+[1;31mE (87308) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (87308) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (87308) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (87418) Sonostream: Successfully connected[0m
+[0;32mI (87518) Sonostream: Successfully connected[0m
+[0;32mI (87568) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (87568) Sonostream: Successfully connected[0m
+[0;32mI (87668) Sonostream: Successfully connected[0m
+[0;32mI (87768) Sonostream: Successfully connected[0m
+[1;31mE (87818) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (87818) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (87818) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (87928) Sonostream: Successfully connected[0m
+[0;32mI (88028) Sonostream: Successfully connected[0m
+[0;32mI (88078) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (88078) Sonostream: Successfully connected[0m
+[0;32mI (88178) Sonostream: Successfully connected[0m
+[0;32mI (88278) Sonostream: Successfully connected[0m
+[1;31mE (88328) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (88328) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (88328) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (88438) Sonostream: Successfully connected[0m
+[0;32mI (88538) Sonostream: Successfully connected[0m
+[0;32mI (88588) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (88588) Sonostream: Successfully connected[0m
+[0;32mI (88688) Sonostream: Successfully connected[0m
+[0;32mI (88788) Sonostream: Successfully connected[0m
+[1;31mE (88858) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (88858) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (88858) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (88958) Sonostream: Successfully connected[0m
+[0;32mI (89058) Sonostream: Successfully connected[0m
+[0;32mI (89108) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (89108) Sonostream: Successfully connected[0m
+[0;32mI (89208) Sonostream: Successfully connected[0m
+[0;32mI (89308) Sonostream: Successfully connected[0m
+[1;31mE (89368) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (89368) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (89368) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (89468) Sonostream: Successfully connected[0m
+[0;32mI (89568) Sonostream: Successfully connected[0m
+[0;32mI (89618) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (89618) Sonostream: Successfully connected[0m
+[0;32mI (89718) Sonostream: Successfully connected[0m
+[0;32mI (89818) Sonostream: Successfully connected[0m
+[1;31mE (89878) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (89878) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (89878) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (89978) Sonostream: Successfully connected[0m
+[0;32mI (90078) Sonostream: Successfully connected[0m
+[0;32mI (90128) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (90128) Sonostream: Successfully connected[0m
+[0;32mI (90228) Sonostream: Successfully connected[0m
+[0;32mI (90328) Sonostream: Successfully connected[0m
+[1;31mE (90388) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (90388) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (90388) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (90498) Sonostream: Successfully connected[0m
+[0;32mI (90598) Sonostream: Successfully connected[0m
+[0;32mI (90638) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (90638) Sonostream: Successfully connected[0m
+[0;32mI (90738) Sonostream: Successfully connected[0m
+[0;32mI (90838) Sonostream: Successfully connected[0m
+[1;31mE (90898) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (90898) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (90898) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (90998) Sonostream: Successfully connected[0m
+[0;32mI (91098) Sonostream: Successfully connected[0m
+[0;32mI (91148) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (91148) Sonostream: Successfully connected[0m
+[0;32mI (91248) Sonostream: Successfully connected[0m
+[0;32mI (91348) Sonostream: Successfully connected[0m
+[1;31mE (91408) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (91408) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (91408) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (91518) Sonostream: Successfully connected[0m
+[0;32mI (91618) Sonostream: Successfully connected[0m
+[0;32mI (91658) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (91658) Sonostream: Successfully connected[0m
+[0;32mI (91758) Sonostream: Successfully connected[0m
+[0;32mI (91858) Sonostream: Successfully connected[0m
+[1;31mE (91918) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (91918) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (91918) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (92028) Sonostream: Successfully connected[0m
+[0;32mI (92128) Sonostream: Successfully connected[0m
+[0;32mI (92168) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (92168) Sonostream: Successfully connected[0m
+[0;32mI (92268) Sonostream: Successfully connected[0m
+[0;32mI (92368) Sonostream: Successfully connected[0m
+[1;31mE (92428) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (92428) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (92428) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (92538) Sonostream: Successfully connected[0m
+[0;32mI (92638) Sonostream: Successfully connected[0m
+[0;32mI (92698) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (92698) Sonostream: Successfully connected[0m
+[0;32mI (92798) Sonostream: Successfully connected[0m
+[0;32mI (92898) Sonostream: Successfully connected[0m
+[1;31mE (92948) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (92948) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (92948) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (93058) Sonostream: Successfully connected[0m
+[0;32mI (93158) Sonostream: Successfully connected[0m
+[0;32mI (93208) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (93208) Sonostream: Successfully connected[0m
+[0;32mI (93308) Sonostream: Successfully connected[0m
+[0;32mI (93408) Sonostream: Successfully connected[0m
+[1;31mE (93458) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (93458) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (93458) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (93568) Sonostream: Successfully connected[0m
+[0;32mI (93668) Sonostream: Successfully connected[0m
+[0;32mI (93718) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (93718) Sonostream: Successfully connected[0m
+[0;32mI (93818) Sonostream: Successfully connected[0m
+[0;32mI (93918) Sonostream: Successfully connected[0m
+[1;31mE (93968) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (93968) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (93968) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (94078) Sonostream: Successfully connected[0m
+[0;32mI (94178) Sonostream: Successfully connected[0m
+[0;32mI (94228) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (94228) Sonostream: Successfully connected[0m
+[0;32mI (94328) Sonostream: Successfully connected[0m
+[0;32mI (94428) Sonostream: Successfully connected[0m
+[1;31mE (94478) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (94478) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (94478) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (94588) Sonostream: Successfully connected[0m
+[0;32mI (94688) Sonostream: Successfully connected[0m
+[0;32mI (94738) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (94738) Sonostream: Successfully connected[0m
+[0;32mI (94838) Sonostream: Successfully connected[0m
+[0;32mI (94938) Sonostream: Successfully connected[0m
+[1;31mE (94988) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (94988) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (94988) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (95098) Sonostream: Successfully connected[0m
+[0;32mI (95198) Sonostream: Successfully connected[0m
+[0;32mI (95248) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (95248) Sonostream: Successfully connected[0m
+[0;32mI (95348) Sonostream: Successfully connected[0m
+[0;32mI (95448) Sonostream: Successfully connected[0m
+[1;31mE (95498) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (95498) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (95498) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (95608) Sonostream: Successfully connected[0m
+[0;32mI (95708) Sonostream: Successfully connected[0m
+[0;32mI (95758) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (95758) Sonostream: Successfully connected[0m
+[0;32mI (95858) Sonostream: Successfully connected[0m
+[0;32mI (95958) Sonostream: Successfully connected[0m
+[1;31mE (96008) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (96008) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (96008) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (96118) Sonostream: Successfully connected[0m
+[0;32mI (96218) Sonostream: Successfully connected[0m
+[0;32mI (96268) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (96268) Sonostream: Successfully connected[0m
+[0;32mI (96368) Sonostream: Successfully connected[0m
+[0;32mI (96468) Sonostream: Successfully connected[0m
+[1;31mE (96538) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (96538) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (96538) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (96638) Sonostream: Successfully connected[0m
+[0;32mI (96738) Sonostream: Successfully connected[0m
+[0;32mI (96788) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (96788) Sonostream: Successfully connected[0m
+[0;32mI (96888) Sonostream: Successfully connected[0m
+[0;32mI (96988) Sonostream: Successfully connected[0m
+[1;31mE (97048) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (97048) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (97048) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (97148) Sonostream: Successfully connected[0m
+[0;32mI (97248) Sonostream: Successfully connected[0m
+[0;32mI (97298) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (97298) Sonostream: Successfully connected[0m
+[0;32mI (97398) Sonostream: Successfully connected[0m
+[0;32mI (97498) Sonostream: Successfully connected[0m
+[1;31mE (97558) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (97558) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (97558) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (97658) Sonostream: Successfully connected[0m
+[0;32mI (97758) Sonostream: Successfully connected[0m
+[0;32mI (97808) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (97808) Sonostream: Successfully connected[0m
+[0;32mI (97908) Sonostream: Successfully connected[0m
+[0;32mI (98008) Sonostream: Successfully connected[0m
+[1;31mE (98068) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (98068) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (98068) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (98168) Sonostream: Successfully connected[0m
+[0;32mI (98268) Sonostream: Successfully connected[0m
+[0;32mI (98318) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (98318) Sonostream: Successfully connected[0m
+[0;32mI (98418) Sonostream: Successfully connected[0m
+[0;32mI (98518) Sonostream: Successfully connected[0m
+[1;31mE (98578) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (98578) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (98578) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (98678) Sonostream: Successfully connected[0m
+[0;32mI (98778) Sonostream: Successfully connected[0m
+[0;32mI (98828) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (98828) Sonostream: Successfully connected[0m
+[0;32mI (98928) Sonostream: Successfully connected[0m
+[0;32mI (99028) Sonostream: Successfully connected[0m
+[1;31mE (99088) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (99088) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (99088) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (99198) Sonostream: Successfully connected[0m
+[0;32mI (99298) Sonostream: Successfully connected[0m
+[0;32mI (99338) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (99338) Sonostream: Successfully connected[0m
+[0;32mI (99438) Sonostream: Successfully connected[0m
+[0;32mI (99538) Sonostream: Successfully connected[0m
+[1;31mE (99598) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (99598) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (99598) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (99708) Sonostream: Successfully connected[0m
+[0;32mI (99808) Sonostream: Successfully connected[0m
+[0;32mI (99848) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (99848) Sonostream: Successfully connected[0m
+[0;32mI (99948) Sonostream: Successfully connected[0m
+[0;32mI (100048) Sonostream: Successfully connected[0m
+[1;31mE (100108) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (100108) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (100108) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (100218) Sonostream: Successfully connected[0m
+[0;32mI (100318) Sonostream: Successfully connected[0m
+[0;32mI (100378) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (100378) Sonostream: Successfully connected[0m
+[0;32mI (100478) Sonostream: Successfully connected[0m
+[0;32mI (100578) Sonostream: Successfully connected[0m
+[1;31mE (100628) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (100628) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (100628) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (100738) Sonostream: Successfully connected[0m
+[0;32mI (100838) Sonostream: Successfully connected[0m
+[0;32mI (100888) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (100888) Sonostream: Successfully connected[0m
+[0;32mI (100988) Sonostream: Successfully connected[0m
+[0;32mI (101088) Sonostream: Successfully connected[0m
+[1;31mE (101138) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (101138) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (101138) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (101248) Sonostream: Successfully connected[0m
+[0;32mI (101348) Sonostream: Successfully connected[0m
+[0;32mI (101398) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (101398) Sonostream: Successfully connected[0m
+[0;32mI (101498) Sonostream: Successfully connected[0m
+[0;32mI (101598) Sonostream: Successfully connected[0m
+[1;31mE (101648) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (101648) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (101648) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (101758) Sonostream: Successfully connected[0m
+[0;32mI (101858) Sonostream: Successfully connected[0m
+[0;32mI (101908) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (101908) Sonostream: Successfully connected[0m
+[0;32mI (102008) Sonostream: Successfully connected[0m
+[0;32mI (102108) Sonostream: Successfully connected[0m
+[1;31mE (102158) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (102158) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (102158) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (102268) Sonostream: Successfully connected[0m
+[0;32mI (102368) Sonostream: Successfully connected[0m
+[0;32mI (102418) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (102418) Sonostream: Successfully connected[0m
+[0;32mI (102518) Sonostream: Successfully connected[0m
+[0;32mI (102618) Sonostream: Successfully connected[0m
+[1;31mE (102668) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (102668) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (102668) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (102778) Sonostream: Successfully connected[0m
+[0;32mI (102878) Sonostream: Successfully connected[0m
+[0;32mI (102928) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (102928) Sonostream: Successfully connected[0m
+[0;32mI (103028) Sonostream: Successfully connected[0m
+[0;32mI (103128) Sonostream: Successfully connected[0m
+[1;31mE (103178) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (103178) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (103178) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (103288) Sonostream: Successfully connected[0m
+[0;32mI (103388) Sonostream: Successfully connected[0m
+[0;32mI (103438) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (103438) Sonostream: Successfully connected[0m
+[0;32mI (103538) Sonostream: Successfully connected[0m
+[0;32mI (103638) Sonostream: Successfully connected[0m
+[1;31mE (103688) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (103688) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (103688) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (103798) Sonostream: Successfully connected[0m
+[0;32mI (103898) Sonostream: Successfully connected[0m
+[0;32mI (103948) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (103948) Sonostream: Successfully connected[0m
+[0;32mI (104048) Sonostream: Successfully connected[0m
+[0;32mI (104148) Sonostream: Successfully connected[0m
+[1;31mE (104218) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (104218) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (104218) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (104328) Sonostream: Successfully connected[0m
+[0;32mI (104428) Sonostream: Successfully connected[0m
+[0;32mI (104468) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (104468) Sonostream: Successfully connected[0m
+[0;32mI (104568) Sonostream: Successfully connected[0m
+[0;32mI (104668) Sonostream: Successfully connected[0m
+[1;31mE (104728) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (104728) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (104728) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (104838) Sonostream: Successfully connected[0m
+[0;32mI (104938) Sonostream: Successfully connected[0m
+[0;32mI (104978) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (104978) Sonostream: Successfully connected[0m
+[0;32mI (105078) Sonostream: Successfully connected[0m
+[0;32mI (105178) Sonostream: Successfully connected[0m
+[1;31mE (105238) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (105238) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (105238) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (105348) Sonostream: Successfully connected[0m
+[0;32mI (105448) Sonostream: Successfully connected[0m
+[0;32mI (105488) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (105488) Sonostream: Successfully connected[0m
+[0;32mI (105588) Sonostream: Successfully connected[0m
+[0;32mI (105688) Sonostream: Successfully connected[0m
+[1;31mE (105748) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (105748) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (105748) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (105858) Sonostream: Successfully connected[0m
+[0;32mI (105958) Sonostream: Successfully connected[0m
+[0;32mI (105998) Sonostream: Success: 5760 bytes sent[0m
+[0;32mI (105998) Sonostream: Successfully connected[0m

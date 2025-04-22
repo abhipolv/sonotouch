@@ -1,0 +1,1779 @@
+Command: /home/abhi/.espressif/python_env/idf5.5_py3.13_env/bin/python /home/abhi/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyACM0 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 /home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/sonostream.elf /home/abhi/University of Michigan Dropbox/Abhipol Vibhatasilpin/school/cse598/sonotouch/fw/sonostream/build/bootloader/bootloader.elf -m '/home/abhi/.espressif/python_env/idf5.5_py3.13_env/bin/python' '/home/abhi/esp/esp-idf/tools/idf.py' '-p' '/dev/ttyACM0'
+[0;32mI (108) esp_image: segment 1: paddr=0002ac08 vaddr=3fc99e00 sizeESP-ROM:esp32s3-20210327[0m
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403cd824
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x15d0
+load:0x403c8700,len:0xd20
+load:0x403cb700,len:0x2f60
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v5.5-dev-2290-g94cfe394fe-dirty 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Mar  8 2025 22:06:51[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.1[0m
+[0;32mI (30) boot: efuse block revision: v1.2[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=1abe0h (109536) map[0m
+[0;32mI (108) esp_image: segment 1: paddr=0002ac08 vaddr=3fc99e00 size=049a0h ( 18848) load[0m
+[0;32mI (112) esp_image: segment 2: paddr=0002f5b0 vaddr=40374000 size=00a68h (  2664) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=87268h (553576) map[0m
+[0;32mI (217) esp_image: segment 4: paddr=000b7290 vaddr=40374a68 size=152e8h ( 86760) load[0m
+[0;32mI (236) esp_image: segment 5: paddr=000cc580 vaddr=600fe000 size=0001ch (    28) load[0m
+[0;32mI (245) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (245) boot: Disabling RNG early entropy source...[0m
+[0;32mI (255) cpu_start: Multicore app[0m
+[0;32mI (264) cpu_start: Pro cpu start user code[0m
+[0;32mI (264) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (264) app_init: Application information:[0m
+[0;32mI (265) app_init: Project name:     sonostream[0m
+[0;32mI (268) app_init: App version:      52524e4-dirty[0m
+[0;32mI (273) app_init: Compile time:     Apr  6 2025 12:35:45[0m
+[0;32mI (278) app_init: ELF file SHA256:  0eae81a3b...[0m
+[0;32mI (282) app_init: ESP-IDF:          v5.5-dev-2290-g94cfe394fe-dirty[0m
+[0;32mI (288) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (292) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (296) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (300) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (306) heap_init: At 3FCA2440 len 000472D0 (284 KiB): RAM[0m
+[0;32mI (311) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (316) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (322) heap_init: At 600FE01C len 00001FCC (7 KiB): RTCRAM[0m
+[0;32mI (328) spi_flash: detected chip: generic[0m
+[0;32mI (331) spi_flash: flash io: dio[0m
+[0;33mW (334) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (346) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (352) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (359) main_task: Started on CPU0[0m
+[0;32mI (369) main_task: Calling app_main()[0m
+[0;32mI (369) Sonostream: Receiving data in PCM format[0m
+[0;32mI (389) pp: pp rom version: e7ae62f[0m
+[0;32mI (389) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (399) wifi:wifi driver task: 3fcd9038, prio:23, stack:6656, core=0[0m
+[0;32mI (409) wifi:wifi firmware version: 3a3aca644[0m
+[0;32mI (409) wifi:wifi certification version: v7.0[0m
+[0;32mI (409) wifi:config NVS flash: enabled[0m
+[0;32mI (409) wifi:config nano formatting: disabled[0m
+[0;32mI (409) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (419) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (419) wifi:Init management short buffer num: 32[0m
+[0;32mI (419) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (429) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (429) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (439) wifi:Init static rx buffer num: 10[0m
+[0;32mI (439) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (439) wifi_init: rx ba win: 6[0m
+[0;32mI (449) wifi_init: accept mbox: 6[0m
+[0;32mI (449) wifi_init: tcpip mbox: 32[0m
+[0;32mI (449) wifi_init: udp mbox: 6[0m
+[0;32mI (459) wifi_init: tcp mbox: 6[0m
+[0;32mI (459) wifi_init: tcp tx win: 5760[0m
+[0;32mI (459) wifi_init: tcp rx win: 5760[0m
+[0;32mI (469) wifi_init: tcp mss: 1440[0m
+[0;32mI (469) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (469) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (479) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (499) phy_init: phy_version 700,8582a7fd,Feb 10 2025,20:13:11[0m
+[0;32mI (539) wifi:mode : sta (34:85:18:50:81:30)[0m
+[0;32mI (539) wifi:enable tsf[0m
+[0;32mI (539) Sonostream: Device successfully initialized as a WiFi station![0m
+[0;32mI (549) wifi:new:<4,0>, old:<1,0>, ap:<255,255>, sta:<4,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (549) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (559) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (559) wifi:state: assoc -> init (0x2c0)[0m
+[0;32mI (569) wifi:new:<4,0>, old:<4,0>, ap:<255,255>, sta:<4,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (569) Sonostream: Attempting to connect to the AP...[0m
+[0;32mI (569) Sonostream: Connection to the AP fail[0m
+[0;32mI (2979) Sonostream: Attempting to connect to the AP...[0m
+[0;32mI (2979) Sonostream: Connection to the AP fail[0m
+[0;32mI (2989) wifi:new:<4,0>, old:<4,0>, ap:<255,255>, sta:<4,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (2989) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (2999) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (3009) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (3019) wifi:connected with definitelynotarouter, aid = 18, channel 4, BW20, bssid = f0:2f:74:5f:62:70[0m
+[0;32mI (3019) wifi:security: WPA2-PSK, phy: bgn, rssi: -18[0m
+[0;32mI (3039) wifi:pm start, type: 1[0m
+
+[0;32mI (3039) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (3039) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (3049) wifi:<ba-add>idx:0 (ifx:0, f0:2f:74:5f:62:70), tid:6, ssn:1, winSize:64[0m
+[0;32mI (3079) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (4059) esp_netif_handlers: sta ip: 192.168.50.21, mask: 255.255.255.0, gw: 192.168.50.1[0m
+[0;32mI (4059) Sonostream: got ip:192.168.50.21[0m
+[0;32mI (4059) Sonostream: Connected to ap SSID:definitelynotarouter password:notapwd777[0m
+[0;32mI (4059) main_task: Returned from app_main()[0m
+[0;32mI (4059) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (4079) wifi:<ba-add>idx:1 (ifx:0, f0:2f:74:5f:62:70), tid:0, ssn:1, winSize:64[0m
+[0;32mI (4179) Sonostream: Successfully connected[0m
+[0;32mI (4179) Sonostream: Current items in the queue: 0[0m
+[1;31mE (4259) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (4259) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (4259) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (4259) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (4369) Sonostream: Successfully connected[0m
+[0;32mI (4369) Sonostream: Current items in the queue: 0[0m
+[0;32mI (4469) Sonostream: Successfully connected[0m
+[0;32mI (4469) Sonostream: Current items in the queue: 0[0m
+[1;31mE (4509) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (4509) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (4509) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (4519) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (4629) Sonostream: Successfully connected[0m
+[0;32mI (4629) Sonostream: Current items in the queue: 0[0m
+[0;32mI (4729) Sonostream: Successfully connected[0m
+[0;32mI (4729) Sonostream: Current items in the queue: 0[0m
+[1;31mE (4769) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (4769) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (4769) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (4769) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (4879) Sonostream: Successfully connected[0m
+[0;32mI (4879) Sonostream: Current items in the queue: 0[0m
+[0;32mI (4979) Sonostream: Successfully connected[0m
+[0;32mI (4979) Sonostream: Current items in the queue: 0[0m
+[1;31mE (5019) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (5019) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (5019) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (5029) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (5139) Sonostream: Successfully connected[0m
+[0;32mI (5139) Sonostream: Current items in the queue: 0[0m
+[0;32mI (5239) Sonostream: Successfully connected[0m
+[0;32mI (5239) Sonostream: Current items in the queue: 0[0m
+[1;31mE (5279) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (5279) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (5279) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (5279) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (5389) Sonostream: Successfully connected[0m
+[0;32mI (5389) Sonostream: Current items in the queue: 0[0m
+[0;32mI (5489) Sonostream: Successfully connected[0m
+[0;32mI (5489) Sonostream: Current items in the queue: 0[0m
+[1;31mE (5529) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (5529) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (5529) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (5539) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (5649) Sonostream: Successfully connected[0m
+[0;32mI (5649) Sonostream: Current items in the queue: 0[0m
+[0;32mI (5749) Sonostream: Successfully connected[0m
+[0;32mI (5749) Sonostream: Current items in the queue: 0[0m
+[1;31mE (5789) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (5789) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (5789) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (5789) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (5899) Sonostream: Successfully connected[0m
+[0;32mI (5899) Sonostream: Current items in the queue: 0[0m
+[0;32mI (5999) Sonostream: Successfully connected[0m
+[0;32mI (5999) Sonostream: Current items in the queue: 0[0m
+[1;31mE (6039) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (6039) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (6039) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (6049) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (6159) Sonostream: Successfully connected[0m
+[0;32mI (6159) Sonostream: Current items in the queue: 0[0m
+[0;32mI (6259) Sonostream: Successfully connected[0m
+[0;32mI (6259) Sonostream: Current items in the queue: 0[0m
+[1;31mE (6299) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (6299) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (6299) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (6299) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (6409) Sonostream: Successfully connected[0m
+[0;32mI (6409) Sonostream: Current items in the queue: 0[0m
+[0;32mI (6509) Sonostream: Successfully connected[0m
+[0;32mI (6509) Sonostream: Current items in the queue: 0[0m
+[1;31mE (6549) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (6549) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (6549) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (6559) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (6669) Sonostream: Successfully connected[0m
+[0;32mI (6669) Sonostream: Current items in the queue: 0[0m
+[0;32mI (6769) Sonostream: Successfully connected[0m
+[0;32mI (6769) Sonostream: Current items in the queue: 0[0m
+[0;32mI (6829) Sonostream: Success: 16384 bytes sent[0m
+[0;32mI (6839) Sonostream: Successfully connected[0m
+[0;32mI (6839) Sonostream: Current items in the queue: 0[0m
+[0;32mI (6939) Sonostream: Successfully connected[0m
+[0;32mI (6939) Sonostream: Current items in the queue: 0[0m
+[0;32mI (7039) Sonostream: Successfully connected[0m
+[0;32mI (7039) Sonostream: Current items in the queue: 0[0m
+[0;32mI (7089) Sonostream: Success: 16384 bytes sent[0m
+[0;32mI (7099) Sonostream: Successfully connected[0m
+[0;32mI (7099) Sonostream: Current items in the queue: 0[0m
+[0;32mI (7199) Sonostream: Successfully connected[0m
+[0;32mI (7199) Sonostream: Current items in the queue: 0[0m
+[0;32mI (7299) Sonostream: Successfully connected[0m
+[0;32mI (7299) Sonostream: Current items in the queue: 0[0m
+[0;32mI (7349) Sonostream: Success: 16384 bytes sent[0m
+[0;32mI (7359) Sonostream: Successfully connected[0m
+[0;32mI (7359) Sonostream: Current items in the queue: 0[0m
+[0;32mI (7459) Sonostream: Successfully connected[0m
+[0;32mI (7459) Sonostream: Current items in the queue: 0[0m
+[0;32mI (7559) Sonostream: Successfully connected[0m
+[0;32mI (7559) Sonostream: Current items in the queue: 0[0m
+[0;32mI (7589) Sonostream: Success: 16384 bytes sent[0m
+[0;32mI (7599) Sonostream: Successfully connected[0m
+[0;32mI (7599) Sonostream: Current items in the queue: 0[0m
+[0;32mI (7699) Sonostream: Successfully connected[0m
+[0;32mI (7699) Sonostream: Current items in the queue: 0[0m
+[0;32mI (7799) Sonostream: Successfully connected[0m
+[0;32mI (7799) Sonostream: Current items in the queue: 0[0m
+[0;32mI (7849) Sonostream: Success: 16384 bytes sent[0m
+[0;32mI (7859) Sonostream: Successfully connected[0m
+[0;32mI (7859) Sonostream: Current items in the queue: 0[0m
+[0;32mI (7959) Sonostream: Successfully connected[0m
+[0;32mI (7959) Sonostream: Current items in the queue: 0[0m
+[0;32mI (8059) Sonostream: Successfully connected[0m
+[0;32mI (8059) Sonostream: Current items in the queue: 0[0m
+[0;32mI (8109) Sonostream: Success: 16384 bytes sent[0m
+[0;32mI (8129) Sonostream: Successfully connected[0m
+[0;32mI (8129) Sonostream: Current items in the queue: 0[0m
+[0;32mI (8229) Sonostream: Successfully connected[0m
+[0;32mI (8229) Sonostream: Current items in the queue: 0[0m
+[0;32mI (8329) Sonostream: Successfully connected[0m
+[0;32mI (8329) Sonostream: Current items in the queue: 0[0m
+[0;32mI (8369) Sonostream: Success: 16384 bytes sent[0m
+[0;32mI (8379) Sonostream: Successfully connected[0m
+[0;32mI (8379) Sonostream: Current items in the queue: 0[0m
+[0;32mI (8479) Sonostream: Successfully connected[0m
+[0;32mI (8479) Sonostream: Current items in the queue: 0[0m
+[0;32mI (8579) Sonostream: Successfully connected[0m
+[0;32mI (8579) Sonostream: Current items in the queue: 0[0m
+[0;32mI (8629) Sonostream: Success: 16384 bytes sent[0m
+[0;32mI (8639) Sonostream: Successfully connected[0m
+[0;32mI (8639) Sonostream: Current items in the queue: 0[0m
+[0;32mI (8739) Sonostream: Successfully connected[0m
+[0;32mI (8739) Sonostream: Current items in the queue: 0[0m
+[0;32mI (8839) Sonostream: Successfully connected[0m
+[0;32mI (8839) Sonostream: Current items in the queue: 0[0m
+[0;32mI (8879) Sonostream: Success: 16384 bytes sent[0m
+[0;32mI (8889) Sonostream: Successfully connected[0m
+[0;32mI (8889) Sonostream: Current items in the queue: 0[0m
+[0;32mI (8989) Sonostream: Successfully connected[0m
+[0;32mI (8989) Sonostream: Current items in the queue: 0[0m
+[0;32mI (9089) Sonostream: Successfully connected[0m
+[0;32mI (9089) Sonostream: Current items in the queue: 0[0m
+[0;32mI (9129) Sonostream: Success: 16384 bytes sent[0m
+[0;32mI (9139) Sonostream: Successfully connected[0m
+[0;32mI (9139) Sonostream: Current items in the queue: 0[0m
+[0;32mI (9239) Sonostream: Successfully connected[0m
+[0;32mI (9239) Sonostream: Current items in the queue: 0[0m
+[0;32mI (9339) Sonostream: Successfully connected[0m
+[0;32mI (9339) Sonostream: Current items in the queue: 0[0m
+[0;32mI (9399) Sonostream: Success: 16384 bytes sent[0m
+[0;32mI (9409) Sonostream: Successfully connected[0m
+[0;32mI (9409) Sonostream: Current items in the queue: 0[0m
+[0;32mI (9509) Sonostream: Successfully connected[0m
+[0;32mI (9509) Sonostream: Current items in the queue: 0[0m
+[0;32mI (9609) Sonostream: Successfully connected[0m
+[0;32mI (9609) Sonostream: Current items in the queue: 0[0m
+[0;32mI (9659) Sonostream: Success: 16384 bytes sent[0m
+[0;32mI (9669) Sonostream: Successfully connected[0m
+[0;32mI (9669) Sonostream: Current items in the queue: 0[0m
+[0;32mI (9769) Sonostream: Successfully connected[0m
+[0;32mI (9769) Sonostream: Current items in the queue: 0[0m
+[0;32mI (9869) Sonostream: Successfully connected[0m
+[0;32mI (9869) Sonostream: Current items in the queue: 0[0m
+[0;32mI (9899) Sonostream: Success: 16384 bytes sent[0m
+[0;32mI (9909) Sonostream: Successfully connected[0m
+[0;32mI (9909) Sonostream: Current items in the queue: 0[0m
+[0;32mI (10009) Sonostream: Successfully connected[0m
+[0;32mI (10009) Sonostream: Current items in the queue: 0[0m
+[0;32mI (10109) Sonostream: Successfully connected[0m
+[0;32mI (10109) Sonostream: Current items in the queue: 0[0m
+[0;32mI (10159) Sonostream: Success: 16384 bytes sent[0m
+[0;32mI (10169) Sonostream: Successfully connected[0m
+[0;32mI (10169) Sonostream: Current items in the queue: 0[0m
+[0;32mI (10269) Sonostream: Successfully connected[0m
+[0;32mI (10269) Sonostream: Current items in the queue: 0[0m
+[0;32mI (10369) Sonostream: Successfully connected[0m
+[0;32mI (10369) Sonostream: Current items in the queue: 0[0m
+[0;32mI (10419) Sonostream: Success: 16384 bytes sent[0m
+[0;32mI (10429) Sonostream: Successfully connected[0m
+[0;32mI (10429) Sonostream: Current items in the queue: 0[0m
+[0;32mI (10529) Sonostream: Successfully connected[0m
+[0;32mI (10529) Sonostream: Current items in the queue: 0[0m
+[0;32mI (10629) Sonostream: Successfully connected[0m
+[0;32mI (10629) Sonostream: Current items in the queue: 0[0m
+[0;32mI (10679) Sonostream: Success: 16384 bytes sent[0m
+[0;32mI (10689) Sonostream: Successfully connected[0m
+[0;32mI (10689) Sonostream: Current items in the queue: 0[0m
+[0;32mI (10789) Sonostream: Successfully connected[0m
+[0;32mI (10789) Sonostream: Current items in the queue: 0[0m
+[0;32mI (10889) Sonostream: Successfully connected[0m
+[0;32mI (10889) Sonostream: Current items in the queue: 0[0m
+[0;32mI (10919) Sonostream: Success: 16384 bytes sent[0m
+[0;32mI (10929) Sonostream: Successfully connected[0m
+[0;32mI (10929) Sonostream: Current items in the queue: 0[0m
+[0;32mI (11029) Sonostream: Successfully connected[0m
+[0;32mI (11029) Sonostream: Current items in the queue: 0[0m
+[0;32mI (11129) Sonostream: Successfully connected[0m
+[0;32mI (11129) Sonostream: Current items in the queue: 0[0m
+[0;32mI (11179) Sonostream: Success: 16384 bytes sent[0m
+[0;32mI (11189) Sonostream: Successfully connected[0m
+[0;32mI (11189) Sonostream: Current items in the queue: 0[0m
+[0;32mI (11289) Sonostream: Successfully connected[0m
+[0;32mI (11289) Sonostream: Current items in the queue: 0[0m
+[0;32mI (11389) Sonostream: Successfully connected[0m
+[0;32mI (11389) Sonostream: Current items in the queue: 0[0m
+[0;32mI (11429) Sonostream: Success: 16384 bytes sent[0m
+[0;32mI (11439) Sonostream: Successfully connected[0m
+[0;32mI (11439) Sonostream: Current items in the queue: 0[0m
+[0;32mI (11539) Sonostream: Successfully connected[0m
+[0;32mI (11539) Sonostream: Current items in the queue: 0[0m
+[0;32mI (11639) Sonostream: Successfully connected[0m
+[0;32mI (11639) Sonostream: Current items in the queue: 0[0m
+[0;32mI (11709) Sonostream: Success: 16384 bytes sent[0m
+[0;32mI (11719) Sonostream: Successfully connected[0m
+[0;32mI (11719) Sonostream: Current items in the queue: 0[0m
+[0;32mI (11819) Sonostream: Successfully connected[0m
+[0;32mI (11819) Sonostream: Current items in the queue: 0[0m
+[0;32mI (11919) Sonostream: Successfully connected[0m
+[0;32mI (11919) Sonostream: Current items in the queue: 0[0m
+[0;32mI (11959) Sonostream: Success: 16384 bytes sent[0m
+[0;32mI (11969) Sonostream: Successfully connected[0m
+[0;32mI (11969) Sonostream: Current items in the queue: 0[0m
+[0;32mI (12069) Sonostream: Successfully connected[0m
+[0;32mI (12069) Sonostream: Current items in the queue: 0[0m
+[0;32mI (12169) Sonostream: Successfully connected[0m
+[0;32mI (12169) Sonostream: Current items in the queue: 0[0m
+[0;32mI (12209) Sonostream: Success: 16384 bytes sent[0m
+[0;32mI (12219) Sonostream: Successfully connected[0m
+[0;32mI (12219) Sonostream: Current items in the queue: 0[0m
+[0;32mI (12319) Sonostream: Successfully connected[0m
+[0;32mI (12319) Sonostream: Current items in the queue: 0[0m
+[0;32mI (12419) Sonostream: Successfully connected[0m
+[0;32mI (12419) Sonostream: Current items in the queue: 0[0m
+[0;32mI (12469) Sonostream: Success: 16384 bytes sent[0m
+[0;32mI (12479) Sonostream: Successfully connected[0m
+[0;32mI (12479) Sonostream: Current items in the queue: 0[0m
+[0;32mI (12579) Sonostream: Successfully connected[0m
+[0;32mI (12579) Sonostream: Current items in the queue: 0[0m
+[0;32mI (12679) Sonostream: Successfully connected[0m
+[0;32mI (12679) Sonostream: Current items in the queue: 0[0m
+[0;32mI (12719) Sonostream: Success: 16384 bytes sent[0m
+[0;32mI (12729) Sonostream: Successfully connected[0m
+[0;32mI (12729) Sonostream: Current items in the queue: 0[0m
+[0;32mI (12829) Sonostream: Successfully connected[0m
+[0;32mI (12829) Sonostream: Current items in the queue: 0[0m
+[0;32mI (12929) Sonostream: Successfully connected[0m
+[0;32mI (12929) Sonostream: Current items in the queue: 0[0m
+[0;32mI (12969) Sonostream: Success: 16384 bytes sent[0m
+[0;32mI (12979) Sonostream: Successfully connected[0m
+[0;32mI (12979) Sonostream: Current items in the queue: 0[0m
+[0;32mI (13079) Sonostream: Successfully connected[0m
+[0;32mI (13079) Sonostream: Current items in the queue: 0[0m
+[0;32mI (13179) Sonostream: Successfully connected[0m
+[0;32mI (13179) Sonostream: Current items in the queue: 0[0m
+[0;32mI (13239) Sonostream: Success: 16384 bytes sent[0m
+[0;32mI (13249) Sonostream: Successfully connected[0m
+[0;32mI (13249) Sonostream: Current items in the queue: 0[0m
+[0;32mI (13349) Sonostream: Successfully connected[0m
+[0;32mI (13349) Sonostream: Current items in the queue: 0[0m
+[0;32mI (13449) Sonostream: Successfully connected[0m
+[0;32mI (13449) Sonostream: Current items in the queue: 0[0m
+[0;32mI (13499) Sonostream: Success: 16384 bytes sent[0m
+[0;32mI (13509) Sonostream: Successfully connected[0m
+[0;32mI (13509) Sonostream: Current items in the queue: 0[0m
+[0;32mI (13609) Sonostream: Successfully connected[0m
+[0;32mI (13609) Sonostream: Current items in the queue: 0[0m
+[0;32mI (13709) Sonostream: Successfully connected[0m
+[0;32mI (13709) Sonostream: Current items in the queue: 0[0m
+[0;32mI (13759) Sonostream: Success: 16384 bytes sent[0m
+[0;32mI (13769) Sonostream: Successfully connected[0m
+[0;32mI (13769) Sonostream: Current items in the queue: 0[0m
+[0;32mI (13869) Sonostream: Successfully connected[0m
+[0;32mI (13869) Sonostream: Current items in the queue: 0[0m
+[0;32mI (13969) Sonostream: Successfully connected[0m
+[0;32mI (13969) Sonostream: Current items in the queue: 0[0m
+[0;32mI (14019) Sonostream: Success: 16384 bytes sent[0m
+[0;32mI (14029) Sonostream: Successfully connected[0m
+[0;32mI (14029) Sonostream: Current items in the queue: 0[0m
+[0;32mI (14129) Sonostream: Successfully connected[0m
+[0;32mI (14129) Sonostream: Current items in the queue: 0[0m
+[0;32mI (14229) Sonostream: Successfully connected[0m
+[0;32mI (14229) Sonostream: Current items in the queue: 0[0m
+[0;32mI (14259) Sonostream: Success: 16384 bytes sent[0m
+[0;32mI (14269) Sonostream: Successfully connected[0m
+[0;32mI (14269) Sonostream: Current items in the queue: 0[0m
+[0;32mI (14369) Sonostream: Successfully connected[0m
+[0;32mI (14369) Sonostream: Current items in the queue: 0[0m
+[0;32mI (14469) Sonostream: Successfully connected[0m
+[0;32mI (14469) Sonostream: Current items in the queue: 0[0m
+[0;32mI (14499) Sonostream: Success: 16384 bytes sent[0m
+[0;32mI (14509) Sonostream: Successfully connected[0m
+[0;32mI (14509) Sonostream: Current items in the queue: 0[0m
+[0;32mI (14609) Sonostream: Successfully connected[0m
+[0;32mI (14609) Sonostream: Current items in the queue: 0[0m
+[0;32mI (14709) Sonostream: Successfully connected[0m
+[0;32mI (14709) Sonostream: Current items in the queue: 0[0m
+[0;32mI (14759) Sonostream: Success: 16384 bytes sent[0m
+[0;32mI (14779) Sonostream: Successfully connected[0m
+[0;32mI (14779) Sonostream: Current items in the queue: 0[0m
+[0;32mI (14879) Sonostream: Successfully connected[0m
+[0;32mI (14879) Sonostream: Current items in the queue: 0[0m
+[0;32mI (14979) Sonostream: Successfully connected[0m
+[0;32mI (14979) Sonostream: Current items in the queue: 0[0m
+[0;32mI (15009) Sonostream: Success: 16384 bytes sent[0m
+[0;32mI (15019) Sonostream: Successfully connected[0m
+[0;32mI (15019) Sonostream: Current items in the queue: 0[0m
+[0;32mI (15119) Sonostream: Successfully connected[0m
+[0;32mI (15119) Sonostream: Current items in the queue: 0[0m
+[0;32mI (15219) Sonostream: Successfully connected[0m
+[0;32mI (15219) Sonostream: Current items in the queue: 0[0m
+[0;32mI (15269) Sonostream: Success: 16384 bytes sent[0m
+[0;32mI (15279) Sonostream: Successfully connected[0m
+[0;32mI (15279) Sonostream: Current items in the queue: 0[0m
+[0;32mI (15379) Sonostream: Successfully connected[0m
+[0;32mI (15379) Sonostream: Current items in the queue: 0[0m
+[0;32mI (15479) Sonostream: Successfully connected[0m
+[0;32mI (15479) Sonostream: Current items in the queue: 0[0m
+[0;32mI (15759) Sonostream: Success: 16384 bytes sent[0m
+[0;32mI (15769) Sonostream: Successfully connected[0m
+[0;32mI (15769) Sonostream: Current items in the queue: 0[0m
+[0;32mI (15799) Sonostream: Success: 16384 bytes sent[0m
+[0;32mI (15809) Sonostream: Successfully connected[0m
+[0;32mI (15809) Sonostream: Current items in the queue: 0[0m
+[0;32mI (15909) Sonostream: Successfully connected[0m
+[0;32mI (15909) Sonostream: Current items in the queue: 0[0m
+[0;32mI (16009) Sonostream: Successfully connected[0m
+[0;32mI (16009) Sonostream: Current items in the queue: 0[0m
+[0;32mI (16199) Sonostream: Success: 16384 bytes sent[0m
+[0;32mI (16209) Sonostream: Successfully connected[0m
+[0;32mI (16209) Sonostream: Current items in the queue: 0[0m
+[0;32mI (16409) Sonostream: Success: 16384 bytes sent[0m
+[0;32mI (16419) Sonostream: Successfully connected[0m
+[0;32mI (16419) Sonostream: Current items in the queue: 0[0m
+[0;32mI (16519) Sonostream: Successfully connected[0m
+[0;32mI (16519) Sonostream: Current items in the queue: 0[0m
+[0;32mI (16579) Sonostream: Success: 16384 bytes sent[0m
+[0;32mI (16589) Sonostream: Successfully connected[0m
+[0;32mI (16589) Sonostream: Current items in the queue: 0[0m
+[0;32mI (16689) Sonostream: Successfully connected[0m
+[0;32mI (16689) Sonostream: Current items in the queue: 0[0m
+[0;32mI (16789) Sonostream: Successfully connected[0m
+[0;32mI (16789) Sonostream: Current items in the queue: 0[0m
+[0;32mI (16819) Sonostream: Success: 16384 bytes sent[0m
+[0;32mI (16829) Sonostream: Successfully connected[0m
+[0;32mI (16829) Sonostream: Current items in the queue: 0[0m
+[0;32mI (16929) Sonostream: Successfully connected[0m
+[0;32mI (16929) Sonostream: Current items in the queue: 0[0m
+[0;32mI (17029) Sonostream: Successfully connected[0m
+[0;32mI (17029) Sonostream: Current items in the queue: 0[0m
+[0;32mI (17079) Sonostream: Success: 16384 bytes sent[0m
+[0;32mI (17089) Sonostream: Successfully connected[0m
+[0;32mI (17089) Sonostream: Current items in the queue: 0[0m
+[0;32mI (17189) Sonostream: Successfully connected[0m
+[0;32mI (17189) Sonostream: Current items in the queue: 0[0m
+[0;32mI (17289) Sonostream: Successfully connected[0m
+[0;32mI (17289) Sonostream: Current items in the queue: 0[0m
+[0;32mI (17339) Sonostream: Success: 16384 bytes sent[0m
+[0;32mI (17349) Sonostream: Successfully connected[0m
+[0;32mI (17349) Sonostream: Current items in the queue: 0[0m
+[0;32mI (17449) Sonostream: Successfully connected[0m
+[0;32mI (17449) Sonostream: Current items in the queue: 0[0m
+[0;32mI (17549) Sonostream: Successfully connected[0m
+[0;32mI (17549) Sonostream: Current items in the queue: 0[0m
+[0;32mI (17579) Sonostream: Success: 16384 bytes sent[0m
+[0;32mI (17589) Sonostream: Successfully connected[0m
+[0;32mI (17589) Sonostream: Current items in the queue: 0[0m
+[0;32mI (17689) Sonostream: Successfully connected[0m
+[0;32mI (17689) Sonostream: Current items in the queue: 0[0m
+[0;32mI (17789) Sonostream: Successfully connected[0m
+[0;32mI (17789) Sonostream: Current items in the queue: 0[0m
+[0;32mI (17839) Sonostream: Success: 16384 bytes sent[0m
+[0;32mI (17849) Sonostream: Successfully connected[0m
+[0;32mI (17849) Sonostream: Current items in the queue: 0[0m
+[0;32mI (17949) Sonostream: Successfully connected[0m
+[0;32mI (17949) Sonostream: Current items in the queue: 0[0m
+[0;32mI (18049) Sonostream: Successfully connected[0m
+[0;32mI (18049) Sonostream: Current items in the queue: 0[0m
+[0;32mI (18109) Sonostream: Success: 16384 bytes sent[0m
+[0;32mI (18129) Sonostream: Successfully connected[0m
+[0;32mI (18129) Sonostream: Current items in the queue: 0[0m
+[0;32mI (18229) Sonostream: Successfully connected[0m
+[0;32mI (18229) Sonostream: Current items in the queue: 0[0m
+[0;32mI (18329) Sonostream: Successfully connected[0m
+[0;32mI (18329) Sonostream: Current items in the queue: 0[0m
+[0;32mI (18349) Sonostream: Success: 16384 bytes sent[0m
+[0;32mI (18359) Sonostream: Successfully connected[0m
+[0;32mI (18359) Sonostream: Current items in the queue: 0[0m
+[0;32mI (18459) Sonostream: Successfully connected[0m
+[0;32mI (18459) Sonostream: Current items in the queue: 0[0m
+[0;32mI (18559) Sonostream: Successfully connected[0m
+[0;32mI (18559) Sonostream: Current items in the queue: 0[0m
+[0;32mI (18629) Sonostream: Success: 16384 bytes sent[0m
+[0;32mI (18639) Sonostream: Successfully connected[0m
+[0;32mI (18639) Sonostream: Current items in the queue: 0[0m
+[0;32mI (18739) Sonostream: Successfully connected[0m
+[0;32mI (18739) Sonostream: Current items in the queue: 0[0m
+[0;32mI (18839) Sonostream: Successfully connected[0m
+[0;32mI (18839) Sonostream: Current items in the queue: 0[0m
+[0;32mI (18869) Sonostream: Success: 16384 bytes sent[0m
+[0;32mI (18879) Sonostream: Successfully connected[0m
+[0;32mI (18879) Sonostream: Current items in the queue: 0[0m
+[0;32mI (18979) Sonostream: Successfully connected[0m
+[0;32mI (18979) Sonostream: Current items in the queue: 0[0m
+[0;32mI (19079) Sonostream: Successfully connected[0m
+[0;32mI (19079) Sonostream: Current items in the queue: 0[0m
+[0;32mI (19139) Sonostream: Success: 16384 bytes sent[0m
+[0;32mI (19149) Sonostream: Successfully connected[0m
+[0;32mI (19149) Sonostream: Current items in the queue: 0[0m
+[0;32mI (19249) Sonostream: Successfully connected[0m
+[0;32mI (19249) Sonostream: Current items in the queue: 0[0m
+[0;32mI (19349) Sonostream: Successfully connected[0m
+[0;32mI (19349) Sonostream: Current items in the queue: 0[0m
+[0;32mI (19369) Sonostream: Success: 16384 bytes sent[0m
+[0;32mI (19379) Sonostream: Successfully connected[0m
+[0;32mI (19379) Sonostream: Current items in the queue: 0[0m
+[0;32mI (19479) Sonostream: Successfully connected[0m
+[0;32mI (19479) Sonostream: Current items in the queue: 0[0m
+[0;32mI (19579) Sonostream: Successfully connected[0m
+[0;32mI (19579) Sonostream: Current items in the queue: 0[0m
+[0;32mI (19639) Sonostream: Success: 16384 bytes sent[0m
+[0;32mI (19649) Sonostream: Successfully connected[0m
+[0;32mI (19649) Sonostream: Current items in the queue: 0[0m
+[0;32mI (19749) Sonostream: Successfully connected[0m
+[0;32mI (19749) Sonostream: Current items in the queue: 0[0m
+[0;32mI (19849) Sonostream: Successfully connected[0m
+[0;32mI (19849) Sonostream: Current items in the queue: 0[0m
+[0;32mI (19889) Sonostream: Success: 16384 bytes sent[0m
+[0;32mI (19909) Sonostream: Successfully connected[0m
+[0;32mI (19909) Sonostream: Current items in the queue: 0[0m
+[0;32mI (20009) Sonostream: Successfully connected[0m
+[0;32mI (20009) Sonostream: Current items in the queue: 0[0m
+[0;32mI (20109) Sonostream: Successfully connected[0m
+[0;32mI (20109) Sonostream: Current items in the queue: 0[0m
+[0;32mI (20169) Sonostream: Success: 16384 bytes sent[0m
+[0;32mI (20179) Sonostream: Successfully connected[0m
+[0;32mI (20179) Sonostream: Current items in the queue: 0[0m
+[0;32mI (20279) Sonostream: Successfully connected[0m
+[0;32mI (20279) Sonostream: Current items in the queue: 0[0m
+[0;32mI (20379) Sonostream: Successfully connected[0m
+[0;32mI (20379) Sonostream: Current items in the queue: 0[0m
+[0;32mI (20409) Sonostream: Success: 16384 bytes sent[0m
+[0;32mI (20419) Sonostream: Successfully connected[0m
+[0;32mI (20419) Sonostream: Current items in the queue: 0[0m
+[0;32mI (20519) Sonostream: Successfully connected[0m
+[0;32mI (20519) Sonostream: Current items in the queue: 0[0m
+[0;32mI (20619) Sonostream: Successfully connected[0m
+[0;32mI (20619) Sonostream: Current items in the queue: 0[0m
+[0;32mI (20659) Sonostream: Success: 16384 bytes sent[0m
+[0;32mI (20669) Sonostream: Successfully connected[0m
+[0;32mI (20669) Sonostream: Current items in the queue: 0[0m
+[0;32mI (20769) Sonostream: Successfully connected[0m
+[0;32mI (20769) Sonostream: Current items in the queue: 0[0m
+[0;32mI (20869) Sonostream: Successfully connected[0m
+[0;32mI (20869) Sonostream: Current items in the queue: 0[0m
+[0;32mI (20909) Sonostream: Success: 16384 bytes sent[0m
+[0;32mI (20919) Sonostream: Successfully connected[0m
+[0;32mI (20919) Sonostream: Current items in the queue: 0[0m
+[0;32mI (21019) Sonostream: Successfully connected[0m
+[0;32mI (21019) Sonostream: Current items in the queue: 0[0m
+[0;32mI (21119) Sonostream: Successfully connected[0m
+[0;32mI (21119) Sonostream: Current items in the queue: 0[0m
+[0;32mI (21169) Sonostream: Success: 16384 bytes sent[0m
+[0;32mI (21179) Sonostream: Successfully connected[0m
+[0;32mI (21179) Sonostream: Current items in the queue: 0[0m
+[0;32mI (21279) Sonostream: Successfully connected[0m
+[0;32mI (21279) Sonostream: Current items in the queue: 0[0m
+[0;32mI (21379) Sonostream: Successfully connected[0m
+[0;32mI (21379) Sonostream: Current items in the queue: 0[0m
+[0;32mI (21429) Sonostream: Success: 16384 bytes sent[0m
+[0;32mI (21439) Sonostream: Successfully connected[0m
+[0;32mI (21439) Sonostream: Current items in the queue: 0[0m
+[0;32mI (21539) Sonostream: Successfully connected[0m
+[0;32mI (21539) Sonostream: Current items in the queue: 0[0m
+[0;32mI (21639) Sonostream: Successfully connected[0m
+[0;32mI (21639) Sonostream: Current items in the queue: 0[0m
+[1;31mE (21669) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (21669) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (21669) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (21679) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (21779) Sonostream: Successfully connected[0m
+[0;32mI (21779) Sonostream: Current items in the queue: 0[0m
+[0;32mI (21879) Sonostream: Successfully connected[0m
+[0;32mI (21879) Sonostream: Current items in the queue: 0[0m
+[1;31mE (21909) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (21909) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (21909) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (21919) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (22029) Sonostream: Successfully connected[0m
+[0;32mI (22029) Sonostream: Current items in the queue: 0[0m
+[0;32mI (22129) Sonostream: Successfully connected[0m
+[0;32mI (22129) Sonostream: Current items in the queue: 0[0m
+[1;31mE (22169) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (22169) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (22169) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (22169) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (22279) Sonostream: Successfully connected[0m
+[0;32mI (22279) Sonostream: Current items in the queue: 0[0m
+[0;32mI (22379) Sonostream: Successfully connected[0m
+[0;32mI (22379) Sonostream: Current items in the queue: 0[0m
+[1;31mE (22419) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (22419) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (22419) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (22429) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (22539) Sonostream: Successfully connected[0m
+[0;32mI (22539) Sonostream: Current items in the queue: 0[0m
+[0;32mI (22639) Sonostream: Successfully connected[0m
+[0;32mI (22639) Sonostream: Current items in the queue: 0[0m
+[1;31mE (22679) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (22679) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (22679) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (22679) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (22789) Sonostream: Successfully connected[0m
+[0;32mI (22789) Sonostream: Current items in the queue: 0[0m
+[0;32mI (22889) Sonostream: Successfully connected[0m
+[0;32mI (22889) Sonostream: Current items in the queue: 0[0m
+[1;31mE (22929) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (22929) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (22929) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (22939) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (23049) Sonostream: Successfully connected[0m
+[0;32mI (23049) Sonostream: Current items in the queue: 0[0m
+[0;32mI (23149) Sonostream: Successfully connected[0m
+[0;32mI (23149) Sonostream: Current items in the queue: 0[0m
+[1;31mE (23189) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (23189) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (23189) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (23189) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (23299) Sonostream: Successfully connected[0m
+[0;32mI (23299) Sonostream: Current items in the queue: 0[0m
+[0;32mI (23399) Sonostream: Successfully connected[0m
+[0;32mI (23399) Sonostream: Current items in the queue: 0[0m
+[1;31mE (23459) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (23459) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (23459) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (23459) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (23569) Sonostream: Successfully connected[0m
+[0;32mI (23569) Sonostream: Current items in the queue: 0[0m
+[0;32mI (23669) Sonostream: Successfully connected[0m
+[0;32mI (23669) Sonostream: Current items in the queue: 0[0m
+[1;31mE (23709) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (23709) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (23709) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (23719) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (23829) Sonostream: Successfully connected[0m
+[0;32mI (23829) Sonostream: Current items in the queue: 0[0m
+[0;32mI (23929) Sonostream: Successfully connected[0m
+[0;32mI (23929) Sonostream: Current items in the queue: 0[0m
+[1;31mE (23969) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (23969) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (23969) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (23969) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (24079) Sonostream: Successfully connected[0m
+[0;32mI (24079) Sonostream: Current items in the queue: 0[0m
+[0;32mI (24179) Sonostream: Successfully connected[0m
+[0;32mI (24179) Sonostream: Current items in the queue: 0[0m
+[1;31mE (24219) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (24219) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (24219) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (24229) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (24339) Sonostream: Successfully connected[0m
+[0;32mI (24339) Sonostream: Current items in the queue: 0[0m
+[0;32mI (24439) Sonostream: Successfully connected[0m
+[0;32mI (24439) Sonostream: Current items in the queue: 0[0m
+[1;31mE (24479) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (24479) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (24479) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (24479) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (24589) Sonostream: Successfully connected[0m
+[0;32mI (24589) Sonostream: Current items in the queue: 0[0m
+[0;32mI (24689) Sonostream: Successfully connected[0m
+[0;32mI (24689) Sonostream: Current items in the queue: 0[0m
+[1;31mE (24729) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (24729) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (24729) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (24739) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (24849) Sonostream: Successfully connected[0m
+[0;32mI (24849) Sonostream: Current items in the queue: 0[0m
+[0;32mI (24949) Sonostream: Successfully connected[0m
+[0;32mI (24949) Sonostream: Current items in the queue: 0[0m
+[1;31mE (24989) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (24989) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (24989) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (24989) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (25099) Sonostream: Successfully connected[0m
+[0;32mI (25099) Sonostream: Current items in the queue: 0[0m
+[0;32mI (25199) Sonostream: Successfully connected[0m
+[0;32mI (25199) Sonostream: Current items in the queue: 0[0m
+[1;31mE (25239) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (25239) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (25239) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (25249) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (25359) Sonostream: Successfully connected[0m
+[0;32mI (25359) Sonostream: Current items in the queue: 0[0m
+[0;32mI (25459) Sonostream: Successfully connected[0m
+[0;32mI (25459) Sonostream: Current items in the queue: 0[0m
+[1;31mE (25499) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (25499) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (25499) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (25499) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (25609) Sonostream: Successfully connected[0m
+[0;32mI (25609) Sonostream: Current items in the queue: 0[0m
+[0;32mI (25709) Sonostream: Successfully connected[0m
+[0;32mI (25709) Sonostream: Current items in the queue: 0[0m
+[1;31mE (25749) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (25749) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (25749) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (25759) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (25869) Sonostream: Successfully connected[0m
+[0;32mI (25869) Sonostream: Current items in the queue: 0[0m
+[0;32mI (25969) Sonostream: Successfully connected[0m
+[0;32mI (25969) Sonostream: Current items in the queue: 0[0m
+[1;31mE (26009) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (26009) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (26009) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (26009) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (26119) Sonostream: Successfully connected[0m
+[0;32mI (26119) Sonostream: Current items in the queue: 0[0m
+[0;32mI (26219) Sonostream: Successfully connected[0m
+[0;32mI (26219) Sonostream: Current items in the queue: 0[0m
+[1;31mE (26259) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (26259) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (26259) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (26269) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (26379) Sonostream: Successfully connected[0m
+[0;32mI (26379) Sonostream: Current items in the queue: 0[0m
+[0;32mI (26479) Sonostream: Successfully connected[0m
+[0;32mI (26479) Sonostream: Current items in the queue: 0[0m
+[1;31mE (26519) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (26519) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (26519) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (26519) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (26629) Sonostream: Successfully connected[0m
+[0;32mI (26629) Sonostream: Current items in the queue: 0[0m
+[0;32mI (26729) Sonostream: Successfully connected[0m
+[0;32mI (26729) Sonostream: Current items in the queue: 0[0m
+[1;31mE (26769) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (26769) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (26769) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (26779) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (26889) Sonostream: Successfully connected[0m
+[0;32mI (26889) Sonostream: Current items in the queue: 0[0m
+[0;32mI (26989) Sonostream: Successfully connected[0m
+[0;32mI (26989) Sonostream: Current items in the queue: 0[0m
+[1;31mE (27029) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (27029) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (27029) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (27029) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (27139) Sonostream: Successfully connected[0m
+[0;32mI (27139) Sonostream: Current items in the queue: 0[0m
+[0;32mI (27239) Sonostream: Successfully connected[0m
+[0;32mI (27239) Sonostream: Current items in the queue: 0[0m
+[1;31mE (27299) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (27299) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (27299) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (27299) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (27409) Sonostream: Successfully connected[0m
+[0;32mI (27409) Sonostream: Current items in the queue: 0[0m
+[0;32mI (27509) Sonostream: Successfully connected[0m
+[0;32mI (27509) Sonostream: Current items in the queue: 0[0m
+[1;31mE (27549) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (27549) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (27549) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (27559) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (27669) Sonostream: Successfully connected[0m
+[0;32mI (27669) Sonostream: Current items in the queue: 0[0m
+[0;32mI (27769) Sonostream: Successfully connected[0m
+[0;32mI (27769) Sonostream: Current items in the queue: 0[0m
+[1;31mE (27809) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (27809) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (27809) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (27809) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (27919) Sonostream: Successfully connected[0m
+[0;32mI (27919) Sonostream: Current items in the queue: 0[0m
+[0;32mI (28019) Sonostream: Successfully connected[0m
+[0;32mI (28019) Sonostream: Current items in the queue: 0[0m
+[1;31mE (28059) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (28059) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (28059) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (28069) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (28179) Sonostream: Successfully connected[0m
+[0;32mI (28179) Sonostream: Current items in the queue: 0[0m
+[0;32mI (28279) Sonostream: Successfully connected[0m
+[0;32mI (28279) Sonostream: Current items in the queue: 0[0m
+[1;31mE (28319) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (28319) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (28319) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (28319) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (28429) Sonostream: Successfully connected[0m
+[0;32mI (28429) Sonostream: Current items in the queue: 0[0m
+[0;32mI (28529) Sonostream: Successfully connected[0m
+[0;32mI (28529) Sonostream: Current items in the queue: 0[0m
+[1;31mE (28569) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (28569) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (28569) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (28579) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (28689) Sonostream: Successfully connected[0m
+[0;32mI (28689) Sonostream: Current items in the queue: 0[0m
+[0;32mI (28789) Sonostream: Successfully connected[0m
+[0;32mI (28789) Sonostream: Current items in the queue: 0[0m
+[1;31mE (28829) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (28829) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (28829) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (28829) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (28939) Sonostream: Successfully connected[0m
+[0;32mI (28939) Sonostream: Current items in the queue: 0[0m
+[0;32mI (29039) Sonostream: Successfully connected[0m
+[0;32mI (29039) Sonostream: Current items in the queue: 0[0m
+[1;31mE (29079) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (29079) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (29079) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (29089) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (29199) Sonostream: Successfully connected[0m
+[0;32mI (29199) Sonostream: Current items in the queue: 0[0m
+[0;32mI (29299) Sonostream: Successfully connected[0m
+[0;32mI (29299) Sonostream: Current items in the queue: 0[0m
+[1;31mE (29339) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (29339) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (29339) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (29339) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (29449) Sonostream: Successfully connected[0m
+[0;32mI (29449) Sonostream: Current items in the queue: 0[0m
+[0;32mI (29549) Sonostream: Successfully connected[0m
+[0;32mI (29549) Sonostream: Current items in the queue: 0[0m
+[1;31mE (29589) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (29589) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (29589) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (29599) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (29709) Sonostream: Successfully connected[0m
+[0;32mI (29709) Sonostream: Current items in the queue: 0[0m
+[0;32mI (29809) Sonostream: Successfully connected[0m
+[0;32mI (29809) Sonostream: Current items in the queue: 0[0m
+[1;31mE (29849) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (29849) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (29849) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (29849) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (29959) Sonostream: Successfully connected[0m
+[0;32mI (29959) Sonostream: Current items in the queue: 0[0m
+[0;32mI (30059) Sonostream: Successfully connected[0m
+[0;32mI (30059) Sonostream: Current items in the queue: 0[0m
+[1;31mE (30099) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (30099) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (30099) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (30109) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (30219) Sonostream: Successfully connected[0m
+[0;32mI (30219) Sonostream: Current items in the queue: 0[0m
+[0;32mI (30319) Sonostream: Successfully connected[0m
+[0;32mI (30319) Sonostream: Current items in the queue: 0[0m
+[1;31mE (30359) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (30359) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (30359) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (30359) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (30469) Sonostream: Successfully connected[0m
+[0;32mI (30469) Sonostream: Current items in the queue: 0[0m
+[0;32mI (30569) Sonostream: Successfully connected[0m
+[0;32mI (30569) Sonostream: Current items in the queue: 0[0m
+[1;31mE (30609) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (30609) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (30609) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (30619) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (30729) Sonostream: Successfully connected[0m
+[0;32mI (30729) Sonostream: Current items in the queue: 0[0m
+[0;32mI (30829) Sonostream: Successfully connected[0m
+[0;32mI (30829) Sonostream: Current items in the queue: 0[0m
+[1;31mE (30869) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (30869) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (30869) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (30869) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (30979) Sonostream: Successfully connected[0m
+[0;32mI (30979) Sonostream: Current items in the queue: 0[0m
+[0;32mI (31079) Sonostream: Successfully connected[0m
+[0;32mI (31079) Sonostream: Current items in the queue: 0[0m
+[1;31mE (31139) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (31139) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (31139) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (31139) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (31249) Sonostream: Successfully connected[0m
+[0;32mI (31249) Sonostream: Current items in the queue: 0[0m
+[0;32mI (31349) Sonostream: Successfully connected[0m
+[0;32mI (31349) Sonostream: Current items in the queue: 0[0m
+[1;31mE (31389) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (31389) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (31389) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (31399) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (31509) Sonostream: Successfully connected[0m
+[0;32mI (31509) Sonostream: Current items in the queue: 0[0m
+[0;32mI (31609) Sonostream: Successfully connected[0m
+[0;32mI (31609) Sonostream: Current items in the queue: 0[0m
+[1;31mE (31649) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (31649) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (31649) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (31649) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (31759) Sonostream: Successfully connected[0m
+[0;32mI (31759) Sonostream: Current items in the queue: 0[0m
+[0;32mI (31859) Sonostream: Successfully connected[0m
+[0;32mI (31859) Sonostream: Current items in the queue: 0[0m
+[1;31mE (31899) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (31899) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (31899) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (31909) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (32019) Sonostream: Successfully connected[0m
+[0;32mI (32019) Sonostream: Current items in the queue: 0[0m
+[0;32mI (32119) Sonostream: Successfully connected[0m
+[0;32mI (32119) Sonostream: Current items in the queue: 0[0m
+[1;31mE (32159) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (32159) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (32159) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (32159) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (32269) Sonostream: Successfully connected[0m
+[0;32mI (32269) Sonostream: Current items in the queue: 0[0m
+[0;32mI (32369) Sonostream: Successfully connected[0m
+[0;32mI (32369) Sonostream: Current items in the queue: 0[0m
+[1;31mE (32409) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (32409) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (32409) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (32419) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (32529) Sonostream: Successfully connected[0m
+[0;32mI (32529) Sonostream: Current items in the queue: 0[0m
+[0;32mI (32629) Sonostream: Successfully connected[0m
+[0;32mI (32629) Sonostream: Current items in the queue: 0[0m
+[1;31mE (32669) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (32669) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (32669) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (32669) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (32779) Sonostream: Successfully connected[0m
+[0;32mI (32779) Sonostream: Current items in the queue: 0[0m
+[0;32mI (32879) Sonostream: Successfully connected[0m
+[0;32mI (32879) Sonostream: Current items in the queue: 0[0m
+[1;31mE (32919) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (32919) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (32919) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (32929) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (33039) Sonostream: Successfully connected[0m
+[0;32mI (33039) Sonostream: Current items in the queue: 0[0m
+[0;32mI (33139) Sonostream: Successfully connected[0m
+[0;32mI (33139) Sonostream: Current items in the queue: 0[0m
+[1;31mE (33179) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (33179) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (33179) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (33179) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (33289) Sonostream: Successfully connected[0m
+[0;32mI (33289) Sonostream: Current items in the queue: 0[0m
+[0;32mI (33389) Sonostream: Successfully connected[0m
+[0;32mI (33389) Sonostream: Current items in the queue: 0[0m
+[1;31mE (33429) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (33429) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (33429) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (33439) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (33549) Sonostream: Successfully connected[0m
+[0;32mI (33549) Sonostream: Current items in the queue: 0[0m
+[0;32mI (33649) Sonostream: Successfully connected[0m
+[0;32mI (33649) Sonostream: Current items in the queue: 0[0m
+[1;31mE (33689) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (33689) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (33689) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (33689) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (33799) Sonostream: Successfully connected[0m
+[0;32mI (33799) Sonostream: Current items in the queue: 0[0m
+[0;32mI (33899) Sonostream: Successfully connected[0m
+[0;32mI (33899) Sonostream: Current items in the queue: 0[0m
+[1;31mE (33939) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (33939) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (33939) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (33949) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (34059) Sonostream: Successfully connected[0m
+[0;32mI (34059) Sonostream: Current items in the queue: 0[0m
+[0;32mI (34159) Sonostream: Successfully connected[0m
+[0;32mI (34159) Sonostream: Current items in the queue: 0[0m
+[1;31mE (34199) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (34199) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (34199) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (34199) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (34309) Sonostream: Successfully connected[0m
+[0;32mI (34309) Sonostream: Current items in the queue: 0[0m
+[0;32mI (34409) Sonostream: Successfully connected[0m
+[0;32mI (34409) Sonostream: Current items in the queue: 0[0m
+[1;31mE (34449) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (34449) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (34449) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (34459) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (34569) Sonostream: Successfully connected[0m
+[0;32mI (34569) Sonostream: Current items in the queue: 0[0m
+[0;32mI (34669) Sonostream: Successfully connected[0m
+[0;32mI (34669) Sonostream: Current items in the queue: 0[0m
+[1;31mE (34709) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (34709) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (34709) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (34709) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (34819) Sonostream: Successfully connected[0m
+[0;32mI (34819) Sonostream: Current items in the queue: 0[0m
+[0;32mI (34919) Sonostream: Successfully connected[0m
+[0;32mI (34919) Sonostream: Current items in the queue: 0[0m
+[1;31mE (34979) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (34979) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (34979) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (34979) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (35089) Sonostream: Successfully connected[0m
+[0;32mI (35089) Sonostream: Current items in the queue: 0[0m
+[0;32mI (35189) Sonostream: Successfully connected[0m
+[0;32mI (35189) Sonostream: Current items in the queue: 0[0m
+[1;31mE (35229) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (35229) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (35229) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (35239) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (35349) Sonostream: Successfully connected[0m
+[0;32mI (35349) Sonostream: Current items in the queue: 0[0m
+[0;32mI (35449) Sonostream: Successfully connected[0m
+[0;32mI (35449) Sonostream: Current items in the queue: 0[0m
+[1;31mE (35489) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (35489) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (35489) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (35489) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (35599) Sonostream: Successfully connected[0m
+[0;32mI (35599) Sonostream: Current items in the queue: 0[0m
+[0;32mI (35699) Sonostream: Successfully connected[0m
+[0;32mI (35699) Sonostream: Current items in the queue: 0[0m
+[1;31mE (35739) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (35739) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (35739) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (35749) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (35859) Sonostream: Successfully connected[0m
+[0;32mI (35859) Sonostream: Current items in the queue: 0[0m
+[0;32mI (35959) Sonostream: Successfully connected[0m
+[0;32mI (35959) Sonostream: Current items in the queue: 0[0m
+[1;31mE (35999) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (35999) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (35999) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (35999) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (36109) Sonostream: Successfully connected[0m
+[0;32mI (36109) Sonostream: Current items in the queue: 0[0m
+[0;32mI (36209) Sonostream: Successfully connected[0m
+[0;32mI (36209) Sonostream: Current items in the queue: 0[0m
+[1;31mE (36249) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (36249) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (36249) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (36259) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (36369) Sonostream: Successfully connected[0m
+[0;32mI (36369) Sonostream: Current items in the queue: 0[0m
+[0;32mI (36469) Sonostream: Successfully connected[0m
+[0;32mI (36469) Sonostream: Current items in the queue: 0[0m
+[1;31mE (36509) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (36509) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (36509) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (36509) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (36619) Sonostream: Successfully connected[0m
+[0;32mI (36619) Sonostream: Current items in the queue: 0[0m
+[0;32mI (36719) Sonostream: Successfully connected[0m
+[0;32mI (36719) Sonostream: Current items in the queue: 0[0m
+[1;31mE (36759) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (36759) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (36759) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (36769) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (36879) Sonostream: Successfully connected[0m
+[0;32mI (36879) Sonostream: Current items in the queue: 0[0m
+[0;32mI (36979) Sonostream: Successfully connected[0m
+[0;32mI (36979) Sonostream: Current items in the queue: 0[0m
+[1;31mE (37019) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (37019) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (37019) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (37019) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (37129) Sonostream: Successfully connected[0m
+[0;32mI (37129) Sonostream: Current items in the queue: 0[0m
+[0;32mI (37229) Sonostream: Successfully connected[0m
+[0;32mI (37229) Sonostream: Current items in the queue: 0[0m
+[1;31mE (37269) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (37269) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (37269) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (37279) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (37389) Sonostream: Successfully connected[0m
+[0;32mI (37389) Sonostream: Current items in the queue: 0[0m
+[0;32mI (37489) Sonostream: Successfully connected[0m
+[0;32mI (37489) Sonostream: Current items in the queue: 0[0m
+[1;31mE (37529) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (37529) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (37529) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (37529) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (37639) Sonostream: Successfully connected[0m
+[0;32mI (37639) Sonostream: Current items in the queue: 0[0m
+[0;32mI (37739) Sonostream: Successfully connected[0m
+[0;32mI (37739) Sonostream: Current items in the queue: 0[0m
+[1;31mE (37779) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (37779) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (37779) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (37789) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (37899) Sonostream: Successfully connected[0m
+[0;32mI (37899) Sonostream: Current items in the queue: 0[0m
+[0;32mI (37999) Sonostream: Successfully connected[0m
+[0;32mI (37999) Sonostream: Current items in the queue: 0[0m
+[1;31mE (38039) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (38039) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (38039) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (38039) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (38149) Sonostream: Successfully connected[0m
+[0;32mI (38149) Sonostream: Current items in the queue: 0[0m
+[0;32mI (38249) Sonostream: Successfully connected[0m
+[0;32mI (38249) Sonostream: Current items in the queue: 0[0m
+[1;31mE (38289) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (38289) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (38289) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (38299) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (38409) Sonostream: Successfully connected[0m
+[0;32mI (38409) Sonostream: Current items in the queue: 0[0m
+[0;32mI (38509) Sonostream: Successfully connected[0m
+[0;32mI (38509) Sonostream: Current items in the queue: 0[0m
+[1;31mE (38549) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (38549) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (38549) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (38549) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (38659) Sonostream: Successfully connected[0m
+[0;32mI (38659) Sonostream: Current items in the queue: 0[0m
+[0;32mI (38759) Sonostream: Successfully connected[0m
+[0;32mI (38759) Sonostream: Current items in the queue: 0[0m
+[1;31mE (38819) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (38819) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (38819) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (38819) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (38929) Sonostream: Successfully connected[0m
+[0;32mI (38929) Sonostream: Current items in the queue: 0[0m
+[0;32mI (39029) Sonostream: Successfully connected[0m
+[0;32mI (39029) Sonostream: Current items in the queue: 0[0m
+[1;31mE (39069) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (39069) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (39069) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (39079) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (39189) Sonostream: Successfully connected[0m
+[0;32mI (39189) Sonostream: Current items in the queue: 0[0m
+[0;32mI (39289) Sonostream: Successfully connected[0m
+[0;32mI (39289) Sonostream: Current items in the queue: 0[0m
+[1;31mE (39329) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (39329) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (39329) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (39329) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (39439) Sonostream: Successfully connected[0m
+[0;32mI (39439) Sonostream: Current items in the queue: 0[0m
+[0;32mI (39539) Sonostream: Successfully connected[0m
+[0;32mI (39539) Sonostream: Current items in the queue: 0[0m
+[1;31mE (39579) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (39579) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (39579) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (39589) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (39699) Sonostream: Successfully connected[0m
+[0;32mI (39699) Sonostream: Current items in the queue: 0[0m
+[0;32mI (39799) Sonostream: Successfully connected[0m
+[0;32mI (39799) Sonostream: Current items in the queue: 0[0m
+[1;31mE (39839) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (39839) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (39839) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (39839) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (39949) Sonostream: Successfully connected[0m
+[0;32mI (39949) Sonostream: Current items in the queue: 0[0m
+[0;32mI (40049) Sonostream: Successfully connected[0m
+[0;32mI (40049) Sonostream: Current items in the queue: 0[0m
+[1;31mE (40089) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (40089) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (40089) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (40099) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (40209) Sonostream: Successfully connected[0m
+[0;32mI (40209) Sonostream: Current items in the queue: 0[0m
+[0;32mI (40309) Sonostream: Successfully connected[0m
+[0;32mI (40309) Sonostream: Current items in the queue: 0[0m
+[1;31mE (40349) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (40349) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (40349) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (40349) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (40459) Sonostream: Successfully connected[0m
+[0;32mI (40459) Sonostream: Current items in the queue: 0[0m
+[0;32mI (40559) Sonostream: Successfully connected[0m
+[0;32mI (40559) Sonostream: Current items in the queue: 0[0m
+[1;31mE (40599) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (40599) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (40599) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (40609) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (40719) Sonostream: Successfully connected[0m
+[0;32mI (40719) Sonostream: Current items in the queue: 0[0m
+[0;32mI (40819) Sonostream: Successfully connected[0m
+[0;32mI (40819) Sonostream: Current items in the queue: 0[0m
+[1;31mE (40859) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (40859) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (40859) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (40859) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (40969) Sonostream: Successfully connected[0m
+[0;32mI (40969) Sonostream: Current items in the queue: 0[0m
+[0;32mI (41069) Sonostream: Successfully connected[0m
+[0;32mI (41069) Sonostream: Current items in the queue: 0[0m
+[1;31mE (41109) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (41109) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (41109) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (41119) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (41229) Sonostream: Successfully connected[0m
+[0;32mI (41229) Sonostream: Current items in the queue: 0[0m
+[0;32mI (41329) Sonostream: Successfully connected[0m
+[0;32mI (41329) Sonostream: Current items in the queue: 0[0m
+[1;31mE (41369) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (41369) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (41369) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (41369) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (41479) Sonostream: Successfully connected[0m
+[0;32mI (41479) Sonostream: Current items in the queue: 0[0m
+[0;32mI (41579) Sonostream: Successfully connected[0m
+[0;32mI (41579) Sonostream: Current items in the queue: 0[0m
+[1;31mE (41619) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (41619) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (41619) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (41629) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (41739) Sonostream: Successfully connected[0m
+[0;32mI (41739) Sonostream: Current items in the queue: 0[0m
+[0;32mI (41839) Sonostream: Successfully connected[0m
+[0;32mI (41839) Sonostream: Current items in the queue: 0[0m
+[1;31mE (41879) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (41879) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (41879) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (41879) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (41989) Sonostream: Successfully connected[0m
+[0;32mI (41989) Sonostream: Current items in the queue: 0[0m
+[0;32mI (42089) Sonostream: Successfully connected[0m
+[0;32mI (42089) Sonostream: Current items in the queue: 0[0m
+[1;31mE (42129) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (42129) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (42129) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (42139) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (42249) Sonostream: Successfully connected[0m
+[0;32mI (42249) Sonostream: Current items in the queue: 0[0m
+[0;32mI (42349) Sonostream: Successfully connected[0m
+[0;32mI (42349) Sonostream: Current items in the queue: 0[0m
+[1;31mE (42389) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (42389) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (42389) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (42389) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (42499) Sonostream: Successfully connected[0m
+[0;32mI (42499) Sonostream: Current items in the queue: 0[0m
+[0;32mI (42599) Sonostream: Successfully connected[0m
+[0;32mI (42599) Sonostream: Current items in the queue: 0[0m
+[1;31mE (42659) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (42659) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (42659) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (42659) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (42769) Sonostream: Successfully connected[0m
+[0;32mI (42769) Sonostream: Current items in the queue: 0[0m
+[0;32mI (42869) Sonostream: Successfully connected[0m
+[0;32mI (42869) Sonostream: Current items in the queue: 0[0m
+[1;31mE (42909) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (42909) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (42909) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (42919) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (43029) Sonostream: Successfully connected[0m
+[0;32mI (43029) Sonostream: Current items in the queue: 0[0m
+[0;32mI (43129) Sonostream: Successfully connected[0m
+[0;32mI (43129) Sonostream: Current items in the queue: 0[0m
+[1;31mE (43169) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (43169) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (43169) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (43169) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (43279) Sonostream: Successfully connected[0m
+[0;32mI (43279) Sonostream: Current items in the queue: 0[0m
+[0;32mI (43379) Sonostream: Successfully connected[0m
+[0;32mI (43379) Sonostream: Current items in the queue: 0[0m
+[1;31mE (43419) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (43419) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (43419) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (43429) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (43539) Sonostream: Successfully connected[0m
+[0;32mI (43539) Sonostream: Current items in the queue: 0[0m
+[0;32mI (43639) Sonostream: Successfully connected[0m
+[0;32mI (43639) Sonostream: Current items in the queue: 0[0m
+[1;31mE (43679) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (43679) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (43679) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (43679) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (43789) Sonostream: Successfully connected[0m
+[0;32mI (43789) Sonostream: Current items in the queue: 0[0m
+[0;32mI (43889) Sonostream: Successfully connected[0m
+[0;32mI (43889) Sonostream: Current items in the queue: 0[0m
+[1;31mE (43929) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (43929) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (43929) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (43939) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (44049) Sonostream: Successfully connected[0m
+[0;32mI (44049) Sonostream: Current items in the queue: 0[0m
+[0;32mI (44149) Sonostream: Successfully connected[0m
+[0;32mI (44149) Sonostream: Current items in the queue: 0[0m
+[1;31mE (44189) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (44189) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (44189) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (44189) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (44299) Sonostream: Successfully connected[0m
+[0;32mI (44299) Sonostream: Current items in the queue: 0[0m
+[0;32mI (44399) Sonostream: Successfully connected[0m
+[0;32mI (44399) Sonostream: Current items in the queue: 0[0m
+[1;31mE (44439) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (44439) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (44439) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (44449) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (44559) Sonostream: Successfully connected[0m
+[0;32mI (44559) Sonostream: Current items in the queue: 0[0m
+[0;32mI (44659) Sonostream: Successfully connected[0m
+[0;32mI (44659) Sonostream: Current items in the queue: 0[0m
+[1;31mE (44699) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (44699) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (44699) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (44699) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (44809) Sonostream: Successfully connected[0m
+[0;32mI (44809) Sonostream: Current items in the queue: 0[0m
+[0;32mI (44909) Sonostream: Successfully connected[0m
+[0;32mI (44909) Sonostream: Current items in the queue: 0[0m
+[1;31mE (44949) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (44949) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (44949) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (44959) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (45069) Sonostream: Successfully connected[0m
+[0;32mI (45069) Sonostream: Current items in the queue: 0[0m
+[0;32mI (45169) Sonostream: Successfully connected[0m
+[0;32mI (45169) Sonostream: Current items in the queue: 0[0m
+[1;31mE (45209) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (45209) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (45209) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (45209) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (45319) Sonostream: Successfully connected[0m
+[0;32mI (45319) Sonostream: Current items in the queue: 0[0m
+[0;32mI (45419) Sonostream: Successfully connected[0m
+[0;32mI (45419) Sonostream: Current items in the queue: 0[0m
+[1;31mE (45459) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (45459) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (45459) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (45469) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (45579) Sonostream: Successfully connected[0m
+[0;32mI (45579) Sonostream: Current items in the queue: 0[0m
+[0;32mI (45679) Sonostream: Successfully connected[0m
+[0;32mI (45679) Sonostream: Current items in the queue: 0[0m
+[1;31mE (45719) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (45719) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (45719) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (45719) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (45829) Sonostream: Successfully connected[0m
+[0;32mI (45829) Sonostream: Current items in the queue: 0[0m
+[0;32mI (45929) Sonostream: Successfully connected[0m
+[0;32mI (45929) Sonostream: Current items in the queue: 0[0m
+[1;31mE (45969) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (45969) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (45969) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (45979) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (46089) Sonostream: Successfully connected[0m
+[0;32mI (46089) Sonostream: Current items in the queue: 0[0m
+[0;32mI (46189) Sonostream: Successfully connected[0m
+[0;32mI (46189) Sonostream: Current items in the queue: 0[0m
+[1;31mE (46229) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (46229) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (46229) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (46229) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (46339) Sonostream: Successfully connected[0m
+[0;32mI (46339) Sonostream: Current items in the queue: 0[0m
+[0;32mI (46439) Sonostream: Successfully connected[0m
+[0;32mI (46439) Sonostream: Current items in the queue: 0[0m
+[1;31mE (46499) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (46499) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (46499) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (46499) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (46609) Sonostream: Successfully connected[0m
+[0;32mI (46609) Sonostream: Current items in the queue: 0[0m
+[0;32mI (46709) Sonostream: Successfully connected[0m
+[0;32mI (46709) Sonostream: Current items in the queue: 0[0m
+[1;31mE (46749) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (46749) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (46749) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (46759) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (46869) Sonostream: Successfully connected[0m
+[0;32mI (46869) Sonostream: Current items in the queue: 0[0m
+[0;32mI (46969) Sonostream: Successfully connected[0m
+[0;32mI (46969) Sonostream: Current items in the queue: 0[0m
+[1;31mE (47009) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (47009) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (47009) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (47009) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (47119) Sonostream: Successfully connected[0m
+[0;32mI (47119) Sonostream: Current items in the queue: 0[0m
+[0;32mI (47219) Sonostream: Successfully connected[0m
+[0;32mI (47219) Sonostream: Current items in the queue: 0[0m
+[1;31mE (47259) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (47259) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (47259) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (47269) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (47379) Sonostream: Successfully connected[0m
+[0;32mI (47379) Sonostream: Current items in the queue: 0[0m
+[0;32mI (47479) Sonostream: Successfully connected[0m
+[0;32mI (47479) Sonostream: Current items in the queue: 0[0m
+[1;31mE (47519) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (47519) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (47519) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (47519) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (47629) Sonostream: Successfully connected[0m
+[0;32mI (47629) Sonostream: Current items in the queue: 0[0m
+[0;32mI (47729) Sonostream: Successfully connected[0m
+[0;32mI (47729) Sonostream: Current items in the queue: 0[0m
+[1;31mE (47769) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (47769) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (47769) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (47779) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (47889) Sonostream: Successfully connected[0m
+[0;32mI (47889) Sonostream: Current items in the queue: 0[0m
+[0;32mI (47989) Sonostream: Successfully connected[0m
+[0;32mI (47989) Sonostream: Current items in the queue: 0[0m
+[1;31mE (48029) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (48029) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (48029) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (48029) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (48139) Sonostream: Successfully connected[0m
+[0;32mI (48139) Sonostream: Current items in the queue: 0[0m
+[0;32mI (48239) Sonostream: Successfully connected[0m
+[0;32mI (48239) Sonostream: Current items in the queue: 0[0m
+[1;31mE (48279) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (48279) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (48279) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (48289) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (48399) Sonostream: Successfully connected[0m
+[0;32mI (48399) Sonostream: Current items in the queue: 0[0m
+[0;32mI (48499) Sonostream: Successfully connected[0m
+[0;32mI (48499) Sonostream: Current items in the queue: 0[0m
+[1;31mE (48539) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (48539) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (48539) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (48539) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (48649) Sonostream: Successfully connected[0m
+[0;32mI (48649) Sonostream: Current items in the queue: 0[0m
+[0;32mI (48749) Sonostream: Successfully connected[0m
+[0;32mI (48749) Sonostream: Current items in the queue: 0[0m
+[1;31mE (48789) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (48789) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (48789) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (48799) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (48909) Sonostream: Successfully connected[0m
+[0;32mI (48909) Sonostream: Current items in the queue: 0[0m
+[0;32mI (49009) Sonostream: Successfully connected[0m
+[0;32mI (49009) Sonostream: Current items in the queue: 0[0m
+[1;31mE (49049) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (49049) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (49049) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (49049) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (49159) Sonostream: Successfully connected[0m
+[0;32mI (49159) Sonostream: Current items in the queue: 0[0m
+[0;32mI (49259) Sonostream: Successfully connected[0m
+[0;32mI (49259) Sonostream: Current items in the queue: 0[0m
+[1;31mE (49299) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (49299) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (49299) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (49309) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (49419) Sonostream: Successfully connected[0m
+[0;32mI (49419) Sonostream: Current items in the queue: 0[0m
+[0;32mI (49519) Sonostream: Successfully connected[0m
+[0;32mI (49519) Sonostream: Current items in the queue: 0[0m
+[1;31mE (49559) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (49559) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (49559) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (49559) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (49669) Sonostream: Successfully connected[0m
+[0;32mI (49669) Sonostream: Current items in the queue: 0[0m
+[0;32mI (49769) Sonostream: Successfully connected[0m
+[0;32mI (49769) Sonostream: Current items in the queue: 0[0m
+[1;31mE (49809) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (49809) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (49809) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (49819) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (49929) Sonostream: Successfully connected[0m
+[0;32mI (49929) Sonostream: Current items in the queue: 0[0m
+[0;32mI (50029) Sonostream: Successfully connected[0m
+[0;32mI (50029) Sonostream: Current items in the queue: 0[0m
+[1;31mE (50069) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (50069) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (50069) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (50069) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (50179) Sonostream: Successfully connected[0m
+[0;32mI (50179) Sonostream: Current items in the queue: 0[0m
+[0;32mI (50279) Sonostream: Successfully connected[0m
+[0;32mI (50279) Sonostream: Current items in the queue: 0[0m
+[1;31mE (50339) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (50339) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (50339) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (50339) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (50449) Sonostream: Successfully connected[0m
+[0;32mI (50449) Sonostream: Current items in the queue: 0[0m
+[0;32mI (50549) Sonostream: Successfully connected[0m
+[0;32mI (50549) Sonostream: Current items in the queue: 0[0m
+[1;31mE (50589) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (50589) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (50589) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (50599) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (50709) Sonostream: Successfully connected[0m
+[0;32mI (50709) Sonostream: Current items in the queue: 0[0m
+[0;32mI (50809) Sonostream: Successfully connected[0m
+[0;32mI (50809) Sonostream: Current items in the queue: 0[0m
+[1;31mE (50849) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (50849) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (50849) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (50849) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (50959) Sonostream: Successfully connected[0m
+[0;32mI (50959) Sonostream: Current items in the queue: 0[0m
+[0;32mI (51059) Sonostream: Successfully connected[0m
+[0;32mI (51059) Sonostream: Current items in the queue: 0[0m
+[1;31mE (51099) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (51099) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (51099) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (51109) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (51219) Sonostream: Successfully connected[0m
+[0;32mI (51219) Sonostream: Current items in the queue: 0[0m
+[0;32mI (51319) Sonostream: Successfully connected[0m
+[0;32mI (51319) Sonostream: Current items in the queue: 0[0m
+[1;31mE (51359) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (51359) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (51359) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (51359) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (51469) Sonostream: Successfully connected[0m
+[0;32mI (51469) Sonostream: Current items in the queue: 0[0m
+[0;32mI (51569) Sonostream: Successfully connected[0m
+[0;32mI (51569) Sonostream: Current items in the queue: 0[0m
+[1;31mE (51609) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (51609) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (51609) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (51619) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (51729) Sonostream: Successfully connected[0m
+[0;32mI (51729) Sonostream: Current items in the queue: 0[0m
+[0;32mI (51829) Sonostream: Successfully connected[0m
+[0;32mI (51829) Sonostream: Current items in the queue: 0[0m
+[1;31mE (51869) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (51869) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (51869) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (51869) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (51979) Sonostream: Successfully connected[0m
+[0;32mI (51979) Sonostream: Current items in the queue: 0[0m
+[0;32mI (52079) Sonostream: Successfully connected[0m
+[0;32mI (52079) Sonostream: Current items in the queue: 0[0m
+[1;31mE (52119) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (52119) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (52119) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (52129) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (52239) Sonostream: Successfully connected[0m
+[0;32mI (52239) Sonostream: Current items in the queue: 0[0m
+[0;32mI (52339) Sonostream: Successfully connected[0m
+[0;32mI (52339) Sonostream: Current items in the queue: 0[0m
+[1;31mE (52379) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (52379) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (52379) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (52379) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (52489) Sonostream: Successfully connected[0m
+[0;32mI (52489) Sonostream: Current items in the queue: 0[0m
+[0;32mI (52589) Sonostream: Successfully connected[0m
+[0;32mI (52589) Sonostream: Current items in the queue: 0[0m
+[1;31mE (52629) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (52629) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (52629) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (52639) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (52749) Sonostream: Successfully connected[0m
+[0;32mI (52749) Sonostream: Current items in the queue: 0[0m
+[0;32mI (52849) Sonostream: Successfully connected[0m
+[0;32mI (52849) Sonostream: Current items in the queue: 0[0m
+[1;31mE (52889) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (52889) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (52889) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (52889) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (52999) Sonostream: Successfully connected[0m
+[0;32mI (52999) Sonostream: Current items in the queue: 0[0m
+[0;32mI (53099) Sonostream: Successfully connected[0m
+[0;32mI (53099) Sonostream: Current items in the queue: 0[0m
+[1;31mE (53139) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (53139) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (53139) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (53149) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (53259) Sonostream: Successfully connected[0m
+[0;32mI (53259) Sonostream: Current items in the queue: 0[0m
+[0;32mI (53359) Sonostream: Successfully connected[0m
+[0;32mI (53359) Sonostream: Current items in the queue: 0[0m
+[1;31mE (53399) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (53399) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (53399) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (53399) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (53509) Sonostream: Successfully connected[0m
+[0;32mI (53509) Sonostream: Current items in the queue: 0[0m
+[0;32mI (53609) Sonostream: Successfully connected[0m
+[0;32mI (53609) Sonostream: Current items in the queue: 0[0m
+[1;31mE (53649) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (53649) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (53649) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (53659) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (53769) Sonostream: Successfully connected[0m
+[0;32mI (53769) Sonostream: Current items in the queue: 0[0m
+[0;32mI (53869) Sonostream: Successfully connected[0m
+[0;32mI (53869) Sonostream: Current items in the queue: 0[0m
+[1;31mE (53909) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (53909) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (53909) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (53909) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (54019) Sonostream: Successfully connected[0m
+[0;32mI (54019) Sonostream: Current items in the queue: 0[0m
+[0;32mI (54119) Sonostream: Successfully connected[0m
+[0;32mI (54119) Sonostream: Current items in the queue: 0[0m
+[1;31mE (54179) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (54179) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (54179) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (54179) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (54289) Sonostream: Successfully connected[0m
+[0;32mI (54289) Sonostream: Current items in the queue: 0[0m
+[0;32mI (54389) Sonostream: Successfully connected[0m
+[0;32mI (54389) Sonostream: Current items in the queue: 0[0m
+[1;31mE (54429) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (54429) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (54429) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (54439) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (54549) Sonostream: Successfully connected[0m
+[0;32mI (54549) Sonostream: Current items in the queue: 0[0m
+[0;32mI (54649) Sonostream: Successfully connected[0m
+[0;32mI (54649) Sonostream: Current items in the queue: 0[0m
+[1;31mE (54689) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (54689) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (54689) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (54689) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
+[0;32mI (54799) Sonostream: Successfully connected[0m
+[0;32mI (54799) Sonostream: Current items in the queue: 0[0m
+[0;32mI (54899) Sonostream: Successfully connected[0m
+[0;32mI (54899) Sonostream: Current items in the queue: 0[0m
+[1;31mE (54939) Sonostream: Error occurred during sending: errno 104[0m
+
+[1;31mE (54939) Sonostream: Error occurred during sending: errno 104[0m
+[1;31mE (54939) Sonostream: Shutting down socket and restarting...[0m
+[0;32mI (54949) Sonostream: Socket created, connecting to 192.168.50.155:3333[0m
