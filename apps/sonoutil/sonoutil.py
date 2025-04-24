@@ -94,8 +94,7 @@ class SonoViz:
         if INFERENCE_EN:
             DEVICE = torch.device("cuda:0") if torch.cuda.is_available() else torch.device("cpu")
             self.model = SonoModel().to(DEVICE)
-            # self.model.load_state_dict(torch.load("sono_model.pth", weights_only=False, map_location=torch.device('cpu')))
-            self.model.load_state_dict(torch.load("../../sono_model.pt", weights_only=True, map_location=torch.device('cpu')), strict=False)
+            self.model.load_state_dict(torch.load("../../model/sono_model.pt", weights_only=True, map_location=torch.device('cpu')), strict=False)
 
         self._set_title()
         self.ax.set_xlabel("Time (seconds)")

@@ -1,3 +1,4 @@
 .vscode/
 fw/sonostream/build/
 .sonotouch-env/
+*/__pycache__/*

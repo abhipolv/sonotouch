@@ -70,9 +70,10 @@ def test_single_sample_inference(model, test_loader):
 DEVICE = torch.device("cuda:0") if torch.cuda.is_available() else torch.device("cpu")
 print(DEVICE)
 
+model_path = os.getcwd() + "/models/sonotemp_model.pt"
 model = SonoModel().to(DEVICE)
 # model = SonoModelLive().to(DEVICE)
-model.load_state_dict(torch.load("sono_model.pt", weights_only=False), strict=False)
+model.load_state_dict(torch.load(model_path, weights_only=False), strict=False)
 
 model.eval()
 

@@ -51,7 +51,7 @@ loss_function = nn.CrossEntropyLoss()
 
 # Training function
 def train_model(is_plot=False):
-    num_epoch = 20
+    num_epoch = 25
     train_loss = []
     train_acc = []
     val_loss = []
@@ -151,6 +151,7 @@ def validate_model(model, val_loader):
 
 
 # Train the model
+models_path = os.getcwd() + "/models/"
 train_model(is_plot=True)
-torch.save(model.state_dict(), "sonotemp_dict.pt")  # save dictionary
-torch.save(test_dl, "sonotemp_dl.pth")  # save testing data
+torch.save(model.state_dict(), models_path+"sonotemp_model.pt")  # save dictionary
+torch.save(test_dl, models_path+"sonotemp_dl.pth")  # save testing data
